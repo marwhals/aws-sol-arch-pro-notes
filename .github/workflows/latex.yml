@@ -2,9 +2,8 @@ name: Build LaTeX PDF
 
 on:
   push:
-    branches:
-      - main
-  pull_request:
+    tags:
+      - '*'  # Triggers only on tag pushes like v1.0.0
 
 jobs:
   build_latex:
@@ -27,8 +26,9 @@ jobs:
           latexmk_shell_escape: true
           args: -f
 
-      - name: Upload PDF
-        uses: actions/upload-artifact@v4
+      - name: Upload PDF as Release Asset
+        uses: softprops/action-gh-release@v1
         with:
-          name: compiled-pdf
-          path: src/main.pdf
+          files: src/main.pdf
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
