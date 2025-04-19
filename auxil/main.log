@@ -1,22 +1,23 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.29)  19 APR 2025 14:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.29)  19 APR 2025 14:53
 entering extended mode
 **./main.tex
 (main.tex
 LaTeX2e <2021-06-01>
 L3 programming layer <2021-06-01>
-(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
-Document Class: article 2021/02/12 v1.4n Standard LaTeX document class
-(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
-File: size11.clo 2021/02/12 v1.4n Standard LaTeX file (size option)
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
+Document Class: book 2021/02/12 v1.4n Standard LaTeX document class
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/base\bk11.clo
+File: bk11.clo 2021/02/12 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count182
-\c@section=\count183
-\c@subsection=\count184
-\c@subsubsection=\count185
-\c@paragraph=\count186
-\c@subparagraph=\count187
-\c@figure=\count188
-\c@table=\count189
+\c@chapter=\count183
+\c@section=\count184
+\c@subsection=\count185
+\c@subsubsection=\count186
+\c@paragraph=\count187
+\c@subparagraph=\count188
+\c@figure=\count189
+\c@table=\count190
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
@@ -41,13 +42,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count190
+\inf@bad=\count191
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count191
-\leftroot@=\count192
+\uproot@=\count192
+\leftroot@=\count193
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count193
-\DOTSCASE@=\count194
+\classnum@=\count194
+\DOTSCASE@=\count195
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -56,15 +57,15 @@ LaTeX Info: Redefining \cdots on input line 620.
 \big@size=\dimen141
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count195
-\c@MaxMatrixCols=\count196
+\macc@depth=\count196
+\c@MaxMatrixCols=\count197
 \dotsspace@=\muskip16
-\c@parentequation=\count197
-\dspbrk@lvl=\count198
+\c@parentequation=\count198
+\dspbrk@lvl=\count199
 \tag@help=\toks17
-\row@=\count199
-\column@=\count266
-\maxfields@=\count267
+\row@=\count266
+\column@=\count267
+\maxfields@=\count268
 \andhelp@=\toks18
 \eqnshift@=\dimen142
 \alignsep@=\dimen143
@@ -114,9 +115,9 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
-\Gm@cnth=\count268
-\Gm@cntv=\count269
-\c@Gm@tempcnt=\count270
+\Gm@cnth=\count269
+\Gm@cntv=\count270
+\c@Gm@tempcnt=\count271
 \Gm@bindingoffset=\dimen150
 \Gm@wd@mp=\dimen151
 \Gm@odd@mp=\dimen152
@@ -187,8 +188,8 @@ y
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
 \@linkdim=\dimen158
-\Hy@linkcounter=\count271
-\Hy@pagecounter=\count272
+\Hy@linkcounter=\count272
+\Hy@pagecounter=\count273
  (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2021-06-05 v7.00l Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -206,7 +207,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 y
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count273
+\Hy@SavedSpaceFactor=\count274
  (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2021-06-05 v7.00l Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -219,7 +220,7 @@ Package hyperref Info: Plain pages OFF on input line 4207.
 Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count274
+\c@Hy@tempcnt=\count275
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
@@ -235,7 +236,7 @@ c.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count275
+\Fld@menulength=\count276
 \Field@Width=\dimen160
 \Fld@charsize=\dimen161
 Package hyperref Info: Hyper figures OFF on input line 6076.
@@ -252,9 +253,9 @@ LaTeX Info: Redefining \pageref on input line 6150.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count276
-\c@Item=\count277
-\c@Hfootnote=\count278
+\Hy@abspage=\count277
+\c@Item=\count278
+\c@Hfootnote=\count279
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
@@ -265,8 +266,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
 e
 with kernel methods
 )
-\Fld@listcount=\count279
-\c@bookmark@seq@number=\count280
+\Fld@listcount=\count280
+\c@bookmark@seq@number=\count281
 
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfi
 lecheck.sty
@@ -282,23 +283,23 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip61
 )
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count281
+\lst@mode=\count282
 \lst@gtempboxa=\box52
 \lst@token=\toks23
-\lst@length=\count282
+\lst@length=\count283
 \lst@currlwidth=\dimen162
-\lst@column=\count283
-\lst@pos=\count284
+\lst@column=\count284
+\lst@pos=\count285
 \lst@lostspace=\dimen163
 \lst@width=\dimen164
-\lst@newlines=\count285
-\lst@lineno=\count286
+\lst@newlines=\count286
+\lst@lineno=\count287
 \lst@maxwidth=\dimen165
 
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count287
-\lst@skipnumbers=\count288
+\c@lstnumber=\count288
+\lst@skipnumbers=\count289
 \lst@framebox=\box53
 )
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
@@ -314,15 +315,15 @@ Package: expl3 2021-06-01 L3 programming layer (loader)
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pd
 ftex.def
 File: l3backend-pdftex.def 2021-05-07 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count289
+\l__color_backend_stack_int=\count290
 \l__pdf_internal_box=\box54
 ))
 Package: l3keys2e 2021-06-01 LaTeX2e option processing using LaTeX3 keys
 )
 Package: lipsum 2021-08-01 v2.5 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count290
-\l__lipsum_a_int=\count291
-\l__lipsum_b_int=\count292
+\g__lipsum_par_int=\count291
+\l__lipsum_a_int=\count292
+\l__lipsum_b_int=\count293
 
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.ltd.tex)
 ) (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\helvet.sty
@@ -338,16 +339,16 @@ Package: arydshln 2019/02/21 v1.76
 \adl@depth=\dimen170
 \adl@depthsave=\dimen171
 \adl@finaldepth=\dimen172
-\adl@columns=\count293
-\adl@ncol=\count294
-\adl@currentcolumn=\count295
-\adl@currentcolumnsave=\count296
-\adl@totalheight=\count297
-\adl@totalheightsave=\count298
-\adl@dash=\count299
-\adl@gap=\count300
-\adl@cla=\count301
-\adl@clb=\count302
+\adl@columns=\count294
+\adl@ncol=\count295
+\adl@currentcolumn=\count296
+\adl@currentcolumnsave=\count297
+\adl@totalheight=\count298
+\adl@totalheightsave=\count299
+\adl@dash=\count300
+\adl@gap=\count301
+\adl@cla=\count302
+\adl@clb=\count303
 \adl@everyvbox=\toks24
 \adl@LTpagetotal=\dimen173
 )
@@ -406,14 +407,14 @@ sfiltered.code.tex
 \pgf@yd=\dimen185
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count303
-\c@pgf@countb=\count304
-\c@pgf@countc=\count305
-\c@pgf@countd=\count306
+\c@pgf@counta=\count304
+\c@pgf@countb=\count305
+\c@pgf@countc=\count306
+\c@pgf@countd=\count307
 \t@pgf@toka=\toks29
 \t@pgf@tokb=\toks30
 \t@pgf@tokc=\toks31
-\pgf@sys@id@count=\count307
+\pgf@sys@id@count=\count308
 
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.
 cfg
@@ -432,8 +433,8 @@ File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
 yssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfsyssoftpath@smallbuffer@items=\count308
-\pgfsyssoftpath@bigbuffer@items=\count309
+\pgfsyssoftpath@smallbuffer@items=\count309
+\pgfsyssoftpath@bigbuffer@items=\count310
 )
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
 ysprotocol.code.tex
@@ -469,7 +470,7 @@ e.tex
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathpars
 er.code.tex
 \pgfmath@dimen=\dimen186
-\pgfmath@count=\count310
+\pgfmath@count=\count311
 \pgfmath@box=\box57
 \pgfmath@toks=\toks32
 \pgfmath@stack@operand=\toks33
@@ -495,7 +496,7 @@ tions.misc.code.tex)
 tions.integerarithmetics.code.tex)))
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloa
 t.code.tex
-\c@pgfmathroundto@lastzeros=\count311
+\c@pgfmathroundto@lastzeros=\count312
 ))
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code
 .tex)
@@ -535,7 +536,7 @@ File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfpic=\box58
 \pgf@hbox=\box59
 \pgf@layerbox@main=\box60
-\pgf@picture@serial@count=\count312
+\pgf@picture@serial@count=\count313
 )
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
 regraphicstate.code.tex
@@ -570,8 +571,8 @@ File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 reshade.code.tex
 File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@max=\dimen266
-\pgf@sys@shading@range@num=\count313
-\pgf@shadingcount=\count314
+\pgf@sys@shading@range@num=\count314
+\pgf@shadingcount=\count315
 )
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
 reimage.code.tex
@@ -644,7 +645,7 @@ Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflib
 raryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@plot@mark@count=\count315
+\pgf@plot@mark@count=\count316
 \pgfplotmarksize=\dimen271
 )
 \tikz@lastx=\dimen272
@@ -659,19 +660,19 @@ File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \tikz@figbox@bg=\box64
 \tikz@tempbox=\box65
 \tikz@tempbox@bg=\box66
-\tikztreelevel=\count316
-\tikznumberofchildren=\count317
-\tikznumberofcurrentchild=\count318
-\tikz@fig@count=\count319
+\tikztreelevel=\count317
+\tikznumberofchildren=\count318
+\tikznumberofcurrentchild=\count319
+\tikz@fig@count=\count320
 
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodul
 ematrix.code.tex
 File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfmatrixcurrentrow=\count320
-\pgfmatrixcurrentcolumn=\count321
-\pgf@matrix@numberofcolumns=\count322
+\pgfmatrixcurrentrow=\count321
+\pgfmatrixcurrentcolumn=\count322
+\pgf@matrix@numberofcolumns=\count323
 )
-\tikz@expandcount=\count323
+\tikz@expandcount=\count324
 
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
 kz/libraries\tikzlibrarytopaths.code.tex
@@ -690,8 +691,8 @@ e.code.tex
 \t@pgfplots@tokb=\toks38
 \t@pgfplots@tokc=\toks39
 \pgfplots@tmpa=\dimen280
-\c@pgfplots@coordindex=\count324
-\c@pgfplots@scanlineindex=\count325
+\c@pgfplots@coordindex=\count325
+\c@pgfplots@scanlineindex=\count326
 
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgfplot
 ssysgeneric.code.tex))
@@ -709,13 +710,13 @@ re\pgfplotsliststructure.code.tex)
 re\pgfplotsliststructureext.code.tex)
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructu
 re\pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count326
+\c@pgfplotsarray@tmp=\count327
 )
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructu
 re\pgfplotsmatrix.code.tex)
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/numtable\pg
 fplotstableshared.code.tex
-\c@pgfplotstable@counta=\count327
+\c@pgfplotstable@counta=\count328
 \t@pgfplotstable@a=\toks40
 )
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructu
@@ -728,7 +729,7 @@ tsbinary.data.code.tex))
 tsutil.verb.code.tex)
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgflib
 rarypgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count328
+\c@pgfplotslibrarysurf@no=\count329
 
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgflibr
 arypgfplots.surfshading.pgfsys-pdftex.def)))
@@ -765,7 +766,7 @@ edecorations.code.tex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen283
 \pgfdecoratedinputsegmentremainingdistance=\dimen284
 \pgf@decorate@distancetomove=\dimen285
-\pgf@decorate@repeatstate=\count329
+\pgf@decorate@repeatstate=\count330
 \pgfdecorationsegmentamplitude=\dimen286
 \pgfdecorationsegmentlength=\dimen287
 )
@@ -781,7 +782,7 @@ kz/libraries\tikzlibrarydecorations.pathreplacing.code.tex
 tions\pgflibrarydecorations.pathreplacing.code.tex))
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzli
 brarypgfplots.contourlua.code.tex)
-\pgfplots@numplots=\count330
+\pgfplots@numplots=\count331
 \pgfplots@xmin@reg=\dimen288
 \pgfplots@xmax@reg=\dimen289
 \pgfplots@ymin@reg=\dimen290
@@ -834,16 +835,16 @@ LaTeX Font Info:    ... okay on input line 33.
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
 kii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count331
+\scratchcounter=\count332
 \scratchdimen=\dimen294
 \scratchbox=\box68
-\nofMPsegments=\count332
-\nofMParguments=\count333
+\nofMPsegments=\count333
+\nofMParguments=\count334
 \everyMPshowfont=\toks41
-\MPscratchCnt=\count334
+\MPscratchCnt=\count335
 \MPscratchDim=\dimen295
-\MPnumerator=\count335
-\makeMPintoPDFobject=\count336
+\MPnumerator=\count336
+\makeMPintoPDFobject=\count337
 \everyMPtoPDFconversion=\toks42
 )
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-
@@ -863,7 +864,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
+* modes: twoside 
 * h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
 * v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
 * \paperwidth=614.295pt
@@ -872,21 +873,21 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \textheight=650.43001pt
 * \oddsidemargin=0.0pt
 * \evensidemargin=0.0pt
-* \topmargin=-37.0pt
+* \topmargin=-31.8738pt
 * \headheight=12.0pt
-* \headsep=25.0pt
+* \headsep=19.8738pt
 * \topskip=11.0pt
-* \footskip=30.0pt
-* \marginparwidth=59.0pt
-* \marginparsep=10.0pt
+* \footskip=27.46295pt
+* \marginparwidth=116.0pt
+* \marginparsep=7.0pt
 * \columnsep=10.0pt
 * \skip\footins=10.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
+* \@twosidetrue
+* \@mparswitchtrue
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
@@ -901,7 +902,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 tlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count337
+\c@section@level=\count338
 )
 LaTeX Info: Redefining \ref on input line 33.
 LaTeX Info: Redefining \pageref on input line 33.
@@ -912,7 +913,7 @@ LaTeX Info: Redefining \nameref on input line 33.
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-\c@lstlisting=\count338
+\c@lstlisting=\count339
 
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
@@ -922,12 +923,8 @@ your preamble.
 
 [1
 
+
 {C:/Users/Marjan/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\out\main.toc)
-\tf@toc=\write5
-\openout5 = `main.toc'.
-
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -936,153 +933,214 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.48     \newpage
-                  [1]
-main.tex:51: Undefined control sequence.
-l.51     \chapter
-                 {Course Introduction}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+[2
 
-main.tex:52: Undefined control sequence.
-l.52     \chapter
-                 {Identity \& Federation}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+] (C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\out\main.toc
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 1.
 
-main.tex:53: Undefined control sequence.
-l.53     \chapter
-                 {Security}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-main.tex:54: Undefined control sequence.
-l.54     \chapter
-                 {Compute \& Load Balancing}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-main.tex:55: Undefined control sequence.
-l.55     \chapter
-                 {Storage}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-main.tex:56: Undefined control sequence.
-l.56     \chapter
-                 {Caching}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-main.tex:57: Undefined control sequence.
-l.57     \chapter
-                 {Databases}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-main.tex:58: Undefined control sequence.
-l.58     \chapter
-                 {Service Communication}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-main.tex:59: Undefined control sequence.
-l.59     \chapter
-                 {Data Engineering}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-main.tex:60: Undefined control sequence.
-l.60     \chapter
-                 {Monitoring}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-main.tex:61: Undefined control sequence.
-l.61     \chapter
-                 {Deployment and Instance Management}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-main.tex:62: Undefined control sequence.
-l.62     \chapter
-                 {Cost Control}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-main.tex:63: Undefined control sequence.
-l.63     \chapter
-                 {Migration}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-main.tex:64: Undefined control sequence.
-l.64     \chapter
-                 {VPC}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-main.tex:65: Undefined control sequence.
-l.65     \chapter
-                 {Machine Learning}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/wasysym\uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+))
+\tf@toc=\write5
+\openout5 = `main.toc'.
 
 
-Overfull \hbox (2.06946pt too wide) in paragraph at lines 51--66
-[]\OT1/phv/m/n/10.95 Course In-tro-duc-tion Iden-tity & Fed-er-a-tion Se-cu-rit
-y Com-pute & Load Bal-anc-ing Stor-age Caching
- []
+[3]
 
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[4
+
+]
+Chapter 1.
+[5]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[6
+
+]
+Chapter 2.
+[7]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[8
+
+]
+Chapter 3.
+[9]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[10
+
+]
+Chapter 4.
+[11]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[12
+
+]
+Chapter 5.
+[13]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[14
+
+]
+Chapter 6.
+[15]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[16
+
+]
+Chapter 7.
+[17]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[18
+
+]
+Chapter 8.
+[19]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[20
+
+]
+Chapter 9.
+[21]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[22
+
+]
+Chapter 10.
+[23]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[24
+
+]
+Chapter 11.
+[25]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[26
+
+]
+Chapter 12.
+[27]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[28
+
+]
+Chapter 13.
+[29]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[30
+
+]
+Chapter 14.
+[31]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[32
+
+]
+Chapter 15.
+[33]
 
 main.tex:123: Package inputenc Error: Unicode character 🤔 (U+1F914)
 (inputenc)                not set up for use with LaTeX.
@@ -1104,39 +1162,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[2]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[3]
+[34]
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 1
 73.
  (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
-main.tex:185: Undefined control sequence.
-l.185     \chapter
-                  {Other Services}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-main.tex:186: Undefined control sequence.
-l.186     \chapter
-                  {Example Preparation}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1145,27 +1176,56 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[4] (C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\out\main.aux
-)
+[35]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[36
+
+]
+Chapter 16.
+[37]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[38
+
+]
+Chapter 17.
+[39]
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\out\main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 0F47E92C86FA205B39001F03240C40D7;96.
  ) 
 Here is how much of TeX's memory you used:
- 31622 strings out of 478864
- 734304 string characters out of 2848186
- 1261342 words of memory out of 3000000
- 49030 multiletter control sequences out of 15000+600000
- 415307 words of font info for 43 fonts, out of 8000000 for 9000
+ 31728 strings out of 478864
+ 735539 string characters out of 2848186
+ 1260827 words of memory out of 3000000
+ 49069 multiletter control sequences out of 15000+600000
+ 419683 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,11n,89p,723b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
-{C:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C
-:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pf
-b><C:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8
-a.pfb>
+pdfTeX warning (dest): name{section.1} has been referenced but does not exist
+, replaced by a fixed one
+
+{C:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/
+Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb>
+<C:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.
+pfb>
 Output written on C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes
-\out\main.pdf (5 pages, 38175 bytes).
+\out\main.pdf (39 pages, 63691 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
- 20 named destinations out of 1000 (max. 500000)
+ 240 PDF objects out of 1000 (max. 8388607)
+ 73 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
