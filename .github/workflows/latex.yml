@@ -1,0 +1,26 @@
+name: Build LaTeX PDF
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up LaTeX
+        uses: dante-ev/latex-action@v2
+        with:
+          root_file: src/main.tex  # 👈 Correct path to your LaTeX source
+
+      - name: Upload PDF
+        uses: actions/upload-artifact@v3
+        with:
+          name: compiled-pdf
+          path: out/main.pdf        # 👈 Correct path to the output PDF
