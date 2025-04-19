@@ -5,6 +5,9 @@ on:
     tags:
       - '*'  # Triggers only on tag pushes like v1.0.0
 
+permissions:
+  contents: write  # Required for creating releases and uploading assets
+
 jobs:
   build_latex:
     runs-on: ubuntu-latest
@@ -26,9 +29,12 @@ jobs:
           latexmk_shell_escape: true
           args: -f
 
+      - name: List files in src/ to confirm PDF exists
+        run: ls src/
+
       - name: Upload PDF as Release Asset
         uses: softprops/action-gh-release@v1
         with:
-          files: src/main.pdf
+          files: src/main.pdf  # Ensure this matches the correct path to your PDF
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
