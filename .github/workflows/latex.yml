@@ -18,6 +18,7 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: src/main.tex
+          latexmk_args: -f  # Add the -f flag to force the compilation
 
       - name: Upload PDF
         uses: actions/upload-artifact@v4
