@@ -14,14 +14,21 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Clean previous build (if any)
+        run: |
+          rm -rf out/*
+          rm -f src/*.aux src/*.log src/*.toc src/*.out
+
       - name: Set up LaTeX
         uses: xu-cheng/latex-action@v2
         with:
           root_file: src/main.tex
-          latexmk_args: -f  # Add the -f flag to force the compilation
+          latexmk_use_lualatex: true
+          latexmk_shell_escape: true
+          latexmk_args: -f
 
       - name: Upload PDF
         uses: actions/upload-artifact@v4
         with:
           name: compiled-pdf
-          path: out/main.pdf
+          path: src/main.pdf
