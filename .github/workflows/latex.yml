@@ -32,6 +32,6 @@ jobs:
       - name: Upload PDF as Release Asset
         uses: softprops/action-gh-release@v1
         with:
-          files: src/main.pdf  # Only this file will be uploaded
+          files: out/main.pdf  # Only this file will be uploaded
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
