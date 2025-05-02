@@ -1,2 +1,98 @@
-\contentsline {section}{\numberline {1}Woopty doo}{2}{section.1}%
-\contentsline {paragraph}{Lalalla}{2}{section*.2}%
+\contentsline {chapter}{\numberline {1}Course Introduction}{5}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Identity \& Federation}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}IAM - What should you know by now}{7}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}IAM Policies Deep Dive}{7}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}IAM AWS Managed Policies - Administrator Access example}{7}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}IAM Policies Conditions}{8}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}IAM Policies Variables and Tags}{8}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}IAM Roles vs Resource Based Policies}{8}{subsection.2.1.5}%
+\contentsline {subsection}{\numberline {2.1.6}IAM Permissions Boundaries}{8}{subsection.2.1.6}%
+\contentsline {subsection}{\numberline {2.1.7}Use cases}{8}{subsection.2.1.7}%
+\contentsline {subsection}{\numberline {2.1.8}IAM Access Analyser}{8}{subsection.2.1.8}%
+\contentsline {subsection}{\numberline {2.1.9}IAM Access Analyser}{8}{subsection.2.1.9}%
+\contentsline {section}{\numberline {2.2}STS}{8}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Using STS to Assume a Role}{8}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Assuming a Role with STS}{9}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Providing Access to an IAM User in Yours or Another AWS Account That You Own}{9}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Providing Access to AWS Accounts Owned by Third Parties}{9}{subsection.2.2.4}%
+\contentsline {subsubsection}{Session Tags in STS}{9}{section*.2}%
+\contentsline {subsubsection}{STS Important APIs}{9}{section*.3}%
+\contentsline {subsection}{\numberline {2.2.5}Identity Federation in AWS}{10}{subsection.2.2.5}%
+\contentsline {subsubsection}{SAML 2.0 Federation}{10}{section*.4}%
+\contentsline {subsubsection}{SAML 2.0 Federation - AWS API Access}{10}{section*.5}%
+\contentsline {subsubsection}{SAML 2.0 Federation - AWS Console Access}{10}{section*.6}%
+\contentsline {subsubsection}{SAML 2.0 Federation - Active Directory DS (ADFS)}{10}{section*.7}%
+\contentsline {subsubsection}{Custom Identity Broker Application}{10}{section*.8}%
+\contentsline {subsubsection}{Web Identity Federation - Without Cognito}{10}{section*.9}%
+\contentsline {subsubsection}{Web Identity Federation - With Cognito}{10}{section*.10}%
+\contentsline {subsubsection}{Web Identity Federation - IAM Policy}{10}{section*.11}%
+\contentsline {subsection}{\numberline {2.2.6}AWS Directory Services (AD)?}{11}{subsection.2.2.6}%
+\contentsline {subsubsection}{What is ADFS (AS Federation Services)?}{11}{section*.12}%
+\contentsline {subsubsection}{AWS Directory Services}{11}{section*.13}%
+\contentsline {subsubsection}{AWS Directory Services and AWS Managed Microsoft AD}{11}{section*.14}%
+\contentsline {subsubsection}{AWS Microsoft Managed AD - Integrations}{11}{section*.15}%
+\contentsline {subsubsection}{Connect to on-premise AD}{11}{section*.16}%
+\contentsline {subsubsection}{Solution Achitecture: Active Directory Replication}{11}{section*.17}%
+\contentsline {subsubsection}{AWS Directory Services AD Connector}{11}{section*.18}%
+\contentsline {subsubsection}{AWS Directory Services Simple AD}{12}{section*.19}%
+\contentsline {subsection}{\numberline {2.2.7}AWS Orgnisations}{12}{subsection.2.2.7}%
+\contentsline {subsubsection}{AWS Organisations - OrgnizationAccountAccessRole}{12}{section*.20}%
+\contentsline {subsubsection}{Multi Account Strategies}{12}{section*.21}%
+\contentsline {subsubsection}{Orgnisational Units (OU) - Examples}{12}{section*.22}%
+\contentsline {subsubsection}{AWS Organisation - Feature Modes}{12}{section*.23}%
+\contentsline {subsubsection}{All Features (Default)}{12}{section*.24}%
+\contentsline {subsubsection}{AWS Organisations - Reserved Instances}{12}{section*.25}%
+\contentsline {subsubsection}{AWS Organisation - Moving Accounts}{13}{section*.26}%
+\contentsline {subsubsection}{Service Control Policies (SCP)}{13}{section*.27}%
+\contentsline {subsubsection}{SCP Hierarchy}{13}{section*.28}%
+\contentsline {subsubsection}{SCP Examples - Blocklist and Allowlist strategies}{13}{section*.29}%
+\contentsline {subsubsection}{IAM Policy Evaluation Logic}{13}{section*.30}%
+\contentsline {subsubsection}{Restricting Tags with IAM policies}{13}{section*.31}%
+\contentsline {subsubsection}{Using SCP to restrict creating resources without appropriate tags}{13}{section*.32}%
+\contentsline {subsubsection}{AWS Organisations - Tag Policies}{13}{section*.33}%
+\contentsline {subsubsection}{AWS Organisation - AI Service Opt-out Policies}{14}{section*.34}%
+\contentsline {subsubsection}{AWS Organisations - Backup policies}{14}{section*.35}%
+\contentsline {subsubsection}{Using SCP to Deny a Region aws:ReqeustRegion}{14}{section*.36}%
+\contentsline {subsection}{\numberline {2.2.8}AWS IAM Identity Center}{14}{subsection.2.2.8}%
+\contentsline {subsubsection}{AWS IAM Identity Center -successor to AWS Single Sign-On- }{14}{section*.37}%
+\contentsline {subsubsection}{AWS IAM Identity Center}{14}{section*.38}%
+\contentsline {subsubsection}{AWS IAM Identity Center - Fine-grained Permissions and Assignments}{14}{section*.39}%
+\contentsline {subsubsection}{AWS Control Tower}{14}{section*.40}%
+\contentsline {subsubsection}{AWS Controller Tower - Account Factory}{15}{section*.41}%
+\contentsline {subsubsection}{AWS Control Tower - Detect and Remediate Policy Violations}{15}{section*.42}%
+\contentsline {subsubsection}{AWS Control Tower - Guardrails Levels}{15}{section*.43}%
+\contentsline {section}{\numberline {2.3}AWS Resource Access Manager (RAM)}{15}{section.2.3}%
+\contentsline {subsubsection}{AWS Resource Access Manager (RAM)}{15}{section*.44}%
+\contentsline {subsubsection}{Resource Access Manager - VPC example}{15}{section*.45}%
+\contentsline {subsubsection}{Resource Access Manager Managed Prefix List}{16}{section*.46}%
+\contentsline {subsubsection}{Resource Access Manger Route 53 Outbound Resolver}{16}{section*.47}%
+\contentsline {section}{\numberline {2.4}Summary of Identity and Federation}{16}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Security}{17}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Compute \& Load Balancing}{19}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Storage}{21}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Caching}{23}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Databases}{25}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Service Communication}{27}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Data Engineering}{29}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Monitoring}{31}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Deployment and Instance Management}{33}{chapter.11}%
+\contentsline {chapter}{\numberline {12}Cost Control}{35}{chapter.12}%
+\contentsline {chapter}{\numberline {13}Migration}{37}{chapter.13}%
+\contentsline {chapter}{\numberline {14}VPC}{39}{chapter.14}%
+\contentsline {chapter}{\numberline {15}Machine Learning}{41}{chapter.15}%
+\contentsline {section}{\numberline {15.1}Rekognition Overview}{41}{section.15.1}%
+\contentsline {subsection}{\numberline {15.1.1}Amazon Rekognition - Content Moderation}{41}{subsection.15.1.1}%
+\contentsline {section}{\numberline {15.2}Transcribe Overview}{41}{section.15.2}%
+\contentsline {section}{\numberline {15.3}Polly Overview}{41}{section.15.3}%
+\contentsline {subsection}{\numberline {15.3.1}Amazon Polly - Lexicon \& SSML}{41}{subsection.15.3.1}%
+\contentsline {section}{\numberline {15.4}Translate Overview}{42}{section.15.4}%
+\contentsline {section}{\numberline {15.5}Lex + Connect Overview}{42}{section.15.5}%
+\contentsline {section}{\numberline {15.6}Comprehend Overview}{42}{section.15.6}%
+\contentsline {section}{\numberline {15.7}Comprehend Medical Overview}{42}{section.15.7}%
+\contentsline {section}{\numberline {15.8}SageMaker Overview}{42}{section.15.8}%
+\contentsline {section}{\numberline {15.9}Kendra Overview}{42}{section.15.9}%
+\contentsline {section}{\numberline {15.10}Personalise Overview}{43}{section.15.10}%
+\contentsline {section}{\numberline {15.11}Textract Overview}{43}{section.15.11}%
+\contentsline {section}{\numberline {15.12}Machine Learning Summary}{43}{section.15.12}%
+\contentsline {chapter}{\numberline {16}Other Services}{45}{chapter.16}%
+\contentsline {chapter}{\numberline {17}Example Preparation}{47}{chapter.17}%
