@@ -18,6 +18,7 @@
 \usepackage{pgfplots}    % For plotting graphs
 \usepackage{wasysym}
 \usepackage{float}
+\usepackage{coptic}
 
 
 %\usepackage{amstex} % Helvetica as a sans-serif font alternative
@@ -97,8 +98,10 @@
 
     \subsection{IAM Policies Conditions}
     % Insert IAM policies conditions
+
     \subsection{IAM Policies Variables and Tags}
     % Insert listings here
+
     \subsection{IAM Roles vs Resource Based Policies}
     - Attach a policy to a resource (example: S3 bucket policy) versus attaching of a using a role as a proxy
 %insert a diagram
@@ -111,7 +114,6 @@
     - Advanced feature to use a managed policy to set the maximum permissions an IAM entity can get
     - Can be used in combinations of AWS organisations SCP
 
-
     \subsection{Use cases}
 
     \begin{itemize}
@@ -122,26 +124,28 @@
 
     \subsection{IAM Access Analyser}
     - Find out which resources are shared externally
-        - S3 Buckets
-        - IAM Roles
-        - KMS Keys
-        - Lambda Functions and Layers
-        - SQS queues
-        - Secrets Manager Secrets
+    - S3 Buckets
+    - IAM Roles
+    - KMS Keys
+    - Lambda Functions and Layers
+    - SQS queues
+    - Secrets Manager Secrets
     - Define Zone ofTrust = AWS Account or AWS Organisation
     - Access outside of zone trusts => findings
 
     \subsection{IAM Access Analyser}
     - IAM Access Analyser Policy Validation
-        - Validates your policy against IAM policy grammar and best practices
-        - General warnings, security warnings errors suggestions
-        - Provides actionable recommendations
+    - Validates your policy against IAM policy grammar and best practices
+    - General warnings, security warnings errors suggestions
+    - Provides actionable recommendations
     - IAM Access Analyser Policy Generation
-        - Generates IAM policy based on access activity
-        - CloudTrail logs is reviewed to generate the policy with the fine-grained permissions and the appropriate Actions and Services
-        - Reviews CloudTrail logs for up to 90 days
-    
+    - Generates IAM policy based on access activity
+    - CloudTrail logs is reviewed to generate the policy with the fine-grained permissions and the appropriate Actions and Services
+    - Reviews CloudTrail logs for up to 90 days
+
+
     \section{STS}
+
     \subsection{Using STS to Assume a Role}
     - Define an IAM Role within your account or cross-account
     - Define which principals can access this IAM role
@@ -161,10 +165,10 @@
     - You can grant your IAM users permissions to switch to roles within your AWS account or to roles defined in other AWS accounts that you own.
     %Diagram
     - Benefits:
-        - You must explicitly grant your users permission to assume the role
-        - Your users must actively switch to the role using the AWS management console or assume the role using the AWS CLI or AWS API
-        - You can add multi-factor authentication (MFA) protection to the role so that only users who sign in with an MFA device can assume the role.
-        - Least Privilege + auditing using CloudTrail
+    - You must explicitly grant your users permission to assume the role
+    - Your users must actively switch to the role using the AWS management console or assume the role using the AWS CLI or AWS API
+    - You can add multi-factor authentication (MFA) protection to the role so that only users who sign in with an MFA device can assume the role.
+    - Least Privilege + auditing using CloudTrail
     %Diagram
 
     \subsection{Providing Access to AWS Accounts Owned by Third Parties}
@@ -172,54 +176,54 @@
     - Outside Zone ofTrust = 3rd parties
     - Use IAM Access Analyser to find out which resources are exposed
     - For granting access to a thrid party:
-        - The third part AWS account ID
-        - An External ID (secret between you and the third party)
-            - To uniquely associate with the role between you and 3rd party
-            - Must be provided when defining the trust and when assuming the role
-            - Must be chosen by the third party
-        - Define permissions in the IAM policy
+    - The third part AWS account ID
+    - An External ID (secret between you and the third party)
+    - To uniquely associate with the role between you and 3rd party
+    - Must be provided when defining the trust and when assuming the role
+    - Must be chosen by the third party
+    - Define permissions in the IAM policy
 
     %The confused deputy, diagram
 
     \subsubsection{Session Tags in STS}
     - Tags that you pass when you assume an IAM Role or federate user in STS
     - aws:PrincipalTag Condition
-        - Compares the tags attached to the principal making the request with the tag you specified in the policy.
-        - Example: Allow a principal to pass session tags only if the principal making the reqeust has the specified tags.
+    - Compares the tags attached to the principal making the request with the tag you specified in the policy.
+    - Example: Allow a principal to pass session tags only if the principal making the reqeust has the specified tags.
     % diagram
 
     \subsubsection{STS Important APIs}
     - AssumeRole: access a role within your account or cross-account
     - AssumeRoleWithSAML: return credentials for users logged with SAML
     - AssumeRoleWithWebIdentity: return creds for users logged with an IdP
-        - Example providers include Amazon Cognito, Login with Amazon, Facebook, Google or any OpenID Connect-compatible identity provider.
-        - AWS Recommends using Cognito
+    - Example providers include Amazon Cognito, Login with Amazon, Facebook, Google or any OpenID Connect-compatible identity provider.
+    - AWS Recommends using Cognito
     - GetSessionToken: for MFA from a user or AWS account root user
     - GetFederationToken: obtain temporary creds for a federated user, usually a proxy app that will give the creds for a federated user, usually a proxy app that will give the creds to a distributed app inside a corporate network.
-    
+
     \subsection{Identity Federation in AWS}
     - Give users outside of AWS permissions to access AWS resources in your account
     - You don't need to create IAM Users (user management is outside AWS)
     - Use cases:
-        - A corporate has its own identity system (e.g Active Directory)
-        - Web / Mobile application that needs access to AWS resources
+    - A corporate has its own identity system (e.g Active Directory)
+    - Web / Mobile application that needs access to AWS resources
     - Identity Federation can have many flavours:
-        - SAML 2.0
-        - Custom Identity Broker
-        - Web Identity Federation With(out) Amazon Cognito
-        - IAM Identity Centre
+    - SAML 2.0
+    - Custom Identity Broker
+    - Web Identity Federation With(out) Amazon Cognito
+    - IAM Identity Centre
 
     \subsubsection{SAML 2.0 Federation}
     - Security Assertion Markup Language 2.0 (SAML 2.0)
     - Open standard used by many identity providers (e.g ADFS)
-        - Supports integration with Microsoft Active Directory Federations Services (ADFS)
-        - Or any SAML 2.0 - compatible IdPs with AWS
+    - Supports integration with Microsoft Active Directory Federations Services (ADFS)
+    - Or any SAML 2.0 - compatible IdPs with AWS
     - Access the AWS Console, AWS CLI or AWS API using temporary credentials
-        - No need to create IAM Users for each of your employees
-        - Need to setup a trust between AWS IAM and SAML 2.0 Identity Provider (both ways)
+    - No need to create IAM Users for each of your employees
+    - Need to setup a trust between AWS IAM and SAML 2.0 Identity Provider (both ways)
     - Under-the-hood: Uses the STS API AssumeRoleWithSAML
     - SAML 2.0 Federation is the "old way", IAM Identity Center Federation is the new managed and simpler way
-        %Insert a URL
+    %Insert a URL
 
     \subsubsection{SAML 2.0 Federation - AWS API Access}
     % Diagram here
@@ -243,12 +247,12 @@
 
     \subsubsection{Web Identity Federation - With Cognito}
     - Preferred over for Web Identity Federation
-        - Create IAM Roles using Cognito with the least privilege needed
-        - Build trust between the OIDC IdP and AWS
+    - Create IAM Roles using Cognito with the least privilege needed
+    - Build trust between the OIDC IdP and AWS
     - Cognito benefits:
-        - Supports anonymous users
-        - Supports MFA
-        - Data Synchronisation
+    - Supports anonymous users
+    - Supports MFA
+    - Data Synchronisation
     - Cognito replaces a Token Vending Machine (TVM)
     %Insert a diagram
 
@@ -272,26 +276,26 @@
 
     \subsubsection{AWS Directory Services}
     - AWS Managed Microsoft AD
-        - Create your own AD in AWS, manage users, locally supports MFA
-        - Establish "trust" connection with your own on premises
+    - Create your own AD in AWS, manage users, locally supports MFA
+    - Establish "trust" connection with your own on premises
     %Diagrams
     - AD Connector
-        - Directory Gateway (proxy) to redirect to on-premises AD, supports MFA
-        - Users are managed on the on-premise AD
+    - Directory Gateway (proxy) to redirect to on-premises AD, supports MFA
+    - Users are managed on the on-premise AD
     %Diagrams
     - Simple AD
-        - AD-compatible managed directory on AWS
-        - Cannot be joined with on-premise AD
+    - AD-compatible managed directory on AWS
+    - Cannot be joined with on-premise AD
     %Diagrams
 
     \subsubsection{AWS Directory Services and AWS Managed Microsoft AD}
     - Managed Service: Microsoft AD in your AWS VPC
     - EC2 Windows Instances:
-        - EC2 Windows instances can join the domain and run traditional AD applications (sharepoint, etc)
-        - Seamlessly Domain Join Amazon EC2 Instances from Multiple Accounts and VPCs
+    - EC2 Windows instances can join the domain and run traditional AD applications (sharepoint, etc)
+    - Seamlessly Domain Join Amazon EC2 Instances from Multiple Accounts and VPCs
     - Integrations
-        - RDS for SQL Server, AWS Workspaces, Quicksight.......
-        - AWS SSO to provide access to third party applications
+    - RDS for SQL Server, AWS Workspaces, Quicksight.......
+    - AWS SSO to provide access to third party applications
     - Standalone repository in AWS or jointed to on-premises AD
     - Multi AZ deployment of AD in 2 AZ, # of DC (Domain Controllers) can be increased for scaling
     - Automated backups
@@ -305,9 +309,9 @@
     - Ability to connect your on-premise Active Directory to AWS Managed Microsoft AD
     - Must establish a Direct Connection (DX) or VPN connection
     - Can setup three kinds of forest trust
-        - One-way trust: AWS -> On-Premise
-        - One-way trust: On-Premise -> AWS
-        - Two-way forest: trust - AWS -> On-Premise
+    - One-way trust: AWS -> On-Premise
+    - One-way trust: On-Premise -> AWS
+    - Two-way forest: trust - AWS -> On-Premise
     - Forest trust is different than synchronisation (replication is not supported)
 
     \subsubsection{Solution Achitecture: Active Directory Replication}
@@ -334,6 +338,7 @@
 
     \subsection{AWS Orgnisations}
     %Diagram
+
     \subsubsection{AWS Organisations - OrgnizationAccountAccessRole}
     %Diagram
     - IAM role which grants full administrator permissions in the Member account to the Management account
@@ -355,14 +360,14 @@
 
     \subsubsection{AWS Organisation - Feature Modes}
     - Consolidated billing features:
-        - Consolidated Billing across all accounts - single payment method
-        - Pricing benefits from aggregated usage (volume discount for EC2, S3.....)
+    - Consolidated Billing across all accounts - single payment method
+    - Pricing benefits from aggregated usage (volume discount for EC2, S3.....)
 
     \subsubsection{All Features (Default)}
-        - Includes consolidated billing features, SCP
-        - Invited accounts must approve enabling all features
-        - Ability to apply an SCP to prevent member accounts from leaving the org
-        - Can't switch back to Consolidated Billing Features only
+    - Includes consolidated billing features, SCP
+    - Invited accounts must approve enabling all features
+    - Ability to apply an SCP to prevent member accounts from leaving the org
+    - Can't switch back to Consolidated Billing Features only
 
     \subsubsection{AWS Organisations - Reserved Instances}
     - For billing purposes, the consolidated billing features of AWS organisations treats all the accounts in the organisation as one account.
@@ -383,24 +388,24 @@
     - Does not apply to the Management Account
     - SCP is applied to all the Users and Roles in the account, including Root user
     - The SCP does not affect Service-linked roles
-        - Service-linked roles enable other AWS services to integrate with AWS organisations and can't be restricted by SCP's
+    - Service-linked roles enable other AWS services to integrate with AWS organisations and can't be restricted by SCP's
     - SCP must have an explicit Allow from the root of each OU in the direct path to the target account (does not allow anything by default)
     - Use cases:
-        - Restrict access to certain services (for example: can't use EMR)
-        - Enforce PCI compliance by explicitly disabling services.
+    - Restrict access to certain services (for example: can't use EMR)
+    - Enforce PCI compliance by explicitly disabling services.
 
     \subsubsection{SCP Hierarchy}
     %Insert diagram
     - Management Account - Can do anything (no SCP apply)
     - Account A
-        - Can do anything
-        - EXCEPT S3 (explicit Deny from Sandbox OU)
-        - EXCEPT EC2 (explicit deny)
+    - Can do anything
+    - EXCEPT S3 (explicit Deny from Sandbox OU)
+    - EXCEPT EC2 (explicit deny)
     - Account B and C
-        - Can do anything
-        - EXCEPT S3 (explicit Deny from Sandbox OU)
+    - Can do anything
+    - EXCEPT S3 (explicit Deny from Sandbox OU)
     - Account D
-        - Can access EC2
+    - Can access EC2
     - Prod OU and Account E and F
 
     \subsubsection{SCP Examples - Blocklist and Allowlist strategies}
@@ -412,7 +417,7 @@
     \subsubsection{Restricting Tags with IAM policies}
     - You can restrict specific tags on AWS resources
     - Using the aws:TagKeys Condition Key
-        - Validate the Tag Keys attached to a resource against the Tag Keys in the IAM Policy
+    - Validate the Tag Keys attached to a resource against the Tag Keys in the IAM Policy
     - Example: Allow IAM users to create EBS Volumes only if it has the "Env" and "CostCenter" Tags
     - Use either ForAllValues (must have all keys) or ForAnyValue (must have any of these keys at a minimum)
 
@@ -450,43 +455,45 @@
     %insert JSON example
 
     \subsection{AWS IAM Identity Center}
+
     \subsubsection{AWS IAM Identity Center -successor to AWS Single Sign-On- }
     - One login (single sign-on) for all your
-        - AWS accounts in AWS organisations
-        - Business cloud applications (e.g, Salesforce, Box, Microsoft 365)
-        - SAML2.0 enabled applications
-        - EC2 windows instances
+    - AWS accounts in AWS organisations
+    - Business cloud applications (e.g, Salesforce, Box, Microsoft 365)
+    - SAML2.0 enabled applications
+    - EC2 windows instances
 
     - Identity Providers
-        - Built-in identity store in IAM identity center
-        - 3rd party Active Directory (AD), OneLogin, Okta
+    - Built-in identity store in IAM identity center
+    - 3rd party Active Directory (AD), OneLogin, Okta
 
     - AWS IAM Identity Center - Login Flow
 
     \subsubsection{AWS IAM Identity Center}
     %Insert diagram
+
     \subsubsection{AWS IAM Identity Center - Fine-grained Permissions and Assignments}
     - Multi-Account Permissions
-        - Manage access across AWS accounts in your AWS Organisation
-        - Permission Sets - a collection of one or more IAM policies assigned to users and groups to define AWS access
+    - Manage access across AWS accounts in your AWS Organisation
+    - Permission Sets - a collection of one or more IAM policies assigned to users and groups to define AWS access
     %diagrams
     - Application Assignments
-        - SSO access to many SAML 2.0 business applications (Salesforce, Box, Microsoft 365)
-        - Provide required URLs, certificates and metadata
+    - SSO access to many SAML 2.0 business applications (Salesforce, Box, Microsoft 365)
+    - Provide required URLs, certificates and metadata
     - Attribute-Based Access Control (ABAC)
-        - Fine-grained permissions based on users' attributes stored in IAM identity center identity store
-        - Example: Cost center, title, locale
-        - Use case: Define permission once, then modify AWS access by changing the attributes
+    - Fine-grained permissions based on users' attributes stored in IAM identity center identity store
+    - Example: Cost center, title, locale
+    - Use case: Define permission once, then modify AWS access by changing the attributes
 
     \subsubsection{AWS Control Tower}
     - Easy way to setup and govern a secure and compliant multi-account AWS environment based on best practices
     - Benefits:
-        - Automate the set up of your environment in a few clicks
-        - Automate ongoing policy management using guardrails
-        - Detect policy violations and remediate them
-        - Monitor compliance through an interactive dashboard
+    - Automate the set up of your environment in a few clicks
+    - Automate ongoing policy management using guardrails
+    - Detect policy violations and remediate them
+    - Monitor compliance through an interactive dashboard
     - AWS ControlTower runs on top AWS Organisations:
-        - It automatically sets up AWS Organisations to organise accounts and implement SCPs (Service Control Policies)
+    - It automatically sets up AWS Organisations to organise accounts and implement SCPs (Service Control Policies)
 
     \subsubsection{AWS Controller Tower - Account Factory}
     - Automates account provisioning and deployments
@@ -496,33 +503,35 @@
 
     \subsubsection{AWS Control Tower - Detect and Remediate Policy Violations}
     - Guardrail
-        - Provide ongoing governance for your Control Tower environment (AWS Accounts)
-        - Preventive - using SCPs (e.g Disallow Creation of Access Keys for the Root User)
-        - Detective - users AWS Config (e.g Detect Whether MFA for the Root User is Enabled)
-        - Example: identify non-compliant resources (e.g, untagged resources)
+    - Provide ongoing governance for your Control Tower environment (AWS Accounts)
+    - Preventive - using SCPs (e.g Disallow Creation of Access Keys for the Root User)
+    - Detective - users AWS Config (e.g Detect Whether MFA for the Root User is Enabled)
+    - Example: identify non-compliant resources (e.g, untagged resources)
 
     %diagram
+
     \subsubsection{AWS Control Tower - Guardrails Levels}
     - Mandatory
-        - Automatically enabled and enforced by AWS control tower
-        - Example: Disallow public Read access to the Log Archive account
+    - Automatically enabled and enforced by AWS control tower
+    - Example: Disallow public Read access to the Log Archive account
     - Strongly Recommended
-        - Based on AWS best practices (optional)
-        - Example: Enable encryption for EBS volumes attached to EC2 instances
+    - Based on AWS best practices (optional)
+    - Example: Enable encryption for EBS volumes attached to EC2 instances
     - Elective
-        - Commonly used by enterprises (optional)
-        - Examples: Disallow delete actions without MFA in S3 buckets
+    - Commonly used by enterprises (optional)
+    - Examples: Disallow delete actions without MFA in S3 buckets
+
 
     \section{AWS Resource Access Manager (RAM)}
     - Share AWS resources that you own with other AWS accounts
     - Share with any account or within your Organisation
     - Avoid resource duplication!
     - VPC Subnets
-        - Allow to have all the resources launched in the same subnets
-        - Must be from the same AWS organisations
-        - Cannot share security groups and defaultVPC
-        - Participants can manage their own resources in there
-        - Participants can't view, modify, delete resources that belong to other participants or the owner
+    - Allow to have all the resources launched in the same subnets
+    - Must be from the same AWS organisations
+    - Cannot share security groups and defaultVPC
+    - Participants can manage their own resources in there
+    - Participants can't view, modify, delete resources that belong to other participants or the owner
     - AWS Transit Gateway
     - Route 53 (Resolver Rules, DNS Firewall Rule Groups)
     - License Manager Configurations
@@ -541,30 +550,31 @@
     \subsubsection{Resource Access Manager - VPC example}
     %Insert diagram here
     - Each account......
-        - Is responsible for it own resources
-        - Cannot view modify or delete other resources in other accounts
+    - Is responsible for it own resources
+    - Cannot view modify or delete other resources in other accounts
     - Network is shared so.....
-        - Anything deployed in the VPC can talk to other resources in the VPC
-        - Applications are accessed easily across accounts, using a private IP
-        - Security groups from other accounts can be referenced for maximum security
+    - Anything deployed in the VPC can talk to other resources in the VPC
+    - Applications are accessed easily across accounts, using a private IP
+    - Security groups from other accounts can be referenced for maximum security
     - Use cases
-        - Applications within the same trust boundaries
-        - Applications with a high degree of interconnectivity
+    - Applications within the same trust boundaries
+    - Applications with a high degree of interconnectivity
 
     \subsubsection{Resource Access Manager Managed Prefix List}
     - A set of one or more CIDR blocks
     - Makes it easier to configure and maintain Security Groups and Route Tables
     - Customer-Managed Prefix List
-        - Set of CIDRs that you define and manage by you
-        - Can be shared with other AWS accounts or AWS Organisation
-        - Modify to update many security groups at once
+    - Set of CIDRs that you define and manage by you
+    - Can be shared with other AWS accounts or AWS Organisation
+    - Modify to update many security groups at once
     - AWS-Managed Prefix List
-        - Set of CIDRs for AWS services
-        - You can't create, modify, share or delete them.
+    - Set of CIDRs for AWS services
+    - You can't create, modify, share or delete them.
 
     \subsubsection{Resource Access Manger Route 53 Outbound Resolver}
     - Helps you scale forwarding rules to your DNS in case you have multiple accounts and VPC
     %diagram
+
 
     \section{Summary of Identity and Federation}
 
@@ -585,7 +595,7 @@
         \end{itemize}
         \item AWS RAM to share resource (example VPC subnets)
     \end{itemize}
-    
+
     \chapter{Security}
 
 
@@ -594,8 +604,257 @@
 
     \chapter{Storage}
 
-
     \chapter{Caching}
+
+    \section{Cloudfront - Part 1}
+    - Content Delivery Network (CDN)
+    - Improves read performance, content is cached at the edge
+    - 225+ Point of Presensce globally (215+ Edge Locations and 13 Regional Edge Caches)
+    - Protect against Network and Application layer attacks (e.g DDoS attacks)
+    - Integration with AWS Shield, AWS WAF and route 53
+    - Can expose external HTTPS and can talk to internal HTTPS backends
+    - Supports WebSocket protocol
+
+    \subsection{CloudFront - Origins}
+    - S3 Bucket
+    - For distributing files
+    - For uploading to S3 (using CloudFront as an ingres)
+    - Enhanced security with CloudFront Origin Access Control (OAC)
+    - MediaStore Container and MediaPackage Endpoint
+    - To deliverVideo on Demand (VOD) or live streaming video using AWS Media Services
+    - VPC Origin
+    - For applications hosted in VPC private subnets
+    - Application Load Balance / Network Load Balancer / EC2 Instances
+    - Customer Origin (HTTP)
+    - API Gateway (for more control.... otherwise use API Gateway Edge)
+    - S3 Bucket configured as a website (enable Static Website hosting)
+    - Any HTTP backend you want
+
+    \subsection{CloudFront - S3 as an Origin}
+    %Diagram
+
+    \subsection{CloudFront vs S3 Cross Region Replication}
+    - CloudFront:
+    - Global Edge network
+    - Files are cached for a TTL (maybe a day)
+    - Great for static content that must be available everywhere
+
+    - S3 Cross Region Replication
+    - Must be setup for each region you want replication to happen
+    - Files are updated in near real-time
+    - Read only
+    - Great for dynamic content that needs to be available at low-latency in few regions
+
+    \subsection{CloudFront - ALB or EC2 as an origin Using VPC Origins}
+    - Allows you to deliver content from you applications hosted in your VPC private subnets (no need to expose them on the Internet)
+    - Deliver traffic to private
+    - Application Load Balancer
+    - Network Load Balancer
+    - EC2 Instances
+
+    %Diagram
+
+    \subsection{CloudFront - EC2 or ALB as an origin}
+    %Diagram
+
+    \subsection{CloudFront - Restrict Access to Application Load Balancers and Custom Origins}
+    - Prevent direct access to you ALB or Custom Origins (only access through CloudFront)
+    - First, configurations CloudFront to add a CustomHTTPHeader to requests it sends to the ALB
+    - Second, configure the ALB to only forward requests that contain that Customer HTTP Header
+    - Keep the custom header name and value secret!
+
+    %Diagram
+
+    \subsection{CloudFront - Origin Groups}
+    - To increase high-availability and do failover
+    - Origin Group: one primary and on secondary
+    - If the primary origin fail; the second on is used
+    - Origins can be cross AWS regions
+
+    %diagram
+
+    \section{Cloudfront - Part 2}
+
+    \subsection{CloudFront Geo Restrictions}
+    - You can restrict who can access your distribution
+    - Allow list: Allow you users to access your content only if they're in one of the countries on a list of approved
+    - Block list: Prevent your users from accessing your content if they're in one of the countries on a blacklist of banned countries..... lol
+    - The "country" is determined using a third party Geo-IP database
+    - Use case: Copyright Laws to control access to content
+    - Note: the geo header CloudFront-Viewer-Country is in Lambda at Edge
+
+    \subsection{CloudFront - Pricing}
+    - CloudFront Edge locations are all around the world
+    - The cost of data out per edge location varies
+    %Insert table
+
+    \subsection{CloudFront - Price Classes}
+    - You can reduce the number of edge locations for cost reductions
+    - Three price classes
+    - Price Class All: all regions - best performance
+    - Price Class 200: most regions, but excludes the most expensive regions
+    - Price Class 100: only the least expensive regions
+    %digrams
+
+    %prety map diagram
+
+    \subsection{CloudFront Signed URL Diagram}
+    - Signed URL with expiration to control access to content in CloudFront
+    - The Signed URL are generated by an API call into CloudFront as a trusted signer
+    %Diagram
+
+    \subsection{CloudFront Signed URL vs S3 Pre-Signed URL}
+    - CloudFront Signed URL:
+    - Allow access to a path, no matter the origin
+    - Account wide key-pair, only the root can manage
+    - Can filter by IP, path, date, expiration
+    - Can leverage caching features
+
+    - S3 Pre-Signed URL:
+    - Issue a request as the person who pre-signed URL
+    - Uses the IAM key of the signed IAM principal
+    - Limited lifetime
+
+    %Diagram
+
+    \subsection{CloudFront - Custom Error Pages}
+    - Return an object to the viewer (e.g html) when your origin returns an HTTP 4xx or 5xx status code to CloudFront
+    - Use Error Caching Minimum TTL to specify how long CloudFront caches the customer error pages
+
+    %diagram
+
+    \section{Lambda at Edge and CloudFront Functions}
+
+    \subsection{CloudFront - Customisation at the edge}
+    - Many modern application execute some form of the logic at the edge
+    - Edge function:
+    - A code that you write an attach to CloudFront distributions
+    - Runs close to your users to minimise latency
+    - Doesn't have any cache, only to change requests/ responses
+    - CloudFront provides two types: CloudFront Functions and Lambda and Edge
+    Use cases:
+    - Manipulate HTTP requests and responses
+    - Implement request filtering before reaching your application
+    - User authentication and authorisation
+    - Generate HTTP resources at the edge
+    - A/B Testing
+    - Bot mitigation
+    - You don't have to manage any servers, deployed globally
+
+    \subsection{CloudFront Functions and Lamabda at Edge}
+    %digram
+
+    \subsection{CloudFront - CloudFront Functions}
+    - Lightweight functions written in JavaScript
+    - For high-scale latency-sensitive CDN customisation
+    - Sub-ms startup times, million of requests per second
+    - RuN at Edge Locations
+    - Processed-Based isolation
+    - Used to changeViewer requests and responses:
+    - Viewer Requests: after CloudFront recevives a reqeusts from a viewer
+    - Viewer Response: before CloudFront forwards the response to the viewer
+    - Native feature of CloudFront (manage code entirely within CloudFront)
+    %diagram
+
+    \subsection{CloudFront - Lambda at Edge}
+    - Lambda functions written in NodeJS or Python
+    - Scala to 1000s of reqeust/ second
+    - Runs at the nearest Regional Edge Cache
+    - VM-based isolation
+    - Used to change CloudFront requests and responses
+    - Viewer Request - after CloudFront recieves a reqeust from a viewer
+    - Origin Request - before CloudFront forwards the response to the origin
+    - Orign response - after CloudFront recieves the response from the origin
+    - Viewer Response - before CloudFront forwards the response to the viewer
+    - Author your functions in one AWS Region (some region) then CloudFront replicats to its locations
+
+    \subsection{CloudFront Functions with Lambda at Edge}
+    CloudFront Functions and Lambda at Edge can be used together
+    %digram
+    Note: You can't combine CloudFront Functions and Lambda at Edge in viewer events ( viewer reqeust and viewer response)
+
+    \subsection{Using Lambda at Edge only}
+    Use when you need some of the capabilites of Lambda at Edge that aren't available with CloudFront Functions (e.g longer execution time, network access,....)
+    %Diagram here
+
+    \subsection{CloudFront Funtions vs. Lamda at Edge}
+    %table here
+
+    \subsection{CloudFront Funcitons vs Lambda at Edge Use Cases}
+    - CloudFront Functions
+    - Cache key normalisation
+    - Transform reqeust attributes (headers, cookies, query string, URL) to create an optimal Cache Key
+    - Header manipulation
+    - Insert/modify/ delete HTTP headers in the request or response
+    - URL rewrites or redirects
+    - Request authentication and authorisation
+    - Create and validate user-generated tokens (e.g JWT) to allow/deny reqeusts
+
+    Lambda at Edge
+    - Longer execution time (several ms)
+    - Adjustable CPU or memory
+    - You code depends on a third libraries (e.g AWS SDK to access other aws Services)
+    - Network access to use external services for processing
+    - File system access or access to the body of HTTP requests
+
+    \subsection{CloudFront Functions vs. Lambda at Edge - Authentication and Authorisation}
+    CloudFront Functions
+    %diagram
+
+    Lambda at Edge
+    %diagram
+
+    \subsection{Lambda@Edge: Loading content based on User-Agent}
+    %diagram here
+
+    \subsection{Lambda at Edge - Global Application}
+    %diagram
+
+
+    \section{Lambda at Edge Reduce Latency}
+
+    \subsection{Lambda at Edge - Route to different origin}
+    %diagram
+
+
+    \section{Amazon ElastiCache}
+
+    \subsection{Amazon ElasticCache Overview}
+    - The same way RDS is to get managed Relational Databases.....
+    - ElastiCache is to get managed Redis or Memcached
+    - Caches are in memory databases with really high performance and low latency
+    - Helps reduce load off of databases for read intensive workloads
+    - Helps make you application stateless
+    - AWS takes care of OS maintenance / patching, optimisations, setup, configuration, monitoring failure recovery and backups.
+    - \textbf{Using ElastiCache involves heavy application code changes}
+
+    \subsection{ElastiCache Solution Architecture - DB Cache}
+    - Applications queries ElastiCache, if not available, get from RDS and store in ElasticCache
+    - Helps relive load in RDS
+    - Cache must have an invalidation strategy to make sure only the most current data is used there.
+    %diagram
+
+    \subsection{ElastiCache Solution Architecture - User Session Store}
+    - User logs into any of the application
+    - The application writes the session data into ElastiCache
+    - The user hits another instance of our application
+    - The instance retrieves the data the user is already logged in
+    %diagram
+
+    \subsection{ElastiCache - Redis vs Memcached}
+    - Redis
+    - Multi AZ with Auto-Failover
+    - Read Replicas to scale reads and have high availability
+    - Persistent, Data Durability: Append Only File (AOF), backup and restore features
+    - Memcached
+    - Multi-node for partitioning of data (sharding)
+    - Non Persistent
+    - Backup and restore (Serverless)
+    - Mult-threaded architecture
+
+
+    \section{Handling Extreme Rates}
+    %diagram
 
 
     \chapter{Databases}
@@ -614,8 +873,9 @@
 
 
     \chapter{Cost Control}
-    \section{Cost Allocation Tags}
 
+
+    \section{Cost Allocation Tags}
 
     \begin{itemize}
         \item With Tags we can track resources that relate to each other
@@ -636,50 +896,53 @@
         \item Takes up to 24 hours for the tags to show up in the report
     \end{itemize}
 
+
     \section{AWS Tag Editor}
     - Allows you to managed tags of multiple resources at once
     - You can add/update/delete tags
     - Search tagged/untagged resources in all AWS Regions
 
+
     \section{Trusted Advisor}
     - No need to install anything - high level AWS account assessment
     - Analyse your AWS accounts and provides recommendation
-        - Cost Optimisation
-        - Performance
-        - Security
-        - Fault Tolerance
-        - Service Limits
-        - Operational Excellence
+    - Cost Optimisation
+    - Performance
+    - Security
+    - Fault Tolerance
+    - Service Limits
+    - Operational Excellence
     - Core Checks and recommendations - all customers
     - Can enable weekly email notification from the console
     - Full Trusted Advisor - Available for Business and Enterprise support plans
-        - Ability to set CloudWatch alarms when reaching limits
-        - Programmatic Access using AWS support API
+    - Ability to set CloudWatch alarms when reaching limits
+    - Programmatic Access using AWS support API
 
 
     \begin{table}[h!]
         \centering
         \begin{tabular}{|c|c|c|c|c|}
             \hline
-            Column1 & Basic Support & Column3 & Column4 & Column5 \\ \hline
-            AWS Trusted Advisor Best Practice Checks   & 7 Core Checks   & Data3   & Data4   & Data5   \\ \hline
-            Enhanced Technical Support   & 24x7 customer service, documentation, whitepapers and support forums  & Data8   & Data9   & Data10  \\ \hline
-            Case Severity / Response Times  & Data12  & Data13  & Data14  & Data15  \\ \hline
-            Data16  & Data17  & Data18  & Data19  & Data20  \\ \hline
+            Column1                                  & Basic Support                                                        & Column3 & Column4 & Column5 \\ \hline
+            AWS Trusted Advisor Best Practice Checks & 7 Core Checks                                                        & Data3   & Data4   & Data5   \\ \hline
+            Enhanced Technical Support               & 24x7 customer service, documentation, whitepapers and support forums  & Data8   & Data9   & Data10  \\ \hline
+            Case Severity / Response Times           & Data12                                                               & Data13  & Data14  & Data15  \\ \hline
+            Data16                                   & Data17                                                               & Data18  & Data19  & Data20  \\ \hline
         \end{tabular}
         \caption{Example Table with 4 Rows and 5 Columns}
         \label{tab:example_table}
     \end{table}
-    
+
     \subsubsection{Trusted Advisor - Good to Know}
     - Can check if an S3 bucket is made public
-        - But cannot check for S3 objects that are public inside of your bucket
-        - Use Amazon EventBridge / S3 Events instead / AWS Config Rules
+    - But cannot check for S3 objects that are public inside of your bucket
+    - Use Amazon EventBridge / S3 Events instead / AWS Config Rules
 
     - Service Limits
-        - Limits can only be monitored in Trusted Advisor (cannot be changed)
-        - Cases must be created manually in AWS Support Centre to increase limits
-        - OR use the AWS Service quotas service
+    - Limits can only be monitored in Trusted Advisor (cannot be changed)
+    - Cases must be created manually in AWS Support Centre to increase limits
+    - OR use the AWS Service quotas service
+
 
     \section{AWS Service Quotas}
     - Notify you when you're close to a service quota value threshold
@@ -693,12 +956,12 @@
     - On Demand Instances - short workload, predictable pricing, reliable.
     - Spot Instances - short workloads for check, can lose instances (not reliable)
     - Reserved: (Minimum 1 year)
-        - Reserved Instances - long workloads
-        - Convertible Reserved Instances - long workloads with flexible instances
+    - Reserved Instances - long workloads
+    - Convertible Reserved Instances - long workloads with flexible instances
     - Dedicated Instances: no other customers will share you hardware
     - Dedicated Hosts: book an entire physical server, control instance placement
-        - Great for software licenses that operate at the core, or socket level
-        - Can define host affinity so that instance reboots are kept on the same host
+    - Great for software licenses that operate at the core, or socket level
+    - Can define host affinity so that instance reboots are kept on the same host
 
     \subsection{AWS Savings Plan}
     - New pricing model to get a discount based on long-term usage
@@ -706,13 +969,15 @@
     - Any usage beyond the savings plan is billed at the on-demand price
 
     - EC2 Instance Savings plan (72\% - same discount as Standard RIs)
-        - Select instance family and locked to a specific region
-        - Flexible across size, OS (Windows to Linux) tenancy. (dedicated or default)
+    - Select instance family and locked to a specific region
+    - Flexible across size, OS (Windows to Linux) tenancy. (dedicated or default)
     - Compute Savings Plan
-        - Ability to move between instance family, region, compute type and OS and tenancy
+    - Ability to move between instance family, region, compute type and OS and tenancy
     - SageMaker Savings plan (up to 64\% off)
 
+
     \section{S3 Cost Savings}
+
     \subsection{S3 Storage Classes}
     - Amazon S3 Standard - General Purpose
     - Amazon S3 Standard-Infrequent Access (IA)
@@ -728,13 +993,15 @@
     - S3 Lifecycle Rules: transition objects between tiers
     - Compress Objects - to save space
     - S3 Requester Pays:
-        - In general, bucket owners pay for all Amazon S3 storage and data transfer costs associated with their bucket
-        - With Requester Pays buckets, the requester instead of the bucket owner pays the cost of the request and the data downloaded from the bucket
-        - The bucket owner always pays the cost of storing data
-        - Helpful when you want to share large datasets with other accounts
-        - If an IAM role is assumed the owner account of that role pays for the request
+    - In general, bucket owners pay for all Amazon S3 storage and data transfer costs associated with their bucket
+    - With Requester Pays buckets, the requester instead of the bucket owner pays the cost of the request and the data downloaded from the bucket
+    - The bucket owner always pays the cost of storing data
+    - Helpful when you want to share large datasets with other accounts
+    - If an IAM role is assumed the owner account of that role pays for the request
+
 
     \section{S3 Storage Classes - Reminder}
+
     \subsection{S3 Storage Classes}
     - Amazon S3 Standard - General Purpose
     - Amazon S3 Standard-Infrequent Access (IA)
@@ -748,14 +1015,14 @@
 
     \subsection{S3 Durability and Availalbility}
     - Durability:
-        - High Durability (99.9999999999, 11 nines) of objects across multiple AZ
-        - If you store 10,000,000 object with Amazon S3, you can on average expect to incur a loss of a single object once every 10,000 years (nice....but basic math)
-        - Same for all storage classes
+    - High Durability (99.9999999999, 11 nines) of objects across multiple AZ
+    - If you store 10,000,000 object with Amazon S3, you can on average expect to incur a loss of a single object once every 10,000 years (nice....but basic math)
+    - Same for all storage classes
 
     - Availability
-        - Measures how readily available a service is
-        - Varies depending on storage class
-        - Example: S3 standard has 99.99\% availability = not available 53 minutes a year
+    - Measures how readily available a service is
+    - Varies depending on storage class
+    - Example: S3 standard has 99.99\% availability = not available 53 minutes a year
 
     S3 Standard - General Purpose
     - 99.99\% Availability
@@ -769,27 +1036,27 @@
     - Lower cost than S3 standard
 
     Amazon S3 Standard-Infrequent Access (S3 Standard-IA)
-        - 99.9\% Availability
-        - Use cases: Disaster Recovery, backups
+    - 99.9\% Availability
+    - Use cases: Disaster Recovery, backups
 
     Amazon S3 One Zone-Infrequent Access (S3 One Zone-IA)
-        - High durability (99.999999999) in a single AZ; data lost when AZ is destroyed
-        - 99.5\% Availability
-        - Use Cases: Storing secondary backup copies of on-premise data or data you can recreate
+    - High durability (99.999999999) in a single AZ; data lost when AZ is destroyed
+    - 99.5\% Availability
+    - Use Cases: Storing secondary backup copies of on-premise data or data you can recreate
 
     Amazon S3 Glacier Storage Classes
     - Low-cost object storage meant for archiving / backup
     - Pricing: price for storage + object retrieval cost
 
     - Amazon S3 Glacier Instant Retrieval
-        - Millisecond retrieval, great for data accessed once a quarter
-        - Minimum storage duration of 90 days
+    - Millisecond retrieval, great for data accessed once a quarter
+    - Minimum storage duration of 90 days
     - Amazon S3 Glacier Flexible Retrieval (Formerly Amazon S3 Glacier)
-        - Expedited (1 to 5 minutes), Standard (3 to 5 hours), Bulk (5 to 12 hours) - free
-        - Minimum storage duration of 90 days
+    - Expedited (1 to 5 minutes), Standard (3 to 5 hours), Bulk (5 to 12 hours) - free
+    - Minimum storage duration of 90 days
     - Amazon S3 Glacier Deep Archive - for long term storage
-        - Standard (12 hours), Bulk (48 Hours)
-        - Minimum Storage duration of 180 days
+    - Standard (12 hours), Bulk (48 Hours)
+    - Minimum Storage duration of 180 days
 
     \subsection{S3 Intelligent Tiering}
     - Small monthly monitoring and auto-tiering fee
@@ -808,13 +1075,15 @@
     \subsubsection{S3 Storage Classes - Price Comparison}
     %Examples
 
+
     \section{AWS Budgets and Cost Explorer}
+
     \subsection{AWS Budgets}
     - Create budget and send alarms when costs exceeds the budget
     - 4 Types of budgets: Usage, Cost, Reservation, Savings Plans
     - For Reserved Instances (RI)
-        - Track utilisation
-        - Supports EC2, ElastiCache, RDS, Redshift
+    - Track utilisation
+    - Supports EC2, ElastiCache, RDS, Redshift
     - Up to 5 SNS notifications per budget
     - Can filter by: Service, Linkedin Account, Tag, Purchase Option, Instance Type, Region, Availability Zone, API Operations, etc......
     - Same options as AWS Cost Explorer
@@ -823,12 +1092,13 @@
     \subsection{Budget Actions}
     - Run actions on your behalf when a budget exceeds a certain cost or usage threshold
     - Supports 3 actions types
-        - Applying an IAM Policy to a user, group or IAM role
-        - Applying Service Control Policy (SCP) to an OU
-        - Stop EC2 or RDS Instances
+    - Applying an IAM Policy to a user, group or IAM role
+    - Applying Service Control Policy (SCP) to an OU
+    - Stop EC2 or RDS Instances
     - Actions can be executed automatically or require a workflow approval process
     - Reduced unintentional overspending in your account.
     %Add diagram
+
     \subsection{Centralised Budget Management}
     %Diagram
 
@@ -845,15 +1115,16 @@
 
     %Diagram Cost- Explorer example
 
+
     \section{AWS Compute Optimiser}
     - Reduce costs and improve performance by recommending optimal AWS resources for you workloads
     - Helps you choose optimal configurations and right-size your workloads (over/under provisioned)
     - Uses Machine Learning to analyse your resources configurations and their utilisation CloudWatch metrics
     - Supported resources
-        - EC2 Instances
-        - EC2 Auto Scaling Groups
-        - EBS volumes
-        - Lambda functions
+    - EC2 Instances
+    - EC2 Auto Scaling Groups
+    - EBS volumes
+    - Lambda functions
     - Lower your costs by up to 25\%
     - Recommendations can be exported to S3
 
@@ -862,13 +1133,15 @@
     - Not needed for CPU, NetworkIn/Out, DiskReadOps, DiskWriteOps
     %Diagram
 
+
     \section{EC2 Reserved Instance}
     - Reserved Instances in an AWS Organisation
-        - All accounts share the Reserved Instances and Savings Plan
-        - The payer account (Management account) of an organisation can turn off Reserved Instance (RI) discount and Savings Plans discount sharing for any accounts in that organisation, including the payer account.
+    - All accounts share the Reserved Instances and Savings Plan
+    - The payer account (Management account) of an organisation can turn off Reserved Instance (RI) discount and Savings Plans discount sharing for any accounts in that organisation, including the payer account.
     - Renewal of Reserved Instances
-        - You can queue (schedule or reserve ahead of time) you reserved instances
-        - To renew a RI, just queue an RI purchase whenever the previous one expires
+    - You can queue (schedule or reserve ahead of time) you reserved instances
+    - To renew a RI, just queue an RI purchase whenever the previous one expires
+
 
     \chapter{Migration}
 

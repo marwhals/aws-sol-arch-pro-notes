@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.29)  3 MAY 2025 14:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.29)  3 MAY 2025 16:24
 entering extended mode
 **./main.tex
 (main.tex
@@ -950,17 +950,22 @@ LaTeX Font Info:    Trying to load font information for U+wasy on input line 3.
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
 [3]
-Overfull \hbox (2.21146pt too wide) detected at line 94
+Overfull \hbox (2.21146pt too wide) detected at line 89
+\OT1/phv/m/n/10.95 12.10 
+ []
+
+
+Overfull \hbox (2.21146pt too wide) detected at line 104
 \OT1/phv/m/n/10.95 15.10 
  []
 
 
-Overfull \hbox (2.21146pt too wide) detected at line 95
+Overfull \hbox (2.21146pt too wide) detected at line 105
 \OT1/phv/m/n/10.95 15.11 
  []
 
 
-Overfull \hbox (2.21146pt too wide) detected at line 96
+Overfull \hbox (2.21146pt too wide) detected at line 106
 \OT1/phv/m/n/10.95 15.12 
  []
 
@@ -1256,9 +1261,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 ]
 Chapter 12.
 
+Overfull \hbox (281.7834pt too wide) in paragraph at lines 661--669
+ [][] 
+ []
+
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [35]
+Underfull \vbox (badness 1005) has occurred while \output is active []
+
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1271,12 +1284,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 }) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.683     \chapter
-                  {Migration}]
-Chapter 13.
-[37
-
-]
+l.723 
+      ]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1285,10 +1294,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[38
+[37]
 
-]
-Chapter 14.
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[38]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
 [39]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1301,11 +1324,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [40
 
 ]
-Chapter 15.
+Chapter 13.
 [41]
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 753.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1314,15 +1334,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[42]
+[42
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
+]
+Chapter 14.
 [43]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1335,8 +1350,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [44
 
 ]
-Chapter 16.
+Chapter 15.
 [45]
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 942.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1345,29 +1363,57 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[46
+[46]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[47]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[48
+
+]
+Chapter 16.
+[49]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[50
 
 ]
 Chapter 17.
-[47]
+[51]
 (C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\out\main.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 
 Package rerunfilecheck Warning: File `main.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: DDA6EE48C9664CFBFB97F1451DD424A1;9064
-(rerunfilecheck)             After:  805D8D1821A2739425257E50ED3FFDD1;10793.
+(rerunfilecheck)             Before: 805D8D1821A2739425257E50ED3FFDD1;10793
+(rerunfilecheck)             After:  011933970EE88F1548C81777C1658BDC;12954.
  ) 
 Here is how much of TeX's memory you used:
- 32246 strings out of 478864
- 741411 string characters out of 2848186
- 1391018 words of memory out of 3000000
- 49472 multiletter control sequences out of 15000+600000
+ 32275 strings out of 478864
+ 741817 string characters out of 2848186
+ 1393090 words of memory out of 3000000
+ 49482 multiletter control sequences out of 15000+600000
  423202 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,11n,89p,723b,1292s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1378,9 +1424,9 @@ y10.pfb><C:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic
 etic/uhvr8a.pfb><C:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
 helvetic/uhvro8a.pfb>
 Output written on C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes
-\out\main.pdf (47 pages, 145537 bytes).
+\out\main.pdf (51 pages, 162612 bytes).
 PDF statistics:
- 594 PDF objects out of 1000 (max. 8388607)
- 169 named destinations out of 1000 (max. 500000)
- 429 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 670 PDF objects out of 1000 (max. 8388607)
+ 188 named destinations out of 1000 (max. 500000)
+ 509 words of extra memory for PDF output out of 10000 (max. 10000000)
 
