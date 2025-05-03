@@ -77,6 +77,16 @@
 \contentsline {chapter}{\numberline {10}Monitoring}{31}{chapter.10}%
 \contentsline {chapter}{\numberline {11}Deployment and Instance Management}{33}{chapter.11}%
 \contentsline {chapter}{\numberline {12}Cost Control}{35}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Cost Allocation Tags}{35}{section.12.1}%
+\contentsline {section}{\numberline {12.2}AWS Tag Editor}{35}{section.12.2}%
+\contentsline {section}{\numberline {12.3}Trusted Advisor}{35}{section.12.3}%
+\contentsline {section}{\numberline {12.4}AWS Service Quotas}{36}{section.12.4}%
+\contentsline {section}{\numberline {12.5}EC2 Launch Types and Savings Plans}{36}{section.12.5}%
+\contentsline {section}{\numberline {12.6}S3 Cost Savings}{36}{section.12.6}%
+\contentsline {section}{\numberline {12.7}S3 Storage Classes - Reminder}{36}{section.12.7}%
+\contentsline {section}{\numberline {12.8}AWS Budgets and Cost Explorer}{36}{section.12.8}%
+\contentsline {section}{\numberline {12.9}AWS Compute Optimiser}{36}{section.12.9}%
+\contentsline {section}{\numberline {12.10}EC2 Reserved Instance}{36}{section.12.10}%
 \contentsline {chapter}{\numberline {13}Migration}{37}{chapter.13}%
 \contentsline {chapter}{\numberline {14}VPC}{39}{chapter.14}%
 \contentsline {chapter}{\numberline {15}Machine Learning}{41}{chapter.15}%

@@ -614,7 +614,261 @@
 
 
     \chapter{Cost Control}
+    \section{Cost Allocation Tags}
 
+
+    \begin{itemize}
+        \item With Tags we can track resources that relate to each other
+        \item With Cost Allocation Tags we can enable detailed costing reports
+        \item Just like Tags, but they show up as columns in Reports
+        \item AWS Generated Cost Allocation Tags
+        \begin{itemize}
+            \item Automatically applied to the resource you create
+            \item Start with Prefix aws: (e.g. aws: createdBy)
+            \item They're not applied to resources created before the activation
+        \end{itemize}
+        \item User tags
+        \begin{itemize}
+            \item Defined by the user
+            \item Start with Prefix user:
+        \end{itemize}
+        \item Cost Allocation Tags just appear in the Billing Console
+        \item Takes up to 24 hours for the tags to show up in the report
+    \end{itemize}
+
+    \section{AWS Tag Editor}
+    - Allows you to managed tags of multiple resources at once
+    - You can add/update/delete tags
+    - Search tagged/untagged resources in all AWS Regions
+
+    \section{Trusted Advisor}
+    - No need to install anything - high level AWS account assessment
+    - Analyse your AWS accounts and provides recommendation
+        - Cost Optimisation
+        - Performance
+        - Security
+        - Fault Tolerance
+        - Service Limits
+        - Operational Excellence
+    - Core Checks and recommendations - all customers
+    - Can enable weekly email notification from the console
+    - Full Trusted Advisor - Available for Business and Enterprise support plans
+        - Ability to set CloudWatch alarms when reaching limits
+        - Programmatic Access using AWS support API
+
+
+    \begin{table}[h!]
+        \centering
+        \begin{tabular}{|c|c|c|c|c|}
+            \hline
+            Column1 & Basic Support & Column3 & Column4 & Column5 \\ \hline
+            AWS Trusted Advisor Best Practice Checks   & 7 Core Checks   & Data3   & Data4   & Data5   \\ \hline
+            Enhanced Technical Support   & 24x7 customer service, documentation, whitepapers and support forums  & Data8   & Data9   & Data10  \\ \hline
+            Case Severity / Response Times  & Data12  & Data13  & Data14  & Data15  \\ \hline
+            Data16  & Data17  & Data18  & Data19  & Data20  \\ \hline
+        \end{tabular}
+        \caption{Example Table with 4 Rows and 5 Columns}
+        \label{tab:example_table}
+    \end{table}
+    
+    \subsubsection{Trusted Advisor - Good to Know}
+    - Can check if an S3 bucket is made public
+        - But cannot check for S3 objects that are public inside of your bucket
+        - Use Amazon EventBridge / S3 Events instead / AWS Config Rules
+
+    - Service Limits
+        - Limits can only be monitored in Trusted Advisor (cannot be changed)
+        - Cases must be created manually in AWS Support Centre to increase limits
+        - OR use the AWS Service quotas service
+
+    \section{AWS Service Quotas}
+    - Notify you when you're close to a service quota value threshold
+    - Create CloudWatch Alarms on the Service Quotas console
+    - Example: Lambda concurrent executions
+    - Helps you know if you need to request a quota increase or shutdown resources before limit is reached
+    %Diagram
+
+
+    \section{EC2 Launch Types and Savings Plans}
+    - On Demand Instances - short workload, predictable pricing, reliable.
+    - Spot Instances - short workloads for check, can lose instances (not reliable)
+    - Reserved: (Minimum 1 year)
+        - Reserved Instances - long workloads
+        - Convertible Reserved Instances - long workloads with flexible instances
+    - Dedicated Instances: no other customers will share you hardware
+    - Dedicated Hosts: book an entire physical server, control instance placement
+        - Great for software licenses that operate at the core, or socket level
+        - Can define host affinity so that instance reboots are kept on the same host
+
+    \subsection{AWS Savings Plan}
+    - New pricing model to get a discount based on long-term usage
+    - Commit to a certain type of usage: ex \$10 per hour for 1 to 3 years
+    - Any usage beyond the savings plan is billed at the on-demand price
+
+    - EC2 Instance Savings plan (72\% - same discount as Standard RIs)
+        - Select instance family and locked to a specific region
+        - Flexible across size, OS (Windows to Linux) tenancy. (dedicated or default)
+    - Compute Savings Plan
+        - Ability to move between instance family, region, compute type and OS and tenancy
+    - SageMaker Savings plan (up to 64\% off)
+
+    \section{S3 Cost Savings}
+    \subsection{S3 Storage Classes}
+    - Amazon S3 Standard - General Purpose
+    - Amazon S3 Standard-Infrequent Access (IA)
+    - Amazon S3 One Zone-Infrequent Access
+    - Amazon S3 Glacier Instant Retrieval
+    - Amazon S3 Glacier Flexible Retrieval
+    - Amazon S3 Glacier Deep Archive
+    - Amazon S3 Intelligent Tiering
+
+    Can move between classes manually or using S3 lifecycle configurations
+
+    \subsection{S3 - Other Cost Savings}
+    - S3 Lifecycle Rules: transition objects between tiers
+    - Compress Objects - to save space
+    - S3 Requester Pays:
+        - In general, bucket owners pay for all Amazon S3 storage and data transfer costs associated with their bucket
+        - With Requester Pays buckets, the requester instead of the bucket owner pays the cost of the request and the data downloaded from the bucket
+        - The bucket owner always pays the cost of storing data
+        - Helpful when you want to share large datasets with other accounts
+        - If an IAM role is assumed the owner account of that role pays for the request
+
+    \section{S3 Storage Classes - Reminder}
+    \subsection{S3 Storage Classes}
+    - Amazon S3 Standard - General Purpose
+    - Amazon S3 Standard-Infrequent Access (IA)
+    - Amazon S3 One Zone-Infrequent Access
+    - Amazon S3 Glacier Instant Retrieval
+    - Amazon S3 Glacier Flexible Retrieval
+    - Amazon S3 Glacier Deep Archive
+    - Amazon S3 Intelligent Tiering
+
+    Can move between classes manually or using S3 lifecycle configurations
+
+    \subsection{S3 Durability and Availalbility}
+    - Durability:
+        - High Durability (99.9999999999, 11 nines) of objects across multiple AZ
+        - If you store 10,000,000 object with Amazon S3, you can on average expect to incur a loss of a single object once every 10,000 years (nice....but basic math)
+        - Same for all storage classes
+
+    - Availability
+        - Measures how readily available a service is
+        - Varies depending on storage class
+        - Example: S3 standard has 99.99\% availability = not available 53 minutes a year
+
+    S3 Standard - General Purpose
+    - 99.99\% Availability
+    - Used for frequently accessed data
+    - Low latency and high throughput
+    - Sustain 2 concurrent facility faiures
+    - Use Cases: Big Data analytics, mobile and gaming applications, content and distribution
+
+    S3 Storage Classes - Infrequent Access
+    - For data that is less frequently accessed, but requires rapid access when needed
+    - Lower cost than S3 standard
+
+    Amazon S3 Standard-Infrequent Access (S3 Standard-IA)
+        - 99.9\% Availability
+        - Use cases: Disaster Recovery, backups
+
+    Amazon S3 One Zone-Infrequent Access (S3 One Zone-IA)
+        - High durability (99.999999999) in a single AZ; data lost when AZ is destroyed
+        - 99.5\% Availability
+        - Use Cases: Storing secondary backup copies of on-premise data or data you can recreate
+
+    Amazon S3 Glacier Storage Classes
+    - Low-cost object storage meant for archiving / backup
+    - Pricing: price for storage + object retrieval cost
+
+    - Amazon S3 Glacier Instant Retrieval
+        - Millisecond retrieval, great for data accessed once a quarter
+        - Minimum storage duration of 90 days
+    - Amazon S3 Glacier Flexible Retrieval (Formerly Amazon S3 Glacier)
+        - Expedited (1 to 5 minutes), Standard (3 to 5 hours), Bulk (5 to 12 hours) - free
+        - Minimum storage duration of 90 days
+    - Amazon S3 Glacier Deep Archive - for long term storage
+        - Standard (12 hours), Bulk (48 Hours)
+        - Minimum Storage duration of 180 days
+
+    \subsection{S3 Intelligent Tiering}
+    - Small monthly monitoring and auto-tiering fee
+    - Moves objects automatically between Access Tiers based on usage
+    - There are no retrieval charges in S3 Intelligent-Tiering
+
+    - Frequent Access tier (automatic): default tier
+    - Infrequent Access Tier (automatic): objects not accessed for 30 days
+    - Archive Instant Access tier (automatic): objects not accessed for 90 days
+    - Archive Access tier (optional): configurable from 90 days to 700+ days
+    - Deep Archive Access tier (optional): config from 180 days to 700+ days
+
+    \subsubsection{S3 Storage Classes Comparision}
+    %classic table here
+
+    \subsubsection{S3 Storage Classes - Price Comparison}
+    %Examples
+
+    \section{AWS Budgets and Cost Explorer}
+    \subsection{AWS Budgets}
+    - Create budget and send alarms when costs exceeds the budget
+    - 4 Types of budgets: Usage, Cost, Reservation, Savings Plans
+    - For Reserved Instances (RI)
+        - Track utilisation
+        - Supports EC2, ElastiCache, RDS, Redshift
+    - Up to 5 SNS notifications per budget
+    - Can filter by: Service, Linkedin Account, Tag, Purchase Option, Instance Type, Region, Availability Zone, API Operations, etc......
+    - Same options as AWS Cost Explorer
+    - 2 budgets are free than \$0.002 / day / budget
+
+    \subsection{Budget Actions}
+    - Run actions on your behalf when a budget exceeds a certain cost or usage threshold
+    - Supports 3 actions types
+        - Applying an IAM Policy to a user, group or IAM role
+        - Applying Service Control Policy (SCP) to an OU
+        - Stop EC2 or RDS Instances
+    - Actions can be executed automatically or require a workflow approval process
+    - Reduced unintentional overspending in your account.
+    %Add diagram
+    \subsection{Centralised Budget Management}
+    %Diagram
+
+    \subsection{DeCentralised Budget Management}
+    %Diagram
+
+    \subsection{Cost Explorer}
+    - Visualise, understand and manage your AWS costs and usage over time
+    - Create custom reports that analyse cost and usage data
+    - Analyse you data at a high level: total costs and usage across all accounts
+    - Or Monthly, hourly, resource level granularity
+    - Choose an optimal Savings PLan (to lower prices on your bill)
+    - Forcast usage up to 12 months based on previous usage
+
+    %Diagram Cost- Explorer example
+
+    \section{AWS Compute Optimiser}
+    - Reduce costs and improve performance by recommending optimal AWS resources for you workloads
+    - Helps you choose optimal configurations and right-size your workloads (over/under provisioned)
+    - Uses Machine Learning to analyse your resources configurations and their utilisation CloudWatch metrics
+    - Supported resources
+        - EC2 Instances
+        - EC2 Auto Scaling Groups
+        - EBS volumes
+        - Lambda functions
+    - Lower your costs by up to 25\%
+    - Recommendations can be exported to S3
+
+    \subsection{Computer Optimiser - CloudWatch Agent}
+    - Needed to analyse Memory Utilisation
+    - Not needed for CPU, NetworkIn/Out, DiskReadOps, DiskWriteOps
+    %Diagram
+
+    \section{EC2 Reserved Instance}
+    - Reserved Instances in an AWS Organisation
+        - All accounts share the Reserved Instances and Savings Plan
+        - The payer account (Management account) of an organisation can turn off Reserved Instance (RI) discount and Savings Plans discount sharing for any accounts in that organisation, including the payer account.
+    - Renewal of Reserved Instances
+        - You can queue (schedule or reserve ahead of time) you reserved instances
+        - To renew a RI, just queue an RI purchase whenever the previous one expires
 
     \chapter{Migration}
 
