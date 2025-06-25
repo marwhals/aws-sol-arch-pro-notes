@@ -43,7 +43,7 @@
         \vfill
         \Large Your Name
         \vfill
-        \Large Date: \today
+        \Large Date: %\today
     \end{titlepage}
 
     \newpage
@@ -55,9 +55,12 @@
     \chapter{Course Introduction}
 
     \paragraph{Pre-Introduction}
-    The purpose of these notes are twofold.
-    Prepare for this exam in the future and gain a high level overview of the services offered by one of the main cloud provider.
-    It will also be useful for generating TerraForm examples.
+    The purpose of these notes are two-fold.
+    \begin{itemize}
+        \item Prepare for this exam in the future.
+        \item Gain a high level overview of the services offered by one of the main cloud providers.
+        \item Additionally it could be useful for generating Terraform examples.
+    \end{itemize}
 
     %Exam study strategy notes here - Targets the SAP-C02
 
@@ -603,90 +606,750 @@
 
     \chapter{Security}
 
-
     \section{CloudTrail}
+    - Provides governance, compliance and audit for your AWS Account
+    - CloudTrail is enabled by default.
+    - Get a history of events / API calls made within your AWS Account by;
+        - Console
+        - SDK
+        - CLI
+        - AWS Services
+    - Can put logs from CloudTrail into CloudWatch Logs or S3.
+    - A trail can be applied to All Regions (default) or a single Region.
+    - If a resource is deleted in AWS, investigate CloudTrail first
 
+    %% TODO Insert cloud trail diagram here
+
+    - Management Events:
+        - Operations that are performed on resources in your AWS account
+        - Examples:
+            - Configuring security (IAM AttachRolePolicy)
+            - Configuring rules for routing data (Amazon EC2 CreateSubnet)
+            - Setting up logging (AWS CloudTrail CreateTrail)
+        - By default, trails are configured to log management events.
+        - Can separate Read Events (that don't modify resources) from Write Events (that may modify resources)
+
+    - Data Events:
+        - By default, data events are not logged (because high volume operations)
+        - Amazon S3 object-level activity (ex: GetObject, DeleteObject, PutObject): can separate Read and Write Events
+        - AWS Lambda function execution activity (the Invoke API)
+
+    - CloudTrail Insights
+        - Enable CloudTrail Insights to detect unusual activity in your account:
+            - Inaccurate resource provisioning
+            - Hitting service limits
+            - Burst of AWS IAM actions
+            - Gaps in periodic maintenance activity
+    - CloudTrail Insights analyses normal management events to create baseline
+    - And then continuously analyses write events to detect unusual patterns
+        - Anomalies appear in the CLoudTrail console
+        - Event is sent to Amazon S3
+        - An EventBridge event is generated (for automation needs)
+
+    %TODO Diagram
+
+    - CloudTrail Events Retention
+        - Events are stored for 90 days in CloudTrail
+        - To Keep events beyond this period, log them to S3 and use Athena
+
+    %TODO Diagram
 
     \section{CloudTrail - EventBridge Integration}
 
+    %TODO Diagram Amazon EventBridge - Intercept API calls
+    %TODO Diagram Amazon EventBridge - CloudTrail
 
     \section{CloudTrail - SA Pro}
+    %Add diagram
+    S3 Enhancements:
+    - Enable Versioning
+    - MFA Delete Protection
+    - S3 Lifecycle Policy (S3 IA, Glacier)
+    - S3 Object Lock
+    - SSE-S3 or SSE-KMS encryption
+    - Feature to perform CloudTrail Log File Integrity validation (SHA-256 for hashing and signing)
 
+    %TODO Diagram - CloudTrail - Solution Architecture - Multi Account, Multi Region Logging
+    Observations
+    - The S3 Bucket policy is necessary for cross-account delivery
+    - If Account A wants to access its CloudTrail files:
+        - Option 1: Create a cross-account role and assume the role
+        - Option 2: edit the bucket policy
+
+    %TODO - CloudTrail - Solition Architecture - Alert for API calls
+    - Log filter metrics can be used to detect a high level of API happening
+    - Ex: Count occurrences of EC2 TerminateInstnaces API
+    - Ex: Count of API calls per user
+    - Ex: Detect high level of Denied API calls
+
+    %TODO - Diagram - CloudTrail - Solution Architecture: Organisational Trail
+    - The Organisational Trail is created in the management account.
+
+    CloudTrail: How to react to events the fastest?
+    - Overall, CloudTrail may take up to 15 minutes to deliver events
+    - EventBridge:
+        - Can be triggered for any API call in CloudTrail
+        - The fastest, most reactive way.
+    - CloudTrail Delivery in CloudWatch Logs:
+        - Events are streamed
+        - Can perform a metric filter to analyse occurrences and detect anomalies
+    - CloudTrail Delivery in S3
+        - Events are delivered every 5 minutes
+        - Possibility of analysing logs integrity, deliver cross account, long-term storage.
 
     \section{KMS}
 
+    AWS KMS (Key Managment Service)
+    - Anytime you hear "encryption" for an AWS service, it is most likely KMS
+    - Easy way to control access to your data, AWS manages keys for us.
+    - Fully integrated with IAM for authorisation
+    - Seamlessly integrated into:
+        - Amazon EBS: encrypt volumes
+        - Amazon S3: Server-side encryption of objects
+        - Amazon Redshift: Encryption of data
+        - Amazon RDS: Encryption of data
+        - Etc.....
+    - Can also use the CLI / SDK
+
+    KMS - KMS - Key Types
+    - Symmetric (AES-256 keys)
+        - First offering of KMS, single encryption key that is used to Encrypt and Decrypt
+        - AWS services that are integrated with KMS use Symmetric KMS keys
+        - Necessary for envelope encryption
+        - You never get access to the KMS key unencrypted (must call KMS API to use)
+    - Asymmetric (RSA and ECC key pairs)
+        - Public (Encrypt) and Private Key (Decrypt) pair
+        - Used for Encrypt/Decrypt or Sign/Verify operations
+        - The public key is downloadable but you can't access the Private Key unencrypted
+        - Use case: encryption outside of AWS by users who can't call the KMS API
+
+    Types of KMS Keys
+    - Customer Managed Keys
+        - Create, manage and use. Can enable or disable
+        - Possibility of rotation policy (new key generated every year, old key preserved)
+        - Can add a Key Policy (resource policy) and audit in CloudTrail
+        - Leverage for envelope encryption.
+    - AWS Managed Keys
+        - Used by AWS service (aws/s3, aws/ebs, aws/redshift)
+        - Managed by AWS (automatically rotated every 1 year)
+        - View Key Policy and audit in CloudTrail
+    - AWS Owned Keys
+        - Create and managed by AWS, use by some AWS services to protect your resources
+        - Used in multiple AWS accounts but they are no in your AWS account
+        - You can't view, use, track or audit.
+
+    Types of KMS keys
+    %TODO Insert table
+
+    KMS Key Material Origin
+    - Identifies the source of the key material in the KMS key
+    - Can't be changed after creation
+
+    - KMS(AWS_KMS) - default
+        - AWS KMS created and managed the key material in its own key store
+
+    - External (EXTERNAL)
+        - You import the key material into the KMS key
+        - You're responsible for securing and managing this key material outside of AWS
+
+    - Custom Key Store (AWS_CLOUDHSM)
+        - AWS KMS creates the key material in a custom key store (CloudHSM Cluster)
+
+    KMS Key Source - Custom Key Store (CloudHSM)
+    - Integrate KMS with CloudHSM cluster as a Custom Key Store
+    - Key materials are stored in a CloudHSM cluster that you own and manage
+    - The cryptographic operations are performed in the HSMs
+    - Use cases:
+        - You need direct control over the HSMs
+        - KMS Keys needs to be stored in a dedicated HSMs
+
+    KMS Key Store - External
+    - Import your own key material into KMS key, Bring Your Own Key (BYOK)
+    - You're responsible for key material's security, availability and durability outside of AWS
+    - Supports both Symmetric and Asymmetric KMS keys
+    - Can't be used with Custom Key Store (CloudHSM)
+    - Manually rotate your KMS key (Automatic and On-demand Key Rotation are NOT supported)
+
+    %TODO Diagram
+
+    KMS Multi-Region Keys
+    %TODO Diagram
+
+    - A set of identical KMS keys in different AWS Regions that can be used interchangeably (same KMS key in multiple Regions)
+    - Encrypt in one Region and decrypt in other Regions (No need to re-encrypt or making cross-Region API calls)
+    - Multi-Region keys have the same key ID, key material, automatic rotation........
+    - KMS - Multi-Region are NOT global (Primary + Replicas)
+    - Each Multi-Region key is manged independently
+    - Only one primary key at a time, can promote replicas into their own primary
+    - Use cases: Disaster Recovery, Global Data Management (e.g DynamoDB, Global Tables), Active-Active Applications that span multiple Regions, Distributed Signing applicatoins.
+
+
 
     \section{Parameter Store}
+    SSM Parameter Store
+    - Secure storage for configuration and secrets
+    - Optional Seamless Encryption using KMS
+    - Serverless, scalable, durable easy SDK
+    - Version tacking of configurations / secrets
+    - Security through IAM
+    - Notifications with Amazon EventBridge
+    - Integration with CloudFormation
+
+    %TODO Insert diagram
+
+    SSM Parameter Store Hierarchy
+
+    %TODO Insert diagram
+
+    Standard and advanced parameter tiers
+
+    %TODO tables
+
+    Parameter Policies (for advanced parameters)
+    - Allows to assign a TTL to a parameter (expiration date) to force updating or deleting sensitive data such as passwords.
+    - Can assign multiple policies at a time.
+
 
 
     \section{Secrets Mangager}
+    AWS Secrets Manager
+    - Meant for storing secrets (e.g passwords, API keys,......)
+    - Capability to force rotation of secrets every X days
+    - Automate generation of secrets on rotation (uses Lambda)
+    - Natively supports Amazon RDS (all supported DB engines)
+    - Support other databases and services (custom Lambda function)
+    - Control access to secrets using Resource-based Policy
+    - Integration with other AWS services to natively pull secrets from Secrets Manager: CloudFormation, CodeBuild, ECS, EMR, Fargate, EKS, Parameter Store......
+    %TODO Insert diagram
 
+    %TODO insert code listing ---- Secrets Manager with CloudFormation
+
+    %TODO insert diagram ---- Secrets Mangager - Sharing Across Accounts
+
+    SSM Parameter Store vs Secrets Manager
+    - Secrets Manager (dollah)
+    - Automatic rotation of secrets with AWS lambda
+    - Lambda function is provided for RDS, Redshift, DocumentDB
+    - KMS encryption is mandatory
+    - Can integrate with CloudFormation
+    SSM Parameter Store (dollah)
+    - Simple API
+    - No secret rotation (can enable rotation using Lambda triggered by EventBridge)
+    - KMS encryption is optional
+    - Can integrate with CloudFormation
+    - Can pull a Secrets Manager secret using the SSM parameter Store API
+
+    SSM Parameter Store vs Secrets Manager Rotation
+    %TODO diagram
 
     \section{RDS Security}
-
+    - KMS encryption at rest for underlying EBS volumes / snapshots
+    - Transparent Data Encryption (TDE) for Oracle and SQL Server
+    - SSL Encryption to RDS is possible for all DB (in-flight)
+    - IAM Authentication for MySQL, PostgreSQL and MariaDB
+    - Authorisation still happens within RDS (not in IAM)
+    - Can copy an un-encrypted RDS snapshot into an encrypted one
+    - CloudTrail cannot be used to track queries made within RDS
 
     \section{SSL Encryption, SNI, MITM}
+SSL/TLS - Basics
+    - SSL refers to Secure Sockets Layer, used to encrypt connections
+    - TLS refers to Transport Layer Security which is a newer version
+    - Nowadays, TLS certifcates are mainily used but people still refer as SSL
+    - Publis SSL certificates are issued by Certifcate Authorities (CA)
+    - Comodo, Symantec, GoDaddy, GlobalSign, Digicert, Letencrypt, etc
+    - SSL certficates have an expiration date (you set) and must be renewed
 
+    SSL Encryption - How it works
+    %TODO insert sequence diagram
+    - Asymmetric Encrutpion is expensive (SSL)
+    - Symmetric encryption is cheaper
+    - Asymmetric handshake is used to exchange a per-client random symmetric key.
+    - Possibilty of client sending an SSL certifccate as well (two-way certificate)
+
+    SSL - Server Name Indicattion (SNI)
+    %TODO insert diagram
+    - SNI solves the probelm of loading multiple SSL certificates onto one web server (to server multiple websites)
+    - It's a "newer" protocol and requires the client to indicate the hostname of the target server in the inisital SSL handshake
+    - The server will the find the correct certificate or return the default one.
+
+    Note:
+    - Only works for ALB and NLB (newer generation), CloudFront
+    - Does not work for CLB (older gen)
+
+    SSL - Man in the middle attacks
+    %TODO - add sequence diagram
+    How to prevent
+    1 - Don't use public-facing HTTP, use HTTPS (meaning use SSL/TLS certificates)
+    2 - Use a DNS that has DNSSEC
+    - To send a client to a pirate server, a DNS response needs to be "forged" by a server which intercepts them.
+    - It is possible to protect your domain name by configuring DNSSEC
+    - Amazon Route 53 supports DNSSEC for domain registration
+    - Route 53 supports DNSSEC for DNS service as of December 2020 (using KMS)
+    - You could also run a custom DNS server on Amazon EC2 for example (Bind is the most popular, dnsmasq, KnotDNS, PowerDNS)
 
     \section{AWS Certificate Manager - ACM}
+
+    AWS Certificate Manager (ACM)
+    - To host public SSL certificates in AWS, you can
+    - Buy your own and upload them using the CLI
+    - Have ACM provision and renew public SSL certificates for you (free of cost)
+
+    - ACM loads SSL certificates on the following integrations:
+    - Load Balancers (including the onces created by EB)
+    - CloudFront distributions
+    - APIs on API gateways
+
+    - SSL certificates is overall a pain to manually manage, so ACM is great to leverage in your AWS infrastructure
+
+    %TODO Diagram
+
+    ACM - Good to know
+    - Possibility of creating public certificates
+    - Must verify public DNS
+    - Must be issued by a trusted public certificate authority (CA)
+    - Possibilty of creating private certificates
+    - For you internal applications
+    - You create your own private CA
+    - Your applications must trust your private CA
+    - Certificate renewal:
+    - Automatically done if generated provisioned by ACM
+    - Any manually uploaded certificates must be renewed manually and re-uploaded.
+    - ACM is a regional service
+    - To use with a global application (multilpe ALB for example), you need to issue an SSL certificate
+    - You cannot copy certs across regions
 
 
     \section{CloudHSM}
 
+    - KMS => AWS manages the software for encryption
+    - CloudHSM -> AWS provisions encryption hardware
+    - Dedicated Hardware (HSM = Hardware Security Module)
+    - You manage your own encrypton keys entirely (not AWS)
+    - HSM device is tamper resistant, FIPS 140-2 Level 3 compliance
+    - Supports both symmetric and asymmetric encryption (SSL/TLS keys)
+    - No free tier available
+    - Must use the CloudHSM Client Software
+    - Redshift supports CloudHSM for database encryption and key management
+    - Good option to use with SSE-C encryption
+
+    CloudHSM Diagram
+    %TODO diagram
+    - IAM permissions
+        - CRUD an HSM Cluster
+    - CloudHSM Software
+        - Manage the Keys
+        - Manage the Users
+
+    CloudHSM - High Availability
+    - CloudHSM clusters are spread across Multi AZ (HA)
+    - Great for availability
+
+    %TODO diagram
+
+    CloudHSM vs KMS
+    %TODO table
+
+
 
     \section{Solution Architecture - SSL on ELB}
+    %TODO insert diagram
 
+    %TODO insert diagram
+
+    - You can offload SSL to CloudHSM (SSL Acceleration)
+    - Supported by NGINX Apache Web servers and IIS for windows server
+    - Extra security: the SSL private key never leaves the HSM device
+    - Must setup a cryptographic user (CU) on the CloudHSM device
+
+    %TODO insert diagram
 
     \section{S3 Security}
+    - SSE-S3: encrypts S3 objects using keys handled and managed by AWS
+    - SSE-KMS: leverage KMS to manage encryption keys
+        - Key usage appears in CloudTrail
+        - objects made public can never be read
+        - On s3:PutObject make the permission kms:GenerateDataKey is allowed
+    - SSE-C: when you want to manage your own encryption keys
+    - Client-Side Encryption
 
+    Glacier: all data is AES-256 encrypted, key under AWS control
+
+    Encryption in transit (SSL/TLS)
+    - Amazon S3 exposes:
+        - HTTP endpoint: non encrypted
+        - HTTPS endpoint: encryption
+
+    - You're free to use the endpoint you want, but HTTPS is reccomended
+    - HTTPS is mandatory for SSE-C
+    - To enforce HTTPS, use a bucket policy wit aws:SecureTransport
+
+    Events in S3 Buckets
+    - S3 Access Logs:
+        - Detailed records for the reqeusts that are made to a bucket
+        - Might take hours to deliver
+        - Might be incomplete (best effoirt)
+    - S3 Event Notifications
+        - Recieve notifications when certain events happen in your bucket
+        - E.g: new objects created, object removal, restore objects, replication events.
+        - Destinsations: SNS, SQS queue, Lambda
+        - Typically delivered in seconds but can take minutes, notification for every object if versioning is enabled, else risk of one notification for two same objects write done simultaneously.
+    - Trusted Advisor:
+        - Check the bucket permission (is the bucket public?)
+    - Amazon EventBridge
+        - Need to enable CloudTrail object level logging on S3 first
+        - Target can be Lambda, SQS, SNS, etc.........
+
+    S3 Security
+
+    - User based
+        - IAM policies - which API calls shoudl be allowed for a specific user from IAM console
+
+    - Resource Based
+        - Bucket Policies - bucket wide rules from the S3 console - allows cross account
+        - Object Access Contorl List (ACL) - finer grain
+        - Bucket Access Contorl List (ACL) - less common
+
+    S3 Bucket Policies
+    - Use S3 bucket for policy to:
+        - Grant public access to the bucket
+        - Force objects to be encrypted at uplade
+        - Grant access to another account (Cross Account)
+    - Optional Conditions on:
+        - SourceIp: Public IP or Elastic IP | VpcSourceIp: Private IP (through VPC Endpoint)
+        - Source VPC or Source VPC Endpoint - only workds with VPC Endpoints
+        - CloudFront Origin Identity
+        - MFA
+    %TODO Examples --- insert link
+
+    S3 pre-signed URLs
+    - Can generate pre-signed URLs using SDK or CLI
+        - For downloads (easy can use the CLI)
+        - For uploads (harder must use the SDK)
+    - Valid for a default of 3600 seconds, can change timeout with --expires-in[TIME_BY_SECONDS] argument
+    - Users given a pre-signed URL inherit the permissions of the person who generated the URL for GET / PUT
+
+    Examples:
+        - Allow only logged-in users to download a premium video on your S3 bucket
+        - Allow an ever changing list of users to download files by generating URLs dynamically
+        - Allow temporarily a user to upload a file to a precise location in our bucket
+
+    VPC Endpoint Gateway for S3
+    %TODO insert diagram
+
+    S3 Object Lock and Glacier Vault Lock
+    - S3 Object Lock
+        - Adopt a WORM (Write once read many) model
+        - Block an object version deletion for a specified amount of time
+    - Glacier Vault Lock
+        - Adopt a WORM (Write Once Read Many) model
+        - Locak the policy for future edits (can no longer be changed)
+        - Helpful for compliance and data retention
 
     \section{S3 Access Points}
+    %TODO insert diagram
+    - Access Points simplify security managment for S3 buckets
+    - Each access point has:
+        - its own DNS name (Internet Origin or VPC origin)
+        - an access point policy (similar to bucket policy) - manage security at scale
 
+    S3 - Access Points - VPC Origin
+    %TODO insert diagram
+    - We can define the access point ot be accessible only form within the VPC
+    - You must create a VPC Endpoint to access the Access Point (Gateway or Interface Endpoint)
+    - The VPC Endpoint Policy must allow access to the target bucket and Access Point
 
     \section{S3 Multi-Region Access Points}
+    %TODO insert a diagram
+    - Provide a global endpoint that spans S3 buckets in multiple AWS regions
+    - Dyanamically route requests to the nearest S3 bucket (lowest latency)
+    - Bi-directional S3 bucket replication rules are created to keep data in sync across regions
+    - Failover Contorls - allows you to shift request across S3 buckets in different AWS regions within minutes (Active-Active or Active-Passive)
 
+    %TODO insert a diagram
+
+    Multi-Region Access Points - Failover Controls
+    %TODO insert diagram
 
     \section{S3 Multi-Region Access Points - Hands On}
-
+%TODO ------ or do via TerraForm :D
 
     \section{S3 Object Lambda}
+    - Use AWS Lambda Functions to change the object before it is retrieved by the caller application
+    - Only one S3 bucket is needed on top of whcih we create S3 Access Point and S3 Object Lambda Access Points
+    - Use Cases:
+        - Redacting personally indentifiable information for analytics or non production environments
+        - Converting across data formats, such as converting XML to JSON
+        - Resizing and watermarking images on the fly using caller-specific details, such as the user who requrest the object
+
+    %TODO insert diagram
 
 
     \section{DDoS and AWS Shield}
+    What is a DDoS
+    %TODO insert a diagram
 
+    Types of Attacks on your infrastrcuture
+    - Distributed Denial os Servicve (DDoS)
+        - When your service is unavailable because it is receiving too many requests
+        - SYN Flood (Layer 4) - send too many TCP connection reqeusts
+        - UDP reflection (Layer 4) - get other servers to send many big UDP requests
+        - DNS flood attack: Overwhelm the DNS so legitimate users can't find the site
+        - Slow Loris attack: a lot of HTTP connections are opened and maintained (hmmmm consider websocket servers!!)
+
+    - Application Level Attacks:
+        - more complext, more specific (HTTP level)
+        - Cache bursting strategies: overload the backend database by invalidating the cache (clever)
+
+    DDoS Protection on AWS
+    - AWS Shield Standard: Protects against DDoS attack for your website and applications, for all customers at no additional cost
+    - AWS Shield Advanced: 24/7 premium DDoS protection
+    - AWS WAF: Filter specific requests based on rules
+    - CloudFront and Route 53:
+        - Availability protection using global edge network
+        - Combined with AWS shield: provides DDoS attack mitigation at the edge
+    - Be ready to scale - leverage AWS Auto Scaling
+    - Separate static resources (S3 / CloudFront) form dynamic ones (EC2 / ALB)
+    - Read the whitepaper %TODO insert link to white paper
+
+    Sample Reference Architecture
+    %TODO diagram
+
+    AWS Shield
+    - AWS Shield Standard
+        - Free service that is activated for every AWS customer
+        - Provides protection from attacks such SYN/UDP Floods, Reflection attacks and other layer 3/layer 4 attacks
+    - AWS Shield Advanced
+        - Optional DDoS mitigation service (3000 dollahs per month per organisation)
+        - Protect against more sophisticated attack on Amazon EC2, Elastic Load Balancing (ELB), Amazon CloudFront, AWS Global Accelerator, Route 53
+        - 24/7 access to AWS DDoS response team (DRP)
+        - Protect against higher fees during usage spikes due to DDoS
 
     \section{AWS WAF - Web Application Firewall}
+    - Protects your web applications from common web exploits (Layer 7)
+    - Deploy on Application Load Balancer (localised rules)
+    - Deploy on API Gateway (ruels running at the regional or edge level)
+    - Deploy on CloudFront (rules on edge locations)
+        - Used in front of other solutions: CLB, EC2 Instances, custom origins, S3 websites
+    - Deploy on AppSync (protect your GraphQL APIs)
+    - WAF is not for DDoS protection
+    - Define Web ACL (Web Acess Control List)
+        - Rules can include IP addresses, HTTP headers, HTTP body, or URI strings
+        - Protects from common attack - SQL injection and Cross-Site scripting (XSS)
+        - Size constaints, Geo Match
+        - Rate-based rules (to count occurrences of events)
+    - Rule Actions: Count | Allow | Block | CAPTCHA | Challenge
 
+    AWS WAF - Mangaged Rules
+    - Library of over 190 managed ruels
+    - Ready to use ruels that are managed by AWS and AWS Marketplace Sellers
+
+    - Baseline Rule Groups - general protection from common threats
+        - AWSManagedRulesCommonRuleSet, AWSManagedRulesAdminProtectionRuleSet,.....
+    - Use-case Specific Rule Groups - Protection for many AWS WAF use cases
+        - AWSManagedRulesSQLLiRuleSet , AWSManagedRulesWindowsRulesSet, AWSMangedRulesPHPRuleSet, AWSManagedRulesWordPressRuleSet
+    - IP Reputation Rule Groups - block requests based on source (e.g. malicious IPs)
+        - AWSManagedRulesAmazonIpReputationList, AWSManagedRulesAnonomoyusIpList
+    - Bot Control Managed Rule Group - block and manage requests from bots
+        - AWSMangedRulesBotContorlRuleSet
+
+    WAF - Web ACL - Logging
+    - You can send your logs to an:
+        - Amazon CloudWatch Logs log group - 5 MB per second
+        - Amazon Simple Storage Service (Amazon S3) bucket - 5 minutes interval
+        - Amazon Kinesis Data Firehouse - limited by Firehose quotas
+
+    %TODO diagrams
+
+    Solution Architecture - Enhance CloudFront Origin
+    Security with AWS WAF and AWS Secrets Manager
+
+    %TODO diagram
 
     \section{AWS Firewall Manager}
+    - Manage rules in all accounts of an AWS organisation
+    - Security policy: common set of security rules
+        - WAF rules (Application Load Balancer, API Gateways, CloudFront)
+        - AWS Shield Advanced (ALB, CLB, NLB, Elastic IP, CloudFront)
+        - Security Groups for EC2, Application Load Balancer and ENI resources in VPC
+        - AWS Network Firewall (VPC Level)
+        - Amazon Route 53 Resolver DNS Firewall
+        - Policies are created at the region level
+
+    - Rules are applied to new resources as they are created (good for compliance) across all and future accounts in your Organisation
+
+    WAF vs Firewall Manager vs Shield
+    %Diagram
+    - WAF, Shield and Firewall Manager are used together for comprehensive protection
+    - Define your Web ACL rules in WAF
+    - For granular protection of your resources, WAF along is the correct choice
+    - If you want to use AWS WAF across accounts, accelerate WAF configuration, automate the protection of new resources use Firewall Manager with AWS WAF
+    - Shield Advanced adds additional features on top of AWS WAF, such as dedicated support from the shield response team (SRT) and advanved reporting
+    - If you're prone to frequent DDoS attacks, consider purchasing Shield Advanved
 
 
     \section{Blocking an IP Address}
 
+    Blocking an IP address
+    %TODO diagram
+
+    Blocking an IP address - with an ALB
+    %TODO diagram
+
+    Blocking an IP address - with an NLB
+    %TODO diagram
+
+    Blocking an IP address - ALB + WAF
+    %TODO diagram
+
+    Blocking an IP address - ALB, CloudFront and WAF
+    %TODO diagram
 
     \section{Amazon Inspector}
+    Amazon Inspector
+    - Automated Security Assessments
+    - For EC2 instances
+    - Leveraging the AWS System Manager (SSM) agent
+    - Analyse against unintended network accessibility
+    - Analyse the running OS against known vulnerabilities
+    - For container images push to amazon ECR
+    - Assessment of Container Images as they are pushed
+    - For Lambda Functions
+    - Identifies software vulnerabilities in function code and package dependencies
+    - Assessment of functions as they are deployed
 
+    - Reporting and integration with AWS security hub
+    - Send findings to Amazon Event Bridge
+
+    What does Amazon Inspector evaluate?
+    - Remember: only for EC2 instances, Container Images and Lamabda functions
+    - Continuous scanning of the infrastructure, only when needed
+    - Package vulnerabilities (EC2, ECR and Lambda) - database of CVE
+    - Network reachability (EC2)
+    - A risk score is associated with all vulnerabilities for prioritisation
 
     \section{AWS Config}
 
+    AWS COnfig
+    - Help with auduting and recording compliance of your AWS resources
+    - Helps records configuration and changes over time
+    - AWS Conifig rules does not prevent actions from happening (no deny)
+    - Questions that can be solved by AWS config
+    - Is there unrestricted SSH access to my security groups?
+    - Do my buckets have any public access?
+    - How has my ALB configuration changed over time?
+    - You can recieve alerts (SNS notifications) for any changes
+    - AWS Config is a per-region service
+    - Can be aggregated across regions and accounts
+
+    AWS config resource
+    - View compliance of a resource over time
+    %TODO diagram
+
+    - View configuration of a resource over time
+    %TODO diagram
+
+    - View CloudTrail API calls if enabled
+    %TODO diagram
+
+    AWS Config Rules
+    - Can use AWS managed config rules (over 75)
+    - Can make custom config rules (must be defined in AWS Lambda)
+        - Evaluate if each EBS disk is of type gp2
+        - Evaulate if each EC2 instance is t2.micro
+    - Rules can be evaluated / triggered
+        - For each config change
+        - And / or: at regular time intervals
+    - Trigger Amazon EventBridge if the rule is non-compliant (chain with Lambda)
+    - Rules can have auto remediations through SSM Automations
+        - If a resource is not compliant you can trigger an auto remediation
+        - Ex: remediate security group rules, stop instances with non-approved tags
 
     \section{AWS Managed Logs}
-
+    - Load Balancer Access Logs (ALB, NLB, CLB) -> S3
+        - Access logs for your Load Balancers
+    - CloudTrail Logs -> to S3 and CloudWatch logs
+        - Logs for API calls made within your account
+    - VPC Flow Logs -> to S3, CloudWatch Logs, Kinesis Data Firehose
+        - Information about IP traffic going to and from network interfaces in your VPC
+    - Route 53 Access Logs -> to CloudWatch logs
+        - Log information about the queries that Route 53 receives
+    - S3 Access Logs -> to S3
+        - Server access logging provides detailed records for the requests that are made to a bucket
+    - CloudFront Access Logs -> to S3
+        - Detailed information about every user request that CloudFront receives
+    - AWS Config -> to S3
 
     \section{Amazon GuardDuty}
 
+    - Intelligent Threat discovery to protect your AWS Account
+    - Using Machine Learning algorithms, anomaly detection, 3rd party data
+    - One click to enable (30 days trial) no need to install software
+    - Input data includes:
+        - CloudTrail Events Logs - unusual API calls, unauthrosed deployments
+            - CloudTrail Management Events - create VPC subnet, create trail
+            - CloudTrail S3 Data Events - get object, list objects, delete object
+        - VPC Flow logs - unusual internal traffic, unusual IP address
+        - DNS Logs - compromised EC2 instances sending encoded data within DNS queries
+        - Optional Feature - EKS Audit Logs, RDS and Aurora, EBS, Lambad, S3 Data Events.......
+    - Can setup EventBridge rules to be notified in case of findings
+    - EventBridge rules can target AWS Lambda or SNS
+    - Can protect against CryptoCurrency attacks (has a dedicated "finding" for it)
+
+    Amazon GuardDuty
+    %TODO diagrams
+
+    GuardDuty - Delegated Administrator
+    - AWS organisation member accounts can be designated to be a GuardDuty Delegated Administrator
+    - Have full permissions to enable and manage GuardDuty for all accounts in the Organisation
+    - Can be done only using the Organisation Mangement Account
+    %TODO diagrams
 
     \section{IAM Advanced Policies}
+    IAM conditions
+    %TODO - example JSON listing
 
+    %TODO - example JSON listing
+
+    IAM for S3
+    %TODO - example JSON listing
+    - s3:ListBucket permission applies to arn:aws:s3:::test -> bucket level permission
+
+    %TODO - example JSON listing
+    - s3:GetObject, s3:PutObject,s3:DeleteObject applies to arn:awn:s3:::test
+    - Object level permissions
+
+    Resource Policies and aws:PrincipalOrgID
+    - aws:PrincipalOrgID can be used in any resource polices to restrict access to accounts that are memeber of an AWS organisation
+    %TODO diagrram
+    %TODO json listing
 
     \section{EC2 Instance Connect}
-
+    EC2 Instance Connect (SendSSHPublicKey API)
+    %TODO Diagram
 
     \section{AWS Security Hub}
+    - Central security tool to manage security across several AWS accounts and automate security checks
+    - Integrated dashboards showing current security and compliance status to quickly take actions
+    - Automatically aggregates alerts in predefined or personal findings formates from various AWS services and AWS partner tools:
+        - Config
+        - GuardDuty
+        - Inspector
+        - Macie
+        - IAM Access Analyser
+        - AWS Systems Manager
+        - AWS Firewal Manager
+        - AWS Health
+        - AWS Partner Network Solutions
 
+    Must first enable the AWS config service
 
     \section{Amazon Detective}
-
+    - GuardDuty, Macie and Security Hub are used to identify potential security issues or findings.
+    - Sometimes security findings require deeper analysis to isolate the root cause and take actions - it is a complext process
+    - Amazon Detective analyses, investigates and quickly identifies the root cause of security issues or suspicious activities (using ML and graphs)
+    - Automatically collects and processes events from VPC Flow Logs, CloudTrail, GuardDuty and creates a unifed view.
+    - Produces visualisations with details and context to get to the root cause.
 
     \chapter{Compute \& Load Balancing}
 

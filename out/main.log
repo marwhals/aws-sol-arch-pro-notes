@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.29)  25 JUN 2025 17:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.29)  25 JUN 2025 22:48
 entering extended mode
 **./main.tex
 (main.tex
@@ -970,12 +970,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [2
 
-] (C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\out\main.toc
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 3.
+]
 
-(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/wasysym\uwasy.fd
-File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
-)
+Package hyperref Warning: old toc file detected, not used; run LaTeX again.
+
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
 [3]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -985,15 +986,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[4]
+[4
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
+]
+Chapter 1.
 [5]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1003,116 +999,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[6]
-Overfull \hbox (2.21146pt too wide) detected at line 245
-\OT1/phv/m/n/10.95 12.10 
- []
-
-
-Overfull \hbox (2.21146pt too wide) detected at line 256
-\OT1/phv/m/n/10.95 13.10 
- []
-
-
-Overfull \hbox (2.21146pt too wide) detected at line 257
-\OT1/phv/m/n/10.95 13.11 
- []
-
-
-Overfull \hbox (2.21146pt too wide) detected at line 258
-\OT1/phv/m/n/10.95 13.12 
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[7]
-Overfull \hbox (2.21146pt too wide) detected at line 269
-\OT1/phv/m/n/10.95 14.10 
- []
-
-
-Overfull \hbox (2.21146pt too wide) detected at line 270
-\OT1/phv/m/n/10.95 14.11 
- []
-
-
-Overfull \hbox (2.21146pt too wide) detected at line 271
-\OT1/phv/m/n/10.95 14.12 
- []
-
-
-Overfull \hbox (2.21146pt too wide) detected at line 284
-\OT1/phv/m/n/10.95 15.10 
- []
-
-
-Overfull \hbox (2.21146pt too wide) detected at line 285
-\OT1/phv/m/n/10.95 15.11 
- []
-
-
-Overfull \hbox (2.21146pt too wide) detected at line 286
-\OT1/phv/m/n/10.95 15.12 
- []
-
-
-Overfull \hbox (2.21146pt too wide) detected at line 297
-\OT1/phv/m/n/10.95 16.10 
- []
-
-
-Overfull \hbox (2.21146pt too wide) detected at line 298
-\OT1/phv/m/n/10.95 16.11 
- []
-
-
-Overfull \hbox (2.21146pt too wide) detected at line 299
-\OT1/phv/m/n/10.95 16.12 
- []
-
-
-Overfull \hbox (2.21146pt too wide) detected at line 300
-\OT1/phv/m/n/10.95 16.13 
- []
-
-
-Overfull \hbox (2.21146pt too wide) detected at line 301
-\OT1/phv/m/n/10.95 16.14 
- []
-
-)
-\tf@toc=\write5
-\openout5 = `main.toc'.
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[8]
-Chapter 1.
-[9
-
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[10
+[6
 
 ]
 Chapter 2.
@@ -1126,48 +1013,92 @@ File: lstlang2.sty 2020/03/24 1.8d listings language file
 File: lstlang3.sty 2020/03/24 1.8d listings language file
 )
 
-main.tex:85: Package Listings Error: Couldn't load requested language.
+main.tex:89: Package Listings Error: Couldn't load requested language.
 
 See the Listings package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.85 ...=Sample JSON Data, label=lst:json-example]
+l.89 ...=Sample JSON Data, label=lst:json-example]
                                                   
 The following languages weren't loadable:
     ,json$
 This may cause errors in the sequel.
 
 
-main.tex:85: Package Listings Error: language json undefined.
+main.tex:89: Package Listings Error: language json undefined.
 
 See the Listings package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.85 ...=Sample JSON Data, label=lst:json-example]
+l.89 ...=Sample JSON Data, label=lst:json-example]
                                                   
 The language is not loadable. Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 85.
-LaTeX Font Info:    Trying to load font information for OMS+phv on input line 8
-6.
+nput line 89.
+LaTeX Font Info:    Trying to load font information for OMS+phv on input line 9
+0.
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsphv.fd
 File: omsphv.fd 
 )
 LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 86.
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 8
-7.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 90.
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 9
+1.
 
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
 Underfull \vbox (badness 2384) has occurred while \output is active []
 
- [11]
+ [7]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[8]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[9]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[10]
+main.tex:304: You can't use `macro parameter character #' in horizontal mode.
+l.304     - Multi AZ deployment of AD in 2 AZ, #
+                                                 of DC (Domain Controllers) ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[11]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1195,14 +1126,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [14]
-main.tex:300: You can't use `macro parameter character #' in horizontal mode.
-l.300     - Multi AZ deployment of AD in 2 AZ, #
-                                                 of DC (Domain Controllers) ...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1221,15 +1144,62 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [16]
+Chapter 3.
+[17
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
+]
+main.tex:745: Missing $ inserted.
+<inserted text> 
+                $
+l.745     - KMS(AWS_
+                    KMS) - default
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 74
+5.
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/wasysym\uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+)
+main.tex:747: Missing $ inserted.
+<inserted text> 
+                $
+l.747 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-[17]
+
+Overfull \hbox (4.89807pt too wide) in paragraph at lines 745--747
+[]\OT1/phv/m/n/10.95 - KMS(AWS$[]\OML/cmm/m/it/10.95 MS\OT1/cmr/m/n/10.95 ) \OM
+S/cmsy/m/n/10.95   \OML/cmm/m/it/10.95 default \OMS/cmsy/m/n/10.95   \OML/cmm/m
+/it/10.95 AWSKMScreatedandmanagedthekeymaterialinitsownkeystore$ 
+ []
+
+main.tex:752: Missing $ inserted.
+<inserted text> 
+                $
+l.752     - Custom Key Store (AWS_
+                                  CLOUDHSM)
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+main.tex:754: Missing $ inserted.
+<inserted text> 
+                $
+l.754 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (117.87563pt too wide) in paragraph at lines 752--754
+[]\OT1/phv/m/n/10.95 - Cus-tom Key Store (AWS$[]\OML/cmm/m/it/10.95 LOUDHSM\OT1
+/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95   \OML/cmm/m/it/10.95 AWSKMScreatesthekeym
+aterialinacustomkeystore\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 CloudHSMCluster
+\OT1/cmr/m/n/10.95 )$ 
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1257,15 +1227,30 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [20]
-Chapter 3.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
 
- [21
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-]
-Overfull \vbox (398.37779pt too high) has occurred while \output is active []
+[21]
+main.tex:1026: Missing $ inserted.
+<inserted text> 
+                $
+l.1026 ...n change timeout with --expires-in[TIME_
+                                                  BY_SECONDS] argument
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
+main.tex:1028: Missing $ inserted.
+<inserted text> 
+                $
+l.1028 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1276,11 +1261,47 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [22]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[23]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[24]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[25]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[26]
 Chapter 4.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23
+ [27
 
 ]
 Overfull \vbox (336.03438pt too high) has occurred while \output is active []
@@ -1294,9 +1315,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[24]
+[28]
 Chapter 5.
-[25
+[29
 
 ]
 
@@ -1307,46 +1328,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[26
+[30
 
 ]
 Chapter 6.
-[27]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[28]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[29]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[30]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
 [31]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1356,10 +1341,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[32
+[32]
 
-]
-Chapter 7.
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
 [33]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1369,10 +1359,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[34
+[34]
 
-]
-Chapter 8.
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
 [35]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1385,7 +1380,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [36
 
 ]
-Chapter 9.
+Chapter 7.
 [37]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1398,7 +1393,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [38
 
 ]
-Chapter 10.
+Chapter 8.
 [39]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1411,7 +1406,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [40
 
 ]
-Chapter 11.
+Chapter 9.
 [41]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1424,16 +1419,42 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [42
 
 ]
+Chapter 10.
+[43]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[44
+
+]
+Chapter 11.
+[45]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[46
+
+]
 Chapter 12.
 
-Overfull \hbox (281.7834pt too wide) in paragraph at lines 1246--1254
+Overfull \hbox (281.7834pt too wide) in paragraph at lines 1910--1918
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[43]
+[47]
 Underfull \vbox (badness 1005) has occurred while \output is active []
 
 
@@ -1445,11 +1466,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[44pdfTeX warning (ext4): destination with the same identifier (name{table.12.1
+[48pdfTeX warning (ext4): destination with the same identifier (name{table.12.1
 }) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1311 
+l.1975 
        ]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1459,37 +1480,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[45]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[46]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[47]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[48
-
-]
-Chapter 13.
 [49]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1499,10 +1489,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[50
+[50]
 
-]
-Chapter 14.
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
 [51]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1515,12 +1510,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [52
 
 ]
-Chapter 15.
+Chapter 13.
 [53]
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 1610.
-
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1529,15 +1520,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[54]
+[54
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
+]
+Chapter 14.
 [55]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1550,8 +1536,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [56
 
 ]
-Chapter 16.
+Chapter 15.
 [57]
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 2274.
+
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1560,11 +1550,42 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[58
+[58]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[59]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[60
+
+]
+Chapter 16.
+[61]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[62
 
 ]
 Chapter 17.
-[59]
+[63]
 (C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\out\main.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -1573,23 +1594,26 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: C14F4C470AED9417EF88F0A13F669246;45293.
  ) 
 Here is how much of TeX's memory you used:
- 32767 strings out of 478864
- 748508 string characters out of 2848186
- 1401355 words of memory out of 3000000
+ 32770 strings out of 478864
+ 748399 string characters out of 2848186
+ 1393166 words of memory out of 3000000
  49776 multiletter control sequences out of 15000+600000
  423202 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,89p,723b,1292s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C
-:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cms
-y10.pfb><C:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic
-/uhvb8a.pfb><C:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helv
-etic/uhvr8a.pfb><C:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
-helvetic/uhvro8a.pfb>
+:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmm
+i10.pfb><C:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmmi8.pfb><C:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb><C:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Marjan/AppData/Local/Programs/MiK
+TeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Marjan/AppData/Local/Programs
+/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/Marjan/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
 Output written on C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes
-\out\main.pdf (59 pages, 311388 bytes).
+\out\main.pdf (63 pages, 320219 bytes).
 PDF statistics:
- 1685 PDF objects out of 1728 (max. 8388607)
- 375 named destinations out of 1000 (max. 500000)
+ 1464 PDF objects out of 1728 (max. 8388607)
+ 380 named destinations out of 1000 (max. 500000)
  2037 words of extra memory for PDF output out of 10000 (max. 10000000)
 
