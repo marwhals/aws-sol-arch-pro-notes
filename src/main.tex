@@ -2898,72 +2898,419 @@ AWS Gateway - Usage Plans and API Keys
 
     \chapter{Data Engineering}
 
-
     \section{Amazon Kinesis Data Streams}
+    %TODO add diagram
+    - Collect and store streaming data in real-time
+        - Producers - Applications, Kinesis Agent
+        - Amazon Kinesis Data Streams
+        - Consumers - Application, Lambda, Amazon Data Firehose, Managed Service for Apache Flink
 
+    Kinesis Data Streams
+    - Retention between up to 365 days.
+    - Ability to reprocess (replay) data by consumers
+    - Data can't be deleted from Kinesis (until it expires)
+    - Data up to 1MB (typical use case is a lot of "small" real-time data)
+    - Data ordering guarantee fro data with the saem "Partition ID"
+    - At-rest KMS encryption, in flight HTTPS encryption
+    - Kinesis Producer Library (KPL) to write an optimiser producer application
+    - Kinesis Client Library (KCL) to write an optimised consumer application
+
+    Kinesis Data Streams - Capacity Modes
+    - Provisioned mode:
+        - Choose number of shards
+        - Each shard gets 1MB/s in (or 1000 records per second)
+        - Each shard gets 2MB/s out
+        - Scale manually to increase or decrease the number of shards
+        - You pay per shard provisioned per hour
+    - On-demand mode:
+        - No need to provision or manage the capcity
+        - Default capacity provisioned (4 MB/s in or 4000 records per second)
+        - Scales automatically based on observed throughput peak during the last 30 days
+        - Pay per stream per hour and data in/out per GB
 
     \section{Amazon Data Firehose}
+    AWS Kinesis Data Firehose
+    %TODO diagram
+    AWS Kinesis Data Firehose
+    - Full Managed Service, no administration
+    - Near Real Time (Buffer based on time and size, optionally can be disabled)
+    - Load data into Redshift / Amazon S3 / OpenSearch  / Splunk
+    - Automatic scaling
+    - Supports many data formats
+    - Data Conversion from JSON to Parquet / ORC (only for S3)
+    - Data Transformation through AWS Lambda (ex: CSV => JSON)
+    - Supports compression when target is Amazon S3 (GZIP, ZIP and SNAPPY)
+    - Only GZIP is the data is further loaded into Redshift
+    - Pay for the amount of data going through Firehose
+    - Spack / KCL do not read from KDF
 
+    Kinesis Data Firehose Delivery Diagram
+    %TODO delivery diagram
+
+    Firehose Buffer Sizing
+    - Firehose accumulates records in a buffer
+    - The buffer is flushed based on time and size rules
+    - Buffer Size (ex: 32MB): if that buffer size is reached, it's flushed
+    - Buffer Time (ex: 2 Minutes): if that time is reached, it's flushed
+    - Firehose can automatically increase the buffer size to increase throughput
+    - High throughput => Buffer Size will be hit
+    - Low throughput => Buffer Time will be hit
+
+    Kinesis Data Streams vs Firehose
+    - Streams
+        - Going to write custom code (producer / consumer)
+        - Real Time (200ms latency for classic, 70ms latency for enhanced fan-out)
+        - Must manage scaling (shard splitting / merging)
+        - Data storage for 1 to 365 days, replay capability, multi consumers
+        - Use with Lambda to insert data in real-time to OpenSearch (for example)
+    - Firehose
+        - Full managed, send to S3, Splunk, Redshift, OpenSearch
+        - Serverless data transformation with Lambda
+        - Near real time
+        - Automated Scaling
+        - No data storage
 
     \section{Amazon Managed Service for Apache Flink}
-
+    - Previously named: Kinesis Data Analytics for Apache Flink
+    - Flink (Java, Scala or SQL) is a framework for processing data streams
+    %TODO add diagram
+    - Run any Apache Flink application on a managed cluster on AWS
+        - Provisioned compute resources, parallel computation, automatic scaling.
+        - Application backups (implemented as checkpoint and snapshots)
+        - Use any Apache Flink programming features to transform data
+        - Important: Flink does not read from Amazon Data Firehose
 
     \section{Streaming Architectures}
+    Full Data Engineering Pipeline - Real-Time Layer
+    %TODO diagram
 
+    Streaming Architectures - 3000 messages of 1kb per second
+    %TODO diagram
+    - Kinesis
+    -  3 shard: 3MB/s in
+    - 3 * 0.015 = 32.4/mth
+    - Must use KDF for output to S3
+    - DynamoDB + Streams
+    - 3000 WCU = 3 MB/s
+    - 1450.90 / month
+    - Storage in DynamoDB
+
+    Comparison Charts
 
     \section{Amazon MSK}
+    Amazon Managed Streaming for Apache Kafka (Amazon MSK)
+    - Alternative to Amazon Kinesis
+    - Fully managed Apache Kafka on AWS
+        - Allow you to create, update, delete clusters
+        - MSK creates and manages Kafka brokers nodes and Zoopkeeper nodes for you
+        - Deploy the MSK cluster in your VPC, multi-AZ (up to 3 for HA)
+        - Automatic recovery from common Apache Kafka failures
+        - Data is stored on EBS volumes for as long as you want
+    - MSK Serverless
+        - Run Apache Kafka on MSK without managing the capacity
+        - MSK automatically provisions resources and scales compute and storage
 
+    Apache Kafka at a high level
+    %TODO kafka architecture at a high level
+    Kinesis Data Streams vs. Amazon MSK
+    - Kinesis Data Streams
+        - 1MB message size limit
+        - Data Streams with Shards
+        - Shard Splitting and Merging
+        - TLS In-flight encryption
+        - KMS at-rest encryption
+    - Amazon MSK
+        - 1MB default, configure or higher (ex: 10MB)
+        - Kafka Topics with Partitions
+        - Can only add partitions to a topic
+        - PLAINTEXT or TLS In-Flight Encryption
+        - KMS at-rest encryption
+
+    Amazon MSK Consumers
+    %TODO diagram
+    - Kinesis Data Analytics for Apache Flink
+    - AWS Glue - Streaming ETL Jobs - Powered by Apache Spark Streaming
+    - Lambda
+    - Applications running on Amazon EC2, ECS, EKS
 
     \section{AWS Batch}
+    - Run batch jobs as Docker images
+    - Two options:
+        - Run on AWS Fargate (full serverless offering)
+        - Dynamic provisioning of the instances (EC2 and Spot Instances) - in VPC
+    - Optimal quantity and type based on volume and requirements
+    - No need to manage clusters, fully serverless
+    - You just pay for the underlying resources used.
+    - Example: batch process of images, running thousands of concurrent jobs
+    - Schedule Batch Jobs using Amazon EventBridge
+    - Orchestrate Batch Jobs using AWS Step Functions
 
+    AWS Batch - Solution Architecture
+    %TODO diagram
+    Batch vs. Lambda
+    - Lambda
+        - Time limit
+        - Limited runtimes (built in runtimes, or Docker images built for Lambda)
+        - Limited temporary disk space
+        - Serverless
+    - Batch
+        - No time limit
+        - Any runtime as long as it's packaged as a Docker image
+        - Rely on EBS / instance store for disk space
+        - Relies on EC2 (can be managed by AWS) or AWS Fargate
+
+    AWS Batch - Compute Environments
+    - Managed Compute Environments
+        - AWS Batch managed the capacity and instances types within the environment
+        - You can chhoose EC2 On-Demand or Spot Instances
+        - You can choose Fargate On-Demand or Fargate Spot Instances
+        - You can set a maximum price for Spot Instances
+        - Launched within your own VPC
+            - If you launch within your own private subnet, make sure it has access to the ECS services
+            - Either using a NAT gateway / instance or using VPC Endpoints for ECS
+    - Unmanaged Computer Environment
+        - You control and manage EC2 instance configuration, provisioning and scaling
+
+    AWS Batch - Managed Compute Environment
+    %TODO diagram of AWS batch job queue
+
+    AWS Batch - Multi Node Mode
+    %TODO add diagram
+    - Multi Node: large scale, good for HPC
+        - Leverages multiple EC2 / ECS instances at the same time.
+        - Good for tightly coupled workloads
+        - Represents a single job and specified how many nodes to create for the job
+        - 1 mean node and many child notes.
+        - Does not work with Spot Instances
+        - Works better if your EC2 launch mode is a placement group "cluster"
 
     \section{Amazon EMR}
+    - EMR stands for "Elastic MapReduce"
+    - EMR helps creating Hadoop clusters (Big Data) to analyse and process vast amounts of data
+    - The clusters can be made of hundreds of EC2 instances
+    - Also support Apache Spark, HBase, Presto, Flink
+    - EMR takes care of all the provisioning and configuration of EC2
+    - Auto-scaling with CloudWatch
+    - Use cases: data processing, machine learning web indexing big data..........
 
+    EMR - Integrations
+    %TODO - add diagram
+
+    Amazon EMR - Node types and purchasing
+    - Master Node: Mange the cluster, coordinates, manage health - long running
+    - Core Node: Run tasks and store data - long running
+    - Task Node (optional): Just to run tasks - usually Spot
+    - Purchasing options:
+        - On-demand: reliable, predictable, won't be terminated
+        - Reserved (min 1 year): cost savings (EMR will automatically use if available)
+        - Spot Instances: cheaper can be terminated, less reliable
+    - Can have long-running cluster or transient (temporary) cluster.
+
+    Amazon EMR - Instance Configuration
+    - Uniform instance groups: select a single instance type and purchasing option for each node (has auto scaling)
+    - Instance fleet: select target capacity, mix instance types and purchasing options (no Auto Scaling)
 
     \section{Running Jobs on AWS}
-
+    Strategy 1: Provision EC2 Instance (long running - CRON jobs)
+    Strategy 2: Amazon EventBridge + Lambda (cron)
+    Strategy 3: Reactive Workflow - EventBridge, S3 Events, API Gateway, SQS, SNS etc.
+    Strategy 4: use AWS batch - EventBridge, Batch
+    Strategy 5: Use fargate - EventBridge -> Fargate
+    Strategy 6: Use EMR (step execution or cluster)
 
     \section{AWS Glue}
+    - Managed extract, transform and load (ETL) service
+    - Useful to prepare and transform data for analytics
+    - Fully serverless service
+    %TODO ETL diagram
 
+    Glue Data Catalog
+    - Glue Data Catalog: catalog of datasets
+    %TODO add data catalog
 
     \section{Redshift}
+    - Redshift is based on PostgreSQL but it's not used for OLTP
+    - Its OLAP - online analytical processing (analytics and data warehousing)
+    - 10x better performance that other data warehouses, scale to PBs of data
+    - Columnar storage of data (instead of row based)
+    - Massively Parallel Query Execution (MPP)
+    - Two modes: Provisioned cluster or Serverless cluster
+    - Has a SQL interface for performing the queries
+    - BI tools such as AWS Quicksight or Tableau integrate with it
 
+    Redshift Continued.......
+    - Data is loaded from S3, Kinesis Firehose, DynamoDB, DMS......
+    - Based on node type: up to 100+ nodes, up to 16TB of space per node
+    - Can provision multiple nodes, with Multi-AZ only for some clusters
+    - Leader node: for query planning, results aggregation
+    - Computer node: for performing the queries, send result to leader
+    - Backup and Restore, Security VPC / IAM / KMS, Monitoring
+    - Redshift Enhanced VPC Routing: COPY / UNLOAD goes through VPC
+    - Redshift is provisioned, so it's worth it when you have a sustained usage (use Athena if the queries are sporadic instead)
+
+    Redshift - Snapshots and DR
+    - Snapshots are point-in-time backups of a cluster, stored internally in S3
+    - Snapshots are incremental (only what hass changed is saved)
+    - You can restore a snapshot into a new cluster
+    - Automated: every 8 hours, every 5 GB, or on a scheduled. Set retention.
+    - Manual: snapshot is retained until you delete it.
+    - You can configure Amazon Redshift to automatically copy snapshots (automated or manual) of a cluster to another AWS region
+
+    Cross-Region Snapshot Copy for an KMS-Encrypted Redshift
+    %TODO add diagram
+    - Enables Redshift to perform encryption operations in the destination Region
+
+    Redshift Spectrum
+    - Query data the is already in S3 without loading it.
+    - Must have a Redshit cluster available to start the query
+    - The query is then submitted to thousands of Redshift Spectrum nodes.
+    %TODO diagram Redshift Cluster
+
+    Redshift Workload Mangement (WLM)
+    - Enables you to flexibly manage queries priorities within workloads
+    - Example: Prevent short, fast-running queries from getting stuck behind long-running queries
+    - Define multiple query queues (Superuser queue, User-defined queues)
+    - Route queries to the appropriate queues at runtime
+    - Automatic WLM - queues and resources managed by Redshift
+    - Manual WLM - queue and resources managed by you
+    %TODO add WLM diagram
+
+    Redshift Concurrency Scaling
+    %TODO Amazon Redshift
+    - Enables you to provide consistently fast performance with virtually unlimited concurrent users and queries
+    - Redshift automatically adds additional cluster capacity (Concurrency-Scaling Cluster) to process an increase in requests.
+    - Ability to decide which queries sent to the concurrency-Scaling Cluster using WLM
+    - Charged per second
 
     \section{Amazon DocumentDB}
+    - Aurora is an "AWS-implemetation" of PostgreSQL / MySQL
+    - DocumentDB is the same for MongoDB (which is a NoSQL database
+    - MongoDB is used to store query and index JSON data
+    - Similar "deployment concepts" as Aurora
+    - Fully Manged, highly available with replication across 3 AZ
+    - DocumentDB storage automatically grows in increments of 10GB
+    - Automatically scales to workloads with millions of requests per seconds
 
+    DocumentDB - Pricing
+    %TODO add diagram
+    - Pay for what you use, no upfront costs
+    - On-demand Instances (per second with minimum of 10 minutes)
+    - Database I/O - amount of I/O used when read and write (per million I/Os)
+    - Database Storage (per GB/month)
+    - Backup storage (per GB/month)
 
     \section{Amazon Timestream}
+    - Fully managed, fast, scalable, serverless time series database
+    - Automatically scales up/down to adjust capacity
+    - Store and analyse trillions of events per day
+    - 1000s times faster and 1/10th the cost of relational databses
+    - Schedules queries, multi-measure records, SQL compatibilty
+    - Data storage tiering, recent data kept in memeory and historical data kept in a cost-optimised storage
+    - Built-in time series analytics functions (helps you identify patterns in your data in near real-time)
+    - Encryption in transit and at rest
+    - Use cases: IoT apps, operational applications, real-time analytics.........
 
+    Amazon Timestream - Architecture
+    %TODO diagram
 
     \section{Amazon Athena}
+    %TODO add diagram
+    - Serverless query service to analyse data stored in Amazon S3
+    - Uses standard SQL language to query the files (built on Presto)
+    - Supports CSV, JSON, ORC, Avro and Parquet
+    - Pricing: 5.00 per TB of data scanned
+    - Commonly used with Amazon Quicksight for reporting/dashboards
+    - Use cases: Business intelligence / analytics / reporting, analyse and query VPC Flow Logs, ELB Logs, CloudTrail trails, etc.......
+    -----> Exam Tip: analyse data in S3 usign serverless SQL, use Athena
 
+    Amazon Athena - Performance Improvement
+    - Using columnar data for cost-savings (less scans)
+        - Apache Parquet or ORC is reccommended
+        - Huge performance improvement
+        - Use Glue to convert your data to Parquet or ORC
+    - Compress data for smaller retrievals (bzip2 gzipm lz4, snappy, zlip, zstd)
+    - Partition datasets in S3 for easy querying on virtual columns
+    - Use larger files (> 128 MB) to minise overhead
+
+    Amazon Athena - Federated Query
+    - Allows you to run SQL queries across data stored in relational, non-relational object and custom data sources (AWS or on-premises)
+    - Uses Data Source Connectors that run on AWS Lambda to run Federated Queries (e.g CloudWatch logs, DynamoDB, RDS)
+    - Store the results back in Amazon S3
+    %TODO Diagram
 
     \section{Amazon QuickSight}
+    - Serverless machine learning-powered business intelligence service to create interactive dashboards
+    - Fast automatically scalable, embeddable, with per-session pricing
+    - Use cases:
+        - Business analytics
+        - Building visualisation
+        - Perform ad-hoc analysis
+        - Get business insights using data
+    - Integrated with RDS, Aurora, Athena, Redshift, S3......
+    - In-memory computation using SPICE engine if data is imported into QuickSight
+    - Enterprise edition: Possibility to setup Column-Level security (CLS)
 
+    QuickSight Integrations
+    %TODO QuickSight diagram
+
+    QuickSight - Dashboard and Analysis
+    - Define Users (standard versions) and groups (enterprise version)
+        - These users and groups only exist within QuickSight not IAM!!
+    - A dashboard...
+        - Is a read-only snapshot of an analysis that you can share
+        - preserves the configuration of the analysis (filtering, parameters, controls, sort)
+    - You can share the analysis or the dashboard with Users or Groups
+    - To share a dashboard, you must first publish it.
+    - Users who see the dashboard can also see the underlying data
 
     \section{Big Data Architecture}
+    Full Data Engineering Pipeline - Analytics layer
+    %TODO diagram
+    - Amazon EMR - Hadoop / Spark / Hive
+    - Redshift / Redshift Spectrum ---- Data Warehousing
+    - Amazon Athena Serverless
+    - Visualisation Amazon QuickSight
 
+    Big Data Ingestion Pipeline
+    %TODO diagram
+    - IoT devices
+    - Amazon Kinesis Data Streams
+    - Amazon Kinesis Data Firehose
+    - Amazon Simple Storage Service (S3)
+    - Amazon Simple Queue Service (Optional)
+    - AWS Lambda
+    - Amazon Athena
+    - Reporting Bucket - Amazon Simple Storage (S3)
+    - Amazon QuickSight <----> Amazon Redshift
+
+    Comparison of warehousing technologies
+    - EMR
+        - Need to use Big Data tools such as Apache Hive, Spark
+        - One long-running cluster, many jobs, with auto-scaling or one cluster per job?
+        - Purchasing options - Spot, On Demand, Reserved Instances
+        - Can access data in DynamoDb and / or S3
+        - Scratch data on EBS disks (HDFS) and long term storage in S3 (EMRFS)
+    - Athena
+        - Simple queries and aggregations, data must live in S3
+        - Serverless, simple SQL queries out-of-the-box queries for many services (cost and billing)
+        - Audit queries through CloudTrail
+    - Redshift
+        - Advanved SQL queries must provision servers
+        - Can leverage Redshift Spectrum for serverless queries on S3
 
     \chapter{Monitoring}
 
-
     \section{CloudWatch}
-
 
     \section{CloudWatch Logs}
 
-
     \section{Amazon EventBridge}
-
 
     \section{X-Ray}
 
-
     \section{AWS Personal Health Dashboard}
 
-
     \chapter{Deployment and Instance Management}
-
 
     \section{Elastic Beanstalk}
 
