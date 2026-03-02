@@ -1,0 +1,93 @@
+\section{EBS and Local Instance Store}
+EBS
+- Network drive you attach to one instance only.
+- Linked to a specific availability zone (transfer: snapshot -> restore)
+- Volumes can be resized
+- Make sure to choose an instance type tha tis EBS optimised to enjoy maximum throughput
+%TODO add diagram
+EBS Volume Types
+- EBS Volumes come in 6 types
+-- gp2/gp3 (SSD): General purpose SSD volume that balances price and performance for a wide variety of workloads
+-- io1/io2 Block Express - Highest-performance SSD volume for mission critical low latency or high throughput workloads
+-- st1 (HDD) low cost HDD volume designed for frequently access, throughput intesive workloads
+-- sc1 (HDD): Lowest cost HDD volume designed for less frequently accessed workloads
+- EBS volumes are characterised in Size / throughput / IOPS (I/O Ops Per Sec)
+--- See AWS Docs when required
+- Only gp2/gp3 and io1/io2 can be used as boot volumes
+
+EBS Snapshots
+- Incremental - only backup changed blocks
+- EBS backups use IO and you shouldn't run them while your application is handling a lot of traffic
+- Snapshots will be stored in S3 (you won't directly see them)
+- Not necessary to detach volume to do snapshot, but reccomended
+- Can copy snapshots across region (for DR)
+- Can make Image (AMI) from snapshot
+- EBS volumes restored by snapshots need to be pre-warmed (use the Fast Snapshot Restore FSR feature or fio/dd command to read the entire volume)
+
+Amazon Data Lifecycle Manager
+- Automate the creation, retention and deletion of EBS snapshots and EBS-backed AMIs
+- Schedule backups, cross-account snapshot copies delete outdated backups
+- Uses resource tags to identify the resources (EC2 instances, EBS volumes)
+- Can't be used to manage snapshots/AMIs created outside Data Life Cycle manager
+- Can't be used to manage instance-store backed AMIs
+
+Amazon Data Lifecycle Manger vs AWS Backup
+- Use Data Lifecycle Manager - when you want to automate the creations, retention and deletion of EBS snapshots
+- Use AWS backup - to manage and monitor backups across the AWS services you use, including EBS volumes from single place
+
+EBS Encryption - Account level setting
+- New Amazon EBS volumes aren't encrypted by default
+- There's an account-level setting to encrypt automatically EBS volumes and Snapshots
+- The setting needs to be enabled on a per-region basis
+
+EBS Multi-Attach - io1/io2 family
+- Attach the same EBS volume to multiple EC2 instances in the same AZ
+- Each instance has full read and write permissions to the volume
+- Use case:
+- Achieve higher application availability in clustered in clustered Linux applications (ex: Teradata)
+- Applications must manage concurrent write operations
+- Must use a file system that's cluster-aware (not XFS, EX4, etc ...)
+
+Local EC2 instance store
+- Physical disk attached to the physical server where your EC2 is
+- Very High IOPS (because its physical)
+- Disks up to 7.5 TiB (can change over time), stripped to reach 60 TiB (can change over time)
+- Block Storage (just like EBS)
+- Cannot be increased in size
+- Risk of data loss if hardware fails
+
+Instance Store vs EBS
+- Instance store is physically attached to the machine (ephemeral storage)
+- EBS is a network drive (persistent)
+- Pros
+- Better I/O performance (EBS gp2 has a max IOPS of 16000, io1 of 6400, io2 Block Express of 256000)
+- Good for buffer / cache / scratch data / temporary content
+- Data survives reboots
+- Cons
+- On stop or termination , the instance store is lost
+- You can't resize the instance store
+- Backups must be operated by the user
+
+\section{Amazon EFS}
+
+\section{Amazon S3}
+
+\section{Amazon S3 - Storage Class Analysis}
+
+\section{Amazon S3 - Storage Lens}
+
+\section{S3 Solution Architecture}
+
+\section{Amazon FSx}
+
+\section{Amazon FSx - Solution Architecture}
+
+\section{AWS DataSync}
+
+\section{AWS DataSync - Solution Architecture}
+
+\section{AWS Data Exchange}
+
+\section{AWS Transfer Family}
+
+\section{AWS Storage Services Price Comparison}
