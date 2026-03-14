@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.29)  3 JUL 2025 17:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.29)  3 JUL 2025 22:47
 entering extended mode
 **./main.tex
 (main.tex
@@ -1584,10 +1584,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[44
+[44]
 
-]
-Chapter 5.
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
 [45]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1600,7 +1605,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [46
 
 ]
-Chapter 6.
+Chapter 5.
 [47]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1610,15 +1615,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[48]
+[48
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
+]
+Chapter 6.
 [49]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1646,10 +1646,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[52
+[52]
 
-]
-Chapter 7.
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
 [53]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1662,7 +1667,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [54
 
 ]
-Chapter 8.
+Chapter 7.
 [55]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1675,7 +1680,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [56
 
 ]
-Chapter 9.
+Chapter 8.
 [57]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1688,7 +1693,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [58
 
 ]
-Chapter 10.
+Chapter 9.
 [59]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1698,10 +1703,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[60
+[60]
 
-]
-Chapter 11.
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
 [61]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1711,22 +1721,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[62
+[62]
 
-]
-Chapter 12.
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
 
-Overfull \hbox (281.7834pt too wide) in paragraph at lines 2880--2888
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [63]
-Underfull \vbox (badness 1005) has occurred while \output is active []
-
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1735,12 +1739,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[64pdfTeX warning (ext4): destination with the same identifier (name{table.12.1
-}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.2945 
-       ]
+[64]
+Chapter 10.
+[65
+
+]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1749,24 +1752,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[65]
+[66
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[66]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
+]
+Chapter 11.
 [67]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1779,8 +1768,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [68
 
 ]
-Chapter 13.
+Chapter 12.
+
+Overfull \hbox (281.7834pt too wide) in paragraph at lines 3387--3395
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 [69]
+Underfull \vbox (badness 1005) has occurred while \output is active []
+
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1789,10 +1789,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[70
+[70pdfTeX warning (ext4): destination with the same identifier (name{table.12.1
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.3452 
+       ]
 
-]
-Chapter 14.
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
 [71]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1802,32 +1812,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[72
+[72]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[73]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[74
 
 ]
-Chapter 15.
-[73]
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 3244.
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[74]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
+Chapter 13.
 [75]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1840,7 +1846,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [76
 
 ]
-Chapter 16.
+Chapter 14.
 [77]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1853,15 +1859,63 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [78
 
 ]
-Chapter 17.
+Chapter 15.
 [79]
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 3751.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[80]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[81]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[82
+
+]
+Chapter 16.
+[83]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[84
+
+]
+Chapter 17.
+[85]
 (C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\out\main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: C14F4C470AED9417EF88F0A13F669246;45293.
  ) 
 Here is how much of TeX's memory you used:
- 32792 strings out of 478864
- 748763 string characters out of 2848186
+ 32798 strings out of 478864
+ 748805 string characters out of 2848186
  1401589 words of memory out of 3000000
  49779 multiletter control sequences out of 15000+600000
  423202 words of font info for 62 fonts, out of 8000000 for 9000
@@ -1877,9 +1931,9 @@ TeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Marjan/AppData/Local/Programs
 /MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/Marjan/AppData/Local/Prog
 rams/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
 Output written on C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes
-\out\main.pdf (79 pages, 422238 bytes).
+\out\main.pdf (85 pages, 445276 bytes).
 PDF statistics:
- 1789 PDF objects out of 2073 (max. 8388607)
- 396 named destinations out of 1000 (max. 500000)
+ 1816 PDF objects out of 2073 (max. 8388607)
+ 402 named destinations out of 1000 (max. 500000)
  2037 words of extra memory for PDF output out of 10000 (max. 10000000)
 
