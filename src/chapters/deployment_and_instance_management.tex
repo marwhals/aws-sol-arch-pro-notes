@@ -1,22 +1,277 @@
-\section{Elastic Beanstalk}
+\usepackage{microtype}\section{Elastic Beanstalk}
+\subsection{AWS Elastic Beanstalk Overview}
+- Elastic Beanstalk is a developer centric view of deploying an application on AWS
+- It uses all the components we've seen before: EC2, Auto Scaling Group, Elastic Load Balancers, RDS, etc.......
+- We still have full contorl over the configuration of each component
+- Beastalk is free but you pay for the underlying instances
 
+\subsection{Elatics Beanstalk}
+
+- Support for many platforms:
+    - Go
+    - Java SE
+    - Java with Tomcat
+    - .NET on Window Server with IIS
+    - Node.js
+    - PHP
+    - Python
+    - Ruby
+    - Packer Builder
+    - Single Container Docker
+    - Multicontainer Docker
+    - Preconfigured Docker
+
+- Beanstalk is great to "Replatform" your application from on-premises to the cloud
+
+- Managed service
+    - Instance configuration / OS is handled by Beanstalk
+    - Deployment strategy is configurable by performed by Elastic Beanstalk
+- Just the application code is the responsibility of the developer
+- Three architecture models:
+    - Single instance deployment: good for deve
+    - LB + ASG: great for production or pre-production web applications
+    - ASG only: great for non-web apps in production (workers. etc......)
+
+\subsection{Beanstalk Environments}
+% TODO add diagrams
+
+\subsection{Web Server vs Worker Environment}
+- If your application performs taks that are long to complete, offload these tasks to a dedicated worker environment
+- Decoupling you application into two tiers is common
+- Example: processing a video, generating a zip file, etc
+- You can define periodic task in a file cron.yaml
+
+%TODO add diagrams
+
+\subsection{Elastic Beanstalk Deployment Blue / Green}
+%TODO add diagrams
+- Not a "direct feature" of Elastic Beanstalk
+- Zero downtime and release facility
+- Create a new "stage" environment and deploy v2 there
+- The new environment (green) can be validated independently and roll back if there are issues
+- Route 53 can be setup using weighted policies to redirect a little bit of traffic to the stage environment
+- Using Beanstalk "swap URLs" (DNS swap) when done with the environment test
 
 \section{CodeDeploy}
 
+\subsection{AWS CodeDeploy}
+%TODO diagram
+- We want to deploy out application automatically to many EC2 instances
+- These instances are no managed by Elastic Beanstalk
+- There are several ways to handle deployment using open source tools (Ansible, Terraform, Chef, Puppet, etc......)
+- We can use the managed Service AWS CodeDeploy
+- CodeDeploy can deploy to: EC2, ASG, ECS and Lamabda
+
+\subsection{CodeDeploy to EC2}
+%TODO add diagram
+- Define how to deploy the application using appspec.yml + deployment strategy
+- Will do in-place update your fleet of EC2 instances
+- Can use hooks to verfiy the deployment after each deployment phase
+
+\subsection{CodeDeploy to ASG}
+%TODO add diagram
+- In place updates:
+    - Updated current existing EC2 instances
+    - Instances newly created by an ASG will also get automated deployments
+- Blue / gree deployment:
+    - A new auto-scaling group is created (settings are copied)
+    - Choose how long to keep the old instances
+    - Must be using an ELB
+
+\subsection{CodeDeploy to AWS Lambda}
+%TODO add diagram
+- Traffic Shifting feature
+- Pre and Post traffic hooks features to validate deployment (before the traffic shift starts and after it ends)
+- Easy and automated rollback using CloudWatch Alarms
+- SAM framework natively uses CodeDeploy
+
+\subsection{CodeDeploy to ECS}
+% TODO add diagram
+- Support for Blue/Green deployments for Amazon ECS and AWS Fargate
+- Setup is done within the ECS service
+- A new task set is created and traffic is re-routed to the new task test
+- Then if everything is stable for X minutes, the old task set is terminated (so you have time to notice the issues)
+- Supports Canary deployments (Canary10Percent5Minute)
 
 \section{CloudFormation}
 
+- Infrastructure as code (IaC) in AWS
+- Portability of stacks across multiple accounts and regions
+- Backbone of the elastic beanstalk service
+- Backbone of the Service Catalog service
+- Backbone of the SAM (Serverless Application Model) framework
+- Must-know service as a developer / sysops / devops
+
+\subsection{Retaining Data on Deletes}
+- You can put a DeletionPolicy on any resource to control what happens when the CloudFormation template is deleted
+- DeletionPolicy=Retain
+    - Specify on resources to preserve / backup in case of CloudFormation deleted
+    - To keep a resource, specify Retain (works for any resource / nested stack)
+- DeletionPolicy=Snapshot:
+    - EBS Volume, Elasticache Cluster, ElastiCache ReplicationGroup
+    - RDS DBInstance, RDS DBCluster, Redshift Cluster
+- DeletePolicy=Delete (default behaviour)
+    - Note: for AWS::RDS::DBCluster resources, the default policy is Snapshot
+    - Note: to delete an S3 bucket, you first empty the bucket of its content
+
+\subsection{CloudFormation Customer Resources (Lambda)}
+%TODO diagram
+- You can define a Custom Resource in CloudFormation to address any of these use cases
+- An AWS resource is not yet supported (new service for example)
+- An on-premises resource
+- Emptying an S3 bucket before being deleted
+- Fetch an AMI id
+
+\subsection{CloudFormation - StackSets}
+%TODO diagram add
+- Create, update or delete stacks across multiple accounts and regions with a single operation
+- Administrator account to create StackSets
+- Trusted accounts to create, update, delete stack instances from StackSets
+- When you updated a stack set, all associated stack instances are updated through all accounts and regions
+- Enabled Automatic Deployment feature to autmatically deploy to accounts in AWS Organisations or OUs
+
+\subsection{CloudFormation Drift Overview}
+%TODO add diagram
+- CloudFormation allows you to create infrastructure
+- But it doesn't protect you against manual configuration changes
+- How do we know if our resources have drifted?
+-> Use cloud formation drift
+- Detect drift on an entire stack or on individual resource within a stack
+
+\subsection{CloudFormation - Integration with Secrets Manager}
+%TODO see screenshot
+
+\subsection{CloudFormation - Resource Import}
+% TODO add diagram
+- Import existing resources into existing / new stack s
+- You don't need to delete and re-create the resources as part of a CloudFormation stack
+- During import operation, you'll ned
+    - A template that describes the entire stack (original stack resources and target resources to import)
+    - A Unique indentifier for each target resource (ex BucketName for S3 buckets)
+- Each resource to import must have a DeletionPolicy attribute (any value) and Identifier
+- Can't import the same resource into multiple stacks
 
 \section{Service Catalog}
 
+\subsection{AWS Service Catalog}
+- Users that are new to AWS have too many options and may create stacks that are not compliant / in line with the rest of the organisation
+- Some users just want a quick self-service portal to launch a set of authorised products pre-defined by admins
+- Includes: virtual machines, databases, storage options, etc.........
+---> AWS Service Catalog use case
+
+\subsection{Service Catalog Diagram}
+%TODO add diagram
+
+\subsection{AWS Service Catalog}
+- Create and manage catalogs of IT services that are approved on AWS
+- The "products" are CloudFormation templates
+- Ex:Virtual machine images, Servers, Software, Databases, Regions, IP address ranges
+- CloudFormation helps ensure consistency and standardisation by Admins
+- They are assigned to Portfolios (teams)
+- Team are presented a self-service portal where they can launch the products
+- All the deployed products are centrally managed deployed services
+- Help with governance, compliance and consistency
+- Can give user access to launching products withouth requiring deep AWS knowledge
+- Integrations with "self-service portals" such as ServiceNow
 
 \section{SAM - Serverless Application Model}
 
+- SAM = Serverless Application Model
+- Framework for developing and deploying serverless applications
+- All the configuration is YAML code. Examples:
+    - Lambda Functions (AWS::Serverless::Function)
+    - DynamoDB tables (AWS::ServerLess::SimpleTable)
+    - API Gateway (AWS::Serverless::API)
+    - StepFunction - State Machine (AWS::Serverless::StateMachine)
+- SAM can help you to run Lambda, API Gateway, DynamoDB locally
+- SAM can use CodeDeploy to deploy Lambda functions (traffic shifting)
+- Leverages CloudFormation in the backend
+
+\subsection{CICD Architecture for SAM}
+%TODO add diagram
 
 \section{AWS CDK - Cloud Development Kit}
+%TODO add diagram
+- Define your cloud infrastructure using a familiar language:
+    - JavaScript/ TypeScript, Python, Java and .NET
+- The code is "compiled" into a CloudFormation template (JSON/YAML)
+- You can therefore deploy infrastructure and application runtime code together
+    - Great for Lambda functions
+    - Great for Docker containers in ECS / EKS
 
+\subsection{CDK Example}
+%TODO see example
 
 \section{AWS Systems Manger - SSM}
 
+\subsection{AWS Systems Manager Overview}
+- Helps you manage your EC2 and on-premises system at scal
+- Get operational insights about the state of your infrastructure
+- Easily detect problems
+- Patching automation for enhancd compliance
+- Works for both Windows and Linux OS
+- Integrated with CloudWatch metrics / dashboards
+- Integrated with AWS Config
+- Free service
+
+\subsection{How Systems Manger Works}
+%TODO see diagram
+- We need to install the SSM agent onto the systems we controll
+- Installed by default on Amazon Linux AMI and some Ubuntu AMI
+- If an instance can't be controlled with System Manger, it's probably an issue with the SSM agent!
+- Make sure the EC2 instances have a proper IAM role to allow System Manager actions
+
+\subsection{AWS Systems Manager Run Command}
+%TODO add diagram
+- Execute a document (script) or just run a command
+- Run command across multiple instances (using resources groups)
+- Rate Control / Error Control
+- Integrated with IAM and CloudTrail
+- No need for SSH
+- Results in the console
+
+\subsection{AWS Systems Manager - Send Command before an ASG Instance is Terminated}
+%TODO add diagrma
+- Perform any action before the ASG terminates an EC2 instance
+- Create a ASG lifecylcle hook that puts the instance in Terminating:Wait state
+- Monitor the Terminating:Wait state using EventBridge
+- Trigger a SSM automation document to perform the actions on the instance before termination
+
+\subsection{Systems Manager Patch Managers - Steps}
+%TODO add diagram
+1 - Define a patch baseline to use (or multiple if you have multiple environments)
+2 - Define patch groups: define based on tags, example different environments (dev, test, prod) --- use tag Patch Group
+3 - Define Maintenance Windows (schedule, duration, registered targets/ patch groups and registered tasks)
+4 - Add tehe AWS-RunPatchBaseline Run Command as part of the registered takss of the  Maintenence Window (works cross platform Linux and Windows)
+5 - Define Rate control (concurrency and error threshold) for the task
+6 - Monitor Patch Compliance using SSM inventory
+
+\subsection{Systems Manager Session Manager}
+%TODO add diagram
+- Allows you to start a secure shell on your EC2 and on-premises servers
+- Access through AWS Console, AWS ClI or Session Manager SDK
+- Does not need SSH access, bastion hosts or SSH keys
+- Supports Linux, macOS and Windows
+- Log connections to your instances and executed commands
+- Session log data can be sent to S3 or CloudWatch Logs
+- CloudTrail can intercept StartSession events
+
+\subsection{Systems Manager OpsCenter}
+- Resolve Operational Issues (OpsItems) related to AWS resources
+- OpsItems - issues, events and alerts
+- Aggregates information to resolve issue on each OpsItems such as:
+    - AWS Config changes and relationships
+    - CloudTrail Logs
+    - CloudWatch Alarms
+    - CloudFormation Stack Information
+- Provides Automation Runbook that you can resolve issues
+- EventBridge or CloudWatch Alarms can create OpsItems
 
 \section{AWS Cloud Map}
+\subsection{AWS Cloud Map}
+%TODO add diagram
+- A fully managed resource discovery service
+- Creates a map of the backend services / resources that your application depend on
+- You register your application components, their locations, attributes and health status with AWS Cloud Map
+- Integrated health checking (stop sending traffic to unhealthy endpoints)
+- Your applications can query AWS Cloud Map using AWS SDK, API or DNS
