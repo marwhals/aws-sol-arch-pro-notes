@@ -1,12 +1,277 @@
 \section{DyanamoDB}
 
-\section{Amazon OpenSearch}
+\subsection{DynamoDB - in short}
+- NoSQL database, fully managed, massive scale (1,000,000 rps)
+- Similar to Apache Cassandra (can migrate to DynamoDB)
+- No disk space to provision, max object size is 400kb
+- Capacity: provisioned (WCU, RCU and Auto Scaling) or on-demand
+- Support CRUD (Create, Read, Update, Delete)
+- Read: Eventually or strong consistency
+- Supports transaction across multiple tables (ACID support)
+- Backups available, point in time recovery
+- Table classes: Standard and Infrequent Access (IA)
 
+\subsection{DynamoDB - Basics}
+- DyanmoDB is made of tables
+- Each table has a primary key (must be decided at creation time)
+- Each table can have aan infinite number of times (= rows)
+- Each item has attributes (can be added over time - can be null)
+- Maximum size of a item is a 400kb
+- Data types supported are:
+    - ScalaTypes: String, Number, Binary, Boolean, Null
+    - Document Types: List, Map
+    - Set Types: String Set, Number Set, Binary Set
+
+\subsection{DynamoDB - Primary Keys}
+%TODO add diagram
+- Option 1: Partition Key only (HASH)
+- Partition key must be unique for each item
+- Partition key must be "diverse" so that the data is distributed
+- Example: user_id for a users table
+
+
+%TODO add diagram
+- Option 2: Partition Key + Sort Key
+- The combination must be unique
+- Data is grouped by partition key
+- Sort key == range key
+- Example: user-games table
+    - user_id for the partition key
+    - game_id for the sort key
+
+- \textbf{Example good sort key: timestamp}
+
+\subsection{DynamoDB - Indexes}
+- Object = partitioon key + optional sort key + attributes
+- LSI - Local Secondary Index
+    - Keep the same parition key
+    - Select an alternative key
+    - Must be defined at table creation time
+- GSI - Global Secondary Index
+    - Change the partition key and optionally the sort key
+    - Can be defined after the table is created
+- \textbf{You can only query by PK + sort key on the main table and indexes \neq RDS}
+
+\subsection{Amazon Kinesis Data Streams for DynamoDB}
+%TODO add diagram
+- You can use Kinesis Data Streams to capture item-level changes in DynamoDB
+- Customer and longer data retention period (> 24 hours in DynamoDB Streams)
+
+\subsection{DynamoDB Solution Architecture Indexing Objects in DynamoDB}
+%TODO add diagram
+API for object metadata
+    - Search by date
+    - Total storage used by a customer
+    - List of all object with certain attributes
+    - Find all objects uploaded within a date range
+
+\subsection{DynamoDB - DAX}
+%TODO add diagram
+- DAX = DynamoDB Accelerator
+- Seamless cache for DynamoDB, no application re-write
+- Writes go through DAX to DynamoDB
+- Micro second latency for cached reads and queries
+- Solives the Hot Key problem (too many reads)
+- 5 minutes TTL for cache by default
+- Up to 10 nodes in the cluster
+- Multi AZ (3 nodes minimuum reccommended for production)
+- Secure (Encryption at rest with KMS, VPC, IAM, CloudTrail....)
+
+\subsection{DynamoDB - DAX vs ElastiCache}
+%TODO add diagram
+
+\section{Amazon OpenSearch}
+\subsection{Amazon OpenSearch (ex ElasticSearch)}
+- New name is Amazon OpenSearch
+- ElasticSearch => OpenSearch
+- Kibana => OpenSearch Dashboards
+- Managed versions of OpenSearch (open-source project, fork of ElastiSearch)
+- Two modes: Managed cluster or Serverless cluster
+- Use cases:
+    - Log Analytics
+    - Real time application monitoring
+    - Security Analytics
+    - Full Text Search
+    - Clickstream Analytics
+    - Indexing
+
+\subsection{OpenSearch + OS Dashboards + Logstash}
+- OpenSearch (ex ElasticSearch): Provide search and indexing capability
+- OpenSearch Dashboard (ex Kibana)
+    - Provide real-time dashboards on top of the data that sits in OpenSearch
+    - Alternative to CloudWatch dashboards (more advanced capabilities)
+- Logstash:
+    - Log ingestion mechanism, use the "Logstash Agent"
+    - Alternative to CloudWatch Log (you decide on retention and granularity)
+
+\subsection{OpenSearch patterns DynamoDB}
+%TODO see diagram
+
+\subsection{OpenSearch patterns CloudWatch Logs}
+%TODO see diagram
 
 \section{RDS}
+- Engines: PostgreSQL, MySQL, MariaDB, IBM DB2, Oracle, SQL Server
+- Managed DB: provisioning, backups, patching, monitoring
+- Launched within a VPC, usually in a private subnet, control network access using security groups (important when using Lambda)
+- Storage by EBS, can increase volume size with auto-scaling
+- Backups: automated with point-in-time recovery. Backups expire
+- Snapshots: manual, can make copies of snapshots cross region
+- RDS Events: get notified via SNS for events (operations, outages.....)
 
+\subsection{RDS - Multi AZ and Read Replicas}
+
+\subsubsection{Multi-AZ}
+%TODO add diagram
+- Standby instance for failover in case of outage
+\subsubsection{Read Replicas}
+%TODO add diagram
+- Increase read, throughput. Eventual consistency. Can be cross-region
+
+\subsection{RDS - Distributing Reads across Replicas}
+%TODO add/see diagram
+
+\subsection{RDS - Security (reminder)}
+- KMS encryption at rest for underlying EBS volumes / snapshots
+- Transparent Data Encryption (TDE) for Oracle and SQL Server
+- SSL encryption to RDS is possible for all DB (in-flight)
+- IAM authentication for MySQL, PostgreSQL and MariaDB
+- Authorisation still happens within RDS (not in IAM)
+- Can copy an un-encrypted RDS snapshot into an encrypted one
+- CloudTrail cannot be used to track queries made within RDS
+
+\subsection{RDS - IAM Authetication}
+%TODO add diagram
+- IAM database authentication works with MariaDB, MySQL and PostgreSQL
+- You don't need a password, just an authentication token obtained through IAM and RDS API calls
+- Auth token has a lifetime of 15 minutes
+- Benefits
+    - Network in/out must be encrypted using SSL
+    - IAM to centrally manage users instead of DB
+    - Can leverage IAM Roles and EC2 instance profiles for easy integration
+
+\subsection{About RDS for Oracle - Exam Tips}
+%TODO see/add diagrams
+- Backups
+    - Use RDS backups for backups and restore to Amazon RDS for Oracle
+    - Use Oracle RMAN (Recovery Manager) for backups and restore to-non RDS (RDS not supported)
+- Real Application Clusters (RAC)
+    - RDS for Oracle does NOT support RAC
+    - RAC is working on Oracle on EC2 instances because you have full control
+- RDS for Oracle supports Transparent Data Encryption (TDE) to encrypt data before it's written to storage
+- DMS work on Oracle RDS
+
+\subsection{About RDS for MySQL}
+%TODO add diagram
+- You can use the native mysqldump to migrate a MySQL RDS DB to non-RDS
+- The external MySQL database can run either on-premises in your data center, or on an Amazon EC2 instance
+
+\subsection{RDS Proxy for AWS Lambda}
+%TODO add diagram
+- When using Lambda functions with RDS, it opens and maintains a database connection
+- This can result in a "TooManyConnections" exception
+- With RDS Proxy, you no longer need code that handles cleaning up idle connections and managing connection pools
+- Supports IAM authentication or DB authentication, auto-scaling
+- The lambda function must be deployed in you VPC, because RDS Proxy is never publicly accessible
+
+\subsection{RDS Solution Architecture Cross Region Failover}
+%TODO add/see diagram
 
 \section{Aurora - Part 1}
+- DB Engines: PostgreSQL-compatible and MySQL- compatible
+- Storage: Automatically grows up to 256TB, 6 copies of data, multi-AZ
+- Read Replicas: up to 15 RR, reader endpoint to access them all
+- Cross Region RR: entire database is copied (not select tables)
+- Load / Offload data directly from / to S3: efficient uuse of resources
+- Backup, Snapshots and Restore: same as RDS
 
+\subsection{Aurora High Availability and Read Scaling}
+%TODO add diagram
+- 6 copies of your data across 3 AZ
+    - 4 copies out of 6 needed for writess
+    - 3 copies out of 6 need for reads
+    - self healing with peer-to-peer replication
+    - storage is striped across 100s of volumes
+- Automated failover for master for less that 30 seconds
+- Master + up to 15 Aurora Read Replicas serve reads
+- Support for Cross Region Replication
 
-\section{Aurora - Part 2}
+\subsection{Aurora DB Cluster}
+%TODO add diagram
+
+\subsection{Aurora Endpoints}
+- Endpoints = Host Address + Port
+- Cluster Endpoint (Writer Endpoint)
+    - Connects to the current primary DB instance in the Aurora cluster
+    - Used for all write operations in the DB cluster (inserts, updates, deletes and queries)
+- Reader Endpoint
+    - Provides load-balancing for read only connection to all Aurora Replicas in the Aurora cluster
+    - Used only for read operations (queries)
+- Custom Endpoint
+    - Represent a set on DB instances that you choose in the Aurora cluster
+    - Used when you want to connect to different subset of DB instances with different capacities and configurations (e.g, different DB parameter group)
+- Instance Endpoint
+    - Connects to specific DB instances in the Aurora cluster
+    - Used when you want to diagnosis and fine tune a specific DB instance
+
+\subsection{Aurora - Customer Endpoints}
+%TODO add diagram
+- Define a subset of Aurora Instances as a Customer Endpoint
+- Example: Run analytical queries on specific replicas
+- The reader endpoint is generally not used after defining Customer Endpoints
+
+\subsection{Aurora Logs}
+%TODO add diagram
+- You can monitor the following types of Aurora MySQL log files:
+    - Error log
+    - Slow query log
+    - General log
+    - The audit log
+- These log files are either downloaded or published to CloudWatch Logs
+
+\subsection{Troubleshooting RDS and Aurora Performance}
+- Performance Insights: find issues by waits, SQL statements, hosts and users
+- CloudWatch Metrics: CPU, Memory, Swap Usage
+- Enhanced Monitoring Metrics: at host level, process view, per-second metric
+- Slow Query Logs
+
+\subsection{Aurora Serverless}
+%TODO add diagram
+- Automated database instantiation and auto-scaling based on actual usage
+- Good for infrequent, intermittent or unpredictable workloads
+- No capacity planing needing
+- Pay per second, can be most cost-effective
+
+\subsection{Aurora Serverless - Data API}
+%TODO add diagram
+- Access Aurora Serverless DB with a simple API endpoint (no JDBC connection needed)
+- Secure HTTPS endpoint to run SQL statements
+- No persistent DB connections management
+- Users must be granted permissions to Data API and Secrets Manager (where credentials are checked)
+
+\subsection{RDS Proxy for Aurora}
+%TODO add diagram/diagrams
+- Ability to create an additional read-only endpoint that connects to Aurora Read Replicas only
+
+\subsection{Global Aurora}
+%TODO add diagram
+- Aurora Cross Region Read Replicas
+    - Useful for disaster recovery
+    - Simple to put in place
+- Aurora Global Database (recommended)
+    - 1 Primary Region (read / write)
+    - Up to 10 secondary (read-only) region, replication lag is less that 1 second
+    - Up to 16 Read Replicas per secondary region
+    - Helps for decreasing latency
+    - Promoting another region (for disaster recovery) has an RTO of < 1 minute
+    - Ability to manage the RPO in Aurora PostgreSQL
+
+\subsection{Aurora Global - Write Forwarding}
+%TODO add diagram
+- Enables Secondary DB Clusters to forward SQL statements that perform write operations to the Primary DB Cluster
+- Data is always changed first on the Primary DB Cluster, then replicated to the Secondary DB Clusters
+- Primary DB Cluster always has an up-to-date copy of all data
+- Reduce the number of endpoints
+
+\subsection{Covert RDS to Aurora}
+%TODO add / see diagram
