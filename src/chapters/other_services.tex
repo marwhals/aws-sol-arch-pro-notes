@@ -3,25 +3,216 @@
 \section{IMPORTANT: CodeCommit Discontinuation}
 
 \section{CI/CD}
+- Developer push the code to a commit repository
+- A testing build server check the code as it's pushed (codebuild / jenkins CI/ etc.....)
+- The developer gets feedback about the tests anc heck that have passed / failed
+- Find bugs early fix bugs
+- Delvier faster as the code is tested
+- Deploy often
+- Happier developre as they're unblcoked
+%TODO add diagram
+
+- Ensure that the software can be released reliablity whenever needed
+- Ensures deployments happen often and are quick
+- Shift ways from one release every 3 months to 5 relases a day
+- That uusually means automated deployment
+    - CodeDeploy
+    - Jenkins Cd
+    - Spinnaker
+    - Etc.....
+%TODO diagrma
+
+\subsection{Technology Stack for CICD}
+%TODO diagram
+
+\subsection{CICD Architecture}
+%TODO add diagram
+
+\subsection{CodeCommit Trigger for AWS Lambda}
+%TODO add diagram
+- Every push to CodeCommit can trigger a Lambda function
+- The Lambda function can scan for leaked AWS credential on every code push, and disable them automatically to remedy the issue
+
+\subsection{Good to know CICD}
+- You can use a manual approval stage in CodePipeline
+- Running unit tests CodeCommit + CodeBuild + Code Pipeline
+%TODO add diagrma
+- Build and Store Docker Images: CodeBuild ECR
+%TODO add diagrams
+- Automated CloudFormation deployment: CodePipeline
+
+\subsection{CodePipeline - GitHub integration}
+%TODO add diagram
 
 \section{Amazon CodeGuru}
+- An ML powered service for automated code reveiews and application performance reccomendations
+- Provides two functionalities
+    - CodeGuru Reviewer : automated code reviews for static code analysis (development)
+    - CodeGuru Profiler : visibility / reccomendations about application performance during runtime (produciton)
+
+%TODO diagram
+
+\subsection{Amazon CodeGuru Reviewer}
+- Identify critical issues, security vulnerabiitles and hard-to-find buigs
+- Examples: common coding best practices, resource leaks, security detection, input validation
+- Uses machine learning and autmated reasonsing
+- Hard learned lessagoins across million of code reviews on 1000s of open source amazon repositories
+- Supports Java and Python
+- Integrations with GitHub, Bitbucket and AWS CodeCommit
+
+\subsection{Amazon CodeGuru Profiler}
+- Helps understand the runtime behaviour of your application
+- Example: identify if you applicaiton is consuming excessive CPU capacity on a logging routine
+- Features:
+    - Identify and remove code inefficiencies
+    - Iimprove applcation performance (e.g reduce CPU utilisation)
+    - Decrease compute costs
+    - Provides heap summary (identify which object using up memeory)
+    - Anamoly detection
+- Support applications running on AWS or on-premise
+- Minimal overhead on application
 
 \section{Alexa for Business, Lex and Connect}
+- Alexa for Business
+    - Use Alexa to help employees be more productive in meeting rooms and their desk
+    - Measure and increase the utilisation of meeting rooms in their workplace
+- Amazon Lex: (Same technology that powers Alexa)
+    - Automatical Speech Recognition (ASR) to convert speech to text
+    - Natural language Understanding to recognise the intent of text, callers
+    - Helps build chatbots, call centre bots
+- Amazon Connect:
+    - Receive calls, create contact flows, cloud-based virtual contact centre
+    - Can integrate with other CRM systems or AWS
+%TODO add diagram
 
 \section{Kinesis Video Streams}
+- One video per streaming device (producers)
+    - Security cameras,body worn camera, smartphone
+    - Can use a kinesis video streams producer library
+- Underlying data is stored in S3 (but we don't have access to it)
+- Cannot output the stream data to S3 (must build customer solution)
+- Consumers
+    - Consumed by EC2 instances for real time analysis, or in batch
+    - Can leverage the Kinesis Video Stream Parser Library
+    - Integration with AWS Rekognition for facial detection
+
+\subsection{Video Streaming and Rekognition}
+%TODO diagram 
 
 \section{AWS WorkSpaces}
+- Managed, Secure Cloud Desktop
+- Great to eliminate management of on-premises VDI (Virtual Desktop Infrastructure)
+- Pricing is either on-demand (pay per hour) or monthly subscription
+- Secure, Encrypted, Network Isolation
+- Integrated with Microsoft Active Directory
+%TODO add diagram
+
+- Workspaces Application Manged (WAM)
+    - Deploy and Mangage applications are virtualised application containers
+    - Provision at scale and keep the application updated using WAM
+- Windows updates
+    - By default, Amazon Workspaces are configured to install software updates
+    - Amazon WorkSpaces with Windows will have Window Update turned on
+    - You have full control over the Windows Update Frequency
+- Maintenance Windows
+    - Updates are installed during maintenance windows (you define them)
+    - Always On WorkSpaces: default is from 00h00 to 04h00 in Sunday morning
+    - AutoStop Workspaces: automatically start once a month to install updates
+    - Manual maintenance: you define your windows and perform maintenance
+
+\subsection{Amazon Workspaces - Cross Region Redirection}
+%TODO add diagram
+
+\subsection{Amazon WorkSpaces IP Access Control Groups}
+- Similar to security groups for Amazon WorkSpaces
+- List of IP addresses / CIDR address ranges that users are authorsied to connect from
+- If users access WorkSpaces through VPN or NAT, the IP Access Control Group must authorise the public IP of these
 
 \section{Amazon AppStream 2.0}
+- Desktop Application Streaming Service
+- Deliver to any computer withouth aquiring provisioning infrastructure
+- The application is delivered from within a web browser
+
+\subsection{Amazon AppStream 2.0 vs WorkSpaces}
+- Workspaces
+    - Fully managed VDI and desktop available
+    - The users connect to VDI and open native or WAM applications
+    - Workspaces are on-demand or always on
+
+- AppStream 2.0
+    - Stream a desktop application to web browsers (no need to connect to a VDI)
+    - Works with any device (that has a browser)
+    - Allow to configure an instance type per application type (CPU, RAM, GPU)
 
 \section{AWS Device Farm}
+- Application testing service for your mobile and web applications
+- Test across real browsers and real mobile devices
+- Fully automated using framework
+- Improve the quality of web and mobile apps
+- Generates video and logs to document the issues encountered
+- Can remote log-in to device for debugging
 
 \section{Amazon Macie}
+- Amazon Machie is a fully managed data security and data privacy service that uses machine learning and pattern matching to discover and protect yoiur sensitive data in AWS
+- Macie helps indentify and alert you to sensitive daata such as pesonally identifiable PII
+%TODO add diagram
 
 \section{Amazon SES}
 
+\subsection{Amazon Simple Email Service (Amazon SES)}
+- Fully managed service to send emails securely, globally and at scale
+- Allows inbound / outbound emails
+- Repution dashboard, performance insights, anti-spam feedback
+- Provides statistics such as email deliveries, bounces, feedback loop results, email open
+- Supports DomainKeys Identified Mail (DKIM) and Sender Policty Framework (SPF)
+- Flexible IP deployment: shared dedicated and customer-owned IPs
+- Send emails using your application using AWS console, APIs or SMTP
+- Use cases: transactional, marketing and bulk email communications
+%TODO add diagram
+
+\subsection{Amazon SES - Configuration Sets}
+%TODO add diagram
+- Configure sets help you customise and analyse your email send events
+- Event destinsation:
+    Kinesis Data Firehose: recieves metrics (number of sends, deliverie, opens, clicks, bounces and complaints) for each email
+    - SNS: for immediate feedback on bounce and compliant information
+- IP pool management: use IP pools to send particular types of emails
+
+
 \section{Amazon Pinpoint}
+%TODO diagram
+- Scalable 2-way (outbound/ inbound) marketing communications service
+- Supports email, SMS, push, voice and in-app messaging
+- Ability to segment and personalise messages with the right content to custoemrs
+- Possibility to receive replies
+- Scales to billions of messages per day
+- Use cases: run campaigns by sending marketing, bulk, transactional SMS messagesion
+- Versus Amazon SNS or Amazon SES
+    - In SNS and SES you managed each messages' audience content and delivery schedule
+    - In Amazon Pinpoint, you create message templates, delivery schedules, highly trageted segments and full campagins
 
 \section{EC2 Image Builder}
+- Used to automate the creation of Virtual Machines or container images
+- => Automate the creation, maintain, validate and test EC2 AMIs
+- Can be run on a schedule (weekly, whenever packages are updated etc,.......)
+- Free service (only pay for the underlying resources)
+- Can publish AMI to multiple regions and multiple accounts
+%TODO add diagram
+
+\subsection{EC2 Image Builder - CICD Architecture}
+%TODO add diagram
 
 \section{Other Services Summary}
+\subsection{AWS IoT Core}
+%TODO add diagram
+- IoT stands for "Internet of Things" - the network of internet-connected devices that are able to collect and transfer data
+- AWS IoT Core allows you to easily connect IoT devices to the AWS cloud
+- Serverless, secure and scalable to billions of devices and trillions of messages
+- Integrates with a lot of AWS serivvces (Lambda, S3, SageMaker, etc)
+- Build IoT application that gather, process,analyse and act on data
+
+\subsection{IoT - Integrations}
+%TODO add diagram
+
+\subsection{IoT - Kinesis Data Firehose}
+%TODO add diagram
