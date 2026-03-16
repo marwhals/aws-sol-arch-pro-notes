@@ -1,24 +1,412 @@
 
 \section{Cloud Migration Strategies - The 7Rs}
+%TODO add diagram
+https://aws.amazon.com/blogs/enterprise-strategy/new-possibilities-seven-strategies-to-accelerate-your-application-migration-to-aws/
+
+- Retire
+    - Turn off things you don't need (maybe as a result of Re-acrhictecting)
+    - Helps with reducing the surface for attacks (more security)
+    - Save cost, maybe up to 10\% to 20\%
+    - Focus your attention on resource that must be maintained
+- Retain
+    - Do nothing for now (its still a decision to make in a Cloud Migration)
+    - Security, data compliance, performance, unresolved dependencies
+    - No business value to migrate, mainframe or mid-range and non-x86 Unix apps
+- Relocate
+    - Move apps from on-premises to its Cloud version
+    - Move EC2 instances to a different VPC, AWS account or AWS region
+    - Example: Transfer servers from VMWare Software-defined Dataa Centre (SSDC) to VMware Cloud on AWS
+- Rehost "lift and shift"
+    - Simple migrations by re-hosting on AWS (applications, databasess, data......)
+    - Migrate machines (physical, virtuaal, another cloud) to AWS cloud
+    - No cloud optimisations being done, applications is migrated as is
+    - Cloud save as much as 30\% on cose
+    - Example: Migrate using AWS application migration service
+- Replatform "lift and reshape"
+    - Example: migrate your database to RDS
+    - Example: migrate your application to Elastic Beanstalk
+    - Not changing the core architecture but leverage some Cloud optimisations
+    - Save time and money by moving to a fully manged service or Serverless
+- Repurchase "drop and shop"
+    - Moving to a different product while moving to the Cloud
+    - Often you move to SaaS platform
+    - Expensive in the short term, but quick to deploy
+    - Example: CRM to Salesforce.com, HR to Workday, CMS to Drupal
+- Refactor / Re-acrchitect
+    - Reimaging how the appilcation is architected using Cloud Native features
+    - Driven by the need of the business to add features and improve scalability, performance, secuirty and agility
+    - Move from a monolithic application to micro-services
+    - Example: move an application to Serverless architectures, use AWS S3
 
 \section{Storage Gateway}
+- Bridge between on-premises data and cloud data
+- Use cases:
+    - disaster recovery
+    - backup and restore
+    - tiered storage
+    - on-premises cache and low-latency file access
+- Types of Storage Gateway
+    - S3 File Gateway
+    - Volume Gateway
+    - Tape Gateway
 
-\section{Storage Gateway - Advanced Concepts}
+\subsection{Amazon S3 File Gateway}
+- Configured S3 buckets are accessible using the NFS and SMB protocol
+- Most recently used data is cached in the file gateway
+- Supports S3 Standard, S3 Standard IA, S3 One Zone A, S3 Intelligent Tiering
+- Transition to S3 Glacier using a lifecucle policy
+- Bucket access using IAM roles for each File Gateway
+- SMB Protocol has integration with Active Directory (AD) for user authentication
+%TODO add diagrma
+
+\subsection{Volume Gateway}
+- Block storage using iSCSI protocol backed by S3
+- Backed by EBS snapshots which can help restore on-premises volumes!
+- Cached Volumes: low latency access to most recent data
+- Stored Volumes: entire dataset is on premise, scheduled backups to S3
+%TODO add diagram
+
+\subsection{Tape Gateway}
+- Some companies hav backup proceses using physical tapes
+- With tape gateway, companies use the same processses but, in the cloud
+- Virtual Tape Library (VTL) bbacked by S3 and glacier
+- Back up data using existing tape-based processes (and iSCSI interface)
+- Works with leading backup software vendors
+%TODO add diagram
+
+\subsection{AWS Storage Gateway}
+%TODO add diagram
+
+\subsection{File Gateway: Extentions}
+%TODO add diagrma
+
+\subsection{File Gateway: Read only replicas}
+%TODO add diagram
+
+\subsection{File Gateway: Backup and Lifecycle Policies}
+%TODO add diagram
+
+\subsection{File Architectures: Other Possibilities}
+- Amazon S3 ObjectVersionoing
+    - Ability to store multiple object verions as they are modified
+    - Helpful to restore a file to a preivous version
+    - Could restore an entire file system to a previous version
+    - Must use the "RefreshCache" API on the gateway to be notified of restore
+
+- Amazon S3 object lock
+    - Enables to have the File Gateway for Write Once Read Many (WORM) data
+    - If there are file modifications or renames in the file share clients, the file gateway creates a new version fo the object without affecting priori verions and the original locked version will remain unchanged
+
+
+%\section{Storage Gateway - Advanced Concepts}
 
 \section{Snow Family}
+\subsection{AWS Snowball}
+- Highly-secure portable devices to collect and process data a tthe edge and migraate data into and out of AWS
+- Helps migrate up to petabytes of data
+
+Device - Snowball Edgee Storage Optimised
+Compute - 104vCPUs
+Memory - 416GB
+Storage - 210 TB
+
+Device - Snowball Edge Compute Optimised
+Compute - 104vCPUs
+Memory - 416GB
+Storage (SSD) - 28TB
+
+\subsection{Data Migrations with Snowball}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        Time to transfer & Column 2 & Column 3 & Column 4 \\
+        \hline
+        Row 1 & 100MBps & 1Gbps & 10Gbps \\
+        \hline
+        10 TB & 12 Days & 30 hours & 3 hours \\
+        \hline
+        100TB & 124 days & 12 days & 30 hours \\
+        \hline
+        1 PB & 3 years & 124 days & 12 days \\
+        \hline
+        \hline
+    \end{tabular}
+    \caption{Table caption}
+\end{table}
+
+Challenges
+- Limited connectivity
+- Limited bandwidth
+- High network cost
+- Shared bandwidht (can't maximise the line)
+- Connection stability
+
+AWS Snowball: offline devices to perform data migrations
+- If it takes more than a week to transfer over the network use snowball devices!
+
+\subsection{Diagrams}
+- Direct upload to S3:
+%TODO add diagrma
+- With Snowball
+%TODO add diagram
+
+\subsection{What is Edge Computing?}
+- Process data while its being created on an edge location
+--- A truck on the road, a ship on the sea, mining station underground........
+- The locations may have limited internet and no access to compuring power
+- We setup a snowball edge device to do edge computing
+    - Snowball edge compute optimised (dedicated for that use case) and Storage Optimsed
+    - Run EC2 instances or Lambda function at the edge
+- Use cases: preprocess data, machine learning, transcoding media
 
 \section{Snow Family - Improving Performance}
 
+- Most impactful to least:
+    - Perform multiple  write oprations at one time - from multiple terminals
+    - Transfer small files in batches - zip up small fiels until at least 1Mb
+    - Don't perform other operations on files during transfer
+    - Reduce local network use
+    - Eliminate unncessary hops - directly connet to the computer
+
+- The data transfer rate using the file interface is typically between 25 MB/s and 40MB/s.
+If you need to transfer data faster than this use the Amazon S3 Adapter for Snowball, which has a data transfer rate typically between 250Mb/s and 400MB/s
+
 \section{AWS DMS - Database Migration Services}
+%TODO diagram
+- Quickly and securely migrate databases to AWS, resilient, self healing
+- The source database remains available during the migration
+- Suports:
+    - Homogenous migrations; ex Oracle to Oracle
+    - Hetrogeneous migrations: Microsoft SQL Server to Aurora
+- Continuous Data Replication using CDC
+- You must create an EC2 instacne to perform the replication tasks
+
+\subsection{DMS Sources and Targets}
+- Sources
+-- On-premises and EC2 instances databases: Oracles, MS SQL Server, MySQL, MariaDB, PostgreSQL, MongoDB, SAP, DB2
+-- Azure: Azure SQL Database
+-- Amazon RDS: all including Aurora
+-- Amazon S3
+-- DocumentDB
+
+- Targets
+-- On-preimises and EC2 instances databases: Oracle, MS SQL Server, MySQL, MariaDB, PostgreSQL, SAP
+-- Amazon RDS including Aurora
+-- Amazon Refshift
+-- Amazon DynamoDB
+-- Amazon S3
+-- OpenSearch Service
+-- Kinesis Data Streams
+-- DocumentDB
+
+\subsection{AWS Schema Conversion Tool (SCT)}
+- Convert your Databases Schema from one engine to another
+- Example OLTP: (SQL Server to Oracle) to MySQL, PostgreSQL, Aurora
+- Example OLAP: (Teradata or Oracle) to Amazon Redshift
+%TODO diagram
+- You do not need to use SCT if you are migrating the same DB engine
+-- Ex: on-premises PostgreSQL => RDS PostgreSQL
+-- The DB engine is stil PostgreSQL (RDS is the platform)
+
+\subsection{DMS - Good things to know}
+- Works over VPC peering, VPN (site to site, software), Direct Connect
+- Supports Full Load, Full Load + CDC or CDC only
+- Oracle
+    - Souruce: Supports TDE for tthe source usign "BinaryReader"
+    - Target: Supports BLOBs in tables that have a primary key and TDE
+- OpenSearch:
+    - Source: does not exist
+    - Target: possible to migrate from a relational database using DMS
+    - Therefore, DMS cannot be used to replica OpenSearch data
+
+\subsection{Snowball + Database Migration Service (DMS)}
+- Larger data migrations can include many terabytes of information
+- Can be limited due to network bandwidth or size of data
+- AWS DMS can use Snowball Edge and Amazon S3 to speed up migration
+- Following stages:
+    1) You use the AWS Schema Conversion Tool (AWS SCT) to extract the data locally and move it to an edge device
+    2) You ship the Edge device or devices back to AWS
+    3) After AWS receives your shipment, the edge device automatically loads its data into an Amazon S3 bucket
+    4) AWS DMS takes the files an migrates the data t othe target data store. If you are using change data capture (CDC), those updates are written to the Amazon S3 bucket and then applie to the target data store.
 
 \section{AWS CART - Cloud Adoption Readiness Tool}
+\subsection{AWS Cloud Adoption Tool (CART)}
+- Helps organisations develop efficient and effective plans for cloud adoptions and migrations
+- Transforms your idea of moving to the cloud into a detailed plan that follows AWS best practices
+- Answer a set of questions across six perspectives (business, people, process, platform, operations, security)
+- Generates a custome report on your level of migration readieness
+%TODO see diagram
 
 \section{Disaster Recovery}
 
+- Any event that has a negative impact on a companys business continuity or finances is a disaster
+- Disaster recovering (DR) is about preparing for and recovering from a disaster
+- What kind of disaster recovery
+    - On-premises => on-premises: Traditional DR and very expensive
+    - On-premises => AWS cloud: hybrid recovery
+    - AWS Cloud Region A => AWS Cloud Region B
+- Nee to define two terms:
+    - Recvoery point objective RPO
+    - Recovery Time Objective RTO
+
+\subsection{RPO and RTO}
+%TODO see diagram
+
+\subsection{Disaster Recovery Strategies}
+- Backup and Restore
+- Pilot Light
+- Warm Standby
+- Hot Site/ Multi Site Approach
+%TODO add diagram
+
+\subsection{Backup and Restore (High RPO)}
+%TODO add diagram
+
+\subsection{Disaster Recovery - Pilot Light}
+- A small version of the app is always running in the cloud
+- Useful for the critical core (pilot light)
+- Very simiar to backup and restore
+- Faster than Backup and Restore as critical systems are already up
+%TODO add diagrma
+
+\subsection{Warm Standby}
+- Full system is up and running, but at minimum size
+- Upon disaster, we can scale to production load
+%TODO add diagram
+
+\subsection{Multi Site / Hot Site Approach}
+- Very low RTO (minutes or seconds) - very expensive
+- Full production Scale is running AWS and on Premise
+%TODO add diagram
+
+\subsection{All AWS multi region}
+%TODO add diagram
+
+\subsection{Disaster Recovery Tips}
+- Backup
+    - EBS Snapshots, RDS automated backups / Snapshots etc
+    - Regulare pushes to S3 / S3 IA / Glacier, Lifecycle Policy, Cross Region Replication
+    - From on-premises, Snowball or Storage Gateway
+- High Availabilty
+    - Use Route53 to migrate DNS over from Region to Region
+    - RDS Multi-AZ, ElastiCache Multi-AZ, EFS, S3
+    - Site to Site VPN as a recovery from Direct Connect
+- Replication
+    - RDS Replication (Cross Region), AWS Aurora + Global Database
+    - Database Replication from on-premises to RDS
+    - Storage Gateway
+- Automation
+    - CloudFormation / Elastic Beanstalk to re-create a whole new environment
+    - Recover / Reboot EC2 instances with CloudWatch if alarms faail
+    - AWS Lambda functions for customised automations
+- Chaos
+    - Netflix has a "simian army" randomly terminating EC2
+
 \section{AWS FIS - Fault Injection Simulator}
 
+- A fully managed service for running fault injection experiments on AWS workloads
+- Based on Chaos engineering - stressing an application by creating disruptive events (e.g sudden increase in CPU or memeory), observing how the system responds and implementing improvements
+- Helps you uncover hidden bugs and performance bottlenecks
+- Supports the follwoing AWS services: EC2, ECS, EKSc, RDS
+- Use pre-built templates that generate the desired disruptions
+%TODO add diagram
+
 \section{VM Migrations Serrvices}
+\subsection{AWS Application Discovery Service}
+- Plan migration projects by gathering information about on-premises data centres
+- Server utilisation data and dependency mapping are important for migraitons
+- Agentless Discovery (AWS Agentless Discovery Connector)
+- Open Virtual applicant (OVA) package that can be deplyed to a VMWare host
+- VM inventory, configuration and performance history such as CPU, memory and disk usage
+- OS Agnostic
+- Agent-based Discovery (AWS Application Discovery Agent)
+- System configuration, system perofrmance, running proceses and details of the network connection between systems
+- Support microsoft server, amazon linux, Ubuntu, RedHat, CentOS, SUSE
+- Result data can be exported as CSV or viewed within AWS migration hub
+- Data can be explored using pre-defined queies in Amazon Athena
+
+\subsection{AWS Application Discovery Service - Migration Hub Data Exploration}
+- Allows you to use Amazon Athena to analyse data collected from on-premimses servers during discovery
+- Data is automatically stored in S3 bucket at regular intervals
+- Use Pre-defined or customer queries in Amazon Athena to analyse data
+- Example: type of processes running on each server
+- Ability to upload additional data source such as Configruation Management Database (CMDB) exports
+- Integrate Athena with QuickSight to visualise data
+%TODO add diagram
+
+\subsection{AWS Application Migration Service (MGN)}
+- The "AWS evolution" of CloudEndure Migration, replacing AWS Server Migration Service (SMS)
+- Lift-and-shift (rehost) solution which simplify migrating application to AWS
+- Converts your physical, virtual and cloud-based server to run natively on AWS
+- Supports wide range of platforms, Operating Systems and databases
+- Minitimal downtiem, reduced costs
+%TODO add diagram
+
+\subsection{AWS Elastic Disaster Recovery (DRS)}
+- Used to be named (CloudEndure Disaster Recovery)
+- Quickly and easily reocver your physical, vritual and cloud-based servers into AS
+- Example: protect your most cirtical databases (including Oracle, MySQL and SQL Server)
+- Continuous block-level replication
+%TODO diagram
+
+\subsection{On-premises strategy with AWS}
+- Ability to download Amazon Linux 2 AMI as a VM (.iso format)
+-- VMWare, KVM, VirtualBox (OracleVM), Microsoft Hyper-V
+- AWS Application Discovery Service
+    - Gather information about your on-premises servers to plan a migration
+    - Server utilisation and dependency mappings
+    - Track with AWS migration hub
+- AWS Application Migration Service (MGN)
+    - Replacing AWS Server Migration Services and CloudEndure Migration
+    - Incremental replication of on-premises live servers to AWS
+    - Migrates the entire VM into AWS
+- AWS Elastic Disaster Recovery (DRS)
+    - Replacing CLoudEndure Disaster Recovery
+    - Recover on-premises workloads onto AWS
+- AWS Database Migration Service (DMS)
+    - rplicate on-premises => AWS, AWS => AWS, AWS => on-premises
+    - Works with various database techinologies (oracle, MySQL, DynamoDB, etc)
 
 \section{AWS Migration Evaluator}
+- Helps you build a data-driven business case for migration to AWS
+- Provides a clear baseline of what you organisation is running to day
+- Install Agentless Collector to conduct broad-based discovery
+- Take a snapshot of on-premises foot-print, server dependencies
+- Analyse current state, define target state then develop migration plan
+%TODO add diagram
+
 
 \section{AWS Backup}
+- Full managed service
+- Centrally manage and automate backups across AWS services
+- No need to create custome scripts and manual processes
+- Supported services
+    - Amazon EC2 / Amazon EBS
+    - Amazon S3
+    - Amazon RDS (all DBs engines) /  Amazon Aurora / Amazon Dyanamo DB
+    - Amazon DocumentDB / Amazon Neptune
+    - Amaozn EFS / Amazon FSx (Lustre and Windows File Server)
+    - AWS Storage Gateway (Volume Gateway)
+- Supports cross-region backups
+- Support cross-account backups
+
+- Supports PITR for supported services
+- On-Demand and Scheulded backups
+- Tag-based backup policies
+- You create backup policis known as Backup plans
+    - Backup frequencey (every 12 hours, daily, weekly, monthly, cron expression)
+    - Backup window
+    - Transition to Cold Storage (Never, Days, Weeks, Months, Years)
+    - Retention Period (Always, Days, Weeks, Months, Years)
+
+%TODO add diagram
+
+\subsection{AWS Backup Vault Lock}
+- Enforce a WORM (Write Once Read Many) state for all the backups that you store in your AWS backup vault
+- Additional layer of defence to protect your backups against
+    - Inadvertent or malicious delete operations
+    - Updates that shorten or alter retention periods
+- Even the root user cannot delete backups when enabled
+%TODO add diagrma
