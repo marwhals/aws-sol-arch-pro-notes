@@ -15,11 +15,40 @@
 \usepackage{helvet}
 \usepackage{arydshln}
 \usepackage{tikz}        % For creating diagrams and drawing
+\usetikzlibrary{
+    positioning,
+    arrows.meta,
+    shapes,
+    fit,
+    backgrounds,
+    calc
+}
 \usepackage{pgfplots}    % For plotting graphs
 \usepackage{wasysym}
 \usepackage{float}
 \usepackage{coptic}
+\usepackage{xcolor}
 
+\definecolor{awsorange}{RGB}{255,153,0}
+\definecolor{awsblue}{RGB}{35,47,62}
+
+% AWS icon command
+\newcommand{\awsicon}[4]{
+    \node (#1) at #2 {
+        \begin{tabular}{c}
+        \includegraphics[width=1.8cm]{#3} \\
+        #4
+        \end{tabular}
+    };
+}
+
+\tikzset{
+    awsarrow/.style={
+        -{Latex[length=3mm]},
+        thick,
+        draw=awsorange
+    }
+}
 
 %\usepackage{amstex} % Helvetica as a sans-serif font alternative
 \renewcommand{\rmdefault}{phv} % Set the default font family to Helvetica
@@ -62,6 +91,32 @@
     \end{itemize}
 
     %Exam study strategy notes here - Targets the SAP-C02
+
+    \chapter{Simple AWS Architecture}
+
+    \begin{figure}[H]
+        \centering
+        \begin{tikzpicture}[
+            node distance=4cm
+        ]
+% EC2
+            \awsicon
+            {ec2}
+            {(0,0)}
+            {aws_icons/Arch_Amazon-EC2_64.png}
+            {EC2 Web Server}
+
+% S3
+            \awsicon
+            {s3}
+            {(5,0)}
+            {aws_icons/Res_Amazon-Simple-Storage-Service_Bucket-With-Objects_48.png}
+            {S3 Bucket}
+% Arrow
+            \draw[awsarrow] (ec2) -- (s3);
+        \end{tikzpicture}
+        \caption{Simple EC2 to S3 Architecture}
+    \end{figure}
 
     \chapter{Identity \& Federation}
     \include{chapters/indentity_and_federation}

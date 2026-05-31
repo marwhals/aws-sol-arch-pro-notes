@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.29)  25 JUN 2025 22:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.29)  31 MAY 2026 16:53
 entering extended mode
 **./main.tex
 (main.tex
@@ -678,6 +678,100 @@ File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 kz/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflib
+raryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowinset=\dimen280
+\pgfarrowlength=\dimen281
+\pgfarrowwidth=\dimen282
+\pgfarrowlinewidth=\dimen283
+)
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes
+\pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes
+\pgflibraryshapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes
+\pgflibraryshapes.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes
+\pgflibraryshapes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibraryshapes.callouts.code.tex
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes
+\pgflibraryshapes.callouts.code.tex))
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes
+\pgflibraryshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodepartlowerbox=\box67
+\pgfnodeparttwobox=\box68
+\pgfnodepartthreebox=\box69
+\pgfnodepartfourbox=\box70
+\pgfnodeparttwentybox=\box71
+\pgfnodepartnineteenbox=\box72
+\pgfnodeparteighteenbox=\box73
+\pgfnodepartseventeenbox=\box74
+\pgfnodepartsixteenbox=\box75
+\pgfnodepartfifteenbox=\box76
+\pgfnodepartfourteenbox=\box77
+\pgfnodepartthirteenbox=\box78
+\pgfnodeparttwelvebox=\box79
+\pgfnodepartelevenbox=\box80
+\pgfnodeparttenbox=\box81
+\pgfnodepartninebox=\box82
+\pgfnodeparteightbox=\box83
+\pgfnodepartsevenbox=\box84
+\pgfnodepartsixbox=\box85
+\pgfnodepartfivebox=\box86
+)))
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibraryfit.code.tex
+File: tikzlibraryfit.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibrarybackgrounds.code.tex
+File: tikzlibrarybackgrounds.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@layerbox@background=\box87
+\pgf@layerboxsaved@background=\box88
+)
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplots.sty
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.re
 vision.tex)
@@ -690,7 +784,7 @@ e.code.tex
 \t@pgfplots@toka=\toks37
 \t@pgfplots@tokb=\toks38
 \t@pgfplots@tokc=\toks39
-\pgfplots@tmpa=\dimen280
+\pgfplots@tmpa=\dimen284
 \c@pgfplots@coordindex=\count325
 \c@pgfplots@scanlineindex=\count326
 
@@ -761,16 +855,16 @@ ths.code.tex)
 kz/libraries\tikzlibrarydecorations.code.tex
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodul
 edecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen281
-\pgfdecoratedremainingdistance=\dimen282
-\pgfdecoratedinputsegmentcompleteddistance=\dimen283
-\pgfdecoratedinputsegmentremainingdistance=\dimen284
-\pgf@decorate@distancetomove=\dimen285
+\pgfdecoratedcompleteddistance=\dimen285
+\pgfdecoratedremainingdistance=\dimen286
+\pgfdecoratedinputsegmentcompleteddistance=\dimen287
+\pgfdecoratedinputsegmentremainingdistance=\dimen288
+\pgf@decorate@distancetomove=\dimen289
 \pgf@decorate@repeatstate=\count330
-\pgfdecorationsegmentamplitude=\dimen286
-\pgfdecorationsegmentlength=\dimen287
+\pgfdecorationsegmentamplitude=\dimen290
+\pgfdecorationsegmentlength=\dimen291
 )
-\tikz@lib@dec@box=\box67
+\tikz@lib@dec@box=\box89
 )
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
 kz/libraries\tikzlibrarydecorations.pathmorphing.code.tex
@@ -783,12 +877,12 @@ tions\pgflibrarydecorations.pathreplacing.code.tex))
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzli
 brarypgfplots.contourlua.code.tex)
 \pgfplots@numplots=\count331
-\pgfplots@xmin@reg=\dimen288
-\pgfplots@xmax@reg=\dimen289
-\pgfplots@ymin@reg=\dimen290
-\pgfplots@ymax@reg=\dimen291
-\pgfplots@zmin@reg=\dimen292
-\pgfplots@zmax@reg=\dimen293
+\pgfplots@xmin@reg=\dimen292
+\pgfplots@xmax@reg=\dimen293
+\pgfplots@ymin@reg=\dimen294
+\pgfplots@ymax@reg=\dimen295
+\pgfplots@zmin@reg=\dimen296
+\pgfplots@zmax@reg=\dimen297
 )
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
 kz/libraries\tikzlibraryplotmarks.code.tex
@@ -808,9 +902,9 @@ LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count332
 \float@exts=\toks41
-\float@box=\box68
+\float@box=\box90
 \@float@everytoks=\toks42
-\@floatcapt=\box69
+\@floatcapt=\box91
 )
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/cbcoptic\coptic.sty
 Package: coptic 2010/01/09 v.0.2 Claudio Beccari
@@ -838,46 +932,48 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 )
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 3
-7.
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 6
+6.
  (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
-(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\out\main.aux)
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\out\main.aux
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\out\chapters/ind
+entity_and_federation.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for LCOP/coptic/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for LCOP/coptic/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
 
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
 kii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count333
-\scratchdimen=\dimen294
-\scratchbox=\box70
+\scratchdimen=\dimen298
+\scratchbox=\box92
 \nofMPsegments=\count334
 \nofMParguments=\count335
 \everyMPshowfont=\toks43
 \MPscratchCnt=\count336
-\MPscratchDim=\dimen295
+\MPscratchDim=\dimen299
 \MPnumerator=\count337
 \makeMPintoPDFobject=\count338
 \everyMPtoPDFconversion=\toks44
@@ -926,7 +1022,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 37.
+Package hyperref Info: Link coloring OFF on input line 66.
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -939,9 +1035,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count339
 )
-LaTeX Info: Redefining \ref on input line 37.
-LaTeX Info: Redefining \pageref on input line 37.
-LaTeX Info: Redefining \nameref on input line 37.
+LaTeX Info: Redefining \ref on input line 66.
+LaTeX Info: Redefining \pageref on input line 66.
+LaTeX Info: Redefining \nameref on input line 66.
 
 (C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\out\main.out)
 (C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\out\main.out)
@@ -954,7 +1050,7 @@ LaTeX Info: Redefining \nameref on input line 37.
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 37.
+ on input line 66.
 
 [1
 
@@ -970,12 +1066,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [2
 
-]
+] (C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\out\main.toc
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 5.
 
-Package hyperref Warning: old toc file detected, not used; run LaTeX again.
-
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/wasysym\uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+))
 \tf@toc=\write5
 \openout5 = `main.toc'.
+
 
 [3]
 
@@ -990,6 +1089,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 Chapter 1.
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 8
+8.
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1phv.fd
+File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
+)
 [5]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1003,6 +1107,43 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 Chapter 2.
+<aws_icons/Arch_Amazon-EC2_64.png, id=156, 80.3pt x 80.3pt>
+File: aws_icons/Arch_Amazon-EC2_64.png Graphic file (type png)
+<use aws_icons/Arch_Amazon-EC2_64.png>
+Package pdftex.def Info: aws_icons/Arch_Amazon-EC2_64.png  used on input line 1
+07.
+(pdftex.def)             Requested size: 51.21504pt x 51.2166pt.
+<aws_icons/Res_Amazon-Simple-Storage-Service_Bucket-With-Objects_48.png, id=157
+, 48.18pt x 48.18pt>
+File: aws_icons/Res_Amazon-Simple-Storage-Service_Bucket-With-Objects_48.png Gr
+aphic file (type png)
+<use aws_icons/Res_Amazon-Simple-Storage-Service_Bucket-With-Objects_48.png>
+Package pdftex.def Info: aws_icons/Res_Amazon-Simple-Storage-Service_Bucket-Wit
+h-Objects_48.png  used on input line 114.
+(pdftex.def)             Requested size: 51.21504pt x 51.21461pt.
+[7pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}
+) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.121     \chapter
+                  {Identity \& Federation} <./aws_icons/Arch_Amazon-EC2_64.png>
+ <./aws_icons/Res_Amazon-Simple-Storage-Service_Bucket-With-Objects_48.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[8
+
+]
+Chapter 3.
+[9]
+\openout2 = `chapters/indentity_and_federation.aux'.
+
+ (chapters/indentity_and_federation.tex
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang2.st
@@ -1013,48 +1154,42 @@ File: lstlang2.sty 2020/03/24 1.8d listings language file
 File: lstlang3.sty 2020/03/24 1.8d listings language file
 )
 
-main.tex:89: Package Listings Error: Couldn't load requested language.
+chapters/indentity_and_federation.tex:25: Package Listings Error: Couldn't load
+ requested language.
 
 See the Listings package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.89 ...=Sample JSON Data, label=lst:json-example]
+l.25 ...=Sample JSON Data, label=lst:json-example]
                                                   
 The following languages weren't loadable:
     ,json$
 This may cause errors in the sequel.
 
 
-main.tex:89: Package Listings Error: language json undefined.
+chapters/indentity_and_federation.tex:25: Package Listings Error: language json
+ undefined.
 
 See the Listings package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.89 ...=Sample JSON Data, label=lst:json-example]
+l.25 ...=Sample JSON Data, label=lst:json-example]
                                                   
 The language is not loadable. Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 89.
-LaTeX Font Info:    Trying to load font information for OMS+phv on input line 9
-0.
+nput line 25.
+LaTeX Font Info:    Trying to load font information for OMS+phv on input line 2
+6.
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsphv.fd
 File: omsphv.fd 
 )
 LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 90.
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 9
-1.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 26.
 
-(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1phv.fd
-File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
-)
-Underfull \vbox (badness 2384) has occurred while \output is active []
-
- [7]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1063,33 +1198,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[8]
+[10
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[9]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[10]
-main.tex:304: You can't use `macro parameter character #' in horizontal mode.
-l.304     - Multi AZ deployment of AD in 2 AZ, #
-                                                 of DC (Domain Controllers) ...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
+]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1108,6 +1219,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [12]
+chapters/indentity_and_federation.tex:240: You can't use `macro parameter chara
+cter #' in horizontal mode.
+l.240 - Multi AZ deployment of AD in 2 AZ, #
+                                             of DC (Domain Controllers) can ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1144,62 +1264,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [16]
-Chapter 3.
-[17
-
-]
-main.tex:745: Missing $ inserted.
-<inserted text> 
-                $
-l.745     - KMS(AWS_
-                    KMS) - default
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 74
-5.
-(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/wasysym\uwasy.fd
-File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
-)
-main.tex:747: Missing $ inserted.
-<inserted text> 
-                $
-l.747 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Overfull \hbox (4.89807pt too wide) in paragraph at lines 745--747
-[]\OT1/phv/m/n/10.95 - KMS(AWS$[]\OML/cmm/m/it/10.95 MS\OT1/cmr/m/n/10.95 ) \OM
-S/cmsy/m/n/10.95   \OML/cmm/m/it/10.95 default \OMS/cmsy/m/n/10.95   \OML/cmm/m
-/it/10.95 AWSKMScreatedandmanagedthekeymaterialinitsownkeystore$ 
- []
-
-main.tex:752: Missing $ inserted.
-<inserted text> 
-                $
-l.752     - Custom Key Store (AWS_
-                                  CLOUDHSM)
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-main.tex:754: Missing $ inserted.
-<inserted text> 
-                $
-l.754 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Overfull \hbox (117.87563pt too wide) in paragraph at lines 752--754
-[]\OT1/phv/m/n/10.95 - Cus-tom Key Store (AWS$[]\OML/cmm/m/it/10.95 LOUDHSM\OT1
-/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95   \OML/cmm/m/it/10.95 AWSKMScreatesthekeym
-aterialinacustomkeystore\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 CloudHSMCluster
-\OT1/cmr/m/n/10.95 )$ 
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1208,7 +1272,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[18]
+[17]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[18])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1218,402 +1291,29 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [19]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[20]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[21]
-main.tex:1026: Missing $ inserted.
-<inserted text> 
-                $
-l.1026 ...n change timeout with --expires-in[TIME_
-                                                  BY_SECONDS] argument
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-main.tex:1028: Missing $ inserted.
-<inserted text> 
-                $
-l.1028 
-       
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[22]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[23]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[24]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[25]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[26]
-Chapter 4.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [27
-
-]
-Overfull \vbox (336.03438pt too high) has occurred while \output is active []
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[28]
-Chapter 5.
-[29
-
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[30
-
-]
-Chapter 6.
-[31]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[32]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[33]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[34]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[35]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[36
-
-]
-Chapter 7.
-[37]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[38
-
-]
-Chapter 8.
-[39]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[40
-
-]
-Chapter 9.
-[41]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[42
-
-]
-Chapter 10.
-[43]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[44
-
-]
-Chapter 11.
-[45]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[46
-
-]
-Chapter 12.
-
-Overfull \hbox (281.7834pt too wide) in paragraph at lines 1910--1918
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[47]
-Underfull \vbox (badness 1005) has occurred while \output is active []
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[48pdfTeX warning (ext4): destination with the same identifier (name{table.12.1
-}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.1975 
-       ]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[49]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[50]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[51]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[52
-
-]
-Chapter 13.
-[53]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[54
-
-]
-Chapter 14.
-[55]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[56
-
-]
-Chapter 15.
-[57]
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 2274.
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[58]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[59]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[60
-
-]
-Chapter 16.
-[61]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[62
-
-]
-Chapter 17.
-[63]
-(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\out\main.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\out\main.aux
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\out\chapters/ind
+entity_and_federation.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C14F4C470AED9417EF88F0A13F669246;45293.
+(rerunfilecheck)             Checksum: 3540DA35949886C82829C55C24D0E840;5079.
  ) 
 Here is how much of TeX's memory you used:
- 32770 strings out of 478864
- 748399 string characters out of 2848186
- 1393166 words of memory out of 3000000
- 49776 multiletter control sequences out of 15000+600000
- 423202 words of font info for 62 fonts, out of 8000000 for 9000
+ 34724 strings out of 478864
+ 814483 string characters out of 2848186
+ 1495584 words of memory out of 3000000
+ 51936 multiletter control sequences out of 15000+600000
+ 421316 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,12n,89p,723b,1292s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 84i,15n,89p,723b,1287s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C
-:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmm
-i10.pfb><C:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmmi8.pfb><C:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb><C:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Marjan/AppData/Local/Programs/MiK
-TeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Marjan/AppData/Local/Programs
-/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/Marjan/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
+:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cms
+y10.pfb><C:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic
+/uhvb8a.pfb><C:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helv
+etic/uhvr8a.pfb>
 Output written on C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes
-\out\main.pdf (63 pages, 320219 bytes).
+\out\main.pdf (19 pages, 98948 bytes).
 PDF statistics:
- 1464 PDF objects out of 1728 (max. 8388607)
- 380 named destinations out of 1000 (max. 500000)
- 2037 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 313 PDF objects out of 1000 (max. 8388607)
+ 104 named destinations out of 1000 (max. 500000)
+ 215 words of extra memory for PDF output out of 10000 (max. 10000000)
 
