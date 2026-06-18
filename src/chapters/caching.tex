@@ -1,49 +1,59 @@
-
 \section{Cloudfront - Part 1}
-- Content Delivery Network (CDN)
-- Improves read performance, content is cached at the edge
-- 225+ Point of Presensce globally (215+ Edge Locations and 13 Regional Edge Caches)
-- Protect against Network and Application layer attacks (e.g DDoS attacks)
-- Integration with AWS Shield, AWS WAF and route 53
-- Can expose external HTTPS and can talk to internal HTTPS backends
-- Supports WebSocket protocol
+\begin{itemize}
+    \item Content Delivery Network (CDN)
+    \item Improves read performance, content is cached at the edge
+    \item 225+ Point of Presence globally (215+ Edge Locations and 13 Regional Edge Caches)
+    \item Protect against Network and Application layer attacks (e.g DDoS attacks)
+    \item Integration with AWS Shield, AWS WAF and route 53
+    \item Can expose external HTTPS and can talk to internal HTTPS backends
+    \item Supports WebSocket protocol
+\end{itemize}
 
 \subsection{CloudFront - Origins}
-- S3 Bucket
-- For distributing files
-- For uploading to S3 (using CloudFront as an ingres)
-- Enhanced security with CloudFront Origin Access Control (OAC)
-- MediaStore Container and MediaPackage Endpoint
-- To deliverVideo on Demand (VOD) or live streaming video using AWS Media Services
-- VPC Origin
-- For applications hosted in VPC private subnets
-- Application Load Balance / Network Load Balancer / EC2 Instances
-- Customer Origin (HTTP)
-- API Gateway (for more control.... otherwise use API Gateway Edge)
-- S3 Bucket configured as a website (enable Static Website hosting)
-- Any HTTP backend you want
+\begin{itemize}
+    \item S3 Bucket
+    \item For distributing files
+    \item For uploading to S3 (using CloudFront as an ingres)
+    \item Enhanced security with CloudFront Origin Access Control (OAC)
+    \item MediaStore Container and MediaPackage Endpoint
+    \item To deliverVideo on Demand (VOD) or live streaming video using AWS Media Services
+    \item VPC Origin
+    \item For applications hosted in VPC private subnets
+    \item Application Load Balance / Network Load Balancer / EC2 Instances
+    \item Customer Origin (HTTP)
+    \item API Gateway (for more control.... otherwise use API Gateway Edge)
+    \item S3 Bucket configured as a website (enable Static Website hosting)
+    \item Any HTTP backend you want
+\end{itemize}
 
 \subsection{CloudFront - S3 as an Origin}
 %Diagram
 
 \subsection{CloudFront vs S3 Cross Region Replication}
-- CloudFront:
-- Global Edge network
-- Files are cached for a TTL (maybe a day)
-- Great for static content that must be available everywhere
-
-- S3 Cross Region Replication
-- Must be setup for each region you want replication to happen
-- Files are updated in near real-time
-- Read only
-- Great for dynamic content that needs to be available at low-latency in few regions
+\begin{itemize}
+    \item CloudFront:
+    \begin{itemize}
+        \item Global Edge network
+        \item Files are cached for a TTL (maybe a day)
+        \item Great for static content that must be available everywhere
+    \end{itemize}
+    \item S3 Cross Region Replication
+    \begin{itemize}
+        \item \item Must be setup for each region you want replication to happen
+        \item Files are updated in near real-time
+        \item Read only
+        \item Great for dynamic content that needs to be available at low-latency in few regions
+    \end{itemize}
+\end{itemize}
 
 \subsection{CloudFront - ALB or EC2 as an origin Using VPC Origins}
-- Allows you to deliver content from you applications hosted in your VPC private subnets (no need to expose them on the Internet)
-- Deliver traffic to private
-- Application Load Balancer
-- Network Load Balancer
-- EC2 Instances
+\begin{itemize}
+    \item Allows you to deliver content from you applications hosted in your VPC private subnets (no need to expose them on the Internet)
+    \item Deliver traffic to private
+    \item Application Load Balancer
+    \item Network Load Balancer
+    \item EC2 Instances
+\end{itemize}
 
 %Diagram
 
@@ -51,18 +61,21 @@
 %Diagram
 
 \subsection{CloudFront - Restrict Access to Application Load Balancers and Custom Origins}
-- Prevent direct access to you ALB or Custom Origins (only access through CloudFront)
-- First, configurations CloudFront to add a CustomHTTPHeader to requests it sends to the ALB
-- Second, configure the ALB to only forward requests that contain that Customer HTTP Header
-- Keep the custom header name and value secret!
-
+\begin{itemize}
+    \item Prevent direct access to you ALB or Custom Origins (only access through CloudFront)
+    \item First, configurations CloudFront to add a CustomHTTPHeader to requests it sends to the ALB
+    \item Second, configure the ALB to only forward requests that contain that Customer HTTP Header
+    \item Keep the custom header name and value secret!
+\end{itemize}
 %Diagram
 
 \subsection{CloudFront - Origin Groups}
-- To increase high-availability and do failover
-- Origin Group: one primary and on secondary
-- If the primary origin fail; the second on is used
-- Origins can be cross AWS regions
+\begin{itemize}
+    \item To increase high-availability and do failover
+    \item Origin Group: one primary and on secondary
+    \item If the primary origin fail; the second on is used
+    \item Origins can be cross AWS regions
+\end{itemize}
 
 %diagram
 
@@ -70,50 +83,62 @@
 \section{Cloudfront - Part 2}
 
 \subsection{CloudFront Geo Restrictions}
-- You can restrict who can access your distribution
-- Allow list: Allow you users to access your content only if they're in one of the countries on a list of approved
-- Block list: Prevent your users from accessing your content if they're in one of the countries on a blacklist of banned countries..... lol
-- The "country" is determined using a third party Geo-IP database
-- Use case: Copyright Laws to control access to content
-- Note: the geo header CloudFront-Viewer-Country is in Lambda at Edge
+\begin{itemize}
+    \item - You can restrict who can access your distribution
+    \item Allow list: Allow you users to access your content only if they're in one of the countries on a list of approved
+    \item Block list: Prevent your users from accessing your content if they're in one of the countries on a blacklist of banned countries..... lol
+    \item The "country" is determined using a third party Geo-IP database
+    \item Use case: Copyright Laws to control access to content
+    \item Note: the geo header CloudFront-Viewer-Country is in Lambda at Edge
+\end{itemize}
 
 \subsection{CloudFront - Pricing}
-- CloudFront Edge locations are all around the world
-- The cost of data out per edge location varies
+\begin{itemize}
+    \item CloudFront Edge locations are all around the world
+    \item The cost of data out per edge location varies
+\end{itemize}
 %Insert table
 
 \subsection{CloudFront - Price Classes}
-- You can reduce the number of edge locations for cost reductions
-- Three price classes
-- Price Class All: all regions - best performance
-- Price Class 200: most regions, but excludes the most expensive regions
-- Price Class 100: only the least expensive regions
+\begin{itemize}
+    \item You can reduce the number of edge locations for cost reductions
+    \item Three price classes
+    \item Price Class All: all regions - best performance
+    \item Price Class 200: most regions, but excludes the most expensive regions
+    \item Price Class 100: only the least expensive regions
+\end{itemize}
 %digrams
 
 %prety map diagram
 
 \subsection{CloudFront Signed URL Diagram}
-- Signed URL with expiration to control access to content in CloudFront
-- The Signed URL are generated by an API call into CloudFront as a trusted signer
+\begin{itemize}
+    \item Signed URL with expiration to control access to content in CloudFront
+    \item The Signed URL are generated by an API call into CloudFront as a trusted signer
+\end{itemize}
 %Diagram
 
 \subsection{CloudFront Signed URL vs S3 Pre-Signed URL}
-- CloudFront Signed URL:
-- Allow access to a path, no matter the origin
-- Account wide key-pair, only the root can manage
-- Can filter by IP, path, date, expiration
-- Can leverage caching features
+\begin{itemize}
+    \item CloudFront Signed URL:
+    \item Allow access to a path, no matter the origin
+    \item Account wide key-pair, only the root can manage
+    \item Can filter by IP, path, date, expiration
+    \item Can leverage caching features
+\end{itemize}
 
-- S3 Pre-Signed URL:
-- Issue a request as the person who pre-signed URL
-- Uses the IAM key of the signed IAM principal
-- Limited lifetime
+\begin{itemize}
+    \item - S3 Pre-Signed URL:
+    \item Issue a request as the person who pre-signed URL
+    \item Uses the IAM key of the signed IAM principal
+    \item Limited lifetime
+\end{itemize}
 
 %Diagram
 
 \subsection{CloudFront - Custom Error Pages}
-- Return an object to the viewer (e.g html) when your origin returns an HTTP 4xx or 5xx status code to CloudFront
-- Use Error Caching Minimum TTL to specify how long CloudFront caches the customer error pages
+\item Return an object to the viewer (e.g html) when your origin returns an HTTP 4xx or 5xx status code to CloudFront
+\item Use Error Caching Minimum TTL to specify how long CloudFront caches the customer error pages
 
 %diagram
 
@@ -121,47 +146,55 @@
 \section{Lambda at Edge and CloudFront Functions}
 
 \subsection{CloudFront - Customisation at the edge}
-- Many modern application execute some form of the logic at the edge
-- Edge function:
-- A code that you write an attach to CloudFront distributions
-- Runs close to your users to minimise latency
-- Doesn't have any cache, only to change requests/ responses
-- CloudFront provides two types: CloudFront Functions and Lambda and Edge
+\begin{itemize}
+    \item Many modern application execute some form of the logic at the edge
+    \item Edge function:
+    \item A code that you write an attach to CloudFront distributions
+    \item Runs close to your users to minimise latency
+    \item Doesn't have any cache, only to change requests/ responses
+    \item CloudFront provides two types: CloudFront Functions and Lambda and Edge
+\end{itemize}
 Use cases:
-- Manipulate HTTP requests and responses
-- Implement request filtering before reaching your application
-- User authentication and authorisation
-- Generate HTTP resources at the edge
-- A/B Testing
-- Bot mitigation
-- You don't have to manage any servers, deployed globally
+\begin{itemize}
+    \item Manipulate HTTP requests and responses
+    \item Implement request filtering before reaching your application
+    \item User authentication and authorisation
+    \item Generate HTTP resources at the edge
+    \item A/B Testing
+    \item Bot mitigation
+    \item You don't have to manage any servers, deployed globally
+\end{itemize}
 
 \subsection{CloudFront Functions and Lamabda at Edge}
 %digram
 
 \subsection{CloudFront - CloudFront Functions}
-- Lightweight functions written in JavaScript
-- For high-scale latency-sensitive CDN customisation
-- Sub-ms startup times, million of requests per second
-- RuN at Edge Locations
-- Processed-Based isolation
-- Used to changeViewer requests and responses:
-- Viewer Requests: after CloudFront recevives a reqeusts from a viewer
-- Viewer Response: before CloudFront forwards the response to the viewer
-- Native feature of CloudFront (manage code entirely within CloudFront)
+\begin{itemize}
+    \item Lightweight functions written in JavaScript
+    \item For high\itemscale latency-sensitive CDN customisation
+    \item Sub-ms startup times, million of requests per second
+    \item RuN at Edge Locations
+    \item Processed-Based isolation
+    \item Used to changeViewer requests and responses:
+    \item Viewer Requests: after CloudFront recevives a reqeusts from a viewer
+    \item Viewer Response: before CloudFront forwards the response to the viewer
+    \item Native feature of CloudFront (manage code entirely within CloudFront)
+\end{itemize}
 %diagram
 
 \subsection{CloudFront - Lambda at Edge}
-- Lambda functions written in NodeJS or Python
-- Scala to 1000s of reqeust/ second
-- Runs at the nearest Regional Edge Cache
-- VM-based isolation
-- Used to change CloudFront requests and responses
-- Viewer Request - after CloudFront recieves a reqeust from a viewer
-- Origin Request - before CloudFront forwards the response to the origin
-- Orign response - after CloudFront recieves the response from the origin
-- Viewer Response - before CloudFront forwards the response to the viewer
-- Author your functions in one AWS Region (some region) then CloudFront replicats to its locations
+\begin{itemize}
+    \item - Lambda functions written in NodeJS or Python
+    \item Scala to 1000s of reqeust/ second
+    \item Runs at the nearest Regional Edge Cache
+    \item VM-based isolation
+    \item Used to change CloudFront requests and responses
+    \item Viewer Request - after CloudFront recieves a reqeust from a viewer
+    \item Origin Request - before CloudFront forwards the response to the origin
+    \item Orign response - after CloudFront recieves the response from the origin
+    \item Viewer Response - before CloudFront forwards the response to the viewer
+    \item Author your functions in one AWS Region (some region) then CloudFront replicats to its locations
+\end{itemize}
 
 \subsection{CloudFront Functions with Lambda at Edge}
 CloudFront Functions and Lambda at Edge can be used together
@@ -169,28 +202,38 @@ CloudFront Functions and Lambda at Edge can be used together
 Note: You can't combine CloudFront Functions and Lambda at Edge in viewer events ( viewer reqeust and viewer response)
 
 \subsection{Using Lambda at Edge only}
-Use when you need some of the capabilites of Lambda at Edge that aren't available with CloudFront Functions (e.g longer execution time, network access,....)
+Use when you need some of the capabilities of Lambda at Edge that aren't available with CloudFront Functions (e.g longer execution time, network access,....)
 %Diagram here
 
 \subsection{CloudFront Funtions vs. Lamda at Edge}
 %table here
 
-\subsection{CloudFront Funcitons vs Lambda at Edge Use Cases}
-- CloudFront Functions
-- Cache key normalisation
-- Transform reqeust attributes (headers, cookies, query string, URL) to create an optimal Cache Key
-- Header manipulation
-- Insert/modify/ delete HTTP headers in the request or response
-- URL rewrites or redirects
-- Request authentication and authorisation
-- Create and validate user-generated tokens (e.g JWT) to allow/deny reqeusts
+\subsection{CloudFront Functions vs Lambda@Edge Use Cases}
 
-Lambda at Edge
-- Longer execution time (several ms)
-- Adjustable CPU or memory
-- You code depends on a third libraries (e.g AWS SDK to access other aws Services)
-- Network access to use external services for processing
-- File system access or access to the body of HTTP requests
+\begin{itemize}
+    \item CloudFront Functions
+    \begin{itemize}
+        \item Cache key normalization
+        \item Transform request attributes (headers, cookies, query strings, URLs) to create an optimal cache key
+        \item Header manipulation
+        \item Insert, modify, or delete HTTP headers in requests or responses
+        \item URL rewrites and redirects
+        \item Request authentication and authorization
+        \item Create and validate user-generated tokens (e.g., JWTs) to allow or deny requests
+    \end{itemize}
+
+    \item Lambda@Edge
+    \begin{itemize}
+        \item Longer execution time (up to several seconds)
+        \item Adjustable CPU and memory allocation
+        \item Support for third-party libraries and dependencies
+        \item Access to AWS services through the AWS SDK
+        \item Network access to external services for processing
+        \item Access to the request body
+        \item File system access via the Lambda execution environment
+        \item Suitable for complex request and response processing
+    \end{itemize}
+\end{itemize}
 
 \subsection{CloudFront Functions vs. Lambda at Edge - Authentication and Authorisation}
 CloudFront Functions
@@ -215,37 +258,45 @@ Lambda at Edge
 \section{Amazon ElastiCache}
 
 \subsection{Amazon ElasticCache Overview}
-- The same way RDS is to get managed Relational Databases.....
-- ElastiCache is to get managed Redis or Memcached
-- Caches are in memory databases with really high performance and low latency
-- Helps reduce load off of databases for read intensive workloads
-- Helps make you application stateless
-- AWS takes care of OS maintenance / patching, optimisations, setup, configuration, monitoring failure recovery and backups.
-- \textbf{Using ElastiCache involves heavy application code changes}
+\begin{itemize}
+    \item The same way RDS is to get managed Relational Databases.....
+    \item ElastiCache is to get managed Redis or Memcached
+    \item Caches are in memory databases with really high performance and low latency
+    \item Helps reduce load off of databases for read intensive workloads
+    \item Helps make you application stateless
+    \item AWS takes care of OS maintenance / patching, optimisations, setup, configuration, monitoring failure recovery and backups.
+    \item \textbf{Using ElastiCache involves heavy application code changes}
+\end{itemize}
 
 \subsection{ElastiCache Solution Architecture - DB Cache}
-- Applications queries ElastiCache, if not available, get from RDS and store in ElasticCache
-- Helps relive load in RDS
-- Cache must have an invalidation strategy to make sure only the most current data is used there.
+\begin{itemize}
+    \item Applications queries ElastiCache, if not available, get from RDS and store in ElasticCache
+    \item Helps relive load in RDS
+    \item Cache must have an invalidation strategy to make sure only the most current data is used there.
+\end{itemize}
 %diagram
 
 \subsection{ElastiCache Solution Architecture - User Session Store}
-- User logs into any of the application
-- The application writes the session data into ElastiCache
-- The user hits another instance of our application
-- The instance retrieves the data the user is already logged in
+\begin{itemize}
+    \item User logs into any of the application
+    \item The application writes the session data into ElastiCache
+    \item The user hits another instance of our application
+    \item The instance retrieves the data the user is already logged in
+\end{itemize}
 %diagram
 
 \subsection{ElastiCache - Redis vs Memcached}
-- Redis
-- Multi AZ with Auto-Failover
-- Read Replicas to scale reads and have high availability
-- Persistent, Data Durability: Append Only File (AOF), backup and restore features
-- Memcached
-- Multi-node for partitioning of data (sharding)
-- Non Persistent
-- Backup and restore (Serverless)
-- Mult-threaded architecture
+\begin{itemize}
+    \item - Redis
+    \item Multi AZ with Auto-Failover
+    \item Read Replicas to scale reads and have high availability
+    \item Persistent, Data Durability: Append Only File (AOF), backup and restore features
+    \item Memcached
+    \item Multi-node for partitioning of data (sharding)
+    \item Non Persistent
+    \item Backup and restore (Serverless)
+    \item Multi-threaded architecture
+\end{itemize}
 
 
 \section{Handling Extreme Rates}

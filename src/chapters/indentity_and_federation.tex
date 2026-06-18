@@ -1,24 +1,27 @@
-
 \section{IAM - What should you know by now}
-- Users: Long term credentials
-- Groups
-- Roles: short-term credentials, uses STS
-- EC2 Instance Roles: Uses the EC2 metadata service. One role of a time per instance
-- Service Roles: API Gateways, CodeDeploy etc
-- Cross Account roles
-- Policies
-- AWS Managed
-- Customer Managed
-- Inline Policies
-- Resource Based Policies (S3 Bucket, SQS queues, etc......)
+\begin{itemize}
+    \item Users: Long term credentials
+    \item Groups
+    \item Roles: short-term credentials, uses STS
+    \item EC2 Instance Roles: Uses the EC2 metadata service. One role of a time per instance
+    \item Service Roles: API Gateways, CodeDeploy etc
+    \item Cross Account roles
+    \item Policies
+    \item AWS Managed
+    \item Customer Managed
+    \item Inline Policies
+    \item Resource Based Policies (S3 Bucket, SQS queues, etc......)
+\end{itemize}
 
 \subsection{IAM Policies Deep Dive}
-- Anatomy of a policy: JSON doc with Effect, Action, Resource, Conditions, Policy Variables
-- Explicit DENY has precedence over ALLOW
-- Best practice: use least privilege for maximum security
-- Access Advisor: See permissions granted and when last accessed
-- Access Analyser: Analyse resources that are shared with external entity
-- Navigate Examples at: %put link to AWS docs here
+\begin{itemize}
+    \item Anatomy of a policy: JSON doc with Effect, Action, Resource, Conditions, Policy Variables
+    \item Explicit DENY has precedence over ALLOW
+    \item Best practice: use least privilege for maximum security
+    \item Access Advisor: See permissions granted and when last accessed
+    \item Access Analyser: Analyse resources that are shared with external entity
+    \item Navigate Examples at: %put link to AWS docs here
+\end{itemize}
 
 \subsection{IAM AWS Managed Policies - Administrator Access example}
 
@@ -43,16 +46,20 @@
 % Insert listings here
 
 \subsection{IAM Roles vs Resource Based Policies}
-- Attach a policy to a resource (example: S3 bucket policy) versus attaching of a using a role as a proxy
+\begin{itemize}
+    \item Attach a policy to a resource (example: S3 bucket policy) versus attaching of a using a role as a proxy
 %insert a diagram
-- When you assume a role (user, application or service), you give up your original permissions and take the permissions assigned to the role.
-- When using a resource-based policy, the principal doesn't have to give up any permissions
-- Example: User in account A needs to scan a DynamoDB table in Account A and dump it in an S3 bucket in Account B
+    \item When you assume a role (user, application or service), you give up your original permissions and take the permissions assigned to the role.
+    \item When using a resource-based policy, the principal doesn't have to give up any permissions
+    \item Example: User in account A needs to scan a DynamoDB table in Account A and dump it in an S3 bucket in Account B
+\end{itemize}
 
 \subsection{IAM Permissions Boundaries}
-- IAM permission boundaries are supported for users and roles (not groups)
-- Advanced feature to use a managed policy to set the maximum permissions an IAM entity can get
-- Can be used in combinations of AWS organisations SCP
+\begin{itemize}
+    \item IAM permission boundaries are supported for users and roles (not groups)
+    \item Advanced feature to use a managed policy to set the maximum permissions an IAM entity can get
+    \item Can be used in combinations of AWS organisations SCP
+\end{itemize}
 
 \subsection{Use cases}
 
@@ -63,107 +70,129 @@
 \end{itemize}
 
 \subsection{IAM Access Analyser}
-- Find out which resources are shared externally
-- S3 Buckets
-- IAM Roles
-- KMS Keys
-- Lambda Functions and Layers
-- SQS queues
-- Secrets Manager Secrets
-- Define Zone ofTrust = AWS Account or AWS Organisation
-- Access outside of zone trusts => findings
+\begin{itemize}
+    \item Find out which resources are shared externally
+    \item S3 Buckets
+    \item IAM Roles
+    \item KMS Keys
+    \item Lambda Functions and Layers
+    \item SQS queues
+    \item Secrets Manager Secrets
+    \item Define Zone ofTrust = AWS Account or AWS Organisation
+    \item Access outside of zone trusts => findings
+\end{itemize}
 
 \subsection{IAM Access Analyser}
-- IAM Access Analyser Policy Validation
-- Validates your policy against IAM policy grammar and best practices
-- General warnings, security warnings errors suggestions
-- Provides actionable recommendations
-- IAM Access Analyser Policy Generation
-- Generates IAM policy based on access activity
-- CloudTrail logs is reviewed to generate the policy with the fine-grained permissions and the appropriate Actions and Services
-- Reviews CloudTrail logs for up to 90 days
+\begin{itemize}
+    \item IAM Access Analyser Policy Validation
+    \item Validates your policy against IAM policy grammar and best practices
+    \item General warnings, security warnings errors suggestions
+    \item Provides actionable recommendations
+    \item IAM Access Analyser Policy Generation
+    \item Generates IAM policy based on access activity
+    \item CloudTrail logs is reviewed to generate the policy with the fine-grained permissions and the appropriate Actions and Services
+    \item Reviews CloudTrail logs for up to 90 days
+\end{itemize}
 
 
 \section{STS}
 
 \subsection{Using STS to Assume a Role}
-- Define an IAM Role within your account or cross-account
-- Define which principals can access this IAM role
-- Using AWS STS (Security Token Service) to retrieve credentials and impersonate the IAM role you have access to (AssumeRole API)
-- Temporary credentials can be valid between 15 to 12 hours.
+\begin{itemize}
+    \item Define an IAM Role within your account or cross-account
+    \item Define which principals can access this IAM role
+    \item Using AWS STS (Security Token Service) to retrieve credentials and impersonate the IAM role you have access to (AssumeRole API)
+    \item Temporary credentials can be valid between 15 to 12 hours.
+\end{itemize}
 
 \subsection{Assuming a Role with STS}
-- Provide access for an IAM user in one AWS account that you own to access resources in another account that you own.
-- Provide access to IAM users in AWS accounts owned by third parties
-- Provide access for services offered by AWS to AWS resources
-- Provide access for externally authenticated users (identity federation)
-- Ability to revoke active sessions and credentials for a role (by adding a policy using a time statement - AWSRevokeOlderSessions)
+\begin{itemize}
+    \item Provide access for an IAM user in one AWS account that you own to access resources in another account that you own.
+    \item Provide access to IAM users in AWS accounts owned by third parties
+    \item Provide access for services offered by AWS to AWS resources
+    \item Provide access for externally authenticated users (identity federation)
+    \item Ability to revoke active sessions and credentials for a role (by adding a policy using a time statement - AWSRevokeOlderSessions)
+\end{itemize}
 
 When you assume a role (user, application or service), you give up your original permissions and take the permissions assigned to the role.
 
 \subsection{Providing Access to an IAM User in Yours or Another AWS Account That You Own}
-- You can grant your IAM users permissions to switch to roles within your AWS account or to roles defined in other AWS accounts that you own.
+\begin{itemize}
+    \item You can grant your IAM users permissions to switch to roles within your AWS account or to roles defined in other AWS accounts that you own.
 %Diagram
-- Benefits:
-- You must explicitly grant your users permission to assume the role
-- Your users must actively switch to the role using the AWS management console or assume the role using the AWS CLI or AWS API
-- You can add multi-factor authentication (MFA) protection to the role so that only users who sign in with an MFA device can assume the role.
-- Least Privilege + auditing using CloudTrail
+    \item Benefits:
+    \item You must explicitly grant your users permission to assume the role
+    \item Your users must actively switch to the role using the AWS management console or assume the role using the AWS CLI or AWS API
+    \item You can add multi-factor authentication (MFA) protection to the role so that only users who sign in with an MFA device can assume the role.
+    \item Least Privilege + auditing using CloudTrail
 %Diagram
+\end{itemize}
 
 \subsection{Providing Access to AWS Accounts Owned by Third Parties}
-- Zone of trust = accounts, organisations that you own
-- Outside Zone ofTrust = 3rd parties
-- Use IAM Access Analyser to find out which resources are exposed
-- For granting access to a thrid party:
-- The third part AWS account ID
-- An External ID (secret between you and the third party)
-- To uniquely associate with the role between you and 3rd party
-- Must be provided when defining the trust and when assuming the role
-- Must be chosen by the third party
-- Define permissions in the IAM policy
+\begin{itemize}
+    \item Zone of trust = accounts, organisations that you own
+    \item Outside Zone ofTrust = 3rd parties
+    \item Use IAM Access Analyser to find out which resources are exposed
+    \item For granting access to a thrid party:
+    \item The third part AWS account ID
+    \item An External ID (secret between you and the third party)
+    \item To uniquely associate with the role between you and 3rd party
+    \item Must be provided when defining the trust and when assuming the role
+    \item Must be chosen by the third party
+    \item Define permissions in the IAM policy
+\end{itemize}
 
 %The confused deputy, diagram
 
 \subsubsection{Session Tags in STS}
-- Tags that you pass when you assume an IAM Role or federate user in STS
-- aws:PrincipalTag Condition
-- Compares the tags attached to the principal making the request with the tag you specified in the policy.
-- Example: Allow a principal to pass session tags only if the principal making the reqeust has the specified tags.
+\begin{itemize}
+    \item Tags that you pass when you assume an IAM Role or federate user in STS
+    \item aws:PrincipalTag Condition
+    \item Compares the tags attached to the principal making the request with the tag you specified in the policy.
+    \item Example: Allow a principal to pass session tags only if the principal making the reqeust has the specified tags.
 % diagram
+\end{itemize}
 
 \subsubsection{STS Important APIs}
-- AssumeRole: access a role within your account or cross-account
-- AssumeRoleWithSAML: return credentials for users logged with SAML
-- AssumeRoleWithWebIdentity: return creds for users logged with an IdP
-- Example providers include Amazon Cognito, Login with Amazon, Facebook, Google or any OpenID Connect-compatible identity provider.
-- AWS Recommends using Cognito
-- GetSessionToken: for MFA from a user or AWS account root user
-- GetFederationToken: obtain temporary creds for a federated user, usually a proxy app that will give the creds for a federated user, usually a proxy app that will give the creds to a distributed app inside a corporate network.
+\begin{itemize}
+    \item AssumeRole: access a role within your account or cross-account
+    \item AssumeRoleWithSAML: return credentials for users logged with SAML
+    \item AssumeRoleWithWebIdentity: return creds for users logged with an IdP
+    \item Example providers include Amazon Cognito, Login with Amazon, Facebook, Google or any OpenID Connect-compatible identity provider.
+    \item AWS Recommends using Cognito
+    \item GetSessionToken: for MFA from a user or AWS account root user
+    \item GetFederationToken: obtain temporary creds for a federated user, usually a proxy app that will give the creds for a federated user, usually a proxy app that will give the creds to a distributed app inside a corporate network.
+\end{itemize}
 
 \subsection{Identity Federation in AWS}
-- Give users outside of AWS permissions to access AWS resources in your account
-- You don't need to create IAM Users (user management is outside AWS)
-- Use cases:
-- A corporate has its own identity system (e.g Active Directory)
-- Web / Mobile application that needs access to AWS resources
-- Identity Federation can have many flavours:
-- SAML 2.0
-- Custom Identity Broker
-- Web Identity Federation With(out) Amazon Cognito
-- IAM Identity Centre
+\begin{itemize}
+    \item Give users outside of AWS permissions to access AWS resources in your account
+    \item You don't need to create IAM Users (user management is outside AWS)
+    \item Use cases:
+    \begin{itemize}
+        \item A corporate has its own identity system (e.g Active Directory)
+        \item Web / Mobile application that needs access to AWS resources
+        \item Identity Federation can have many flavours:
+        \item SAML 2.0
+        \item Custom Identity Broker
+        \item Web Identity Federation With(out) Amazon Cognito
+        \item IAM Identity Centre
+    \end{itemize}
+\end{itemize}
 
 \subsubsection{SAML 2.0 Federation}
-- Security Assertion Markup Language 2.0 (SAML 2.0)
-- Open standard used by many identity providers (e.g ADFS)
-- Supports integration with Microsoft Active Directory Federations Services (ADFS)
-- Or any SAML 2.0 - compatible IdPs with AWS
-- Access the AWS Console, AWS CLI or AWS API using temporary credentials
-- No need to create IAM Users for each of your employees
-- Need to setup a trust between AWS IAM and SAML 2.0 Identity Provider (both ways)
-- Under-the-hood: Uses the STS API AssumeRoleWithSAML
-- SAML 2.0 Federation is the "old way", IAM Identity Center Federation is the new managed and simpler way
+\begin{itemize}
+    \item Security Assertion Markup Language 2.0 (SAML 2.0)
+    \item Open standard used by many identity providers (e.g ADFS)
+    \item Supports integration with Microsoft Active Directory Federations Services (ADFS)
+    \item Or any SAML 2.0 - compatible IdPs with AWS
+    \item Access the AWS Console, AWS CLI or AWS API using temporary credentials
+    \item No need to create IAM Users for each of your employees
+    \item Need to setup a trust between AWS IAM and SAML 2.0 Identity Provider (both ways)
+    \item Under-the-hood: Uses the STS API AssumeRoleWithSAML
+    \item SAML 2.0 Federation is the "old way", IAM Identity Center Federation is the new managed and simpler way
 %Insert a URL
+\end{itemize}
 
 \subsubsection{SAML 2.0 Federation - AWS API Access}
 % Diagram here
@@ -175,178 +204,216 @@ When you assume a role (user, application or service), you give up your original
 % Diagram here
 
 \subsubsection{Custom Identity Broker Application}
-- Use only if identity provider is NOT compatible with SAML 2.0
-- The identity broker is NOT compatible with SAML 2.0
-- The identity broker must determine the appropriate IAM Role
-- Uses the STS API AssumeRole or GetFederationToken
+\begin{itemize}
+    \item Use only if identity provider is NOT compatible with SAML 2.0
+    \item The identity broker is NOT compatible with SAML 2.0
+    \item The identity broker must determine the appropriate IAM Role
+    \item Uses the STS API AssumeRole or GetFederationToken
 % Diagrams
+\end{itemize}
 
 \subsubsection{Web Identity Federation - Without Cognito}
 - Not recommended by AWS - use cognito instead
 % Insert a diagram
 
 \subsubsection{Web Identity Federation - With Cognito}
-- Preferred over for Web Identity Federation
-- Create IAM Roles using Cognito with the least privilege needed
-- Build trust between the OIDC IdP and AWS
-- Cognito benefits:
-- Supports anonymous users
-- Supports MFA
-- Data Synchronisation
-- Cognito replaces a Token Vending Machine (TVM)
+\begin{itemize}
+    \item Preferred over for Web Identity Federation
+    \item Create IAM Roles using Cognito with the least privilege needed
+    \item Build trust between the OIDC IdP and AWS
+    \item Cognito benefits:
+    \item Supports anonymous users
+    \item Supports MFA
+    \item Data Synchronisation
+    \item Cognito replaces a Token Vending Machine (TVM)
 %Insert a diagram
+\end{itemize}
 
 \subsubsection{Web Identity Federation - IAM Policy}
-- After being authenticated with Web Identity Federation, you can identify the user with an IAM policy variable
-- Example:
+\begin{itemize}
+    \item After being authenticated with Web Identity Federation, you can identify the user with an IAM policy variable
+    \item Example:
 %Insert examples
+\end{itemize}
 
 \subsection{AWS Directory Services (AD)?}
-- Found on any Windows Server with AD Domain Services
-- Database of objects: User Accounts, Computers, Printers, File Shares, Security Groups
-- Centralised security management, create account, assign permissions
-- Objects are organised in trees
-- A group of trees
+\begin{itemize}
+    \item Found on any Windows Server with AD Domain Services
+    \item Database of objects: User Accounts, Computers, Printers, File Shares, Security Groups
+    \item Centralised security management, create account, assign permissions
+    \item Objects are organised in trees
+    \item A group of trees
 %diagrams
+\end{itemize}
 
 \subsubsection{What is ADFS (AS Federation Services)?}
-- ADFS provides Single Sign-On across applications
-- SAML across 3rd party: AWS Console, Dropbox, Officer365, etc.....
+\begin{itemize}
+    \item ADFS provides Single Sign-On across applications
+    \item SAML across 3rd party: AWS Console, Dropbox, Officer365, etc.....
 %diagrams
+\end{itemize}
 
 \subsubsection{AWS Directory Services}
-- AWS Managed Microsoft AD
-- Create your own AD in AWS, manage users, locally supports MFA
-- Establish "trust" connection with your own on premises
+\begin{itemize}
+    \item AWS Managed Microsoft AD
+    \item Create your own AD in AWS, manage users, locally supports MFA
+    \item Establish "trust" connection with your own on premises
 %Diagrams
-- AD Connector
-- Directory Gateway (proxy) to redirect to on-premises AD, supports MFA
-- Users are managed on the on-premise AD
+    \item AD Connector
+    \item Directory Gateway (proxy) to redirect to on-premises AD, supports MFA
+    \item Users are managed on the on-premise AD
 %Diagrams
-- Simple AD
-- AD-compatible managed directory on AWS
-- Cannot be joined with on-premise AD
+    \item Simple AD
+    \item AD-compatible managed directory on AWS
+    \item Cannot be joined with on-premise AD
 %Diagrams
+\end{itemize}
 
 \subsubsection{AWS Directory Services and AWS Managed Microsoft AD}
-- Managed Service: Microsoft AD in your AWS VPC
-- EC2 Windows Instances:
-- EC2 Windows instances can join the domain and run traditional AD applications (sharepoint, etc)
-- Seamlessly Domain Join Amazon EC2 Instances from Multiple Accounts and VPCs
-- Integrations
-- RDS for SQL Server, AWS Workspaces, Quicksight.......
-- AWS SSO to provide access to third party applications
-- Standalone repository in AWS or jointed to on-premises AD
-- Multi AZ deployment of AD in 2 AZ, # of DC (Domain Controllers) can be increased for scaling
-- Automated backups
-- Automated Multi-Region replication of your directory
+\begin{itemize}
+    \item Managed Service: Microsoft AD in your AWS VPC
+    \item EC2 Windows Instances:
+    \item EC2 Windows instances can join the domain and run traditional AD applications (sharepoint, etc)
+    \item Seamlessly Domain Join Amazon EC2 Instances from Multiple Accounts and VPCs
+    \item Integrations
+    \item RDS for SQL Server, AWS Workspaces, Quicksight.......
+    \item AWS SSO to provide access to third party applications
+    \item Standalone repository in AWS or jointed to on-premises AD
+    \item Multi AZ deployment of AD in 2 AZ, # of DC (Domain Controllers) can be increased for scaling
+    \item Automated backups
+    \item Automated Multi-Region replication of your directory
 % Insert Diagram
+\end{itemize}
 
 \subsubsection{AWS Microsoft Managed AD - Integrations}
 %Add diagram
 
 \subsubsection{Connect to on-premise AD}
-- Ability to connect your on-premise Active Directory to AWS Managed Microsoft AD
-- Must establish a Direct Connection (DX) or VPN connection
-- Can setup three kinds of forest trust
-- One-way trust: AWS -> On-Premise
-- One-way trust: On-Premise -> AWS
-- Two-way forest: trust - AWS -> On-Premise
-- Forest trust is different than synchronisation (replication is not supported)
+\begin{itemize}
+    \item Ability to connect your on-premise Active Directory to AWS Managed Microsoft AD
+    \item Must establish a Direct Connection (DX) or VPN connection
+    \item Can setup three kinds of forest trust
+    \item One-way trust: AWS -> On-Premise
+    \item One-way trust: On-Premise -> AWS
+    \item Two-way forest: trust - AWS -> On-Premise
+    \item Forest trust is different than synchronisation (replication is not supported)
+\end{itemize}
 
-\subsubsection{Solution Achitecture: Active Directory Replication}
-- You may want to create a replica of your AD on EC2 in the cloud to minimise latency of in case DX or VPN goes down
-- Establish trust between the AWS Manged Microsoft AD and EC2
+\subsubsection{Solution Architecture: Active Directory Replication}
+\begin{itemize}
+    \item You may want to create a replica of your AD on EC2 in the cloud to minimise latency of in case DX or VPN goes down
+    \item Establish trust between the AWS Manged Microsoft AD and EC2
 % Diagram here
+\end{itemize}
 
 \subsubsection{AWS Directory Services AD Connector}
-- AD Connector is a directory gateway to redirect director requests to your on premises Microsoft Active Directory
-- No caching capability
-- Managed users solely on-premise, no possibility of setting up a trust
-- VPN or Direct Connect
-- Doesn't work with SQL Server, doesn't do seamless joining, can't share director.
+\begin{itemize}
+    \item AD Connector is a directory gateway to redirect director requests to your on premises Microsoft Active Directory
+    \item No caching capability
+    \item Managed users solely on-premise, no possibility of setting up a trust
+    \item VPN or Direct Connect
+    \item Doesn't work with SQL Server, doesn't do seamless joining, can't share director.
 %Insert diagram
+\end{itemize}
 
 \subsubsection{AWS Directory Services Simple AD}
-- Simple AD is an inexpensive Active Directory-compatible service with the common directory features
-- Supports joining EC2 instances, manage users and groups
-- Does not support MFA, RDS SQL server, AWS SSO
-- Small: 500 users, large: 5000 users
-- Powered by Samba 4, compatible with Microsoft AD
-- lower cost, low scale, basic AD compatible or LDAP compatibility
-- No trust relationship
+\begin{itemize}
+    \item Simple AD is an inexpensive Active Directory-compatible service with the common directory features
+    \item Supports joining EC2 instances, manage users and groups
+    \item Does not support MFA, RDS SQL server, AWS SSO
+    \item Small: 500 users, large: 5000 users
+    \item Powered by Samba 4, compatible with Microsoft AD
+    \item lower cost, low scale, basic AD compatible or LDAP compatibility
+    \item No trust relationship
+\end{itemize}
 
 \subsection{AWS Orgnisations}
 %Diagram
 
 \subsubsection{AWS Organisations - OrgnizationAccountAccessRole}
 %Diagram
-- IAM role which grants full administrator permissions in the Member account to the Management account
-- Used to perform admin tasks in the Member accounts (e.g - creating IAM users)
-- Could be assumed by IAM users in the Management account
-- Automatically added to all new Member account created with AWS organisations
-- Must be created manually if you invite an existing Member account
+\begin{itemize}
+    \item IAM role which grants full administrator permissions in the Member account to the Management account
+    \item Used to perform admin tasks in the Member accounts (e.g - creating IAM users)
+    \item Could be assumed by IAM users in the Management account
+    \item Automatically added to all new Member account created with AWS organisations
+    \item Must be created manually if you invite an existing Member account
+\end{itemize}
 
 \subsubsection{Multi Account Strategies}
-- Create accounts per department, per cost centre, per dev / test / prod, based on regulatory restrictions (using SCP), for better resource isolation (ex:VPC), to have separate per-account service limits isolated account for logging.
-- Multi Account vs. On Account MultiVPC
-- Use tagging standards for billing purposes
-- Enable CloudTrail on all accounts, send logs to central S3 account
-- Send CloudWatch logs to central logging account
-- Strategy to create an account for security
+\begin{itemize}
+    \item Create accounts per department, per cost centre, per dev / test / prod, based on regulatory restrictions (using SCP), for better resource isolation (ex:VPC), to have separate per-account service limits isolated account for logging.
+    \item Multi Account vs. On Account MultiVPC
+    \item Use tagging standards for billing purposes
+    \item Enable CloudTrail on all accounts, send logs to central S3 account
+    \item Send CloudWatch logs to central logging account
+    \item Strategy to create an account for security
+\end{itemize}
 
 \subsubsection{Orgnisational Units (OU) - Examples}
 %Insert diagrams here
 
 \subsubsection{AWS Organisation - Feature Modes}
-- Consolidated billing features:
-- Consolidated Billing across all accounts - single payment method
-- Pricing benefits from aggregated usage (volume discount for EC2, S3.....)
+\begin{itemize}
+    \item Consolidated billing features:
+    \item Consolidated Billing across all accounts - single payment method
+    \item Pricing benefits from aggregated usage (volume discount for EC2, S3.....)
+\end{itemize}
 
 \subsubsection{All Features (Default)}
-- Includes consolidated billing features, SCP
-- Invited accounts must approve enabling all features
-- Ability to apply an SCP to prevent member accounts from leaving the org
-- Can't switch back to Consolidated Billing Features only
+\begin{itemize}
+    \item Includes consolidated billing features, SCP
+    \item Invited accounts must approve enabling all features
+    \item Ability to apply an SCP to prevent member accounts from leaving the org
+    \item Can't switch back to Consolidated Billing Features only
+\end{itemize}
 
 \subsubsection{AWS Organisations - Reserved Instances}
-- For billing purposes, the consolidated billing features of AWS organisations treats all the accounts in the organisation as one account.
-- The means that all accounts in the organisation can receive the hourly cost benefit of Reserved Instances that are purchased by any other account.
-- The payer account (Management account) of an organisation can turn off Reserved Instance (RI) discount and Saving Plans discount sharing for any accounts in that organisation, including the payer account.
-- This means that RIs and Saving Plans discounts aren't shared between any accounts that have sharing turned off.
-- To share an RI or Savings Plans discount with an account, both accounts must have sharing turned on.
+\begin{itemize}
+    \item For billing purposes, the consolidated billing features of AWS organisations treats all the accounts in the organisation as one account.
+    \item The means that all accounts in the organisation can receive the hourly cost benefit of Reserved Instances that are purchased by any other account.
+    \item The payer account (Management account) of an organisation can turn off Reserved Instance (RI) discount and Saving Plans discount sharing for any accounts in that organisation, including the payer account.
+    \item This means that RIs and Saving Plans discounts aren't shared between any accounts that have sharing turned off.
+    \item To share an RI or Savings Plans discount with an account, both accounts must have sharing turned on.
+\end{itemize}
 
 \subsubsection{AWS Organisation - Moving Accounts}
-- Remove the member account from the AWS organisation
-- Send an invite to the member account from the AWS organisation
-- Accept the invite to the new Organisation from the member account.
+\begin{itemize}
+    \item Remove the member account from the AWS organisation
+    \item Send an invite to the member account from the AWS organisation
+    \item Accept the invite to the new Organisation from the member account.
 %Diagram
+\end{itemize}
 
 \subsubsection{Service Control Policies (SCP)}
-- Define allowlist or blocklist IAM actions
-- Applied at the OU or Account level
-- Does not apply to the Management Account
-- SCP is applied to all the Users and Roles in the account, including Root user
-- The SCP does not affect Service-linked roles
-- Service-linked roles enable other AWS services to integrate with AWS organisations and can't be restricted by SCP's
-- SCP must have an explicit Allow from the root of each OU in the direct path to the target account (does not allow anything by default)
-- Use cases:
-- Restrict access to certain services (for example: can't use EMR)
-- Enforce PCI compliance by explicitly disabling services.
+\begin{itemize}
+    \item Define allowlist or blocklist IAM actions
+    \item Applied at the OU or Account level
+    \item Does not apply to the Management Account
+    \item SCP is applied to all the Users and Roles in the account, including Root user
+    \item The SCP does not affect Service-linked roles
+    \item Service-linked roles enable other AWS services to integrate with AWS organisations and can't be restricted by SCP's
+    \item SCP must have an explicit Allow from the root of each OU in the direct path to the target account (does not allow anything by default)
+    \item Use cases:
+    \item Restrict access to certain services (for example: can't use EMR)
+    \item Enforce PCI compliance by explicitly disabling services.
+\end{itemize}
 
 \subsubsection{SCP Hierarchy}
 %Insert diagram
-- Management Account - Can do anything (no SCP apply)
-- Account A
-- Can do anything
-- EXCEPT S3 (explicit Deny from Sandbox OU)
-- EXCEPT EC2 (explicit deny)
-- Account B and C
-- Can do anything
-- EXCEPT S3 (explicit Deny from Sandbox OU)
-- Account D
-- Can access EC2
-- Prod OU and Account E and F
+\begin{itemize}
+    \item Management Account - Can do anything (no SCP apply)
+    \item Account A
+    \item Can do anything
+    \item EXCEPT S3 (explicit Deny from Sandbox OU)
+    \item EXCEPT EC2 (explicit deny)
+    \item Account B and C
+    \item Can do anything
+    \item EXCEPT S3 (explicit Deny from Sandbox OU)
+    \item Account D
+    \item Can access EC2
+    \item Prod OU and Account E and F
+\end{itemize}
 
 \subsubsection{SCP Examples - Blocklist and Allowlist strategies}
 %Insert JSON examples
@@ -355,11 +422,13 @@ When you assume a role (user, application or service), you give up your original
 %Diagram and reference to amazon docs
 
 \subsubsection{Restricting Tags with IAM policies}
-- You can restrict specific tags on AWS resources
-- Using the aws:TagKeys Condition Key
-- Validate the Tag Keys attached to a resource against the Tag Keys in the IAM Policy
-- Example: Allow IAM users to create EBS Volumes only if it has the "Env" and "CostCenter" Tags
-- Use either ForAllValues (must have all keys) or ForAnyValue (must have any of these keys at a minimum)
+\begin{itemize}
+    \item You can restrict specific tags on AWS resources
+    \item Using the aws:TagKeys Condition Key
+    \item Validate the Tag Keys attached to a resource against the Tag Keys in the IAM Policy
+    \item Example: Allow IAM users to create EBS Volumes only if it has the "Env" and "CostCenter" Tags
+    \item Use either ForAllValues (must have all keys) or ForAnyValue (must have any of these keys at a minimum)
+\end{itemize}
 
 %Add JSON tags here
 
@@ -368,28 +437,34 @@ When you assume a role (user, application or service), you give up your original
 % Add JSON example here
 
 \subsubsection{AWS Organisations - Tag Policies}
-- Helps you standardise tags across resources in an AWS organisation
-- Ensure consistent tags, audit tagged resources, maintain proper resources categorisation
-- You define Tag keys and their allowed values
-- Helps with AWS Cost Allocation Tags and Attribute-based Access Control
-- Prevent any non-compliant tagging operations on specified services and resources
-- Generate a report that lists all tagged/ non compliant resources
-- Use Amazon EventBridge to monitor non-compliant tags
+\begin{itemize}
+    \item Helps you standardise tags across resources in an AWS organisation
+    \item Ensure consistent tags, audit tagged resources, maintain proper resources categorisation
+    \item You define Tag keys and their allowed values
+    \item Helps with AWS Cost Allocation Tags and Attribute-based Access Control
+    \item Prevent any non-compliant tagging operations on specified services and resources
+    \item Generate a report that lists all tagged/ non compliant resources
+    \item Use Amazon EventBridge to monitor non-compliant tags
+\end{itemize}
 
 \subsubsection{AWS Organisation - AI Service Opt-out Policies}
-- Certain AWS AI services may use your content for continuous improvement of Amazon AI/ML services
-- Example: Amazon Lex, Amazon Comprehend, Amazon Polly.........
-- You can opt-out of having your content stored or used by AWS AI services
-- Create an Opt-out Policy that enforces this setting across all Member accounts and AWS Regions
-- You can opt-out all AI services or selected services
-- Can be attached to Organisation Root, specific OU or individual Member account
+\begin{itemize}
+    \item Certain AWS AI services may use your content for continuous improvement of Amazon AI/ML services
+    \item Example: Amazon Lex, Amazon Comprehend, Amazon Polly.........
+    \item You can opt-out of having your content stored or used by AWS AI services
+    \item Create an Opt-out Policy that enforces this setting across all Member accounts and AWS Regions
+    \item You can opt-out all AI services or selected services
+    \item Can be attached to Organisation Root, specific OU or individual Member account
+\end{itemize}
 
 \subsubsection{AWS Organisations - Backup policies}
-- AWS Backup enables you to create Backup Plans that define how to backup your AWS resources
-- JSON Documents that define backup plans across an AWS Organisation
-- Gives you granular control over backup up your resources (e.g backup frequency, time window, backup region,.....)
-- Can be attached to Organisation Root, specific OU or individual Member account
-- Immutable backup plans appear in Member accounts (view only)
+\begin{itemize}
+    \item AWS Backup enables you to create Backup Plans that define how to backup your AWS resources
+    \item JSON Documents that define backup plans across an AWS Organisation
+    \item Gives you granular control over backup up your resources (e.g backup frequency, time window, backup region,.....)
+    \item Can be attached to Organisation Root, specific OU or individual Member account
+    \item Immutable backup plans appear in Member accounts (view only)
+\end{itemize}
 
 \subsubsection{Using SCP to Deny a Region aws:ReqeustRegion}
 %insert JSON example
@@ -397,119 +472,143 @@ When you assume a role (user, application or service), you give up your original
 \subsection{AWS IAM Identity Center}
 
 \subsubsection{AWS IAM Identity Center -successor to AWS Single Sign-On- }
-- One login (single sign-on) for all your
-- AWS accounts in AWS organisations
-- Business cloud applications (e.g, Salesforce, Box, Microsoft 365)
-- SAML2.0 enabled applications
-- EC2 windows instances
 
-- Identity Providers
-- Built-in identity store in IAM identity center
-- 3rd party Active Directory (AD), OneLogin, Okta
+\begin{itemize}
+    \item One login (single sign-on) for all your
+    \item AWS accounts in AWS organisations
+    \item Business cloud applications (e.g, Salesforce, Box, Microsoft 365)
+    \item SAML2.0 enabled applications
+    \item EC2 windows instances
 
-- AWS IAM Identity Center - Login Flow
+    \item Identity Providers
+    \begin{itemize}
+        \item Built-in identity store in IAM identity center
+        \item 3rd party Active Directory (AD), OneLogin, Okta
+    \end{itemize}
+
+    \item AWS IAM Identity Center - Login Flow
+\end{itemize}
 
 \subsubsection{AWS IAM Identity Center}
 %Insert diagram
 
 \subsubsection{AWS IAM Identity Center - Fine-grained Permissions and Assignments}
-- Multi-Account Permissions
-- Manage access across AWS accounts in your AWS Organisation
-- Permission Sets - a collection of one or more IAM policies assigned to users and groups to define AWS access
+\begin{itemize}
+    \item Multi-Account Permissions
+    \item Manage access across AWS accounts in your AWS Organisation
+    \item Permission Sets - a collection of one or more IAM policies assigned to users and groups to define AWS access
 %diagrams
-- Application Assignments
-- SSO access to many SAML 2.0 business applications (Salesforce, Box, Microsoft 365)
-- Provide required URLs, certificates and metadata
-- Attribute-Based Access Control (ABAC)
-- Fine-grained permissions based on users' attributes stored in IAM identity center identity store
-- Example: Cost center, title, locale
-- Use case: Define permission once, then modify AWS access by changing the attributes
+    \item Application Assignments
+    \item SSO access to many SAML 2.0 business applications (Salesforce, Box, Microsoft 365)
+    \item Provide required URLs, certificates and metadata
+    \item Attribute-Based Access Control (ABAC)
+    \item Fine-grained permissions based on users' attributes stored in IAM identity center identity store
+    \item Example: Cost center, title, locale
+    \item Use case: Define permission once, then modify AWS access by changing the attributes
+\end{itemize}
 
 \subsubsection{AWS Control Tower}
-- Easy way to setup and govern a secure and compliant multi-account AWS environment based on best practices
-- Benefits:
-- Automate the set up of your environment in a few clicks
-- Automate ongoing policy management using guardrails
-- Detect policy violations and remediate them
-- Monitor compliance through an interactive dashboard
-- AWS ControlTower runs on top AWS Organisations:
-- It automatically sets up AWS Organisations to organise accounts and implement SCPs (Service Control Policies)
+\begin{itemize}
+    \item Easy way to setup and govern a secure and compliant multi-account AWS environment based on best practices
+    \item Benefits:
+    \begin{itemize}
+        \item Automate the set up of your environment in a few clicks
+        \item Automate ongoing policy management using guardrails
+        \item Detect policy violations and remediate them
+        \item Monitor compliance through an interactive dashboard
+        \item AWS ControlTower runs on top AWS Organisations:
+        \item It automatically sets up AWS Organisations to organise accounts and implement SCPs (Service Control Policies)
+    \end{itemize}
+\end{itemize}
 
 \subsubsection{AWS Controller Tower - Account Factory}
-- Automates account provisioning and deployments
-- Enables you to create pre-approved baselines and configuration options for AWS accounts in your organisation (e.g VPC default configuration, subnets, region, ...)
-- Uses AWS service catalog to provision new AWS accounts
+\begin{itemize}
+    \item Automates account provisioning and deployments
+    \item Enables you to create pre-approved baselines and configuration options for AWS accounts in your organisation (e.g VPC default configuration, subnets, region, ...)
+    \item Uses AWS service catalog to provision new AWS accounts
 %diagram
+\end{itemize}
 
 \subsubsection{AWS Control Tower - Detect and Remediate Policy Violations}
-- Guardrail
-- Provide ongoing governance for your Control Tower environment (AWS Accounts)
-- Preventive - using SCPs (e.g Disallow Creation of Access Keys for the Root User)
-- Detective - users AWS Config (e.g Detect Whether MFA for the Root User is Enabled)
-- Example: identify non-compliant resources (e.g, untagged resources)
-
+\begin{itemize}
+    \item Guardrail
+    \item Provide ongoing governance for your Control Tower environment (AWS Accounts)
+    \item Preventive - using SCPs (e.g Disallow Creation of Access Keys for the Root User)
+    \item Detective - users AWS Config (e.g Detect Whether MFA for the Root User is Enabled)
+    \item Example: identify non-compliant resources (e.g, untagged resources)
 %diagram
+\end{itemize}
 
 \subsubsection{AWS Control Tower - Guardrails Levels}
-- Mandatory
-- Automatically enabled and enforced by AWS control tower
-- Example: Disallow public Read access to the Log Archive account
-- Strongly Recommended
-- Based on AWS best practices (optional)
-- Example: Enable encryption for EBS volumes attached to EC2 instances
-- Elective
-- Commonly used by enterprises (optional)
-- Examples: Disallow delete actions without MFA in S3 buckets
+\begin{itemize}
+    \item Mandatory
+    \item Automatically enabled and enforced by AWS control tower
+    \item Example: Disallow public Read access to the Log Archive account
+    \item Strongly Recommended
+    \item Based on AWS best practices (optional)
+    \item Example: Enable encryption for EBS volumes attached to EC2 instances
+    \item Elective
+    \item Commonly used by enterprises (optional)
+    \item Examples: Disallow delete actions without MFA in S3 buckets
+\end{itemize}
 
 
 \section{AWS Resource Access Manager (RAM)}
-- Share AWS resources that you own with other AWS accounts
-- Share with any account or within your Organisation
-- Avoid resource duplication!
-- VPC Subnets
-- Allow to have all the resources launched in the same subnets
-- Must be from the same AWS organisations
-- Cannot share security groups and defaultVPC
-- Participants can manage their own resources in there
-- Participants can't view, modify, delete resources that belong to other participants or the owner
-- AWS Transit Gateway
-- Route 53 (Resolver Rules, DNS Firewall Rule Groups)
-- License Manager Configurations
+\begin{itemize}
+    \item Share AWS resources that you own with other AWS accounts
+    \item Share with any account or within your Organisation
+    \item Avoid resource duplication!
+    \item VPC Subnets
+    \item Allow to have all the resources launched in the same subnets
+    \item Must be from the same AWS organisations
+    \item Cannot share security groups and defaultVPC
+    \item Participants can manage their own resources in there
+    \item Participants can't view, modify, delete resources that belong to other participants or the owner
+    \item AWS Transit Gateway
+    \item Route 53 (Resolver Rules, DNS Firewall Rule Groups)
+    \item License Manager Configurations
+\end{itemize}
 
 \subsubsection{AWS Resource Access Manager (RAM)}
-- Aurora DB Clusters
-- ACM Private Cerficiate Authority
-- CodeBuild Project
-- EC2 (Dedicated Hosts, Capacity Reservation)
-- AWS Glue (Catalog, Database, Table)
-- AWS Network Firewall Policies
-- AWS Resources groups
-- Systems Manager Incident Manager (Contacts, Response Plans)
-- AWS Outposts (Outpost, Site)
+\begin{itemize}
+    \item Aurora DB Clusters
+    \item ACM Private Certificate Authority
+    \item CodeBuild Project
+    \item EC2 (Dedicated Hosts, Capacity Reservation)
+    \item AWS Glue (Catalog, Database, Table)
+    \item AWS Network Firewall Policies
+    \item AWS Resources groups
+    \item Systems Manager Incident Manager (Contacts, Response Plans)
+    \item AWS Outposts (Outpost, Site)
+\end{itemize}
 
 \subsubsection{Resource Access Manager - VPC example}
 %Insert diagram here
-- Each account......
-- Is responsible for it own resources
-- Cannot view modify or delete other resources in other accounts
-- Network is shared so.....
-- Anything deployed in the VPC can talk to other resources in the VPC
-- Applications are accessed easily across accounts, using a private IP
-- Security groups from other accounts can be referenced for maximum security
-- Use cases
-- Applications within the same trust boundaries
-- Applications with a high degree of interconnectivity
+\begin{itemize}
+    \item Each account......
+    \item Is responsible for it own resources
+    \item Cannot view modify or delete other resources in other accounts
+    \item Network is shared so.....
+    \item Anything deployed in the VPC can talk to other resources in the VPC
+    \item Applications are accessed easily across accounts, using a private IP
+    \item Security groups from other accounts can be referenced for maximum security
+    \item Use cases
+    \item Applications within the same trust boundaries
+    \item Applications with a high degree of interconnectivity
+\end{itemize}
 
 \subsubsection{Resource Access Manager Managed Prefix List}
-- A set of one or more CIDR blocks
-- Makes it easier to configure and maintain Security Groups and Route Tables
-- Customer-Managed Prefix List
-- Set of CIDRs that you define and manage by you
-- Can be shared with other AWS accounts or AWS Organisation
-- Modify to update many security groups at once
-- AWS-Managed Prefix List
-- Set of CIDRs for AWS services
-- You can't create, modify, share or delete them.
+\begin{itemize}
+    \item A set of one or more CIDR blocks
+    \item Makes it easier to configure and maintain Security Groups and Route Tables
+    \item Customer-Managed Prefix List
+    \item Set of CIDRs that you define and manage by you
+    \item Can be shared with other AWS accounts or AWS Organisation
+    \item Modify to update many security groups at once
+    \item AWS-Managed Prefix List
+    \item Set of CIDRs for AWS services
+    \item You can't create, modify, share or delete them.
+\end{itemize}
 
 \subsubsection{Resource Access Manger Route 53 Outbound Resolver}
 - Helps you scale forwarding rules to your DNS in case you have multiple accounts and VPC

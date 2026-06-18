@@ -1,261 +1,338 @@
 \section{Step Functions}
-- Build serverless virtual workflow to orchestrate you Lambda functions
-- Represent flow as a JSON state machine
-- Features: sequence, parallel, conditions, timeouts, error handling........
-- Maximum execution time of 1 year
-- Possibility to implement human approval feature
-- If you chain Lambda functions using Step functions, be mindful of the added latency to pass the calls
+\begin{itemize}
+    \item Build serverless virtual workflow to orchestrate you Lambda functions
+    \item Represent flow as a JSON state machine
+    \item Features: sequence, parallel, conditions, timeouts, error handling........
+    \item Maximum execution time of 1 year
+    \item Possibility to implement human approval feature
+    \item If you chain Lambda functions using Step functions, be mindful of the added latency to pass the calls
+\end{itemize}
 
 \subsection{Visual Work flow in Step Functions}
 %TODO add diagram
 
 \subsection{Step Function Integrations}
 %TODO add diagram
-- Optimised Integrations
-    - Can invoke a Lambda function
-    - Run an AWS batch job
-    - Run an ECS task and wait for it to complete
-    - Insert an item from DynamoDB
-    - Publish message to SNS, SQS
-    - Launch an EMR, Glue or SageMaker jobs
-    - Launch another Step Function workflow
-- AWS SDK Integrations
-    - Access 200+ AWS services from your State machine
-    - Works like a standard AWS SDK API call
+\begin{itemize}
+    \item Optimised Integrations
+    \begin{itemize}
+        \item Can invoke a Lambda function
+        \item Run an AWS batch job
+        \item Run an ECS task and wait for it to complete
+        \item Insert an item from DynamoDB
+        \item Publish message to SNS, SQS
+        \item Launch an EMR, Glue or SageMaker jobs
+        \item Launch another Step Function workflow
+    \end{itemize}
+    \item AWS SDK Integrations
+    \begin{itemize}
+        \item Access 200+ AWS services from your State machine
+        \item Works like a standard AWS SDK API call
+    \end{itemize}
+\end{itemize}
 
 \subsection{Step Functions Workflow Triggeers}
 %TODO add diagram
-- You can invoke a step function workflow (State Machine) using:
-    - AWS Management Console
-    - AWS SDK (StartExecution API call)
-    - AWS CLI (start-execution)
-    - AWS Lambda (StartExecution API call)
-    - API Gateway
-    - EventBridge
-    - CodePipeline
-    - Step Functions
+You can invoke a step function workflow (State Machine) using:
+\begin{itemize}
+    \item AWS Management Console
+    \item AWS SDK (StartExecution API call)
+    \item AWS CLI (start-execution)
+    \item AWS Lambda (StartExecution API call)
+    \item API Gateway
+    \item EventBridge
+    \item CodePipeline
+    \item Step Functions
+\end{itemize}
 
 \subsection{Step Funcitons - Sample Projects}
 https://console.aws.amazon.com/states/home?region=us-east-
 1#/sampleProjects
 
 \subsection{Step Functions - Tasks}
-- Lambda Tasks:
-    - Invoke a Lambda function
-- Activity Tasks:
-    - Activity work (HTTP), EC2 Instances, mobile device, on premise DC
-    - They poll the step functions service
-- Service Tasks:
-    - Connect to a supported AWS service
-    - Lambda function, ECS Task, Fargate, DyanamoDB, Batch job SNS topic, SQS queue
-- Wait Task
-    - To wait for a duration or until a timestamp
-- \textbf{Note: Step functions does not integrate natively with AWS Mechanical Turk}
+\begin{itemize}
+    \item Lambda Tasks:
+    \begin{itemize}
+        \item Invoke a Lambda function
+    \end{itemize}
+    \item Activity Tasks:
+    \begin{itemize}
+        \item Activity work (HTTP), EC2 Instances, mobile device, on premise DC
+        \item They poll the step functions service
+    \end{itemize}
+    \item Service Tasks:
+    \begin{itemize}
+        \item Connect to a supported AWS service
+        \item Lambda function, ECS Task, Fargate, DyanamoDB, Batch job SNS topic, SQS queue
+    \end{itemize}
+    \item Wait Task
+    \begin{itemize}
+        \item To wait for a duration or until a timestamp
+    \end{itemize}
+    \item \textbf{Note: Step functions does not integrate natively with AWS Mechanical Turk}
+\end{itemize}
 
 \subsection{Step Functions - Standard vs. Express}
-- Standard Workflows
-Maximum duration - 1 year
-Supported execution start rate - over 2000 per second
-Supported state transition rate - over 4000 per second per account
-Pricing - Priced per state transition. A state trasition is counted each time a step in your execution is complete (move expensive)
-Execution - Executions can be listed and described with Step Functions APIs, and visually debugged through the console They can also be inspected in CloudWatch logs by enabling loggging on your state machine
-Execution semantics - Exactly once workflow execution
+\begin{itemize}
+    \item Standard Workflows
+    Maximum duration - 1 year
+    Supported execution start rate - over 2000 per second
+    Supported state transition rate - over 4000 per second per account
+    Pricing - Priced per state transition. A state trasition is counted each time a step in your execution is complete (move expensive)
+    Execution - Executions can be listed and described with Step Functions APIs, and visually debugged through the console They can also be inspected in CloudWatch logs by enabling loggging on your state machine
+    Execution semantics - Exactly once workflow execution
 
-- Express Workflows
-Maximum duration - 5 minutes
-Supported execution state rate - over 100,000 per second
-Supported state transition rate - Nearly unlimited
-Pricing - Priced by the number of executions you run, their duration and memeory consumption. (cheaper)
-Execution history - Executions can be inspected in CloudWatch logs by enabling logging on your state machine
-Execution semantics - At-least once workflow execution
+    \item Express Workflows
+    Maximum duration - 5 minutes
+    Supported execution state rate - over 100,000 per second
+    Supported state transition rate - Nearly unlimited
+    Pricing - Priced by the number of executions you run, their duration and memeory consumption. (cheaper)
+    Execution history - Executions can be inspected in CloudWatch logs by enabling logging on your state machine
+    Execution semantics - At-least once workflow execution
+\end{itemize}
 
 \subsection{Step Functions - Express Workflow - Synchronous vs. Asynchoronous}
-- Synchronous Express Workflows
-    - Wait until the Workflow completes, then return the result
-    - Examples: orchestrate microservices, handler errors, retries, parallel taks
+\begin{itemize}
+    \item Synchronous Express Workflows
+    \begin{itemize}
+        \item Wait until the Workflow completes, then return the result
+        \item Examples: orchestrate microservices, handler errors, retries, parallel tasks
+    \end{itemize}
 %TODO add diagram
-- Asynchornous Express Workflows
-    - Doesn't wait? for the Workflow to complete
-    - Examples: Workflow sthat don't require immieidiate response messaging
+    \begin{itemize}
+        \item Asynchronous Express Workflows
+        \item Doesn't wait? for the Workflow to complete
+        \item Examples: Workflow that don't require immediate response messaging
+    \end{itemize}
+\end{itemize}
 %TODO add diagram
 
 \subsection{Step Functions - Error handling}
-- You can enable error handling, retries and add alerting to Step Function State Machine
-- Example: set up EventBridge to alert via email if a State Machine execution failes
+\begin{itemize}
+    \item You can enable error handling, retries and add alerting to Step Function State Machine
+    \item Example: set up EventBridge to alert via email if a State Machine execution failes
+\end{itemize}
 %TODO add diagram
 
 \subsection{Step Functions - Solution Architecture}
 %TODO diagram
 
+
 \section{SQS}
 
-- Serverless, managed queue, integrated with IAM
-- Can handle extreme scale, no provisioning required
-- Used to decouple services
-- Message size of max 1024KB (use a pointer to S3 for large message)
-- Can be read from EC2 (optional ASG), Lambda
-- SQS could be used as a write bugger for DynamoDB
-- SQS FIFO
-    - receive message in order they were sent
-    - 300 messages/s without batching , 3000/s with batching
+\begin{itemize}
+    \item Serverless, managed queue, integrated with IAM
+    \item Can handle extreme scale, no provisioning required
+    \item Used to decouple services
+    \item Message size of max 1024KB (use a pointer to S3 for large message)
+    \item Can be read from EC2 (optional ASG), Lambda
+    \item SQS could be used as a write bugger for DynamoDB
+    \item SQS FIFO
+    \item receive message in order they were sent
+    \item 300 messages/s without batching , 3000/s with batching
+\end{itemize}
 
 \subsection{Amazon SQS - Dead Letter Queue (DLQ)}
 %TODO add diagram
-- If a consumer fails to process a message within the visibility timeout....the message goes back to the queue
-- We can set a threshold of how many times a message can go back to the queue
-- After the MaximumReceives threshold is exceeded, the message goes into a Dead Letter Queue (DLQ)
-- Useful for debugging
-- DLQ of a FIFO queue must also be a FIFO queue
-- DLQ of standard queue must also be a standard queue
-- Make sure to process the messages in the DLQ before they expire
-    - Good to set a retention of 14 days in the DLQ
+\begin{itemize}
+    \item If a consumer fails to process a message within the visibility timeout....the message goes back to the queue
+    \item We can set a threshold of how many times a message can go back to the queue
+    \item After the MaximumReceives threshold is exceeded, the message goes into a Dead Letter Queue (DLQ)
+    \item Useful for debugging
+    \item DLQ of a FIFO queue must also be a FIFO queue
+    \item DLQ of standard queue must also be a standard queue
+    \item Make sure to process the messages in the DLQ before they expire
+    \item Good to set a retention of 14 days in the DLQ
+\end{itemize}
 
 \subsection{SQS DLQ - Redrive to source}
-%TODO add diagrma
-- Feature to help consume messages in the DLQ to understand what is wrong with them
-- When our code is fixed we can redrive the message from the DLQ back into the source queue (or any other queueu) in batch without writing customer code
+%TODO add diagrmam
+\begin{itemize}
+    \item Feature to help consume messages in the DLQ to understand what is wrong with them
+    \item When our code is fixed we can redrive the message from the DLQ back into the source queue (or any other queueu) in batch without writing customer code
+\end{itemize}
 
 \subsection{SQS - Solution Architecture Idempotency}
-- Messages can be processed twice by consumer (in case of failures, timeouts, etc)
-- To hedge against that problem, implement idempotency at the consumer level
-- Means the same action done twice by the consumer won't duplicate the effect
+\begin{itemize}
+    \item Messages can be processed twice by consumer (in case of failures, timeouts, etc)
+    \item To hedge against that problem, implement idempotency at the consumer level
+    \item Means the same action done twice by the consumer won't duplicate the effect
+\end{itemize}
 %TODO add diagram
 
 \subsection{Lambda - Event Source Mapping SQS and SQS FIFO}
 %TODO add diagrams
-- Event Source Mapping will poll SQS (Long polling)
-- Specify batch size (1-10 messages)
-- Recommended: Set the queue visibility timeout to 6x the timeout of your Lambda function
-- To use a DLQ
-    - Set-up on the SQS queue not Lambda (DLQ for Lambda is only for async invocations)
-    - Or use a Lambda destination for failures
+\begin{itemize}
+    \item Event Source Mapping will poll SQS (Long polling)
+    \item Specify batch size (1-10 messages)
+    \item Recommended: Set the queue visibility timeout to 6x the timeout of your Lambda function
+    \item To use a DLQ
+    \begin{itemize}
+        \item Set-up on the SQS queue not Lambda (DLQ for Lambda is only for async invocations)
+        \item Or use a Lambda destination for failures
+    \end{itemize}
+\end{itemize}
 
 \subsection{SQS - Solution Architecture Request / Response queue (async)}
 %TODO add diagram
-- Decoupling
-- Fault Tolerance
-- Load Balancing
+\item Decoupling
+\item Fault Tolerance
+\item Load Balancing
+
 
 \section{Amazon MQ}
 
-- SQS, SNS are "cloud-native" services: proprietary protocol from AWS
-- Traditional applications running from on-premises may use open protocols such as: MQTT, AMQP, STOMP, Openwire, WSS
-- When migrating to the cloud, instead of re-engineering the application to use SQS and SNS we can use amazon MQ
-- Amazon MQ is a managed message broker service for rabbit MQ/ Active MQ
-- Amazon MQ doesn't "scale" as much as SQS / SNS
-- Amazon MQ runs on servers, can run in Multi-AZ with failover
-- Amazon MQ has both queue feature (roughly equal to SQS) and topic features (roughly equal to SQS)
+\begin{itemize}
+    \item SQS, SNS are "cloud\itemnative" services: proprietary protocol from AWS
+    \item Traditional applications running from on-premises may use open protocols such as: MQTT, AMQP, STOMP, Openwire, WSS
+    \item When migrating to the cloud, instead of re-engineering the application to use SQS and SNS we can use amazon MQ
+    \item Amazon MQ is a managed message broker service for rabbit MQ/ Active MQ
+    \item Amazon MQ doesn't "scale" as much as SQS / SNS
+    \item Amazon MQ runs on servers, can run in Multi-AZ with failover
+    \item Amazon MQ has both queue feature (roughly equal to SQS) and topic features (roughly equal to SQS)
+\end{itemize}
 
 \subsection{Amazon MQ - Re-platform}
-- IBM MQ, TIBCO EMS, Rabbit MQ and Apache ActiveMQ can be migrated to Amazon MQ
+IBM MQ, TIBCO EMS, Rabbit MQ and Apache ActiveMQ can be migrated to Amazon MQ
 %TODO see diagram
+
 
 \section{Amazon SNS}
 
 \subsection{Amazon SNS}
-- What if you want to send one message to many receivers?
+\begin{itemize}
+    \item What if you want to send one message to many receivers?
 %TODO add diagram of direct integration
 %TODO add diagram of pub sub with SNS topic
 
-- The "event producer" only sends message to one SNS topic
-- As many "event receivers" (subscriptions) as we want to listen to the SNS topic notifications
-- Each subscriber to the topic will get all the message (note: new feature to filter messages)
-- Up do 12,500,000 subscriptions per topic
-- 100,000 topics limit
+    \item The "event producer" only sends message to one SNS topic
+    \item As many "event receivers" (subscriptions) as we want to listen to the SNS topic notifications
+    \item Each subscriber to the topic will get all the message (note: new feature to filter messages)
+    \item Up do 12,500,000 subscriptions per topic
+    \item 100,000 topics limit
 %TODO add diagram
+\end{itemize}
 
 \subsection{SNS integrates with a lot of AWS serivces}
 - Many AWS services can send data directly to SNS for notifications
 %TODO add diagram of services that publish to
 
 \subsection{Amazon SNS - How to publish}
-- Topic Publish (using the SDK)
-     - Create a topic
-    - create a subscription
-    - publish to the topic
-- Direct Publish (for mobile apps SDK)
-    - Create a platform appilcation
-    - Create a platform endpoint
-    - Publish to the platform endpoint
-    - Works with Google GCM, Apple APNS, Amazon ADM
+\begin{itemize}
+    \item Topic Publish (using the SDK)
+    \begin{itemize}
+        \item Create a topic
+        \item create a subscription
+        \item publish to the topic
+    \end{itemize}
+    \item Direct Publish (for mobile apps SDK)
+    \begin{itemize}
+        \item Create a platform appilcation
+        \item Create a platform endpoint
+        \item Publish to the platform endpoint
+        \item Works with Google GCM, Apple APNS, Amazon ADM
+    \end{itemize}
+\end{itemize}
 
 \subsection{Amazon SNS - Security}
 
-- Encryption
-    - In-flight encryption using HTTPS API
-    - At-rest encryption using KMS keys
-    - Client-side encryption if the client wants to perform encryption / decryption itself
-- Access control: IAM policies to refulate access to the SNS API
-- SNS Access Policies (similar to S3 bucket policies)
-    - Useful for cross-account access to SNS topics
-    - Useful for allowing other services (S3....) to write to an SNS topic
+\begin{itemize}
+    \item Encryption
+    \begin{itemize}
+        \item In-flight encryption using HTTPS API
+        \item At-rest encryption using KMS keys
+        \item Client-side encryption if the client wants to perform encryption / decryption itself
+    \end{itemize}
+    \item Access control: IAM policies to refulate access to the SNS API
+    \begin{itemize}
+        \item SNS Access Policies (similar to S3 bucket policies)
+        \item Useful for cross-account access to SNS topics
+        \item Useful for allowing other services (S3....) to write to an SNS topic
+    \end{itemize}
+\end{itemize}
+
 
 \section{Amazon SNS - SQS Fan Out Pattern}
 
 \subsection{SNS + SQS: Fan out}
 %TODO add digram
-- Push once in SNS, recieve in all SQS queue that are subscribers
-- Full decoupled, no data loss
-- SQS allows for dataa: persistence, delayed processing and retries of work
-- Ability to add more SQS subscribers over time
-- Make sure your SQS queue access policy allows for SNS to write
-- Cross-Region Delivery: works with SQS queues in other regions
+\begin{itemize}
+    \item Push once in SNS, recieve in all SQS queue that are subscribers
+    \item Full decoupled, no data loss
+    \item SQS allows for dataa: persistence, delayed processing and retries of work
+    \item Ability to add more SQS subscribers over time
+    \item Make sure your SQS queue access policy allows for SNS to write
+    \item Cross-Region Delivery: works with SQS queues in other regions
+\end{itemize}
 
 \subsection{Application: S3 Events to multiple queues}
-- For the same combination of: event type (e.g object create) and prefix (e.g. images/) you can only have one S3 event rule
-- If you want to send the same S3 event to many SQS queues, use fan-out
+\begin{itemize}
+    \item For the same combination of: event type (e.g object create) and prefix (e.g. images/) you can only have one S3 event rule
+    \item If you want to send the same S3 event to many SQS queues, use fan-out
+\end{itemize}
 %TODO add diagram showing fanout pattern with queues
 
 \subsection{Application: SNS to Amazon S3 through Kinesis Data Firehose}
-- SNS can send to Kinesis and therefore we can have the following solutions architecture
+SNS can send to Kinesis and therefore we can have the following solutions architecture
 %TODO add diagram
 
 \subsection{Amazon SNS - FIFO Topic}
-- FIFO - First in First Out (ordering of messages in the topic)
+\begin{itemize}
+    \item FIFO - First in First Out (ordering of messages in the topic)
 %TODO add diagram
-- Similar features as SQS FIFO:
-    - Ordering by Message Group ID (all messages in the same group are ordered)
-    - Deduplication using a Deduplication ID or Content Based Deduplication
-- Can have SQS Standard and FIFO queues as subscribers
-- Limited throughput (same throughput as SQS FIFO)
+    \item Similar features as SQS FIFO:
+    \item Ordering by Message Group ID (all messages in the same group are ordered)
+    \item Deduplication using a Deduplication ID or Content Based Deduplication
+    \begin{itemize}
+        \item Can have SQS Standard and FIFO queues as subscribers
+        \item Limited throughput (same throughput as SQS FIFO)
+    \end{itemize}
+\end{itemize}
 
 \subsection{SNS FIFO + SQS FIFO: Fan Out}
-- In case you need fan out + ordering + deduplication
+In case you need fan out + ordering + deduplication
 %TODO add diagram
 
 \subsection{SNS - Message Filtering}
-- JSON policy used to filter messages sent to SNS topics subscriptions
-- If a subscription doesn't have a filter policy, it receives every message
+JSON policy used to filter messages sent to SNS topics subscriptions.
+If a subscription doesn't have a filter policy, it receives every message
 %TODO add diagram
+
 
 \section{Amazon SNS - Message Delivery Retries}
 
 \subsection{SNS - Message Delivery Retries}
-- When a message is delivered to an SNS subscriber, case of service-side errors, a delivery policy is applied
+When a message is delivered to an SNS subscriber, case of service-side errors, a delivery policy is applied
 
 \subsubsection{AWS Managed endpoints}
-- Delivery protocols - Amazon Kinesis Data Firehose, AWS Lambda, Amazon SQS
-- Immediate retry (no delay) phase - 3 times withouth delay
-- Pre-backoff phase - 2 times, 1 second apart
-- Backoff - 10 times with exponential backoff, from 1 seconds to 20 seconds
-- Post-backoff phase - 100,000 times, 20 seconds apart
-- Total attempts - 100,015 over 23 days
+\begin{itemize}
+    \item Delivery protocols - Amazon Kinesis Data Firehose, AWS Lambda, Amazon SQS
+    \item Immediate retry (no delay) phase - 3 times withouth delay
+    \item Pre-backoff phase - 2 times, 1 second apart
+    \item Backoff - 10 times with exponential backoff, from 1 seconds to 20 seconds
+    \item Post-backoff phase - 100,000 times, 20 seconds apart
+    \item Total attempts - 100,015 over 23 days
+\end{itemize}
 
 \subsubsection{Customer managed endpoints}
-Delivery protocols - SMTP
-Immiedate retry (no delay) phase - 0 times withouth delay
-Pre-backoff - 2 times, 10 seconds apart
-Backoff phase - 10 times with exponential backoff from 10 seconds to 600 seconds (10 minutes)
-Post-backoff - 38 times, 600 seconds (10 minutes) apart
-Total attempts - 50 attempts, over 6 hours
+\begin{itemize}
+    \item Delivery protocols - SMTP
+    \item Immediate retry (no delay) phase - 0 times without delay
+    \item Pre-backoff - 2 times, 10 seconds apart
+    \item Backoff phase - 10 times with exponential backoff from 10 seconds to 600 seconds (10 minutes)
+    \item Post-backoff - 38 times, 600 seconds (10 minutes) apart
+    \item Total attempts - 50 attempts, over 6 hours
+\end{itemize}
 
 \subsection{SNS Customer Delivery Policies}
-- Only HTTP/S supports custom policies
+Only HTTP/S supports custom policies
 %TODO add JSON custom delivery policy
 
 \subsection{SNS - Dead Lette Queues}
-- After exhausting the delivery policy, messages that haven't been delivered are discarded unless you set a DLQ (Dead Letter Queue)
-- DLQ are Amazon SQS queues or Amazon SQS FIFO queues (for SNS FIFO)
-- Dead Letter Queues are attached to a subscription (rather than a topic)
+\begin{itemize}
+    \item After exhausting the delivery policy, messages that haven't been delivered are discarded unless you set a DLQ (Dead Letter Queue)
+    \item DLQ are Amazon SQS queues or Amazon SQS FIFO queues (for SNS FIFO)
+    \item Dead Letter Queues are attached to a subscription (rather than a topic)
+\end{itemize}
 %TODO add diagram
 

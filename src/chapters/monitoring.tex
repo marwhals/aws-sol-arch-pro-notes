@@ -1,78 +1,99 @@
 \section{CloudWatch}
 
 \subsection{CloudWatch Metrics}
-- Provided by many AWS services
-- EC2 standard: 5 minute, detailed monitoring: 1 minute
-- EC2 RAM is not a built-in metric
-- Can create customer metrics: standard resolution 1 minute, high resolution 1 sec
+\begin{itemize}
+    \item Provided by many AWS services
+    \item EC2 standard: 5 minute, detailed monitoring: 1 minute
+    \item EC2 RAM is not a built-in metric
+    \item Can create customer metrics: standard resolution 1 minute, high resolution 1 sec
+\end{itemize}
 
 \subsection{CloudWatch Alarms}
-- Can trigger actions: EC2 action (reboot, stop, terminate, recover), Auto Scaling, SNS
-- Alarm events can be intercepted by Amazon EventBridge
+\begin{itemize}
+    \item Can trigger actions: EC2 action (reboot, stop, terminate, recover), Auto Scaling, SNS
+    \item Alarm events can be intercepted by Amazon EventBridge
+\end{itemize}
 
 \subsection{CloudWatch Dashboards}
-- Display metrics and alarms
-- Can show metrics of multiple regions
+\begin{itemize}
+    \item Display metrics and alarms
+    \item Can show metrics of multiple regions
+\end{itemize}
 
 \subsection{CloudWatch Alarms Integrations}
 %TODO add diagram of cloud watch integrations
 
 \subsection{CloudWatch Syntethics Canary}
 %TODO add diagram
-- Configurable script that monitors your APIs, URL, Websites,......
-- Reproduce what your customers do programmatically to find issues before customers are impacted
-- Check the availability and latency of your endpoints and can store load time data and screen shots of the UI
-- Integration with CloudWatch Alarms
-- Scripts written in Node.js or Python
-- Programmatic access to a headless Google Chrome browser
-- Can run once or on a regular schedule
+\begin{itemize}
+    \item Configurable script that monitors your APIs, URL, Websites,......
+    \item Reproduce what your customers do programmatically to find issues before customers are impacted
+    \item Check the availability and latency of your endpoints and can store load time data and screen shots of the UI
+    \item Integration with CloudWatch Alarms
+    \item Scripts written in Node.js or Python
+    \item Programmatic access to a headless Google Chrome browser
+    \item Can run once or on a regular schedule
+\end{itemize}
 
 \subsection{CloudWatch Synthetics Canary Blueprints}
-- Heartbeat Monitor - load URL, store screenshot and an HTTP archive files
-- API Canary - test basic read and write functions of REST APIs
-- Broken Link Checker - check all links inside the URL that you are testing
-- Visual Monitoring - compare a screenshot taken during a canary run with a baseline screen shot
-- Canary Recorder - used with CloudWatch Synthetics Recorder (record your actions on a website and automatically generates a script for that)
-- GUI Workflow Builder - verfies that action can be taken on your webpage (e.g test a webpage with a login form)
+\begin{itemize}
+    \item Heartbeat Monitor - load URL, store screenshot and an HTTP archive files
+    \item API Canary - test basic read and write functions of REST APIs
+    \item Broken Link Checker - check all links inside the URL that you are testing
+    \item Visual Monitoring - compare a screenshot taken during a canary run with a baseline screen shot
+    \item Canary Recorder - used with CloudWatch Synthetics Recorder (record your actions on a website and automatically generates a script for that)
+    \item GUI Workflow Builder - verifies that action can be taken on your webpage (e.g test a webpage with a login form)
+\end{itemize}
+
 
 \section{CloudWatch Logs}
 
 \subsection{AWS Cloudwatch Logs - Sources}
-- SDK, CloudWatch Logs Agent, CloudWatch Unified Agent
-- Elastic Beanstalk: collection of logs from application
-- ECS: collection from containers
-- AWS Lambda: Collection from function lgos
-- VPC Flow Logs: VPC specific logs
-- API Gateway
-- CloudTrail based on filter
-- CloudWatch log agents: for examples on EC2 machines
-- Route53: Log DNS queries
+\begin{itemize}
+    \item SDK, CloudWatch Logs Agent, CloudWatch Unified Agent
+    \item Elastic Beanstalk: collection of logs from application
+    \item ECS: collection from containers
+    \item AWS Lambda: Collection from function logs
+    \item VPC Flow Logs: VPC specific logs
+    \item API Gateway
+    \item CloudTrail based on filter
+    \item CloudWatch log agents: for examples on EC2 machines
+    \item Route53: Log DNS queries
+\end{itemize}
 
 \subsection{CloudWatch Logs}
-- Log groups: arbitary name, usually representing an application
-- Log stream: instances within application / log files / containers
-- Can define log expiration policies (never expire, 30 days, etc.......)
-- Optional KMS encryption
-- CloudWatch Logs can send logs to:
-    - Amazon S3 (exports)
-    - Kinesis Data Streams
-    - Kinesis Data Firehose
-    - AWS Lambda
-    - ElasticSearch
+\begin{itemize}
+    \item Log groups: arbitrary name, usually representing an application
+    \item Log stream: instances within application / log files / containers
+    \item Can define log expiration policies (never expire, 30 days, etc.......)
+    \item Optional KMS encryption
+    \item CloudWatch Logs can send logs to:
+    \begin{itemize}
+        \item Amazon S3 (exports)
+        \item Kinesis Data Streams
+        \item Kinesis Data Firehose
+        \item AWS Lambda
+        \item ElasticSearch
+    \end{itemize}
+\end{itemize}
 
 \subsection{CloudWatch Logs Metric Filter and Insights}
-- CloudWatch Logs can use filter expressions
-    - For example, find a specific IP inside of a log
-    - Or count occurences of "ERROR" in your logs
-    - Metric filters can be used to trigger alarms
+\begin{itemize}
+    \item CloudWatch Logs can use filter expressions
+    \item For example, find a specific IP inside of a log
+    \item Or count occurrences of "ERROR" in your logs
+    \item Metric filters can be used to trigger alarms
+\end{itemize}
 
-- CloudWatch Logs Insights can be used to query logs and add queries to CloudWatch Dashboards
+z CloudWatch Logs Insights can be used to query logs and add queries to CloudWatch Dashboards
 
 \subsection{CloudWatch Logs - S3 Export}
-- S3 buckets must be encrypted with AES-256 (SSE-S3) or SSE-KMS
-- Log data can take up to 12 hours to become available for export
-- The API call is CreateExportTask
-- Not near-real time or real-time..... use Logs Subscriptions instead
+\begin{itemize}
+    \item S3 buckets must be encrypted with AES-256 (SSE-S3) or SSE-KMS
+    \item Log data can take up to 12 hours to become available for export
+    \item The API call is CreateExportTask
+    \item Not near-real time or real-time..... use Logs Subscriptions instead
+\end{itemize}
 
 \subsection{CloudWatch Logs Subscription}
 %TODO add diagram cloudwatch logs subscriptions
@@ -82,61 +103,85 @@
 
 \subsection{CloudWatch Agent - Integration with SSM}
 %TODO add diagrams x 3
-- Install CW Agent using SSM Run Command
-- Install CW agent using SSM State Manager
-- Configure CW Agent by storing config in SSM Parameter Store
+\begin{itemize}
+    \item Install CW Agent using SSM Run Command
+    \item Install CW agent using SSM State Manager
+    \item Configure CW Agent by storing config in SSM Parameter Store
+\end{itemize}
+
 
 \section{Amazon EventBridge}
+
 \subsection{Amazon EventBridge - formerly cloudwatch events}
-- Scehdule: Cron jobs (scheduled scripts)
-- Event pattern: Event rules to react to a service doing something
-- Trigger Lambda functions, send SQS/ SNS messages
+\begin{itemize}
+    \item Schedule: Cron jobs (scheduled scripts)
+    \item Event pattern: Event rules to react to a service doing something
+    \item Trigger Lambda functions, send SQS/ SNS messages
+\end{itemize}
 
 \subsection{Amazon EventBridge Rules}
 %TODO add event bridge diagram rules
 
 \subsection{Amazon EventBridge}
 %TODO add diagrams
-- Event buses can be accessed by other AWS accounts using Resource-based Policies
-- You can archive events (all/filter) sent to an event bus (indefinitely or set period)
-- Ability to replay archived events
+\begin{itemize}
+    \item Event buses can be accessed by other AWS accounts using Resource-based Policies
+    \item You can archive events (all/filter) sent to an event bus (indefinitely or set period)
+    \item Ability to replay archived events
+\end{itemize}
 
 \subsection{Amazon EventBridge - Schema Registry}
-- EventBridge can analyse the events in your bus and infer the schema
-- The Schema Registry allows you to generate code for you application, that will know in advance how data is structured in the event bus
-- Schema can be versioned
+\begin{itemize}
+    \item EventBridge can analyse the events in your bus and infer the schema
+    \item The Schema Registry allows you to generate code for you application, that will know in advance how data is structured in the event bus
+    \item Schema can be versioned
+\end{itemize}
 
 \subsection{Amazon EventBridge - Resource-based Policy}
 %TODO add diagram and JSON
-- Manage permissions for specific Event Bus
-- Example: allow/deny events from another AWS account or AWS region
-- Use case: aggregate all events from your AWS Organisation in a single AWS account or AWS region
+\begin{itemize}
+    \item Manage permissions for specific Event Bus
+    \item Example: allow/deny events from another AWS account or AWS region
+    \item Use case: aggregate all events from your AWS Organisation in a single AWS account or AWS region
+\end{itemize}
+
 
 \section{X-Ray}
+
 \subsection{Visual analysis of our application}
 %TODO see diagram
+
 \subsection{X-Ray}
-- Tracing requests across your microservices (distributed systems)
-- Integrations with:
-    - EC2 - install the X-Ray agent
-    - ECS - install the X-Ray agent or Docker container
-    - Lambda
-    - Beanstalk - agent is automatically installed
-- The X-Ray agent or services need IAM permissions to X-Ray
+\begin{itemize}
+    \item Tracing requests across your microservices (distributed systems)
+    \item Integrations with:
+    \begin{itemize}
+        \item EC2 - install the X-Ray agent
+        \item ECS - install the X-Ray agent or Docker container
+        \item Lambda
+        \item Beanstalk - agent is automatically installed
+    \end{itemize}
+    \item The X-Ray agent or services need IAM permissions to X-Ray
+\end{itemize}
+
 
 \section{AWS Personal Health Dashboard}
-- Global service
-- Show how AWS outages directly impact you
-- Show the impact on your resources
-- List issues and actions you can do to remediate them
-- Will show \textbf{maintenance} events from AWS
-- Programmatically accessible through the AWS Health API
-- Aggregations across multiple accounts of an AWS Organisation
-- https://phd.aws.amazon.com/
+\begin{itemize}
+    \item Global service
+    \item Show how AWS outages directly impact you
+    \item Show the impact on your resources
+    \item List issues and actions you can do to remediate them
+    \item Will show \textbf{maintenance} events from AWS
+    \item Programmatically accessible through the AWS Health API
+    \item Aggregations across multiple accounts of an AWS Organisation
+    \item https://phd.aws.amazon.com/
+\end{itemize}
 
 \subsection{Health Event Notifications}
 %TODO add diagram
-- Use EventBridge (CloudWatch events) to react to changes for AWS Health events in your AWS account
-- Examples: receive email notifications when EC2 instances in your AWS account are scheduled for updates
-- Can't be used to return public events from the Service Health Dashboard
-- Use cases: send notfications, capture event information, take corrective action,..........
+\begin{itemize}
+    \item Use EventBridge (CloudWatch events) to react to changes for AWS Health events in your AWS account
+    \item Examples: receive email notifications when EC2 instances in your AWS account are scheduled for updates
+    \item Can't be used to return public events from the Service Health Dashboard
+    \item Use cases: send notifications, capture event information, take corrective action,..........
+\end{itemize}

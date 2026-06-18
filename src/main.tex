@@ -28,6 +28,8 @@
 \usepackage{float}
 \usepackage{coptic}
 \usepackage{xcolor}
+\usepackage{tweaklist}
+\usepackage{tikzexternal}
 
 \definecolor{awsorange}{RGB}{255,153,0}
 \definecolor{awsblue}{RGB}{35,47,62}
@@ -80,6 +82,7 @@
     \tableofcontents
     \newpage
 
+
     \chapter{Course Introduction}
 
     \paragraph{Pre-Introduction}
@@ -91,6 +94,7 @@
     \end{itemize}
 
     %Exam study strategy notes here - Targets the SAP-C02
+
 
     \chapter{Simple AWS Architecture}
 
@@ -118,36 +122,68 @@
         \caption{Simple EC2 to S3 Architecture}
     \end{figure}
 
+
     \chapter{Identity \& Federation}
     \include{chapters/indentity_and_federation}
 
-%    \chapter{Security}
-%
-%    \chapter{Compute \& Load Balancing}
-%
-%    \chapter{Storage} %320 - 377
-%
-%    \chapter{Caching}
-%
-%    \chapter{Databases}
-%
-%    \chapter{Service Communication}
-%
-%    \chapter{Data Engineering}
-%
-%    \chapter{Monitoring}
-%
-%    \chapter{Deployment and Instance Management}
-%
-%    \chapter{Cost Control}
 
-%    \chapter{Migration}
+    \chapter{Security}
+    \include{chapters/security}
 %
-%    \chapter{VPC}
 
-%    \chapter{Machine Learning}
+
+    \chapter{Compute \& Load Balancing}
+    \include{chapters/compute_and_load_balancing}
 %
-%    \chapter{Other Services}
+
+
+    \chapter{Storage} %320 - 377
+    \include{chapters/storage}
+%
+
+
+    \chapter{Caching}
+    \include{chapters/caching}
+
+
+    \chapter{Databases}
+    \include{chapters/databases}
+
+
+    \chapter{Service Communication}
+    \include{chapters/service_communication}
+
+
+    \chapter{Data Engineering}
+    \include{chapters/data_engineering}
+
+
+    \chapter{Monitoring}
+    \include{chapters/monitoring}
+
+
+    \chapter{Deployment and Instance Management}
+    \include{chapters/deployment_and_instance_management}
+
+
+    \chapter{Cost Control}
+    \include{chapters/cost_control}
+
+
+    \chapter{Migration}
+    \include{chapters/migration}
+
+
+    \chapter{VPC}
+    \include{chapters/vpc}
+
+
+    \chapter{Machine Learning}
+    \include{chapters/machine_learning}
+
+
+    \chapter{Other Services}
+    \include{chapters/other_services}
 
 %    \chapter{Exam Preparation}
 

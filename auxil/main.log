@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.29)  17 MAR 2026 22:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.29)  18 JUN 2026 01:10
 entering extended mode
 **./main.tex
 (main.tex
@@ -678,6 +678,100 @@ File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 kz/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflib
+raryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowinset=\dimen280
+\pgfarrowlength=\dimen281
+\pgfarrowwidth=\dimen282
+\pgfarrowlinewidth=\dimen283
+)
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes
+\pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes
+\pgflibraryshapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes
+\pgflibraryshapes.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes
+\pgflibraryshapes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibraryshapes.callouts.code.tex
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes
+\pgflibraryshapes.callouts.code.tex))
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes
+\pgflibraryshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodepartlowerbox=\box67
+\pgfnodeparttwobox=\box68
+\pgfnodepartthreebox=\box69
+\pgfnodepartfourbox=\box70
+\pgfnodeparttwentybox=\box71
+\pgfnodepartnineteenbox=\box72
+\pgfnodeparteighteenbox=\box73
+\pgfnodepartseventeenbox=\box74
+\pgfnodepartsixteenbox=\box75
+\pgfnodepartfifteenbox=\box76
+\pgfnodepartfourteenbox=\box77
+\pgfnodepartthirteenbox=\box78
+\pgfnodeparttwelvebox=\box79
+\pgfnodepartelevenbox=\box80
+\pgfnodeparttenbox=\box81
+\pgfnodepartninebox=\box82
+\pgfnodeparteightbox=\box83
+\pgfnodepartsevenbox=\box84
+\pgfnodepartsixbox=\box85
+\pgfnodepartfivebox=\box86
+)))
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibraryfit.code.tex
+File: tikzlibraryfit.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibrarybackgrounds.code.tex
+File: tikzlibrarybackgrounds.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@layerbox@background=\box87
+\pgf@layerboxsaved@background=\box88
+)
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplots.sty
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.re
 vision.tex)
@@ -690,7 +784,7 @@ e.code.tex
 \t@pgfplots@toka=\toks37
 \t@pgfplots@tokb=\toks38
 \t@pgfplots@tokc=\toks39
-\pgfplots@tmpa=\dimen280
+\pgfplots@tmpa=\dimen284
 \c@pgfplots@coordindex=\count325
 \c@pgfplots@scanlineindex=\count326
 
@@ -761,16 +855,16 @@ ths.code.tex)
 kz/libraries\tikzlibrarydecorations.code.tex
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodul
 edecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen281
-\pgfdecoratedremainingdistance=\dimen282
-\pgfdecoratedinputsegmentcompleteddistance=\dimen283
-\pgfdecoratedinputsegmentremainingdistance=\dimen284
-\pgf@decorate@distancetomove=\dimen285
+\pgfdecoratedcompleteddistance=\dimen285
+\pgfdecoratedremainingdistance=\dimen286
+\pgfdecoratedinputsegmentcompleteddistance=\dimen287
+\pgfdecoratedinputsegmentremainingdistance=\dimen288
+\pgf@decorate@distancetomove=\dimen289
 \pgf@decorate@repeatstate=\count330
-\pgfdecorationsegmentamplitude=\dimen286
-\pgfdecorationsegmentlength=\dimen287
+\pgfdecorationsegmentamplitude=\dimen290
+\pgfdecorationsegmentlength=\dimen291
 )
-\tikz@lib@dec@box=\box67
+\tikz@lib@dec@box=\box89
 )
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
 kz/libraries\tikzlibrarydecorations.pathmorphing.code.tex
@@ -783,12 +877,12 @@ tions\pgflibrarydecorations.pathreplacing.code.tex))
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzli
 brarypgfplots.contourlua.code.tex)
 \pgfplots@numplots=\count331
-\pgfplots@xmin@reg=\dimen288
-\pgfplots@xmax@reg=\dimen289
-\pgfplots@ymin@reg=\dimen290
-\pgfplots@ymax@reg=\dimen291
-\pgfplots@zmin@reg=\dimen292
-\pgfplots@zmax@reg=\dimen293
+\pgfplots@xmin@reg=\dimen292
+\pgfplots@xmax@reg=\dimen293
+\pgfplots@ymin@reg=\dimen294
+\pgfplots@ymax@reg=\dimen295
+\pgfplots@zmin@reg=\dimen296
+\pgfplots@zmax@reg=\dimen297
 )
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
 kz/libraries\tikzlibraryplotmarks.code.tex
@@ -808,9 +902,9 @@ LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count332
 \float@exts=\toks41
-\float@box=\box68
+\float@box=\box90
 \@float@everytoks=\toks42
-\@floatcapt=\box69
+\@floatcapt=\box91
 )
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/cbcoptic\coptic.sty
 Package: coptic 2010/01/09 v.0.2 Claudio Beccari
@@ -838,46 +932,70 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 )
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 3
-7.
- (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/moderncv\tweaklist.sty
+
+C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/moderncv\tweaklist.sty:
+56: LaTeX Error: Command \description already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56   {\endlist}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\tikzexte
+rnal.sty
+\r@pgf@reada=\read3
+)
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 6
+8.
+
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
-(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\out\main.aux)
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\out\main.aux
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\out\chapters/ind
+entity_and_federation.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for LCOP/coptic/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for LCOP/coptic/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
 
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
 kii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count333
-\scratchdimen=\dimen294
-\scratchbox=\box70
+\scratchdimen=\dimen298
+\scratchbox=\box92
 \nofMPsegments=\count334
 \nofMParguments=\count335
 \everyMPshowfont=\toks43
 \MPscratchCnt=\count336
-\MPscratchDim=\dimen295
+\MPscratchDim=\dimen299
 \MPnumerator=\count337
 \makeMPintoPDFobject=\count338
 \everyMPtoPDFconversion=\toks44
@@ -926,7 +1044,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 37.
+Package hyperref Info: Link coloring OFF on input line 68.
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -939,9 +1057,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count339
 )
-LaTeX Info: Redefining \ref on input line 37.
-LaTeX Info: Redefining \pageref on input line 37.
-LaTeX Info: Redefining \nameref on input line 37.
+LaTeX Info: Redefining \ref on input line 68.
+LaTeX Info: Redefining \pageref on input line 68.
+LaTeX Info: Redefining \nameref on input line 68.
 
 (C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\out\main.out)
 (C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\out\main.out)
@@ -954,7 +1072,7 @@ LaTeX Info: Redefining \nameref on input line 37.
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 37.
+ on input line 68.
 
 [1
 
@@ -971,11 +1089,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [2
 
 ] (C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\out\main.toc
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 4.
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 5.
 
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/wasysym\uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
-)
+))
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
+
 [3]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -985,15 +1107,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[4]
+[4
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
+]
+Chapter 1.
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 9
+1.
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1phv.fd
+File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
+)
 [5]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1003,125 +1125,142 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[6]
-Overfull \hbox (2.21146pt too wide) detected at line 246
-\OT1/phv/m/n/10.95 12.10 
- []
-
-
-Overfull \hbox (2.21146pt too wide) detected at line 257
-\OT1/phv/m/n/10.95 13.10 
- []
-
-
-Overfull \hbox (2.21146pt too wide) detected at line 258
-\OT1/phv/m/n/10.95 13.11 
- []
-
-
-Overfull \hbox (2.21146pt too wide) detected at line 259
-\OT1/phv/m/n/10.95 13.12 
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[7]
-Overfull \hbox (2.21146pt too wide) detected at line 270
-\OT1/phv/m/n/10.95 14.10 
- []
-
-
-Overfull \hbox (2.21146pt too wide) detected at line 271
-\OT1/phv/m/n/10.95 14.11 
- []
-
-
-Overfull \hbox (2.21146pt too wide) detected at line 272
-\OT1/phv/m/n/10.95 14.12 
- []
-
-
-Overfull \hbox (2.21146pt too wide) detected at line 285
-\OT1/phv/m/n/10.95 15.10 
- []
-
-
-Overfull \hbox (2.21146pt too wide) detected at line 286
-\OT1/phv/m/n/10.95 15.11 
- []
-
-
-Overfull \hbox (2.21146pt too wide) detected at line 287
-\OT1/phv/m/n/10.95 15.12 
- []
-
-
-Overfull \hbox (2.21146pt too wide) detected at line 298
-\OT1/phv/m/n/10.95 16.10 
- []
-
-
-Overfull \hbox (2.21146pt too wide) detected at line 299
-\OT1/phv/m/n/10.95 16.11 
- []
-
-
-Overfull \hbox (2.21146pt too wide) detected at line 300
-\OT1/phv/m/n/10.95 16.12 
- []
-
-
-Overfull \hbox (2.21146pt too wide) detected at line 301
-\OT1/phv/m/n/10.95 16.13 
- []
-
-
-Overfull \hbox (2.21146pt too wide) detected at line 302
-\OT1/phv/m/n/10.95 16.14 
- []
-
-)
-\tf@toc=\write5
-\openout5 = `main.toc'.
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[8]
-Chapter 1.
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 5
-9.
-(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1phv.fd
-File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
-)
-[9
-
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[10
+[6
 
 ]
 Chapter 2.
-[11]
+main.tex:121: Undefined control sequence.
+\tikzexternal@figurename ->\tikzexternal@realjob 
+                                                 -figure
+l.121         \end{tikzpicture}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+main.tex:121: Undefined control sequence.
+\tikzexternal@figurename ->\tikzexternal@realjob 
+                                                 -figure
+l.121         \end{tikzpicture}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+main.tex:121: Undefined control sequence.
+\tikzexternal@figurename ->\tikzexternal@realjob 
+                                                 -figure
+l.121         \end{tikzpicture}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+main.tex:121: Undefined control sequence.
+\tikzexternal@figurename ->\tikzexternal@realjob 
+                                                 -figure
+l.121         \end{tikzpicture}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+main.tex:121: Undefined control sequence.
+\tikzexternal@curfilename ->\tikzexternal@realjob 
+                                                  -figure0
+l.121         \end{tikzpicture}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+main.tex:121: Undefined control sequence.
+tikzexternal@curfilename ->tikzexternal@realjob 
+                                                -figure0
+l.121         \end{tikzpicture}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+main.tex:121: Undefined control sequence.
+tikzexternal@curfilename ->tikzexternal@realjob 
+                                                -figure0
+l.121         \end{tikzpicture}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+main.tex:121: Undefined control sequence.
+tikzexternal@curfilename ->tikzexternal@realjob 
+                                                -figure0
+l.121         \end{tikzpicture}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+main.tex:121: Undefined control sequence.
+\tikzexternal@curfilename ->\tikzexternal@realjob 
+                                                  -figure0
+l.121         \end{tikzpicture}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+main.tex:121: LaTeX Error: File `-figure0' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.121         \end{tikzpicture}
+                               
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[7pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}
+) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.126     \chapter
+                  {Identity \& Federation}]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[8
+
+]
+Chapter 3.
+[9]
 \openout2 = `chapters/indentity_and_federation.aux'.
 
  (chapters/indentity_and_federation.tex
@@ -1135,41 +1274,41 @@ File: lstlang2.sty 2020/03/24 1.8d listings language file
 File: lstlang3.sty 2020/03/24 1.8d listings language file
 )
 
-chapters/indentity_and_federation.tex:25: Package Listings Error: Couldn't load
+chapters/indentity_and_federation.tex:28: Package Listings Error: Couldn't load
  requested language.
 
 See the Listings package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.25 ...=Sample JSON Data, label=lst:json-example]
+l.28 ...=Sample JSON Data, label=lst:json-example]
                                                   
 The following languages weren't loadable:
     ,json$
 This may cause errors in the sequel.
 
 
-chapters/indentity_and_federation.tex:25: Package Listings Error: language json
+chapters/indentity_and_federation.tex:28: Package Listings Error: language json
  undefined.
 
 See the Listings package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.25 ...=Sample JSON Data, label=lst:json-example]
+l.28 ...=Sample JSON Data, label=lst:json-example]
                                                   
 The language is not loadable. Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 25.
+nput line 28.
 LaTeX Font Info:    Trying to load font information for OMS+phv on input line 2
-6.
+9.
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsphv.fd
 File: omsphv.fd 
 )
 LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 26.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 29.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1179,9 +1318,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[12
+[10
 
 ]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[11]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[12]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1200,15 +1357,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [14]
-chapters/indentity_and_federation.tex:240: You can't use `macro parameter chara
-cter #' in horizontal mode.
-l.240 - Multi AZ deployment of AD in 2 AZ, #
-                                             of DC (Domain Controllers) can ...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1218,6 +1366,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [15]
+chapters/indentity_and_federation.tex:282: You can't use `macro parameter chara
+cter #' in horizontal mode.
+l.282 ...item Multi AZ deployment of AD in 2 AZ, #
+                                                   of DC (Domain Controllers...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1262,7 +1419,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[20])
+[20]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1280,16 +1437,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[22
-
-
-
-]
-Chapter 3.
-[23]
-\openout2 = `chapters/security.aux'.
-
- (chapters/security.tex
+[22]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1298,56 +1446,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[24
+[23]
 
-]
-chapters/security.tex:141: Missing $ inserted.
-<inserted text> 
-                $
-l.141 - KMS(AWS_
-                KMS) - default
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
 
-chapters/security.tex:143: Missing $ inserted.
-<inserted text> 
-                $
-l.143 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-
-Overfull \hbox (4.89807pt too wide) in paragraph at lines 141--143
-[]\OT1/phv/m/n/10.95 - KMS(AWS$[]\OML/cmm/m/it/10.95 MS\OT1/cmr/m/n/10.95 ) \OM
-S/cmsy/m/n/10.95   \OML/cmm/m/it/10.95 default \OMS/cmsy/m/n/10.95   \OML/cmm/m
-/it/10.95 AWSKMScreatedandmanagedthekeymaterialinitsownkeystore$ 
- []
-
-chapters/security.tex:148: Missing $ inserted.
-<inserted text> 
-                $
-l.148 - Custom Key Store (AWS_
-                              CLOUDHSM)
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-chapters/security.tex:150: Missing $ inserted.
-<inserted text> 
-                $
-l.150 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Overfull \hbox (117.87563pt too wide) in paragraph at lines 148--150
-[]\OT1/phv/m/n/10.95 - Cus-tom Key Store (AWS$[]\OML/cmm/m/it/10.95 LOUDHSM\OT1
-/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95   \OML/cmm/m/it/10.95 AWSKMScreatesthekeym
-aterialinacustomkeystore\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 CloudHSMCluster
-\OT1/cmr/m/n/10.95 )$ 
- []
-
+[24])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1365,32 +1473,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[26]
+[26
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
+]
+Chapter 4.
 [27]
-chapters/security.tex:422: Missing $ inserted.
-<inserted text> 
-                $
-l.422 ...an change timeout with --expires-in[TIME_
-                                                  BY_SECONDS] argument
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+\openout2 = `chapters/security.aux'.
 
-chapters/security.tex:424: Missing $ inserted.
-<inserted text> 
-                $
-l.424 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
+ (chapters/security.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1399,7 +1491,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[28]
+[28
+
+]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1418,6 +1512,53 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [30]
+chapters/security.tex:169: Missing $ inserted.
+<inserted text> 
+                $
+l.169 - KMS(AWS_
+                KMS) - default
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+chapters/security.tex:171: Missing $ inserted.
+<inserted text> 
+                $
+l.171 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (4.89807pt too wide) in paragraph at lines 169--171
+[]\OT1/phv/m/n/10.95 - KMS(AWS$[]\OML/cmm/m/it/10.95 MS\OT1/cmr/m/n/10.95 ) \OM
+S/cmsy/m/n/10.95   \OML/cmm/m/it/10.95 default \OMS/cmsy/m/n/10.95   \OML/cmm/m
+/it/10.95 AWSKMScreatedandmanagedthekeymaterialinitsownkeystore$ 
+ []
+
+chapters/security.tex:176: Missing $ inserted.
+<inserted text> 
+                $
+l.176 - Custom Key Store (AWS_
+                              CLOUDHSM)
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+chapters/security.tex:178: Missing $ inserted.
+<inserted text> 
+                $
+l.178 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (117.87563pt too wide) in paragraph at lines 176--178
+[]\OT1/phv/m/n/10.95 - Cus-tom Key Store (AWS$[]\OML/cmm/m/it/10.95 LOUDHSM\OT1
+/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95   \OML/cmm/m/it/10.95 AWSKMScreatesthekeym
+aterialinacustomkeystore\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 CloudHSMCluster
+\OT1/cmr/m/n/10.95 )$ 
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1435,7 +1576,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[32])
+[32]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1445,633 +1586,3370 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [33]
-(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\out\main.aux)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[34]
+
+chapters/security.tex:366: LaTeX Error: Lonely \item--perhaps a missing list en
+vironment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.366 \item P
+             ossibility of creating public certificates
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 366
+[][]
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[35]
+
+chapters/security.tex:367: LaTeX Error: Lonely \item--perhaps a missing list en
+vironment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.367 \item M
+             ust verify public DNS
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 367
+[][]
+ []
+
+
+chapters/security.tex:368: LaTeX Error: Lonely \item--perhaps a missing list en
+vironment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.368 \item M
+             ust be issued by a trusted public certificate authority (CA)
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 368
+[][]
+ []
+
+
+chapters/security.tex:369: LaTeX Error: Lonely \item--perhaps a missing list en
+vironment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.369 \item P
+             ossibility of creating private certificates
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 369
+[][]
+ []
+
+
+chapters/security.tex:370: LaTeX Error: Lonely \item--perhaps a missing list en
+vironment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.370 \item F
+             or you internal applications
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 370
+[][]
+ []
+
+
+chapters/security.tex:371: LaTeX Error: Lonely \item--perhaps a missing list en
+vironment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.371 \item Y
+             ou create your own private CA
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 371
+[][]
+ []
+
+
+chapters/security.tex:372: LaTeX Error: Lonely \item--perhaps a missing list en
+vironment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.372 \item Y
+             our applications must trust your private CA
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 372
+[][]
+ []
+
+
+chapters/security.tex:373: LaTeX Error: Lonely \item--perhaps a missing list en
+vironment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.373 \item C
+             ertificate renewal:
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 373
+[][]
+ []
+
+
+chapters/security.tex:374: LaTeX Error: Lonely \item--perhaps a missing list en
+vironment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.374 \item A
+             utomatically done if generated provisioned by ACM
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 374
+[][]
+ []
+
+
+chapters/security.tex:375: LaTeX Error: Lonely \item--perhaps a missing list en
+vironment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.375 \item A
+             ny manually uploaded certificates must be renewed manually and ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 375
+[][]
+ []
+
+
+chapters/security.tex:376: LaTeX Error: Lonely \item--perhaps a missing list en
+vironment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.376 \item A
+             CM is a regional service
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 376
+[][]
+ []
+
+
+chapters/security.tex:377: LaTeX Error: Lonely \item--perhaps a missing list en
+vironment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.377 \item T
+             o use with a global application (multilpe ALB for example), you...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 377
+[][]
+ []
+
+
+chapters/security.tex:378: LaTeX Error: Lonely \item--perhaps a missing list en
+vironment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.378 \item Y
+             ou cannot copy certs across regions
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 378
+[][]
+ []
+
+
+chapters/security.tex:406: LaTeX Error: Lonely \item--perhaps a missing list en
+vironment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.406 \item C
+             loudHSM clusters are spread across Multi AZ (HA)
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 406
+[][]
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[36]
+
+chapters/security.tex:407: LaTeX Error: Lonely \item--perhaps a missing list en
+vironment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.407 \item G
+             reat for availability
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 407
+[][]
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[37]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[38]
+chapters/security.tex:511: Missing $ inserted.
+<inserted text> 
+                $
+l.511 ...an change timeout with --expires-in[TIME_
+                                                  BY_SECONDS] argument
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+chapters/security.tex:512: LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.512     \item
+                Users given a pre-signed URL inherit the permissions of the ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/security.tex:512: LaTeX Error: Something's wrong--perhaps a missing \i
+tem.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.512     \item U
+                 sers given a pre-signed URL inherit the permissions of the ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/security.tex:512: LaTeX Error: Something's wrong--perhaps a missing \i
+tem.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.512     \item U
+                 sers given a pre-signed URL inherit the permissions of the ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/security.tex:513: LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.513     \item
+                Examples:
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+chapters/security.tex:513: Missing $ inserted.
+<inserted text> 
+                $
+l.513     \item E
+                 xamples:
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+chapters/security.tex:513: Missing } inserted.
+<inserted text> 
+                }
+l.513     \item E
+                 xamples:
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (136.31818pt too wide) in paragraph at lines 511--513
+[]\OT1/phv/m/n/10.95 Valid for a de-fault of 3600 sec-onds, can change time-out
+ with --expires-in[TIME$[]\OML/cmm/m/it/10.95 Y[]ECONDS\OT1/cmr/m/n/10.95 ]\OML
+/cmm/m/it/10.95 argumentUsersgivenapre \OMS/cmsy/m/n/10.95  
+ []
+
+chapters/security.tex:513: Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.513     \item E
+                 xamples:
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[39]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[40]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[41]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[42]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[43]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[44]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[45]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[46]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[47])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[48]
+Chapter 5.
+[49
+
+
+
+]
+\openout2 = `chapters/compute_and_load_balancing.aux'.
+
+ (chapters/compute_and_load_balancing.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[50
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[51]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[52]
+
+chapters/compute_and_load_balancing.tex:152: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.152     \item C
+                 PU optimised, GPU optimised
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/compute_and_load_balancing.tex:152: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.152     \item C
+                 PU optimised, GPU optimised
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/compute_and_load_balancing.tex:152: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.152     \item C
+                 PU optimised, GPU optimised
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/compute_and_load_balancing.tex:153: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.153     \item S
+                 pot Instances / Spot Fleets for cost savings + Auto Scaling
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/compute_and_load_balancing.tex:153: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.153     \item S
+                 pot Instances / Spot Fleets for cost savings + Auto Scaling
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/compute_and_load_balancing.tex:153: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.153     \item S
+                 pot Instances / Spot Fleets for cost savings + Auto Scaling
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/compute_and_load_balancing.tex:154: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.154     \item E
+                 C2 Place Groups: Cluster for good network performance
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/compute_and_load_balancing.tex:154: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.154     \item E
+                 C2 Place Groups: Cluster for good network performance
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/compute_and_load_balancing.tex:154: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.154     \item E
+                 C2 Place Groups: Cluster for good network performance
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/compute_and_load_balancing.tex:156: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.156     \item E
+                 C2 Enhanced Networking (SR-IOV)
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/compute_and_load_balancing.tex:156: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.156     \item E
+                 C2 Enhanced Networking (SR-IOV)
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/compute_and_load_balancing.tex:156: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.156     \item E
+                 C2 Enhanced Networking (SR-IOV)
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/compute_and_load_balancing.tex:157: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.157     \item H
+                 igher Bandwidth, higher PPS (packet per second), lower latency
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/compute_and_load_balancing.tex:157: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.157     \item H
+                 igher Bandwidth, higher PPS (packet per second), lower latency
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/compute_and_load_balancing.tex:157: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.157     \item H
+                 igher Bandwidth, higher PPS (packet per second), lower latency
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/compute_and_load_balancing.tex:158: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.158     \item O
+                 ption 1: Elastic Network Adapted (ENA) up to 100 Gbps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/compute_and_load_balancing.tex:158: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.158     \item O
+                 ption 1: Elastic Network Adapted (ENA) up to 100 Gbps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/compute_and_load_balancing.tex:158: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.158     \item O
+                 ption 1: Elastic Network Adapted (ENA) up to 100 Gbps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/compute_and_load_balancing.tex:159: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.159     \item O
+                 ption 2: Intel 82599 up to 10Gbps - Legacy
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/compute_and_load_balancing.tex:159: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.159     \item O
+                 ption 2: Intel 82599 up to 10Gbps - Legacy
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/compute_and_load_balancing.tex:159: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.159     \item O
+                 ption 2: Intel 82599 up to 10Gbps - Legacy
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/compute_and_load_balancing.tex:160: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.160     \item E
+                 lastic Fabric Adapter (EFA)
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/compute_and_load_balancing.tex:160: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.160     \item E
+                 lastic Fabric Adapter (EFA)
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/compute_and_load_balancing.tex:160: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.160     \item E
+                 lastic Fabric Adapter (EFA)
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/compute_and_load_balancing.tex:161: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.161     \item I
+                 mproved ENA for HPC only works for Linux
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/compute_and_load_balancing.tex:161: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.161     \item I
+                 mproved ENA for HPC only works for Linux
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/compute_and_load_balancing.tex:161: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.161     \item I
+                 mproved ENA for HPC only works for Linux
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/compute_and_load_balancing.tex:162: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.162     \item G
+                 reat for inter-node communications, tightly coupled workloads
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/compute_and_load_balancing.tex:162: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.162     \item G
+                 reat for inter-node communications, tightly coupled workloads
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/compute_and_load_balancing.tex:162: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.162     \item G
+                 reat for inter-node communications, tightly coupled workloads
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/compute_and_load_balancing.tex:163: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.163     \item L
+                 everages Message Passing interface (MPI) standard
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/compute_and_load_balancing.tex:163: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.163     \item L
+                 everages Message Passing interface (MPI) standard
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/compute_and_load_balancing.tex:163: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.163     \item L
+                 everages Message Passing interface (MPI) standard
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/compute_and_load_balancing.tex:164: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.164     \item B
+                 ypasses the underlying Linux OS to provide low-latency reli...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/compute_and_load_balancing.tex:164: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.164     \item B
+                 ypasses the underlying Linux OS to provide low-latency reli...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/compute_and_load_balancing.tex:164: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.164     \item B
+                 ypasses the underlying Linux OS to provide low-latency reli...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/compute_and_load_balancing.tex:165: LaTeX Error: Something's wrong--pe
+rhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.165 \end{itemize}
+                   
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[53]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[54]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[55]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[56]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[57]
+Overfull \hbox (3.47621pt too wide) in paragraph at lines 479--491
+\OT1/phv/m/n/10.95 Amazon ECS Any-where - Eas-ily run con-tain-ers on Customer-
+managed in-fras-truc-ture (on-premises,
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[58]
+chapters/compute_and_load_balancing.tex:523: You can't use `macro parameter cha
+racter #' in horizontal mode.
+l.523 - C#
+           (.NET Core) / Powershell
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[59]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[60]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[61]
+chapters/compute_and_load_balancing.tex:814: Missing $ inserted.
+<inserted text> 
+                $
+l.814 - IAM based access (AWS_
+                              IAM)
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+chapters/compute_and_load_balancing.tex:823: Missing $ inserted.
+<inserted text> 
+                $
+l.823 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (106.79376pt too wide) in paragraph at lines 812--823
+[]\OT1/phv/m/n/10.95 API Gate-way - Au-then-ti-ca-tion - IAM based ac-cess (AWS
+$[]\OML/cmm/m/it/10.95 AM\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95   \OML/cmm/m/
+it/10.95 Goodforprovidingaccesswithinyourinfrastructure \OMS/cmsy/m/n/10.95  
+ []
+
+
+Overfull \hbox (17.9569pt too wide) in paragraph at lines 812--823
+\OML/cmm/m/it/10.95 PassIAMcredentialinheadersthroughSigV\OT1/cmr/m/n/10.95 4 \
+OMS/cmsy/m/n/10.95   \OML/cmm/m/it/10.95 LambdaAuthoriser\OT1/cmr/m/n/10.95 (\O
+ML/cmm/m/it/10.95 formerlyCustomerAuthoriser\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/
+10.95  
+ []
+
+
+Overfull \hbox (149.57808pt too wide) in paragraph at lines 812--823
+\OML/cmm/m/it/10.95 UseLambdatoverfifyacustomOAuth=SAML=thridpartyauthenticatio
+n \OMS/cmsy/m/n/10.95   \OML/cmm/m/it/10.95 Cognitouserpools \OMS/cmsy/m/n/10.9
+5   \OML/cmm/m/it/10.95 ClientauthenticateswithCognito \OMS/cmsy/m/n/10.95  
+ []
+
+
+Overfull \hbox (8.1331pt too wide) in paragraph at lines 812--823
+\OML/cmm/m/it/10.95 ClientpassesthetokentotheAPIGateway \OMS/cmsy/m/n/10.95   \
+OML/cmm/m/it/10.95 APIGatewayknowout \OMS/cmsy/m/n/10.95   \OML/cmm/m/it/10.95 
+of \OMS/cmsy/m/n/10.95   \OML/cmm/m/it/10.95 the \OMS/cmsy/m/n/10.95   \OML/cmm
+/m/it/10.95 boxhowtoverifytotoken$ 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[62]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[63]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[64]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[65]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[66])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[67]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[68
+
+
+
+]
+Chapter 6.
+[69]
+\openout2 = `chapters/storage.aux'.
+
+ (chapters/storage.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[70
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[71]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[72]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[73]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[74]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[75]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[76]
+Overfull \hbox (15.24205pt too wide) in paragraph at lines 341--342
+[]\OT1/phv/m/n/10.95 VersioningEnabledBucketCount, MFADele-teEn-abled-Buck-et-C
+ount, SSEKM-SEn-abled-Buck-
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[77]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[78]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[79]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[80]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[81]
+
+chapters/storage.tex:597: LaTeX Error: Lonely \item--perhaps a missing list env
+ironment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.597 \item A
+              fully-managed service for file transfers into and out of Amazo...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 597
+[][]
+ []
+
+
+chapters/storage.tex:598: LaTeX Error: Lonely \item--perhaps a missing list env
+ironment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.598 \item S
+             upported Protocols
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 598
+[][]
+ []
+
+
+chapters/storage.tex:604: LaTeX Error: Lonely \item--perhaps a missing list env
+ironment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.604 \item M
+             anaged infrastructure, Scalable, Reliable, Highly Available (mu...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 604
+[][]
+ []
+
+
+chapters/storage.tex:605: LaTeX Error: Lonely \item--perhaps a missing list env
+ironment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.605 \item P
+             ay per provisioned endpoint per hour + data transfers in GB
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 605
+[][]
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[82]
+
+chapters/storage.tex:606: LaTeX Error: Lonely \item--perhaps a missing list env
+ironment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.606 \item S
+             tore and manage users' credentials within the service
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 606
+[][]
+ []
+
+
+chapters/storage.tex:607: LaTeX Error: Lonely \item--perhaps a missing list env
+ironment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.607 \item I
+             ntegrate with existing authentication systems (Microsoft Active...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 607
+[][]
+ []
+
+
+chapters/storage.tex:608: LaTeX Error: Lonely \item--perhaps a missing list env
+ironment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.608 \item U
+             sage: sharing files, public datasets, CRM, ERP,.....
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 608
+[][]
+ []
+
+)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[83]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[84
+
+
+
+]
+Chapter 7.
+[85]
+\openout2 = `chapters/caching.aux'.
+
+ (chapters/caching.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[86
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[87]
+
+chapters/caching.tex:140: LaTeX Error: Lonely \item--perhaps a missing list env
+ironment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 \item R
+             eturn an object to the viewer (e.g html) when your origin retur...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 140
+[][]
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[88]
+
+chapters/caching.tex:141: LaTeX Error: Lonely \item--perhaps a missing list env
+ironment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.141 \item U
+             se Error Caching Minimum TTL to specify how long CloudFront cac...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 141
+[][]
+ []
+
+chapters/caching.tex:174: Undefined control sequence.
+l.174     \item For high\itemscale
+                                   latency-sensitive CDN customisation
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[89]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[90]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[91])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[92]
+Chapter 8.
+[93
+
+
+
+]
+\openout2 = `chapters/databases.aux'.
+
+ (chapters/databases.tex
+chapters/databases.tex:37: Missing $ inserted.
+<inserted text> 
+                $
+l.37     \item Example: user_
+                             id for a users table
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+chapters/databases.tex:38: LaTeX Error: Command \end{itemize} invalid in math m
+ode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 \end{itemize}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/databases.tex:38: LaTeX Error: Something's wrong--perhaps a missing \i
+tem.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 \end{itemize}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/databases.tex:38: LaTeX Error: Something's wrong--perhaps a missing \i
+tem.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 \end{itemize}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+chapters/databases.tex:38: Missing $ inserted.
+<inserted text> 
+                $
+l.38 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[94
+
+]
+chapters/databases.tex:48: Missing $ inserted.
+<inserted text> 
+                $
+l.48     \item user_
+                    id for the partition key
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+chapters/databases.tex:49: LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.49     \item
+               game_id for the sort key
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/databases.tex:49: LaTeX Error: Something's wrong--perhaps a missing \i
+tem.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.49     \item g
+                ame_id for the sort key
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/databases.tex:49: LaTeX Error: Something's wrong--perhaps a missing \i
+tem.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.49     \item g
+                ame_id for the sort key
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/databases.tex:50: LaTeX Error: Command \end{itemize} invalid in math m
+ode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50 \end{itemize}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/databases.tex:50: LaTeX Error: Something's wrong--perhaps a missing \i
+tem.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50 \end{itemize}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/databases.tex:50: LaTeX Error: Something's wrong--perhaps a missing \i
+tem.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50 \end{itemize}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+chapters/databases.tex:50: Missing $ inserted.
+<inserted text> 
+                $
+l.50 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+chapters/databases.tex:52: LaTeX Error: Lonely \item--perhaps a missing list en
+vironment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \item \textbf
+                  {Example good sort key: timestamp}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 52
+[][]
+ []
+
+chapters/databases.tex:64: Missing $ inserted.
+<inserted text> 
+                $
+l.64 ...ey on the main table and indexes \neq RDS}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+chapters/databases.tex:64: Extra }, or forgotten $.
+<recently read> \egroup 
+                        
+l.64 ...ey on the main table and indexes \neq RDS}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+chapters/databases.tex:65: LaTeX Error: Command \end{itemize} invalid in math m
+ode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.65 \end{itemize}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/databases.tex:65: LaTeX Error: Something's wrong--perhaps a missing \i
+tem.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.65 \end{itemize}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/databases.tex:65: LaTeX Error: Something's wrong--perhaps a missing \i
+tem.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.65 \end{itemize}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+chapters/databases.tex:65: Missing $ inserted.
+<inserted text> 
+                $
+l.65 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+chapters/databases.tex:65: Missing } inserted.
+<inserted text> 
+                }
+l.65 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+chapters/databases.tex:78: LaTeX Error: Something's wrong--perhaps a missing \i
+tem.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.78     \item S
+                earch by date
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/databases.tex:78: LaTeX Error: Something's wrong--perhaps a missing \i
+tem.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.78     \item S
+                earch by date
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/databases.tex:78: LaTeX Error: Something's wrong--perhaps a missing \i
+tem.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.78     \item S
+                earch by date
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/databases.tex:79: LaTeX Error: Something's wrong--perhaps a missing \i
+tem.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.79     \item T
+                otal storage used by a customer
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/databases.tex:79: LaTeX Error: Something's wrong--perhaps a missing \i
+tem.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.79     \item T
+                otal storage used by a customer
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/databases.tex:79: LaTeX Error: Something's wrong--perhaps a missing \i
+tem.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.79     \item T
+                otal storage used by a customer
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/databases.tex:80: LaTeX Error: Something's wrong--perhaps a missing \i
+tem.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.80     \item L
+                ist of all object with certain attributes
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/databases.tex:80: LaTeX Error: Something's wrong--perhaps a missing \i
+tem.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.80     \item L
+                ist of all object with certain attributes
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/databases.tex:80: LaTeX Error: Something's wrong--perhaps a missing \i
+tem.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.80     \item L
+                ist of all object with certain attributes
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/databases.tex:81: LaTeX Error: Something's wrong--perhaps a missing \i
+tem.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.81     \item F
+                ind all objects uploaded within a date range
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/databases.tex:81: LaTeX Error: Something's wrong--perhaps a missing \i
+tem.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.81     \item F
+                ind all objects uploaded within a date range
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/databases.tex:81: LaTeX Error: Something's wrong--perhaps a missing \i
+tem.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.81     \item F
+                ind all objects uploaded within a date range
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/databases.tex:82: LaTeX Error: Something's wrong--perhaps a missing \i
+tem.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.82 \end{itemize}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[95]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[96]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[97]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[98]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[99]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[100]
+chapters/databases.tex:309: Undefined control sequence.
+l.309 ...ity to create an additional read\itemonly
+                                                   endpoint that connects to...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[101]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[102
+
+
+
+]
+Chapter 9.
+[103]
+\openout2 = `chapters/service_communication.aux'.
+
+ (chapters/service_communication.tex
+chapters/service_communication.tex:50: You can't use `macro parameter character
+ #' in horizontal mode.
+l.50 1#
+       /sampleProjects
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[104
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[105]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[106]
+
+chapters/service_communication.tex:178: LaTeX Error: Lonely \item--perhaps a mi
+ssing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.178 \item D
+             ecoupling
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 178
+[][]
+ []
+
+
+chapters/service_communication.tex:179: LaTeX Error: Lonely \item--perhaps a mi
+ssing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.179 \item F
+             ault Tolerance
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 179
+[][]
+ []
+
+
+chapters/service_communication.tex:180: LaTeX Error: Lonely \item--perhaps a mi
+ssing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.180 \item L
+             oad Balancing
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 180
+[][]
+ []
+
+chapters/service_communication.tex:186: Undefined control sequence.
+l.186     \item SQS, SNS are "cloud\itemnative
+                                              " services: proprietary protoc...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[107]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[108]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[109])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[110]
+Chapter 10.
+[111
+
+
+
+]
+\openout2 = `chapters/data_engineering.aux'.
+
+ (chapters/data_engineering.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[112
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[113]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[114]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[115]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[116]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[117]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[118]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[119]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[120]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[121]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[122]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[123])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[124]
+Chapter 11.
+[125
+
+
+
+]
+\openout2 = `chapters/monitoring.aux'.
+
+ (chapters/monitoring.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[126
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[127]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[128]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[129])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[130]
+Chapter 12.
+[131
+
+
+
+]
+\openout2 = `chapters/deployment_and_instance_management.aux'.
+
+ (chapters/deployment_and_instance_management.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[132
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[133]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[134]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[135]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[136]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[137]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[138])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[139]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[140
+
+
+
+]
+Chapter 13.
+[141]
+\openout2 = `chapters/cost_control.aux'.
+
+ (chapters/cost_control.tex
+Overfull \hbox (281.7834pt too wide) in paragraph at lines 50--58
+ [][] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[142
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[143pdfTeX warning (ext4): destination with the same identifier (name{table.13.
+1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.97     \item C
+                an define host affinity so that instance reboots are kept on...
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[144]
+
+chapters/cost_control.tex:149: LaTeX Error: Something's wrong--perhaps a missin
+g \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.149     \begin{itemize}
+                         
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[145]
+
+chapters/cost_control.tex:194: LaTeX Error: Something's wrong--perhaps a missin
+g \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.194         \item 9
+                     9.9\% Availability
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/cost_control.tex:194: LaTeX Error: Something's wrong--perhaps a missin
+g \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.194         \item 9
+                     9.9\% Availability
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/cost_control.tex:194: LaTeX Error: Something's wrong--perhaps a missin
+g \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.194         \item 9
+                     9.9\% Availability
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/cost_control.tex:195: LaTeX Error: Something's wrong--perhaps a missin
+g \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.195         \item U
+                     se cases: Disaster Recovery, backups
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/cost_control.tex:195: LaTeX Error: Something's wrong--perhaps a missin
+g \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.195         \item U
+                     se cases: Disaster Recovery, backups
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/cost_control.tex:195: LaTeX Error: Something's wrong--perhaps a missin
+g \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.195         \item U
+                     se cases: Disaster Recovery, backups
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/cost_control.tex:196: LaTeX Error: Something's wrong--perhaps a missin
+g \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.196     \end{itemize}
+                       
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[146]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[147]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[148])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[149]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[150
+
+
+
+]
+Chapter 14.
+[151]
+\openout2 = `chapters/migration.aux'.
+
+ (chapters/migration.tex
+Overfull \hbox (7.72467pt too wide) in paragraph at lines 3--4
+\OT1/phv/m/n/10.95 https://aws.amazon.com/blogs/enterprise-strategy/new-possibi
+lities-seven-strategies-to-accelerate-
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[152
+
+])
+Runaway argument?
+{Amazon S3 File Gateway \begin {itemize} \item Configured S3 buckets \ETC.
+main.tex:174: File ended while scanning use of \@xdblarg.
+<inserted text> 
+                \par 
+l.174     \include{chapters/migration}
+                                      
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[153]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[154
+
+
+
+]
+Chapter 15.
+[155]
+\openout2 = `chapters/vpc.aux'.
+
+ (chapters/vpc.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[156
+
+]
+chapters/vpc.tex:93: Missing $ inserted.
+<inserted text> 
+                $
+l.93 ...IPv6 addresses are public, total 3.4 x 10^
+                                                  38 addresses (vs 4.3 billi...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+chapters/vpc.tex:94: LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.94     \item
+               Example CIDR:2600:LfL8:80c:a900::/56
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/vpc.tex:94: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.94     \item E
+                xample CIDR:2600:LfL8:80c:a900::/56
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/vpc.tex:94: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.94     \item E
+                xample CIDR:2600:LfL8:80c:a900::/56
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+chapters/vpc.tex:95: LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.95     \item
+               Addresses are "random" and can't be scanned online (because t...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+chapters/vpc.tex:95: Missing $ inserted.
+<inserted text> 
+                $
+l.95     \item A
+                ddresses are "random" and can't be scanned online (because t...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+chapters/vpc.tex:95: Missing } inserted.
+<inserted text> 
+                }
+l.95     \item A
+                ddresses are "random" and can't be scanned online (because t...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+chapters/vpc.tex:95: Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.95     \item A
+                ddresses are "random" and can't be scanned online (because t...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[157]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[158]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[159]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[160]
+chapters/vpc.tex:236: Missing $ inserted.
+<inserted text> 
+                $
+l.236 ... Policy to restrict access to bucket "my_
+                                                  secure_bucket"
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+chapters/vpc.tex:238: Missing $ inserted.
+<inserted text> 
+                $
+l.238 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+chapters/vpc.tex:238: Missing } inserted.
+<inserted text> 
+                }
+l.238 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+chapters/vpc.tex:238: Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.238 
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[161]
+
+chapters/vpc.tex:301: LaTeX Error: Lonely \item--perhaps a missing list environ
+ment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.301 \item C
+             reate static route in corporate data centre for 10.0.0.1/24 thr...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 301
+[][]
+ []
+
+
+chapters/vpc.tex:302: LaTeX Error: Lonely \item--perhaps a missing list environ
+ment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.302 \item C
+             reate static route in AWS for 10.3.0.0/20 through the VGW
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 302
+[][]
+ []
+
+
+chapters/vpc.tex:303: LaTeX Error: Lonely \item--perhaps a missing list environ
+ment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.303 \item D
+             ynamic Routing (BGP)
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 303
+[][]
+ []
+
+
+chapters/vpc.tex:304: LaTeX Error: Lonely \item--perhaps a missing list environ
+ment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.304 \item U
+             sing BGP (Border Gateway Protocol) to share routes automaticall...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 304
+[][]
+ []
+
+
+chapters/vpc.tex:305: LaTeX Error: Lonely \item--perhaps a missing list environ
+ment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.305 \item W
+             e don't need to update the routing tables, it will be done for ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 305
+[][]
+ []
+
+
+chapters/vpc.tex:306: LaTeX Error: Lonely \item--perhaps a missing list environ
+ment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.306 \item J
+             ust need to specify the ASN (Autonomous System Number) of the C...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 306
+[][]
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[162]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[163]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[164]
+Overfull \hbox (5.64548pt too wide) in paragraph at lines 473--475
+[]\OT1/phv/m/n/10.95 Flow logs ex-am-ples: https://docs.aws.amazon.com/vpc/late
+st/userguide/flow-logsrecords- ex-
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[165]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[166])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[167]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[168
+
+
+
+]
+Chapter 16.
+[169]
+\openout2 = `chapters/machine_learning.aux'.
+
+ (chapters/machine_learning.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[170
+
+]
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 77.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[171]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[172]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[173])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[174]
+Chapter 17.
+[175
+
+
+
+]
+\openout2 = `chapters/other_services.aux'.
+
+ (chapters/other_services.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[176
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[177]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[178]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[179]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[180])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[181]
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\out\main.aux
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\out\chapters/ind
+entity_and_federation.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C14F4C470AED9417EF88F0A13F669246;45293.
+(rerunfilecheck)             Checksum: 3540DA35949886C82829C55C24D0E840;5079.
  ) 
 Here is how much of TeX's memory you used:
- 32746 strings out of 478864
- 748856 string characters out of 2848186
- 1401903 words of memory out of 3000000
- 49777 multiletter control sequences out of 15000+600000
- 421316 words of font info for 60 fonts, out of 8000000 for 9000
+ 35552 strings out of 478864
+ 826892 string characters out of 2848186
+ 1495846 words of memory out of 3000000
+ 51979 multiletter control sequences out of 15000+600000
+ 423202 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,89p,723b,1287s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{chapter.17} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.16.14} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.16.13} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.16.12} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.16.11} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.16.10} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.16.9} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.16.8} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.16.7} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.16.6} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.16.5} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.16.4} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.16.3} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.16.2} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.16.1} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.16} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section.15.12} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.15.11} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.15.10} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.15.9} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.15.8} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.15.7} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.15.6} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.15.5} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.15.4} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.15.3.1} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.15.3} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.15.2} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.15.1.1} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.15.1} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.15} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section.14.12} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.14.11} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.14.10} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.14.9} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.14.8} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.14.7} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.14.6} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.14.5} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.14.4} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.14.3} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.14.2} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.14.1} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.14} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section.13.12} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.13.11} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.13.10} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.13.9} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.13.8} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.13.7} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.13.6} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.13.5} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.13.4} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.13.3} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.13.2} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.13.1} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.13} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section.12.10} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.12.9.1} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.12.9} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.12.8.5} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.12.8.4} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.12.8.3} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.12.8.2} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.12.8.1} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.12.8} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.12.7.3} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.12.7.2} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.12.7.1} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.12.7} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.12.6.2} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.12.6.1} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.12.6} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.12.5.1} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.12.5} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.12.4} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.12.3} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.12.2} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.12.1} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.12} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section.11.8} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.11.7} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.11.6} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.11.5} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.11.4} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.11.3} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.11.2} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.11.1} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.11} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section.10.5} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.10.4} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.10.3} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.10.2} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.10.1} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.10} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section.9.15} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.9.14} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.9.13} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.9.12} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.9.11} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.9.10} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.9.9} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.9.8} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.9.7} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.9.6} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.9.5} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.9.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.9.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.9.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.9.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.9} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{section.8.6} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.8.5} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.8.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.8.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.8.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.8.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.8} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{section.7.5} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.7.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.7.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.7.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.7.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.7} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{section.6.6} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.5.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.5.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.5.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.5.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.6.5} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.4.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.6.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.3.11} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.3.10} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.3.9} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.3.8} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.3.7} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.3.6} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.3.5} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.3.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.3.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.3.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.3.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.6.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.2.6} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.2.5} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.2.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.2.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.2.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.2.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.6.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.1.7} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.1.6} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.1.5} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.1.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.1.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.1.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.1.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.6.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.6} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.13} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.12} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.11} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.10} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.9} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.8} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.7} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.6} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.5} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.5} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.26} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.25} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.24} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.23} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.22} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.21} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.20} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.19} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.18} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.17} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.16} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.15} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.14} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.13} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.12} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.11} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.10} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.9} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.8} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.7} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.6} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.5} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.4} has been referenced but does not exist, 
-replaced by a fixed one
-
-{C:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/
-Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi1
-0.pfb><C:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmmi8.pfb><C:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmr10.pfb><C:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Marjan/AppData/Local/Programs/MiKTe
-X/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Marjan/AppData/Local/Programs/M
-iKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb>
+{C:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C
+:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmm
+i10.pfb><C:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmmi8.pfb><C:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb><C:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Marjan/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Marjan/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Marjan/AppData/Local/
+Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/Marjan/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
 Output written on C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes
-\out\main.pdf (33 pages, 319483 bytes).
+\out\main.pdf (181 pages, 504048 bytes).
 PDF statistics:
- 1576 PDF objects out of 1728 (max. 8388607)
- 346 named destinations out of 1000 (max. 500000)
- 2037 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1719 PDF objects out of 1728 (max. 8388607)
+ 826 named destinations out of 1000 (max. 500000)
+ 205 words of extra memory for PDF output out of 10000 (max. 10000000)
 

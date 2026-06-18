@@ -1,214 +1,270 @@
 \section{Solution Architecture on AWS}
 % TODO add diagram
-- DNS Layer - Route 53
-- Web Layer - CLB, ALB, NLB, API Gateway, Elastic IP
-- Compute Layer - EC2, ASG, Lambda, ECS, Fargate, Batch, EMR
-- CDN Layer - CloudFront
-- Caching / Session Layer - ElastiCache, DAX, DynamoDB, RDS
-- Database Layer - RDS, Aurora, DynamoDB, ElastiSearch, S3, Redshift
-- Decoupling Orchestration Layer - SQS, SNS, Kinesis, Amazon MQ, Step Functions
-- Storage Layer - EBS, EFS, Instance Store
-- Static Assets Layer (storage) - S3, Glacier
+
+\begin{itemize}
+    \item DNS Layer - Route 53
+    \item Web Layer - CLB, ALB, NLB, API Gateway, Elastic IP
+    \item Compute Layer - EC2, ASG, Lambda, ECS, Fargate, Batch, EMR
+    \item CDN Layer - CloudFront
+    \item Caching / Session Layer - ElastiCache, DAX, DynamoDB, RDS
+    \item Database Layer - RDS, Aurora, DynamoDB, ElastiSearch, S3, Redshift
+    \item Decoupling Orchestration Layer - SQS, SNS, Kinesis, Amazon MQ, Step Functions
+    \item Storage Layer - EBS, EFS, Instance Store
+    \item Static Assets Layer (storage) - S3, Glacier
+\end{itemize}
+
 
 \section{EC2}
 EC2 Instance Types - Main Ones
-- R: applications that need a long of RAM - in-memory caches
-- C: applicatoins that need good CPU - compute / databases
-- M: Applications that are balanced (think "medium") - general / web app
-- I: Aplications that need good local I/O (instance storage) - databases
-- G: Applications that need a GPU - video rendering / machine learniing
-- T2 / T3: burstable instances (up to a capacity)
-- T2 / T3 - unlimited: unlimited burst
+\begin{itemize}
+    \item R: applications that need a long of RAM - in-memory caches
+    \item C: applications that need good CPU - compute / databases
+    \item M: Applications that are balanced (think "medium") - general / web app
+    \item I: Applications that need good local I/O (instance storage) - databases
+    \item G: Applications that need a GPU - video rendering / machine learniing
+    \item T2 / T3: burstable instances (up to a capacity)
+    \item T2 / T3 - unlimited: unlimited burst
+\end{itemize}
 
 See link at https://www.ec2instances.info.
 
 EC2 - Placement Groups
-- Control the EC2 instance placement strategy using placement groups
-- Group strategies
-- Cluster - cluster instances into a low-latency group in a single Avialability Zone
-- Spread - spreads instances across undelying hardward (max 7 instances per group per AZ) - critical applications
-- Partition - spreads instances across many different partitions (which rely on different sets of racks) within an AZ. Scales to 100s of EC2 instances per group (Hadoop, Cassandra, Kafka)
-- You can move an instance into or out of a placement group
-- You first need to stop it
-- You then need to use the CLI (modify-instance placement)
-- You can then start your instances
+\begin{itemize}
+    \item Control the EC2 instance placement strategy using placement groups
+    \item Group strategies
+    \item Cluster - cluster instances into a low-latency group in a single Availability Zone
+    \item Spread - spreads instances across underlying hardware (max 7 instances per group per AZ) - critical applications
+    \item Partition - spreads instances across many different partitions (which rely on different sets of racks) within an AZ. Scales to 100s of EC2 instances per group (Hadoop, Cassandra, Kafka)
+    \item You can move an instance into or out of a placement group
+    \item You first need to stop it
+    \item You then need to use the CLI (modify-instance placement)
+    \item You can then start your instances
+\end{itemize}
 
 Placement Groups Cluster
 %TODO add diagram -- Same Rack, Same AZ ----- Placement Group Cluster. Low latency 10gbps network
-- Pros: Greate network (10 Gbps bandwidth between instances with Enhanced Networking enabled - recommended)
-- Cons: If the rack fails, all instances fails at the same time.
-- Use case:
-- Big Data job that needs to complete fast
-- Applicatoins that needs extremely low latency and high network throughput
+\begin{itemize}
+    \item Pros: Great network (10 Gbps bandwidth between instances with Enhanced Networking enabled - recommended)
+    \item Cons: If the rack fails, all instances fails at the same time.
+    \item Use case:
+    \item Big Data job that needs to complete fast
+    \item Applications that needs extremely low latency and high network throughput
+\end{itemize}
 
 Placement Groups Spread
 %TODO add diagram
-- Pros
-- Can span across Availability Zones (AZ)
-- Reduced risk of simulataneous failure
-- EC2 Instances are on different pysical hardware
-- Cons
-- Limited to 7 instances per AZ per placement group
-- Use case:
-- Application that need to maximise high availability
-- Critical Applications where each instance must be isolated from failure from each other
+\begin{itemize}
+    \item
+    \begin{itemize}
+        \item Pros
+        \item Can span across Availability Zones (AZ)
+        \item Reduced risk of simultaneous failure
+        \item EC2 Instances are on different physical hardware
+    \end{itemize}
+    \item
+    \begin{itemize}
+        \item Cons
+        \item Limited to 7 instances per AZ per placement group
+        \item Use case:
+        \item Application that need to maximise high availability
+        \item Critical Applications where each instance must be isolated from failure from each other
+    \end{itemize}
+\end{itemize}
 
 Placement Groups Partition
-- Up to 7 partitions per AZ
-- Up to 100s of EC2 instances
-- The instances in a partition do not share racks with the instances in the other partitions
-- A partition failure can affect many EC2 instances but won't affect other partitions
-- EC2 instances get access to the partition information as metadata
-- Use cases: HDFS, HBase, Cassandra, Kafka
+\begin{itemize}
+    \item Up to 7 partitions per AZ
+    \item Up to 100s of EC2 instances
+    \item The instances in a partition do not share racks with the instances in the other partitions
+    \item A partition failure can affect many EC2 instances but won't affect other partitions
+    \item EC2 instances get access to the partition information as metadata
+    \item Use cases: HDFS, HBase, Cassandra, Kafka
+\end{itemize}
 
 EC2 Instance Launch Types
-- On Demand Instances: Short workload, prefictable pricing, reliable
-- Spot Instance: short workloads, for cheap, can lose instances (not reliable)
-- Reserved (Minimum 1 year)
-- Reserved Instances: Long workloads
-- Convertible Reserved Instances: Long workloads with flexible instances
-- Highest to lowest discount: All upfront payment, partial upfront payment, no upfront
-- Dedicated Instances: No other customers will share your hardware
-- Dedicated Hosts: book an entire physical server, control instance placement
-- Great for software licenses that operate at the core, or CPU socket level
-- Can define host affinity so that instance reboots are kept on the same host
+\begin{itemize}
+    \item On Demand Instances: Short workload, prefictable pricing, reliable
+    \item Spot Instance: short workloads, for cheap, can lose instances (not reliable)
+    \item Reserved (Minimum 1 year)
+    \item Reserved Instances: Long workloads
+    \item Convertible Reserved Instances: Long workloads with flexible instances
+    \item Highest to lowest discount: All upfront payment, partial upfront payment, no upfront
+    \item Dedicated Instances: No other customers will share your hardware
+    \item Dedicated Hosts: book an entire physical server, control instance placement
+    \item Great for software licenses that operate at the core, or CPU socket level
+    \item Can define host affinity so that instance reboots are kept on the same host
+\end{itemize}
 
 EC2 Graviton
-- AWS Graviton Processors deliver the best price performance
-- Supports many Linux OS, Amazon Linuz 2, RedHat, SUSE, Ubuntu
-- Not available for windows instances
-- Graviton2 - 40\% better price performance over comparable 5th generation x86 based instances
-- Graviton3 - Up to 3x better perfromance compared to Graviton2
-- Use cases: app servers, microservices, HPC, CPU-based ML, video encodign, gaming, in-memory cahces,.....
+\begin{itemize}
+    \item AWS Graviton Processors deliver the best price performance
+    \item Supports many Linux OS, Amazon Linux 2, RedHat, SUSE, Ubuntu
+    \item Not available for windows instances
+    \item Graviton2 - 40\% better price performance over comparable 5th generation x86 based instances
+    \item Graviton3 - Up to 3x better performance compared to Graviton2
+    \item Use cases: app servers, microservices, HPC, CPU-based ML, video encoding, gaming, in-memory caches,.....
+\end{itemize}
 
 EC2 included metrics
-- CPU: CPU Utilisations + Credit Usage / Balance
-- Network: Network In / Out
-- Status Check
-- Instance status = check the ECM VM
-- System status = check the undelying hardware
-- Disk: Read  / Write for Ops / Bytes (only for instance store)
-- RAM is not included in the AWS EC2 metrics
+\begin{itemize}
+    \item CPU: CPU Utilisation + Credit Usage / Balance
+    \item Network: Network In / Out
+    \item Status Check
+    \item Instance status = check the ECM VM
+    \item System status = check the undelying hardware
+    \item Disk: Read / Write for Ops / Bytes (only for instance store)
+    \item RAM is not included in the AWS EC2 metrics
+\end{itemize}
 
 EC2 Instance Recovery
-- Status Check
-- Instance Status = check the EC2 VM
-- System status = check the underlying hardware
+\begin{itemize}
+    \item Status Check
+    \item Instance Status = check the EC2 VM
+    \item System status = check the underlying hardware
 %TODO add diagram
-- Recovery: Same Private, Public, Elastic IP, metadata, placement group
+    \item Recovery: Same Private, Public, Elastic IP, metadata, placement group
+\end{itemize}
+
 
 \section{High Performance Computing (HPC)}
-- Cloud is good for HPC
-- Can create a very high number of resources in no time.
-- Can speed up time to results by adding more resources
-- You can pay only for the systems you have used
----- Examples: Genomics, computational chemistry, financial risk modelling, weather prediction, machine learning, deep learning, autonomous driving......
-- Services which help HPC?
+\begin{itemize}
+    \item Cloud is good for HPC
+    \item Can create a very high number of resources in no time.
+    \item Can speed up time to results by adding more resources
+    \item You can pay only for the systems you have used
+    ---- Examples: Genomics, computational chemistry, financial risk modelling, weather prediction, machine learning, deep learning, autonomous driving......
+    \item Services which help HPC?
+\end{itemize}
 
 Data Management \% Transfer
-- Aws Direct Connect
-- Move GBs of data to the cloud over a private secure network
-- Snowball
-- Move PB of data to the cloud
-- AWS DataSync
-- Move large amount of data between on-premise and S3, EFS, FSx for Windows
+\begin{itemize}
+    \item Aws Direct Connect
+    \item Move GBs of data to the cloud over a private secure network
+    \item Snowball
+    \item Move PB of data to the cloud
+    \item AWS DataSync
+    \item Move large amount of data between on-premise and S3, EFS, FSx for Windows
+\end{itemize}
 
 Computer and Networking
-- EC2 Instances:
-- CPU optimised, GPU optimised
-- Spot Instances / Spot Fleets for cost savings + Auto Scaling
-- EC2 Place Groups: Cluster for good network performance
+\begin{itemize}
+    EC2 Instances:
+    \item CPU optimised, GPU optimised
+    \item Spot Instances / Spot Fleets for cost savings + Auto Scaling
+    \item EC2 Place Groups: Cluster for good network performance
 %TODO add digram ---- repeat ---- cluster group in same rack and same AZ for low latency
-- EC2 Enhanced Networkin (SR-IOV)
-- Higher Bandwidth, higher PPS (packet per second), lower latency
-- Option 1: Elastic Network Adapted (ENA) up to 100 Gbps
-- Option 2: Intel 82599 up to 10Gbps - Legacy
-- Elastic Fabric Adapter (EFA)
-- Improved ENA for HPC only works for Linux
-- Great for inter-node communications, tightly coupled workloads
-- Leverages Message Passing interface (MPI) standard
-- Bypasses the undelying Linux OS to provide low-latency reliable transport
+    \item EC2 Enhanced Networking (SR-IOV)
+    \item Higher Bandwidth, higher PPS (packet per second), lower latency
+    \item Option 1: Elastic Network Adapted (ENA) up to 100 Gbps
+    \item Option 2: Intel 82599 up to 10Gbps - Legacy
+    \item Elastic Fabric Adapter (EFA)
+    \item Improved ENA for HPC only works for Linux
+    \item Great for inter-node communications, tightly coupled workloads
+    \item Leverages Message Passing interface (MPI) standard
+    \item Bypasses the underlying Linux OS to provide low-latency reliable transport
+\end{itemize}
 
 Storage
-- Instance-attached storage
-- EBS: scale up to 256000 IOPS with io2 Block Express
-- Instance Store: Scal to milliiton of IOPS, linkedin to EC2 instance, low latency.
+\begin{itemize}
+    \item Instance-attached storage
+    \item EBS: scale up to 256000 IOPS with io2 Block Express
+    \item Instance Store: Scal to million of IOPS, linkedin to EC2 instance, low latency.
+\end{itemize}
 
-- Network Storage
-- Amazon S3: large blob, not a file system
-- Amazon EFS: scale IOPS based on total size or use provisioned IOPS
-- Amazon FSx for Lustre:
-- HPC optimised distributed file system, millions of IOPS
-- Backed by S3
+\begin{itemize}
+    \item Network Storage
+    \item Amazon S3: large blob, not a file system
+    \item Amazon EFS: scale IOPS based on total size or use provisioned IOPS
+    \item Amazon FSx for Lustre:
+    \item HPC optimised distributed file system, millions of IOPS
+    \item Backed by S3
+\end{itemize}
 
 Automation and Orchestration
-- AWS Batch
-- AWS Batch supports multi-node paralell jobs which enables you to run single jobs that span multiple EC2 instances
-- Easily schedule jobs and launch EC2 instances accordingly
-- AWS ParalellCluster
-- Open source cluster management tool to deploy HPC on AWS
-- Configure text files
-- Automate creation of VPC, Subnet, cluster type and instance types
+\begin{itemize}
+    \item AWS Batch
+    \item AWS Batch supports multi-node parallel jobs which enables you to run single jobs that span multiple EC2 instances
+    \item Easily schedule jobs and launch EC2 instances accordingly
+    \item AWS ParallelCluster
+    \item Open source cluster management tool to deploy HPC on AWS
+    \item Configure text files
+    \item Automate creation of VPC, Subnet, cluster type and instance types
+\end{itemize}
+
 
 \section{Auto Scaling}
 Auto Scaling Groups - Dynamic Scaling Policies
-- Target Tracking Scaling
-- Most simple and easy to setup
-- Example: I want the average ASG CPU to stay at aroudnd 40\%
-- Simple / Step Scaling
-- When a CloudWatch alarm is triggered (example CPU  > 70\%) then add 2 units
-- When a CloudWatch alarm is triggered (example CPU < 30\%) then remove 1
-- Sceduled Actions
-- Anticipate a scaling based on known usage patterns
-- Example: Increase the min capcity to 10 at 5pm on Fridays
-
+\begin{itemize}
+    \item Target Tracking Scaling
+    \item Most simple and easy to setup
+    \item Example: I want the average ASG CPU to stay at aroudnd 40\%
+    \item Simple / Step Scaling
+    \item When a CloudWatch alarm is triggered (example CPU  > 70\%) then add 2 units
+    \item When a CloudWatch alarm is triggered (example CPU < 30\%) then remove 1
+    \item Scheduled Actions
+    \item Anticipate a scaling based on known usage patterns
+    \item Example: Increase the min capacity to 10 at 5pm on Fridays
+\end{itemize}
 
 Auto Scaling Groups - Predictive Scaling
-- Predictive Scaling: continuously forcast load and scedule scaling ahead
+\begin{itemize}
+    \item Predictive Scaling: continuously forecast load and schedule scaling ahead
+\end{itemize}
 %TODO add useful diagrams
 
 Good metrics to scale on
-- CPUUtilisation: Average CPU utilisation across your instances
-- RequstCountPerTarget: to make sure the number of reqeusts per EC2 instances is stable
-- Average Network In / Out (if you're application is network bound)
-- Any custom metric (that you push using CloudWatch)
+\begin{itemize}
+    \item CPUUtilisation: Average CPU utilisation across your instances
+    \item RequestCountPerTarget: to make sure the number of requests per EC2 instances is stable
+    \item Average Network In / Out (if you're application is network bound)
+    \item Any custom metric (that you push using CloudWatch)
 %TODO add diagram
+\end{itemize}
 
 Auto Scaling - Good to know
-- Spot fleet support (mix on Spot and On-Demand instances)
-- Lifecycle Hooks
-- Perform actions before an instance is in service, or before it is terminated
-- Example: Cleanup, log extraction, special health checks
-- To upgrade an AMI, must update the launch configuration / template
-- Then terminate instances manually (CloudFromation can help)
-- Or use EC2 instance refresh for Auto Scaling
+\begin{itemize}
+    \item Spot fleet support (mix on Spot and On-Demand instances)
+    \item Lifecycle Hooks
+    \item Perform actions before an instance is in service, or before it is terminated
+    \item Example: Cleanup, log extraction, special health checks
+    \item To upgrade an AMI, must update the launch configuration / template
+    \item Then terminate instances manually (CloudFormation can help)
+    \item Or use EC2 instance refresh for Auto Scaling
+\end{itemize}
 
 Auto Scaling - Instance Refresh
-- Goal: Update launch template and then re-creating all EC2 instances
-- For this we can use the native feature of Instance Refresh
-- Setting of minimum healthy percentage
-- Specify warm-up time (how long until the instance is ready to use)
-%TODO add diagram
+\begin{itemize}
+    \item Goal: Update launch template and then re-creating all EC2 instances
+    \item For this we can use the native feature of Instance Refresh
+    \item Setting of minimum healthy percentage
+    \item Specify warm-up time (how long until the instance is ready to use)
+    %TODO add diagram
+\end{itemize}
 
 Auto Scaling - Scaling Processes
-- Launch: Add a new EC2 to the group, increasing the capacity
-- Terminate: Remove an EC2 instance from the group, decreasing the capcity
-- HealthCheck: Check the health of the instances
-- ReplaceUnhealty: Terminate unhealthy instances and re-create them
-- AZRebalance: Balancer the number of EC2 instances across AZ
-- Alarm Notification: Accept notification from CloudWatch
-- SchedulesActions: Performs scheduled actions that you create
-- AddToLoadBalancer: Add instances to the load balancer or target group.
-- InstanceRefresh: Perform an instance refresh
-----> These processes can be suspended
+\begin{itemize}
+    \item Launch: Add a new EC2 to the group, increasing the capacity
+    \item Terminate: Remove an EC2 instance from the group, decreasing the capacity
+    \item HealthCheck: Check the health of the instances
+    \item ReplaceUnhealthy: Terminate unhealthy instances and re-create them
+    \item AZRebalanced: Balancer the number of EC2 instances across AZ
+    \item Alarm Notification: Accept notification from CloudWatch
+    \item SchedulesActions: Performs scheduled actions that you create
+    \item AddToLoadBalancer: Add instances to the load balancer or target group.
+    \item InstanceRefresh: Perform an instance refresh
+    ----> These processes can be suspended
+\end{itemize}
 
 Auto Scaling - Health Checks
-- Health Checks available:
-- EC2 Status Checks
-- ELB Health Checks (HTTP)
-- Customer Health Checks - send instances health to an ASG using AWS CLI or AWS SDK (set-instnance-health)
-- ASG will launch a new instance after terminating an unhealthy one
-- Make sure the health check is simple and check ths correct thing
+\begin{itemize}
+    \item Health Checks available:
+    \item EC2 Status Checks
+    \item ELB Health Checks (HTTP)
+    \item Customer Health Checks - send instances health to an ASG using AWS CLI or AWS SDK (set-instnance-health)
+    \item ASG will launch a new instance after terminating an unhealthy one
+    \item Make sure the health check is simple and check ths correct thing
+\end{itemize}
+
 
 \section{Auto Scaling Update Strategies}
 Auto Scaling - Updating an application
@@ -219,15 +275,18 @@ Auto Scaling - Solution Architecture
 
 %TODO add diagram
 
+
 \section{Spot Instances and Spot Fleet}
 
 EC2 Spot Instances
-- Can get a discount of up to 90\% compared to On-Demand
-- Define max spot price and get the instance while current spot price < max
-- The hourly spot price variaes based on offer and capacity
-- If the current spot price > your max price you can choose to stop or terminate your instance with a two minutes grace period
-- Used for batch jobs, data analysis or workloads that are resilient to failures.
----> Not great critical jobs or databases
+\begin{itemize}
+    \item Can get a discount of up to 90\% compared to On-Demand
+    \item Define max spot price and get the instance while current spot price < max
+    \item The hourly spot price varies based on offer and capacity
+    \item If the current spot price > your max price you can choose to stop or terminate your instance with a two minutes grace period
+    \item Used for batch jobs, data analysis or workloads that are resilient to failures.
+    ---> Not great critical jobs or databases
+\end{itemize}
 
 %TODO consider adding chart
 
@@ -243,6 +302,7 @@ Spot Fleets
 - capcityOptimised: pool with optimal capacity for the number of instances
 - priceCapacityOptimised (recommended): pools with highest capacity available then select the pool with the lowest price (best choice for most workloads)
 --> Spot fleets allow us to automaticaly requests spot instances with the lowest price
+
 
 \section{Amazon ECS - Elastic Container Service}
 What is Docker?
@@ -315,14 +375,14 @@ Amazon ECS - Security and Netoworking
 - ECS Tasks Networking
 - none - no network connectivity, no port mappings
 - bridge - uses Docker's virtual container based network
-- host  - bypass Docker's network uses the underlying host network interface
+- host - bypass Docker's network uses the underlying host network interface
 - awsvpc
 - Every task launched on the instance gets it own ENI and a private IP adress
 - Simplified networking, enhanced security, Security Groups, monitoring, VPC Flow Logs
 - Default mode for Fargate tasks
 
 Amazon ECS - Service Auto Scaling
-- Automaticalyly  increase / decrease the desired number of tasks
+- Automaticalyly increase / decrease the desired number of tasks
 - Amazon ECS leverages AWS application auto scaling
 - CPU and RAM is tracked in CloudWatch as the ECS Service level
 - Target Tracking - scale based on target value for a specific CloudWatch metrics
@@ -340,6 +400,7 @@ Amazon ECS - Spot Instances
 - Specify minimum of tasks for on-demand baseline workload
 - Add tasks running on FARGATE\_SPOT for cost-savings (can be reclaimed by AWS)
 - Regardless of On-demand or Spot, Fargate scales well based on load
+
 
 \section{Amazon ECR - Elastic Container Registry}
 - Store and manage Docker images on AWS
@@ -360,6 +421,7 @@ Amazon ECR - Image Scanning
 - Enhanced Scanning - Leverages Amazon Inspector (OS and Programming Language vulnerabilties) %Spicy
 - Scan results can be retrieved from within the AWS console
 %TODO add diagram
+
 
 \section{Amazon EKS - Elastic Kubernetes Service}
 - Amazon EKS = Amazon Elastic Kubernete Service
@@ -396,6 +458,7 @@ Amazon EKS - Data Volumes
 - Amazon FSx for Lustre
 - Amazon FSx for NetApp ONTAP
 
+
 \section{AWS App Runner}
 - Fully managed service that makes it easy to deploy web applications and APIs at scale
 - No infratructure experience requried
@@ -410,6 +473,7 @@ Amazon EKS - Data Volumes
 
 Solution Architecture - App Runner Multi-Region Architecture
 %TODO add diagram of App Runner Multi-Region Architecture
+
 
 \section{ECS Anywhere and EKS Anywhere}
 Amazon ECS Anywhere
@@ -434,6 +498,7 @@ Amazon EKS Anywhere
 - Optionally use the EKS Connector to connect the EKS Anywhere clusters to AWS
 - Full Connected and Partially Disconnected: you can connect to Amazon EKS Anywhere clusters to AWS and leverage the EKS console
 - Fully Disconnected: Must install the EKS Distro and leverage open-source tools to manage your clusters.
+
 
 \section{AWS Lambda - Part 1}
 AWS Lambda Integration Main ones
@@ -508,6 +573,7 @@ AWS Lambda Logging, Monitoring and Tracing
 - Use AWS SDK in Code
 - Ensure Lambda Function has correct IAM Execution Role
 
+
 \section{AWS Lambda - Part 2}
 Lambda in a VPC
 %TODO add diagram
@@ -535,6 +601,7 @@ Lambda - Architecture Discussion
 - Amazon S3 -> Amazon SNS -> Lambda
 - Batched Executions Delay
 - Amazon S3 -> Amazon SNS -> Amazon SQS -> Lambda
+
 
 \section{Elastic Load Balancers - Part 1}
 Types of load balancer on AWS
@@ -620,6 +687,7 @@ Gateway Load Balancer - Target Groups
 - IP Addresses - must be private IPs
 %TODO add gateway load balancer diagram
 
+
 \section{Elastic Load Balancers - Part 2}
 Cross-Zone Load Balancing
 
@@ -663,6 +731,7 @@ Request Routing Algorithsm - Flow Hash
 - Each TCP/ UDP connection is routed to a single target for the life of the connection
 - Works with Network Load Balancer
 %TODO add diagram
+
 
 \section{API Gateway}
 API Gateway - Overview
@@ -765,6 +834,7 @@ API Gateway - Logging, Monitoring, Tracing
 - Enable tracing to get extra information about requests min API Gateway
 - X-Ray API Gateway + AWS Lambda give you the full picture.
 
+
 \section{API Gateway - Part 2}
 AWS Gateway - Usage Plans and API Keys
 - If you wan to make an API available as an offering to your customers
@@ -804,6 +874,7 @@ API Gateway - Private APIs
 - Allow or deny access to API from selected VPCs and VPC Endpoints, including across AWS accounts
 - aws:SourceVpc and aws:SourceVpce
 
+
 \section{AWS AppSync}
 - AppSync is a managed service that uses GraphQL
 - GraphQL makes it easy for applications to get exactly the data they need.
@@ -823,6 +894,7 @@ AppSync - Cognito Integration
 - Perform authorisation on Cognito users based on the groups they belong to.
 - In the GraphQL schema, you can specify the security for Cognito groups
 %TODO add graphQL listing
+
 
 \section{Route 53 - Part 1}
 Route 53 - Record Types
@@ -935,6 +1007,7 @@ Routing Policies - IP- Based Routing
 - Example: route end users from a particular ISP to a specific endpoint
 %TODO add diagram
 
+
 \section{Route 53 - Part 2}
 Route 53 - Hosted Zones
 - A container for records that define how to route traffic to a domain and its subdomain
@@ -987,6 +1060,7 @@ Health Checks - Private hosted Zones
 Health Checks Solutions Architecture - RDS multi-region fail over
 %TODO diagram insert RDS multi-region failover
 
+
 \section{Route 53 - Resolvers and Hybrid DNS}
 %TODO Diagram
 - By default, Route 53 Resolver automatically answers DNS queries for:
@@ -1029,6 +1103,7 @@ Route 53 - Resolver Rules
 - Manage them centrally in one account
 - Send DNS queries from multiple VPC to the target IP defined in the rule
 
+
 \section{AWS Global Accelerator}
 %TODO add diagram
 - Leverage the AWS internal network to route to your application
@@ -1062,6 +1137,7 @@ AWS Global Accelerator vs CloudFront
 - Good fit for non-HTTP uses cases, such as gaming (UDP), IoT (MQTT) or Voice over IP
 - Good for HTTP use cases that require static IP addresses
 - Good for HTTP use cases that required deterministic, fast regional failover
+
 
 \section{Comparison of Solution Architecture}
 - EC2 on its own with Elastic IP
@@ -1151,6 +1227,7 @@ API Gateway + HTTP backend (ex: ALB)
 - Application Load Balancer
 - Third party HTTP service
 
+
 \section{AWS Outposts}
 %TODO add diagram
 - Hybrid Cloud: business that keep an on-premises infrastructure alongside a cloud infrastructure
@@ -1184,6 +1261,7 @@ S3 on AWS Outposts
 - Default encryption using SSE-S3
 %TODO add diagram
 
+
 \section{AWS WaveLength}
 %TODO add diagram
 - WaveLength Zones are infrastructure deployments, embedded within the telecommunications providers datacentres at the edge of 5G networks
@@ -1194,6 +1272,7 @@ S3 on AWS Outposts
 - High-bandwidth and secure connection to the parent AWS region
 - No additional charges or service agreements
 - Use cases: Smart Cities, ML-assisted diagnostics, Connected Vehicles, Interactive Live Video Streams, AR/VR Real-time Gaming........ %spicy
+
 
 \section{AWS Local Zones}
 %TODO add diagram
