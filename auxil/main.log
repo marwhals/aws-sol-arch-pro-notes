@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.29)  18 JUN 2026 01:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.29)  29 JUN 2026 01:31
 entering extended mode
 **./main.tex
 (main.tex
@@ -959,9 +959,37 @@ LaTeX Font Info:    Trying to load font information for OT1+phv on input line 6
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
-(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\out\main.aux
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\auxil\main.aux
 (C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\out\chapters/ind
-entity_and_federation.aux))
+entity_and_federation.aux)
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\auxil\chapters/s
+ecurity.aux)
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\auxil\chapters/c
+ompute_and_load_balancing.aux)
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\auxil\chapters/s
+torage.aux)
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\auxil\chapters/c
+aching.aux)
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\auxil\chapters/d
+atabases.aux)
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\auxil\chapters/s
+ervice_communication.aux)
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\auxil\chapters/d
+ata_engineering.aux)
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\auxil\chapters/m
+onitoring.aux)
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\auxil\chapters/d
+eployment_and_instance_management.aux)
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\auxil\chapters/c
+ost_control.aux)
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\auxil\chapters/m
+igration.aux)
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\auxil\chapters/v
+pc.aux)
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\auxil\chapters/m
+achine_learning.aux)
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\auxil\chapters/o
+ther_services.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
@@ -1061,8 +1089,8 @@ LaTeX Info: Redefining \ref on input line 68.
 LaTeX Info: Redefining \pageref on input line 68.
 LaTeX Info: Redefining \nameref on input line 68.
 
-(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\out\main.out)
-(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\out\main.out)
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\auxil\main.out)
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\auxil\main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
@@ -1088,16 +1116,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [2
 
-] (C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\out\main.toc
+]
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\auxil\main.toc
 LaTeX Font Info:    Trying to load font information for U+wasy on input line 5.
+
 
 (C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/wasysym\uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
-))
-\tf@toc=\write5
-\openout5 = `main.toc'.
-
-
+)
 [3]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1107,15 +1133,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[4
+[4]
 
-]
-Chapter 1.
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 9
-1.
-(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1phv.fd
-File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
-)
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
 [5]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1125,7 +1151,1807 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[6
+[6]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[7]
+Overfull \hbox (1.29184pt too wide) detected at line 310
+ []\OT1/phv/m/n/10.95 100
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 311
+ []\OT1/phv/m/n/10.95 100
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 312
+ []\OT1/phv/m/n/10.95 100
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 313
+ []\OT1/phv/m/n/10.95 100
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 314
+ []\OT1/phv/m/n/10.95 101
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 315
+ []\OT1/phv/m/n/10.95 101
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 316
+ []\OT1/phv/m/n/10.95 101
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 317
+ []\OT1/phv/m/n/10.95 101
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 318
+ []\OT1/phv/m/n/10.95 101
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 320
+ []\OT1/phv/m/n/10.95 104
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 321
+ []\OT1/phv/m/n/10.95 104
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 322
+ []\OT1/phv/m/n/10.95 104
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 323
+ []\OT1/phv/m/n/10.95 104
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 324
+ []\OT1/phv/m/n/10.95 105
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[8]
+Overfull \hbox (1.29184pt too wide) detected at line 325
+ []\OT1/phv/m/n/10.95 105
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 326
+ []\OT1/phv/m/n/10.95 105
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 327
+ []\OT1/phv/m/n/10.95 105
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 328
+ []\OT1/phv/m/n/10.95 106
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 329
+ []\OT1/phv/m/n/10.95 106
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 330
+ []\OT1/phv/m/n/10.95 106
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 331
+ []\OT1/phv/m/n/10.95 106
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 332
+ []\OT1/phv/m/n/10.95 106
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 333
+ []\OT1/phv/m/n/10.95 107
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 334
+ []\OT1/phv/m/n/10.95 107
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 335
+ []\OT1/phv/m/n/10.95 107
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 336
+ []\OT1/phv/m/n/10.95 107
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 337
+ []\OT1/phv/m/n/10.95 107
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 338
+ []\OT1/phv/m/n/10.95 108
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 339
+ []\OT1/phv/m/n/10.95 108
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 340
+ []\OT1/phv/m/n/10.95 108
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 341
+ []\OT1/phv/m/n/10.95 108
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 342
+ []\OT1/phv/m/n/10.95 108
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 343
+ []\OT1/phv/m/n/10.95 109
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 344
+ []\OT1/phv/m/n/10.95 109
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 345
+ []\OT1/phv/m/n/10.95 109
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 346
+ []\OT1/phv/m/n/10.95 109
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 347
+ []\OT1/phv/m/n/10.95 109
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 348
+ []\OT1/phv/m/n/10.95 109
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 349
+ []\OT1/phv/m/n/10.95 109
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 350
+ []\OT1/phv/m/n/10.95 110
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 351
+ []\OT1/phv/m/n/10.95 110
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 354
+ []\OT1/phv/m/n/10.95 110
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 355
+ []\OT1/phv/m/n/10.95 110
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 357
+ []\OT1/phv/m/n/10.95 112
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 360
+ []\OT1/phv/m/n/10.95 113
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 361
+ []\OT1/phv/m/n/10.95 113
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 362
+ []\OT1/phv/m/n/10.95 113
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 363
+ []\OT1/phv/m/n/10.95 113
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 364
+ []\OT1/phv/m/n/10.95 113
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 365
+ []\OT1/phv/m/n/10.95 114
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 366
+ []\OT1/phv/m/n/10.95 114
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 367
+ []\OT1/phv/m/n/10.95 114
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 368
+ []\OT1/phv/m/n/10.95 114
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 369
+ []\OT1/phv/m/n/10.95 115
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 370
+ []\OT1/phv/m/n/10.95 115
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 371
+ []\OT1/phv/m/n/10.95 115
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 372
+ []\OT1/phv/m/n/10.95 115
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 373
+ []\OT1/phv/m/n/10.95 115
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 374
+ []\OT1/phv/m/n/10.95 116
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 375
+ []\OT1/phv/m/n/10.95 116
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[9]
+Overfull \hbox (1.29184pt too wide) detected at line 376
+ []\OT1/phv/m/n/10.95 116
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 377
+ []\OT1/phv/m/n/10.95 116
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 378
+ []\OT1/phv/m/n/10.95 117
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 379
+ []\OT1/phv/m/n/10.95 117
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 380
+ []\OT1/phv/m/n/10.95 117
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 381
+ []\OT1/phv/m/n/10.95 117
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 382
+ []\OT1/phv/m/n/10.95 118
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 383
+ []\OT1/phv/m/n/10.95 118
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 384
+ []\OT1/phv/m/n/10.95 118
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 385
+ []\OT1/phv/m/n/10.95 118
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 386
+ []\OT1/phv/m/n/10.95 118
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 387
+ []\OT1/phv/m/n/10.95 118
+ []
+
+
+Overfull \hbox (2.21146pt too wide) detected at line 388
+\OT1/phv/m/n/10.95 10.10 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 388
+ []\OT1/phv/m/n/10.95 119
+ []
+
+
+Overfull \hbox (1.48863pt too wide) detected at line 389
+\OT1/phv/m/n/10.95 10.10.1 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 389
+ []\OT1/phv/m/n/10.95 119
+ []
+
+
+Overfull \hbox (1.48863pt too wide) detected at line 390
+\OT1/phv/m/n/10.95 10.10.2 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 390
+ []\OT1/phv/m/n/10.95 119
+ []
+
+
+Overfull \hbox (1.48863pt too wide) detected at line 391
+\OT1/phv/m/n/10.95 10.10.3 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 391
+ []\OT1/phv/m/n/10.95 120
+ []
+
+
+Overfull \hbox (1.48863pt too wide) detected at line 392
+\OT1/phv/m/n/10.95 10.10.4 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 392
+ []\OT1/phv/m/n/10.95 120
+ []
+
+
+Overfull \hbox (1.48863pt too wide) detected at line 393
+\OT1/phv/m/n/10.95 10.10.5 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 393
+ []\OT1/phv/m/n/10.95 120
+ []
+
+
+Overfull \hbox (2.21146pt too wide) detected at line 394
+\OT1/phv/m/n/10.95 10.11 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 394
+ []\OT1/phv/m/n/10.95 120
+ []
+
+
+Overfull \hbox (1.48863pt too wide) detected at line 395
+\OT1/phv/m/n/10.95 10.11.1 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 395
+ []\OT1/phv/m/n/10.95 121
+ []
+
+
+Overfull \hbox (2.21146pt too wide) detected at line 396
+\OT1/phv/m/n/10.95 10.12 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 396
+ []\OT1/phv/m/n/10.95 121
+ []
+
+
+Overfull \hbox (2.21146pt too wide) detected at line 397
+\OT1/phv/m/n/10.95 10.13 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 397
+ []\OT1/phv/m/n/10.95 121
+ []
+
+
+Overfull \hbox (1.48863pt too wide) detected at line 398
+\OT1/phv/m/n/10.95 10.13.1 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 398
+ []\OT1/phv/m/n/10.95 122
+ []
+
+
+Overfull \hbox (1.48863pt too wide) detected at line 399
+\OT1/phv/m/n/10.95 10.13.2 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 399
+ []\OT1/phv/m/n/10.95 122
+ []
+
+
+Overfull \hbox (2.21146pt too wide) detected at line 400
+\OT1/phv/m/n/10.95 10.14 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 400
+ []\OT1/phv/m/n/10.95 122
+ []
+
+
+Overfull \hbox (1.48863pt too wide) detected at line 401
+\OT1/phv/m/n/10.95 10.14.1 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 401
+ []\OT1/phv/m/n/10.95 123
+ []
+
+
+Overfull \hbox (1.48863pt too wide) detected at line 402
+\OT1/phv/m/n/10.95 10.14.2 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 402
+ []\OT1/phv/m/n/10.95 123
+ []
+
+
+Overfull \hbox (2.21146pt too wide) detected at line 403
+\OT1/phv/m/n/10.95 10.15 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 403
+ []\OT1/phv/m/n/10.95 123
+ []
+
+
+Overfull \hbox (1.48863pt too wide) detected at line 404
+\OT1/phv/m/n/10.95 10.15.1 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 404
+ []\OT1/phv/m/n/10.95 123
+ []
+
+
+Overfull \hbox (1.48863pt too wide) detected at line 405
+\OT1/phv/m/n/10.95 10.15.2 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 405
+ []\OT1/phv/m/n/10.95 123
+ []
+
+
+Overfull \hbox (1.48863pt too wide) detected at line 406
+\OT1/phv/m/n/10.95 10.15.3 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 406
+ []\OT1/phv/m/n/10.95 124
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 408
+ []\OT1/phv/m/n/10.95 126
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 409
+ []\OT1/phv/m/n/10.95 126
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 410
+ []\OT1/phv/m/n/10.95 126
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 411
+ []\OT1/phv/m/n/10.95 126
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 412
+ []\OT1/phv/m/n/10.95 126
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 413
+ []\OT1/phv/m/n/10.95 126
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 414
+ []\OT1/phv/m/n/10.95 126
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 415
+ []\OT1/phv/m/n/10.95 127
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 416
+ []\OT1/phv/m/n/10.95 127
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 417
+ []\OT1/phv/m/n/10.95 127
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 418
+ []\OT1/phv/m/n/10.95 128
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 419
+ []\OT1/phv/m/n/10.95 128
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 420
+ []\OT1/phv/m/n/10.95 128
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 421
+ []\OT1/phv/m/n/10.95 128
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 422
+ []\OT1/phv/m/n/10.95 128
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[10]
+Overfull \hbox (1.29184pt too wide) detected at line 423
+ []\OT1/phv/m/n/10.95 128
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 424
+ []\OT1/phv/m/n/10.95 128
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 425
+ []\OT1/phv/m/n/10.95 128
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 426
+ []\OT1/phv/m/n/10.95 128
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 427
+ []\OT1/phv/m/n/10.95 129
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 428
+ []\OT1/phv/m/n/10.95 129
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 429
+ []\OT1/phv/m/n/10.95 129
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 430
+ []\OT1/phv/m/n/10.95 129
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 431
+ []\OT1/phv/m/n/10.95 129
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 432
+ []\OT1/phv/m/n/10.95 129
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 433
+ []\OT1/phv/m/n/10.95 130
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 435
+ []\OT1/phv/m/n/10.95 132
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 436
+ []\OT1/phv/m/n/10.95 132
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 437
+ []\OT1/phv/m/n/10.95 132
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 438
+ []\OT1/phv/m/n/10.95 133
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 439
+ []\OT1/phv/m/n/10.95 133
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 440
+ []\OT1/phv/m/n/10.95 133
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 441
+ []\OT1/phv/m/n/10.95 133
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 442
+ []\OT1/phv/m/n/10.95 133
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 443
+ []\OT1/phv/m/n/10.95 133
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 444
+ []\OT1/phv/m/n/10.95 134
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 445
+ []\OT1/phv/m/n/10.95 134
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 446
+ []\OT1/phv/m/n/10.95 134
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 447
+ []\OT1/phv/m/n/10.95 134
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 448
+ []\OT1/phv/m/n/10.95 135
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 449
+ []\OT1/phv/m/n/10.95 135
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 450
+ []\OT1/phv/m/n/10.95 135
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 451
+ []\OT1/phv/m/n/10.95 135
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 452
+ []\OT1/phv/m/n/10.95 136
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 453
+ []\OT1/phv/m/n/10.95 136
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 454
+ []\OT1/phv/m/n/10.95 136
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 455
+ []\OT1/phv/m/n/10.95 136
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 456
+ []\OT1/phv/m/n/10.95 136
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 457
+ []\OT1/phv/m/n/10.95 136
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 458
+ []\OT1/phv/m/n/10.95 137
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 459
+ []\OT1/phv/m/n/10.95 137
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 460
+ []\OT1/phv/m/n/10.95 137
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 461
+ []\OT1/phv/m/n/10.95 137
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 462
+ []\OT1/phv/m/n/10.95 137
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 463
+ []\OT1/phv/m/n/10.95 137
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 464
+ []\OT1/phv/m/n/10.95 138
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 465
+ []\OT1/phv/m/n/10.95 138
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 466
+ []\OT1/phv/m/n/10.95 138
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 467
+ []\OT1/phv/m/n/10.95 138
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 468
+ []\OT1/phv/m/n/10.95 139
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[11]
+Overfull \hbox (1.29184pt too wide) detected at line 469
+ []\OT1/phv/m/n/10.95 139
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 470
+ []\OT1/phv/m/n/10.95 139
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 471
+ []\OT1/phv/m/n/10.95 139
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 473
+ []\OT1/phv/m/n/10.95 142
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 474
+ []\OT1/phv/m/n/10.95 142
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 475
+ []\OT1/phv/m/n/10.95 142
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 477
+ []\OT1/phv/m/n/10.95 143
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 478
+ []\OT1/phv/m/n/10.95 143
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 479
+ []\OT1/phv/m/n/10.95 144
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 480
+ []\OT1/phv/m/n/10.95 144
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 481
+ []\OT1/phv/m/n/10.95 144
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 482
+ []\OT1/phv/m/n/10.95 145
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 483
+ []\OT1/phv/m/n/10.95 145
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 484
+ []\OT1/phv/m/n/10.95 145
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 485
+ []\OT1/phv/m/n/10.95 145
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 486
+ []\OT1/phv/m/n/10.95 146
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 489
+ []\OT1/phv/m/n/10.95 147
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 490
+ []\OT1/phv/m/n/10.95 147
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 491
+ []\OT1/phv/m/n/10.95 147
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 492
+ []\OT1/phv/m/n/10.95 148
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 493
+ []\OT1/phv/m/n/10.95 148
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 494
+ []\OT1/phv/m/n/10.95 148
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 495
+ []\OT1/phv/m/n/10.95 148
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 496
+ []\OT1/phv/m/n/10.95 148
+ []
+
+
+Overfull \hbox (2.21146pt too wide) detected at line 497
+\OT1/phv/m/n/10.95 13.10 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 497
+ []\OT1/phv/m/n/10.95 149
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 499
+ []\OT1/phv/m/n/10.95 152
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 500
+ []\OT1/phv/m/n/10.95 153
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 502
+ []\OT1/phv/m/n/10.95 156
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 503
+ []\OT1/phv/m/n/10.95 156
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 504
+ []\OT1/phv/m/n/10.95 156
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 505
+ []\OT1/phv/m/n/10.95 156
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 506
+ []\OT1/phv/m/n/10.95 156
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 507
+ []\OT1/phv/m/n/10.95 156
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 508
+ []\OT1/phv/m/n/10.95 156
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 509
+ []\OT1/phv/m/n/10.95 156
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 510
+ []\OT1/phv/m/n/10.95 157
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 511
+ []\OT1/phv/m/n/10.95 157
+ []
+
+
+Overfull \hbox (1.48863pt too wide) detected at line 512
+\OT1/phv/m/n/10.95 15.1.10 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 512
+ []\OT1/phv/m/n/10.95 157
+ []
+
+
+Overfull \hbox (1.48863pt too wide) detected at line 513
+\OT1/phv/m/n/10.95 15.1.11 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 513
+ []\OT1/phv/m/n/10.95 157
+ []
+
+
+Overfull \hbox (1.48863pt too wide) detected at line 514
+\OT1/phv/m/n/10.95 15.1.12 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 514
+ []\OT1/phv/m/n/10.95 157
+ []
+
+
+Overfull \hbox (1.48863pt too wide) detected at line 515
+\OT1/phv/m/n/10.95 15.1.13 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 515
+ []\OT1/phv/m/n/10.95 157
+ []
+
+
+Overfull \hbox (1.48863pt too wide) detected at line 516
+\OT1/phv/m/n/10.95 15.1.14 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 516
+ []\OT1/phv/m/n/10.95 158
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[12]
+Overfull \hbox (1.29184pt too wide) detected at line 517
+ []\OT1/phv/m/n/10.95 158
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 518
+ []\OT1/phv/m/n/10.95 158
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 519
+ []\OT1/phv/m/n/10.95 158
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 520
+ []\OT1/phv/m/n/10.95 159
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 524
+ []\OT1/phv/m/n/10.95 159
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 525
+ []\OT1/phv/m/n/10.95 159
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 526
+ []\OT1/phv/m/n/10.95 159
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 527
+ []\OT1/phv/m/n/10.95 159
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 528
+ []\OT1/phv/m/n/10.95 159
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 529
+ []\OT1/phv/m/n/10.95 159
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 530
+ []\OT1/phv/m/n/10.95 160
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 531
+ []\OT1/phv/m/n/10.95 160
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 532
+ []\OT1/phv/m/n/10.95 160
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 533
+ []\OT1/phv/m/n/10.95 161
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 534
+ []\OT1/phv/m/n/10.95 161
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 536
+ []\OT1/phv/m/n/10.95 161
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 537
+ []\OT1/phv/m/n/10.95 161
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 538
+ []\OT1/phv/m/n/10.95 162
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 539
+ []\OT1/phv/m/n/10.95 162
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 540
+ []\OT1/phv/m/n/10.95 162
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 541
+ []\OT1/phv/m/n/10.95 162
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 543
+ []\OT1/phv/m/n/10.95 162
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 544
+ []\OT1/phv/m/n/10.95 162
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 545
+ []\OT1/phv/m/n/10.95 163
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 546
+ []\OT1/phv/m/n/10.95 163
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 547
+ []\OT1/phv/m/n/10.95 163
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 548
+ []\OT1/phv/m/n/10.95 163
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 549
+ []\OT1/phv/m/n/10.95 163
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 550
+ []\OT1/phv/m/n/10.95 163
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 551
+ []\OT1/phv/m/n/10.95 163
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 552
+ []\OT1/phv/m/n/10.95 163
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 553
+ []\OT1/phv/m/n/10.95 163
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 554
+ []\OT1/phv/m/n/10.95 164
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 555
+ []\OT1/phv/m/n/10.95 164
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 556
+ []\OT1/phv/m/n/10.95 164
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 557
+ []\OT1/phv/m/n/10.95 164
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 558
+ []\OT1/phv/m/n/10.95 164
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 559
+ []\OT1/phv/m/n/10.95 165
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 560
+ []\OT1/phv/m/n/10.95 165
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 561
+ []\OT1/phv/m/n/10.95 165
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 562
+ []\OT1/phv/m/n/10.95 165
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 563
+ []\OT1/phv/m/n/10.95 165
+ []
+
+
+Overfull \hbox (2.21146pt too wide) detected at line 564
+\OT1/phv/m/n/10.95 15.10 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 564
+ []\OT1/phv/m/n/10.95 165
+ []
+
+
+Overfull \hbox (1.48863pt too wide) detected at line 565
+\OT1/phv/m/n/10.95 15.10.1 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 565
+ []\OT1/phv/m/n/10.95 165
+ []
+
+
+Overfull \hbox (1.48863pt too wide) detected at line 566
+\OT1/phv/m/n/10.95 15.10.2 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 566
+ []\OT1/phv/m/n/10.95 166
+ []
+
+
+Overfull \hbox (1.48863pt too wide) detected at line 569
+\OT1/phv/m/n/10.95 15.10.3 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 569
+ []\OT1/phv/m/n/10.95 166
+ []
+
+
+Overfull \hbox (1.48863pt too wide) detected at line 570
+\OT1/phv/m/n/10.95 15.10.4 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 570
+ []\OT1/phv/m/n/10.95 166
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[13]
+Overfull \hbox (2.21146pt too wide) detected at line 571
+\OT1/phv/m/n/10.95 15.11 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 571
+ []\OT1/phv/m/n/10.95 166
+ []
+
+
+Overfull \hbox (1.48863pt too wide) detected at line 572
+\OT1/phv/m/n/10.95 15.11.1 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 572
+ []\OT1/phv/m/n/10.95 166
+ []
+
+
+Overfull \hbox (1.48863pt too wide) detected at line 573
+\OT1/phv/m/n/10.95 15.11.2 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 573
+ []\OT1/phv/m/n/10.95 167
+ []
+
+
+Overfull \hbox (1.48863pt too wide) detected at line 574
+\OT1/phv/m/n/10.95 15.11.3 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 574
+ []\OT1/phv/m/n/10.95 167
+ []
+
+
+Overfull \hbox (1.48863pt too wide) detected at line 575
+\OT1/phv/m/n/10.95 15.11.4 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 575
+ []\OT1/phv/m/n/10.95 167
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 577
+ []\OT1/phv/m/n/10.95 170
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 578
+ []\OT1/phv/m/n/10.95 170
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 579
+ []\OT1/phv/m/n/10.95 170
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 580
+ []\OT1/phv/m/n/10.95 171
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 581
+ []\OT1/phv/m/n/10.95 171
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 582
+ []\OT1/phv/m/n/10.95 171
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 583
+ []\OT1/phv/m/n/10.95 171
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 584
+ []\OT1/phv/m/n/10.95 172
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 585
+ []\OT1/phv/m/n/10.95 172
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 586
+ []\OT1/phv/m/n/10.95 172
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 587
+ []\OT1/phv/m/n/10.95 173
+ []
+
+
+Overfull \hbox (2.21146pt too wide) detected at line 588
+\OT1/phv/m/n/10.95 16.10 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 588
+ []\OT1/phv/m/n/10.95 173
+ []
+
+
+Overfull \hbox (2.21146pt too wide) detected at line 589
+\OT1/phv/m/n/10.95 16.11 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 589
+ []\OT1/phv/m/n/10.95 173
+ []
+
+
+Overfull \hbox (2.21146pt too wide) detected at line 590
+\OT1/phv/m/n/10.95 16.12 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 590
+ []\OT1/phv/m/n/10.95 173
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 592
+ []\OT1/phv/m/n/10.95 176
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 593
+ []\OT1/phv/m/n/10.95 176
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 594
+ []\OT1/phv/m/n/10.95 176
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 595
+ []\OT1/phv/m/n/10.95 176
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 596
+ []\OT1/phv/m/n/10.95 176
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 597
+ []\OT1/phv/m/n/10.95 176
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 598
+ []\OT1/phv/m/n/10.95 176
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 599
+ []\OT1/phv/m/n/10.95 177
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 600
+ []\OT1/phv/m/n/10.95 177
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 601
+ []\OT1/phv/m/n/10.95 177
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 602
+ []\OT1/phv/m/n/10.95 177
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 603
+ []\OT1/phv/m/n/10.95 178
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 604
+ []\OT1/phv/m/n/10.95 178
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 605
+ []\OT1/phv/m/n/10.95 178
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 606
+ []\OT1/phv/m/n/10.95 178
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 607
+ []\OT1/phv/m/n/10.95 179
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 608
+ []\OT1/phv/m/n/10.95 179
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 609
+ []\OT1/phv/m/n/10.95 179
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 610
+ []\OT1/phv/m/n/10.95 179
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 611
+ []\OT1/phv/m/n/10.95 180
+ []
+
+
+Overfull \hbox (2.21146pt too wide) detected at line 612
+\OT1/phv/m/n/10.95 17.10 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 612
+ []\OT1/phv/m/n/10.95 180
+ []
+
+
+Overfull \hbox (2.21146pt too wide) detected at line 613
+\OT1/phv/m/n/10.95 17.11 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 613
+ []\OT1/phv/m/n/10.95 180
+ []
+
+
+Overfull \hbox (1.48863pt too wide) detected at line 614
+\OT1/phv/m/n/10.95 17.11.1 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 614
+ []\OT1/phv/m/n/10.95 180
+ []
+
+
+Overfull \hbox (1.48863pt too wide) detected at line 615
+\OT1/phv/m/n/10.95 17.11.2 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 615
+ []\OT1/phv/m/n/10.95 180
+ []
+
+
+Overfull \hbox (2.21146pt too wide) detected at line 616
+\OT1/phv/m/n/10.95 17.12 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 616
+ []\OT1/phv/m/n/10.95 181
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[14]
+Overfull \hbox (2.21146pt too wide) detected at line 617
+\OT1/phv/m/n/10.95 17.13 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 617
+ []\OT1/phv/m/n/10.95 181
+ []
+
+
+Overfull \hbox (1.48863pt too wide) detected at line 618
+\OT1/phv/m/n/10.95 17.13.1 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 618
+ []\OT1/phv/m/n/10.95 181
+ []
+
+
+Overfull \hbox (2.21146pt too wide) detected at line 619
+\OT1/phv/m/n/10.95 17.14 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 619
+ []\OT1/phv/m/n/10.95 181
+ []
+
+
+Overfull \hbox (1.48863pt too wide) detected at line 620
+\OT1/phv/m/n/10.95 17.14.1 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 620
+ []\OT1/phv/m/n/10.95 181
+ []
+
+
+Overfull \hbox (1.48863pt too wide) detected at line 621
+\OT1/phv/m/n/10.95 17.14.2 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 621
+ []\OT1/phv/m/n/10.95 181
+ []
+
+
+Overfull \hbox (1.48863pt too wide) detected at line 622
+\OT1/phv/m/n/10.95 17.14.3 
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 622
+ []\OT1/phv/m/n/10.95 181
+ []
+
+)
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[15]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[16
+
+]
+Chapter 1.
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 9
+1.
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1phv.fd
+File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
+)
+[17]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[18
 
 ]
 Chapter 2.
@@ -1242,8 +3068,8 @@ I could not locate the file with any of these extensions:
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[7pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}
-) has been already used, duplicate ignored
+[19pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
+}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.126     \chapter
@@ -1256,11 +3082,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[8
+[20
 
 ]
 Chapter 3.
-[9]
+[21]
 \openout2 = `chapters/indentity_and_federation.aux'.
 
  (chapters/indentity_and_federation.tex
@@ -1318,126 +3144,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[10
+[22
 
 ]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[11]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[12]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[13]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[14]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[15]
-chapters/indentity_and_federation.tex:282: You can't use `macro parameter chara
-cter #' in horizontal mode.
-l.282 ...item Multi AZ deployment of AD in 2 AZ, #
-                                                   of DC (Domain Controllers...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[16]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[17]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[18]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[19]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[20]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[21]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[22]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1455,7 +3164,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[24])
+[24]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1473,16 +3182,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[26
-
-
-
-]
-Chapter 4.
-[27]
-\openout2 = `chapters/security.aux'.
-
- (chapters/security.tex
+[26]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1491,9 +3191,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[28
+[27]
+chapters/indentity_and_federation.tex:282: You can't use `macro parameter chara
+cter #' in horizontal mode.
+l.282 ...item Multi AZ deployment of AD in 2 AZ, #
+                                                   of DC (Domain Controllers...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
 
-]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[28]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1512,6 +3228,116 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [30]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[31]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[32]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[33]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[34]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[35]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[36])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[37]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[38
+
+
+
+]
+Chapter 4.
+[39]
+\openout2 = `chapters/security.aux'.
+
+ (chapters/security.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[40
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[41]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[42]
 chapters/security.tex:169: Missing $ inserted.
 <inserted text> 
                 $
@@ -1567,7 +3393,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[31]
+[43]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1576,7 +3402,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[32]
+[44]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1585,7 +3411,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[33]
+[45]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1594,7 +3420,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[34]
+[46]
 
 chapters/security.tex:366: LaTeX Error: Lonely \item--perhaps a missing list en
 vironment.
@@ -1621,7 +3447,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[35]
+[47]
 
 chapters/security.tex:367: LaTeX Error: Lonely \item--perhaps a missing list en
 vironment.
@@ -1866,7 +3692,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[36]
+[48]
 
 chapters/security.tex:407: LaTeX Error: Lonely \item--perhaps a missing list en
 vironment.
@@ -1893,7 +3719,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[37]
+[49]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1902,7 +3728,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[38]
+[50]
 chapters/security.tex:511: Missing $ inserted.
 <inserted text> 
                 $
@@ -2009,7 +3835,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[39]
+[51]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2018,7 +3844,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[40]
+[52]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2027,7 +3853,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[41]
+[53]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2036,7 +3862,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[42]
+[54]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2045,7 +3871,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[43]
+[55]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2054,7 +3880,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[44]
+[56]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2063,7 +3889,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[45]
+[57]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2072,7 +3898,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[46]
+[58]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2081,7 +3907,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[47])
+[59])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2090,9 +3916,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[48]
+[60]
 Chapter 5.
-[49
+[61
 
 
 
@@ -2108,7 +3934,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[50
+[62
 
 ]
 
@@ -2119,7 +3945,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[51]
+[63]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2128,7 +3954,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[52]
+[64]
 
 chapters/compute_and_load_balancing.tex:152: LaTeX Error: Something's wrong--pe
 rhaps a missing \item.
@@ -2624,7 +4450,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[53]
+[65]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2633,7 +4459,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[54]
+[66]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2642,7 +4468,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[55]
+[67]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2651,7 +4477,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[56]
+[68]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2660,7 +4486,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[57]
+[69]
 Overfull \hbox (3.47621pt too wide) in paragraph at lines 479--491
 \OT1/phv/m/n/10.95 Amazon ECS Any-where - Eas-ily run con-tain-ers on Customer-
 managed in-fras-truc-ture (on-premises,
@@ -2674,7 +4500,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[58]
+[70]
 chapters/compute_and_load_balancing.tex:523: You can't use `macro parameter cha
 racter #' in horizontal mode.
 l.523 - C#
@@ -2692,7 +4518,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[59]
+[71]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2701,7 +4527,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[60]
+[72]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2710,7 +4536,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[61]
+[73]
 chapters/compute_and_load_balancing.tex:814: Missing $ inserted.
 <inserted text> 
                 $
@@ -2765,116 +4591,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[62]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[63]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[64]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[65]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[66])
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[67]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[68
-
-
-
-]
-Chapter 6.
-[69]
-\openout2 = `chapters/storage.aux'.
-
- (chapters/storage.tex
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[70
-
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[71]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[72]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[73]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
 [74]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2894,11 +4610,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [76]
-Overfull \hbox (15.24205pt too wide) in paragraph at lines 341--342
-[]\OT1/phv/m/n/10.95 VersioningEnabledBucketCount, MFADele-teEn-abled-Buck-et-C
-ount, SSEKM-SEn-abled-Buck-
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2916,7 +4627,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[78]
+[78])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2934,7 +4645,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[80]
+[80
+
+
+
+]
+Chapter 6.
+[81]
+\openout2 = `chapters/storage.aux'.
+
+ (chapters/storage.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2943,7 +4663,113 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[81]
+[82
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[83]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[84]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[85]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[86]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[87]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[88]
+Overfull \hbox (15.24205pt too wide) in paragraph at lines 341--342
+[]\OT1/phv/m/n/10.95 VersioningEnabledBucketCount, MFADele-teEn-abled-Buck-et-C
+ount, SSEKM-SEn-abled-Buck-
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[89]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[90]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[91]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[92]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[93]
 
 chapters/storage.tex:597: LaTeX Error: Lonely \item--perhaps a missing list env
 ironment.
@@ -3026,7 +4852,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[82]
+[94]
 
 chapters/storage.tex:606: LaTeX Error: Lonely \item--perhaps a missing list env
 ironment.
@@ -3091,7 +4917,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[83]
+[95]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -3100,13 +4926,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[84
+[96
 
 
 
 ]
 Chapter 7.
-[85]
+[97]
 \openout2 = `chapters/caching.aux'.
 
  (chapters/caching.tex
@@ -3118,7 +4944,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[86
+[98
 
 ]
 
@@ -3129,7 +4955,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[87]
+[99]
 
 chapters/caching.tex:140: LaTeX Error: Lonely \item--perhaps a missing list env
 ironment.
@@ -3157,7 +4983,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[88]
+[100]
 
 chapters/caching.tex:141: LaTeX Error: Lonely \item--perhaps a missing list env
 ironment.
@@ -3194,7 +5020,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[89]
+[101]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -3203,7 +5029,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[90]
+[102]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -3212,7 +5038,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[91])
+[103])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -3221,9 +5047,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[92]
+[104]
 Chapter 8.
-[93
+[105
 
 
 
@@ -3297,7 +5123,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[94
+[106
 
 ]
 chapters/databases.tex:48: Missing $ inserted.
@@ -3671,7 +5497,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[95]
+[107]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -3680,7 +5506,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[96]
+[108]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -3689,7 +5515,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[97]
+[109]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -3698,7 +5524,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[98]
+[110]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -3707,7 +5533,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[99]
+[111]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -3716,7 +5542,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[100]
+[112]
 chapters/databases.tex:309: Undefined control sequence.
 l.309 ...ity to create an additional read\itemonly
                                                    endpoint that connects to...
@@ -3735,7 +5561,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[101]
+[113]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -3744,13 +5570,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[102
+[114
 
 
 
 ]
 Chapter 9.
-[103]
+[115]
 \openout2 = `chapters/service_communication.aux'.
 
  (chapters/service_communication.tex
@@ -3771,7 +5597,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[104
+[116
 
 ]
 
@@ -3782,7 +5608,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[105]
+[117]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -3791,7 +5617,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[106]
+[118]
 
 chapters/service_communication.tex:178: LaTeX Error: Lonely \item--perhaps a mi
 ssing list environment.
@@ -3863,116 +5689,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[107]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[108]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[109])
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[110]
-Chapter 10.
-[111
-
-
-
-]
-\openout2 = `chapters/data_engineering.aux'.
-
- (chapters/data_engineering.tex
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[112
-
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[113]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[114]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[115]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[116]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[117]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[118]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
 [119]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3991,7 +5707,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[121]
+[121])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -4001,33 +5717,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [122]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[123])
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[124]
-Chapter 11.
-[125
+Chapter 10.
+[123
 
 
 
 ]
-\openout2 = `chapters/monitoring.aux'.
+\openout2 = `chapters/data_engineering.aux'.
 
- (chapters/monitoring.tex
+ (chapters/data_engineering.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -4036,9 +5734,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[126
+[124
 
 ]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[125]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[126]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -4065,7 +5781,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[129])
+[129]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -4075,15 +5791,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [130]
-Chapter 12.
-[131
-
-
-
-]
-\openout2 = `chapters/deployment_and_instance_management.aux'.
-
- (chapters/deployment_and_instance_management.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -4092,9 +5799,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[132
+[131]
 
-]
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[132]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -4121,7 +5835,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[135]
+[135])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -4131,6 +5845,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [136]
+Chapter 11.
+[137
+
+
+
+]
+\openout2 = `chapters/monitoring.aux'.
+
+ (chapters/monitoring.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -4139,16 +5862,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[137]
+[138
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[138])
+]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -4166,13 +5882,123 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[140
+[140]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[141])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[142]
+Chapter 12.
+[143
+
+
+
+]
+\openout2 = `chapters/deployment_and_instance_management.aux'.
+
+ (chapters/deployment_and_instance_management.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[144
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[145]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[146]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[147]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[148]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[149]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[150])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[151]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[152
 
 
 
 ]
 Chapter 13.
-[141]
+[153]
 \openout2 = `chapters/cost_control.aux'.
 
  (chapters/cost_control.tex
@@ -4188,7 +6014,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[142
+[154
 
 ]
 
@@ -4199,7 +6025,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[143pdfTeX warning (ext4): destination with the same identifier (name{table.13.
+[155pdfTeX warning (ext4): destination with the same identifier (name{table.13.
 1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -4214,7 +6040,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[144]
+[156]
 
 chapters/cost_control.tex:149: LaTeX Error: Something's wrong--perhaps a missin
 g \item.
@@ -4236,7 +6062,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[145]
+[157]
 
 chapters/cost_control.tex:194: LaTeX Error: Something's wrong--perhaps a missin
 g \item.
@@ -4336,7 +6162,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[146]
+[158]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -4345,7 +6171,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[147]
+[159]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -4354,7 +6180,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[148])
+[160])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -4363,7 +6189,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[149]
+[161]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -4372,13 +6198,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[150
+[162
 
 
 
 ]
 Chapter 14.
-[151]
+[163]
 \openout2 = `chapters/migration.aux'.
 
  (chapters/migration.tex
@@ -4395,15 +6221,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[152
+[164
 
 ])
 Runaway argument?
 {Amazon S3 File Gateway \begin {itemize} \item Configured S3 buckets \ETC.
-main.tex:174: File ended while scanning use of \@xdblarg.
+main.tex:173: File ended while scanning use of \@xdblarg.
 <inserted text> 
                 \par 
-l.174     \include{chapters/migration}
+l.173     \include{chapters/migration}
                                       
 I suspect you have forgotten a `}', causing me
 to read past where you wanted me to stop.
@@ -4418,7 +6244,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[153]
+[165]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -4427,13 +6253,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[154
+[166
 
 
 
 ]
 Chapter 15.
-[155]
+[167]
 \openout2 = `chapters/vpc.aux'.
 
  (chapters/vpc.tex
@@ -4445,7 +6271,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[156
+[168
 
 ]
 chapters/vpc.tex:93: Missing $ inserted.
@@ -4543,7 +6369,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[157]
+[169]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -4552,7 +6378,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[158]
+[170]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -4561,7 +6387,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[159]
+[171]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -4570,7 +6396,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[160]
+[172]
 chapters/vpc.tex:236: Missing $ inserted.
 <inserted text> 
                 $
@@ -4617,7 +6443,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[161]
+[173]
 
 chapters/vpc.tex:301: LaTeX Error: Lonely \item--perhaps a missing list environ
 ment.
@@ -4738,7 +6564,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[162]
+[174]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -4747,7 +6573,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[163]
+[175]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -4756,127 +6582,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[164]
+[176]
 Overfull \hbox (5.64548pt too wide) in paragraph at lines 473--475
 []\OT1/phv/m/n/10.95 Flow logs ex-am-ples: https://docs.aws.amazon.com/vpc/late
 st/userguide/flow-logsrecords- ex-
  []
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[165]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[166])
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[167]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[168
-
-
-
-]
-Chapter 16.
-[169]
-\openout2 = `chapters/machine_learning.aux'.
-
- (chapters/machine_learning.tex
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[170
-
-]
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 77.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[171]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[172]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[173])
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[174]
-Chapter 17.
-[175
-
-
-
-]
-\openout2 = `chapters/other_services.aux'.
-
- (chapters/other_services.tex
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[176
-
-]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -4894,7 +6605,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[178]
+[178])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -4912,7 +6623,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[180])
+[180
+
+
+
+]
+Chapter 16.
+[181]
+\openout2 = `chapters/machine_learning.aux'.
+
+ (chapters/machine_learning.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -4921,18 +6641,156 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[181]
-(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\out\main.aux
+[182
+
+]
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 77.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[183]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[184]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[185])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[186]
+Chapter 17.
+[187
+
+
+
+]
+\openout2 = `chapters/other_services.aux'.
+
+ (chapters/other_services.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[188
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[189]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[190]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[191]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[192])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[193]
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\auxil\main.aux
 (C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\out\chapters/ind
-entity_and_federation.aux))
+entity_and_federation.aux)
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\auxil\chapters/s
+ecurity.aux)
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\auxil\chapters/c
+ompute_and_load_balancing.aux)
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\auxil\chapters/s
+torage.aux)
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\auxil\chapters/c
+aching.aux)
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\auxil\chapters/d
+atabases.aux)
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\auxil\chapters/s
+ervice_communication.aux)
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\auxil\chapters/d
+ata_engineering.aux)
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\auxil\chapters/m
+onitoring.aux)
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\auxil\chapters/d
+eployment_and_instance_management.aux)
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\auxil\chapters/c
+ost_control.aux)
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\auxil\chapters/m
+igration.aux)
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\auxil\chapters/v
+pc.aux)
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\auxil\chapters/m
+achine_learning.aux)
+(C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes\auxil\chapters/o
+ther_services.aux))
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3540DA35949886C82829C55C24D0E840;5079.
+(rerunfilecheck)             Checksum: 5C93EFC6DD1287FDD7B125DED4BDB704;111541.
+
  ) 
 Here is how much of TeX's memory you used:
- 35552 strings out of 478864
- 826892 string characters out of 2848186
- 1495846 words of memory out of 3000000
- 51979 multiletter control sequences out of 15000+600000
+ 36192 strings out of 478864
+ 842678 string characters out of 2848186
+ 1509033 words of memory out of 3000000
+ 52550 multiletter control sequences out of 15000+600000
  423202 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,89p,723b,1287s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -4947,9 +6805,9 @@ rams/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Marjan/AppData/Local/
 Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/Marjan/AppData/Lo
 cal/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
 Output written on C:/Users\Marjan\Documents\JavaProjects\aws-sol-arch-pro-notes
-\out\main.pdf (181 pages, 504048 bytes).
+\out\main.pdf (193 pages, 831055 bytes).
 PDF statistics:
- 1719 PDF objects out of 1728 (max. 8388607)
- 826 named destinations out of 1000 (max. 500000)
- 205 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3887 PDF objects out of 4296 (max. 8388607)
+ 838 named destinations out of 1000 (max. 500000)
+ 4429 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,7 +1,7 @@
-\contentsline {chapter}{\numberline {1}Course Introduction}{5}{chapter.1}%
-\contentsline {paragraph}{Pre-Introduction}{5}{section*.2}%
-\contentsline {chapter}{\numberline {2}Simple AWS Architecture}{7}{chapter.2}%
-\contentsline {chapter}{\numberline {3}Identity \& Federation}{9}{chapter.3}%
+\contentsline {chapter}{\numberline {1}Course Introduction}{17}{chapter.1}%
+\contentsline {paragraph}{Pre-Introduction}{17}{section*.2}%
+\contentsline {chapter}{\numberline {2}Simple AWS Architecture}{19}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Identity \& Federation}{21}{chapter.3}%
 \contentsline {section}{\numberline {3.1}IAM - What should you know by now}{10}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}IAM Policies Deep Dive}{10}{subsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.1.2}IAM AWS Managed Policies - Administrator Access example}{10}{subsection.3.1.2}%
@@ -69,3 +69,554 @@
 \contentsline {subsubsection}{Resource Access Manager Managed Prefix List}{18}{section*.47}%
 \contentsline {subsubsection}{Resource Access Manger Route 53 Outbound Resolver}{18}{section*.48}%
 \contentsline {section}{\numberline {3.4}Summary of Identity and Federation}{19}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Security}{39}{chapter.4}%
+\contentsline {section}{\numberline {4.1}CloudTrail}{40}{section.4.1}%
+\contentsline {section}{\numberline {4.2}CloudTrail - EventBridge Integration}{41}{section.4.2}%
+\contentsline {section}{\numberline {4.3}CloudTrail - SA Pro}{41}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}S3 Enhancements}{41}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Observations}{41}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}CloudTrail: How to react to events the fastest?}{42}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}KMS}{42}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}AWS KMS (Key Management Service)}{42}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}KMS - KMS - Key Types}{42}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Types of KMS Keys}{43}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}KMS Key Material Origin}{43}{subsection.4.4.4}%
+\contentsline {subsection}{\numberline {4.4.5}KMS Key Source - Custom Key Store (CloudHSM)}{44}{subsection.4.4.5}%
+\contentsline {subsection}{\numberline {4.4.6}KMS Key Store - External}{44}{subsection.4.4.6}%
+\contentsline {subsection}{\numberline {4.4.7}KMS Multi-Region Keys}{44}{subsection.4.4.7}%
+\contentsline {section}{\numberline {4.5}Parameter Store}{44}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}SSM Parameter Store}{44}{subsection.4.5.1}%
+\contentsline {section}{\numberline {4.6}Secrets Mangager}{45}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}AWS Secrets Manager}{45}{subsection.4.6.1}%
+\contentsline {subsubsection}{SSM Parameter Store vs Secrets Manager}{45}{section*.49}%
+\contentsline {subsubsection}{SSM Parameter Store (dollah)}{46}{section*.50}%
+\contentsline {section}{\numberline {4.7}RDS Security}{46}{section.4.7}%
+\contentsline {section}{\numberline {4.8}SSL Encryption, SNI, MITM}{46}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}SSL/TLS - Basics}{46}{subsection.4.8.1}%
+\contentsline {subsection}{\numberline {4.8.2}SSL Encryption - How it works}{46}{subsection.4.8.2}%
+\contentsline {subsection}{\numberline {4.8.3}SSL - Server Name Indication (SNI)}{47}{subsection.4.8.3}%
+\contentsline {subsection}{\numberline {4.8.4}SSL - Man in the middle attacks}{47}{subsection.4.8.4}%
+\contentsline {section}{\numberline {4.9}AWS Certificate Manager - ACM}{47}{section.4.9}%
+\contentsline {subsection}{\numberline {4.9.1}AWS Certificate Manager (ACM)}{47}{subsection.4.9.1}%
+\contentsline {subsection}{\numberline {4.9.2}ACM - Good to know}{48}{subsection.4.9.2}%
+\contentsline {section}{\numberline {4.10}CloudHSM}{48}{section.4.10}%
+\contentsline {subsection}{\numberline {4.10.1}CloudHSM Diagram}{48}{subsection.4.10.1}%
+\contentsline {subsection}{\numberline {4.10.2}CloudHSM - High Availability}{49}{subsection.4.10.2}%
+\contentsline {subsection}{\numberline {4.10.3}CloudHSM vs KMS}{49}{subsection.4.10.3}%
+\contentsline {section}{\numberline {4.11}Solution Architecture - SSL on ELB}{49}{section.4.11}%
+\contentsline {section}{\numberline {4.12}S3 Security}{49}{section.4.12}%
+\contentsline {subsection}{\numberline {4.12.1}Encryption in transit (SSL/TLS)}{49}{subsection.4.12.1}%
+\contentsline {subsection}{\numberline {4.12.2}Events in S3 Buckets}{50}{subsection.4.12.2}%
+\contentsline {subsection}{\numberline {4.12.3}S3 Security}{50}{subsection.4.12.3}%
+\contentsline {subsection}{\numberline {4.12.4}S3 Bucket Policies}{50}{subsection.4.12.4}%
+\contentsline {subsection}{\numberline {4.12.5}S3 pre-signed URLs}{51}{subsection.4.12.5}%
+\contentsline {subsection}{\numberline {4.12.6}VPC Endpoint Gateway for S3}{51}{subsection.4.12.6}%
+\contentsline {subsection}{\numberline {4.12.7}S3 Object Lock and Glacier Vault Lock}{51}{subsection.4.12.7}%
+\contentsline {section}{\numberline {4.13}S3 Access Points}{51}{section.4.13}%
+\contentsline {subsection}{\numberline {4.13.1}S3 - Access Points - VPC Origin}{52}{subsection.4.13.1}%
+\contentsline {section}{\numberline {4.14}S3 Multi-Region Access Points}{52}{section.4.14}%
+\contentsline {section}{\numberline {4.15}S3 Multi-Region Access Points - Hands On}{52}{section.4.15}%
+\contentsline {section}{\numberline {4.16}S3 Object Lambda}{52}{section.4.16}%
+\contentsline {section}{\numberline {4.17}DDoS and AWS Shield}{52}{section.4.17}%
+\contentsline {subsection}{\numberline {4.17.1}Types of Attacks on your infrastructure}{53}{subsection.4.17.1}%
+\contentsline {subsection}{\numberline {4.17.2}Application Level Attacks:}{53}{subsection.4.17.2}%
+\contentsline {subsection}{\numberline {4.17.3}DDoS Protection on AWS}{53}{subsection.4.17.3}%
+\contentsline {subsection}{\numberline {4.17.4}Sample Reference Architecture}{53}{subsection.4.17.4}%
+\contentsline {subsection}{\numberline {4.17.5}AWS Shield}{53}{subsection.4.17.5}%
+\contentsline {section}{\numberline {4.18}AWS WAF - Web Application Firewall}{54}{section.4.18}%
+\contentsline {subsection}{\numberline {4.18.1}AWS WAF - Managed Rules}{54}{subsection.4.18.1}%
+\contentsline {subsection}{\numberline {4.18.2}WAF - Web ACL - Logging}{55}{subsection.4.18.2}%
+\contentsline {section}{\numberline {4.19}AWS Firewall Manager}{55}{section.4.19}%
+\contentsline {subsection}{\numberline {4.19.1}WAF vs Firewall Manager vs Shield}{55}{subsection.4.19.1}%
+\contentsline {section}{\numberline {4.20}Blocking an IP Address}{56}{section.4.20}%
+\contentsline {subsection}{\numberline {4.20.1}Blocking an IP address}{56}{subsection.4.20.1}%
+\contentsline {subsection}{\numberline {4.20.2}Blocking an IP address - with an ALB}{56}{subsection.4.20.2}%
+\contentsline {subsection}{\numberline {4.20.3}Blocking an IP address - with an NLB}{56}{subsection.4.20.3}%
+\contentsline {subsection}{\numberline {4.20.4}Blocking an IP address - ALB + WAF}{56}{subsection.4.20.4}%
+\contentsline {subsection}{\numberline {4.20.5}Blocking an IP address - ALB, CloudFront and WAF}{56}{subsection.4.20.5}%
+\contentsline {section}{\numberline {4.21}Amazon Inspector}{56}{section.4.21}%
+\contentsline {subsection}{\numberline {4.21.1}Amazon Inspector}{56}{subsection.4.21.1}%
+\contentsline {subsection}{\numberline {4.21.2}What does Amazon Inspector evaluate?}{56}{subsection.4.21.2}%
+\contentsline {section}{\numberline {4.22}AWS Config}{57}{section.4.22}%
+\contentsline {subsection}{\numberline {4.22.1}AWS Config}{57}{subsection.4.22.1}%
+\contentsline {subsection}{\numberline {4.22.2}AWS config resource}{57}{subsection.4.22.2}%
+\contentsline {subsection}{\numberline {4.22.3}AWS Config Rules}{57}{subsection.4.22.3}%
+\contentsline {section}{\numberline {4.23}AWS Managed Logs}{58}{section.4.23}%
+\contentsline {section}{\numberline {4.24}Amazon GuardDuty}{58}{section.4.24}%
+\contentsline {subsection}{\numberline {4.24.1}Amazon GuardDuty}{59}{subsection.4.24.1}%
+\contentsline {subsection}{\numberline {4.24.2}GuardDuty - Delegated Administrator}{59}{subsection.4.24.2}%
+\contentsline {section}{\numberline {4.25}IAM Advanced Policies}{59}{section.4.25}%
+\contentsline {subsection}{\numberline {4.25.1}IAM conditions}{59}{subsection.4.25.1}%
+\contentsline {subsection}{\numberline {4.25.2}IAM for S3}{59}{subsection.4.25.2}%
+\contentsline {subsection}{\numberline {4.25.3}Resource Policies and aws:PrincipalOrgID}{59}{subsection.4.25.3}%
+\contentsline {section}{\numberline {4.26}EC2 Instance Connect}{59}{section.4.26}%
+\contentsline {section}{\numberline {4.27}AWS Security Hub}{59}{section.4.27}%
+\contentsline {section}{\numberline {4.28}Amazon Detective}{60}{section.4.28}%
+\contentsline {chapter}{\numberline {5}Compute \& Load Balancing}{61}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Solution Architecture on AWS}{62}{section.5.1}%
+\contentsline {section}{\numberline {5.2}EC2}{62}{section.5.2}%
+\contentsline {section}{\numberline {5.3}High Performance Computing (HPC)}{65}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Auto Scaling}{66}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Auto Scaling Update Strategies}{68}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Spot Instances and Spot Fleet}{68}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Amazon ECS - Elastic Container Service}{68}{section.5.7}%
+\contentsline {section}{\numberline {5.8}Amazon ECR - Elastic Container Registry}{69}{section.5.8}%
+\contentsline {section}{\numberline {5.9}Amazon EKS - Elastic Kubernetes Service}{70}{section.5.9}%
+\contentsline {section}{\numberline {5.10}AWS App Runner}{70}{section.5.10}%
+\contentsline {section}{\numberline {5.11}ECS Anywhere and EKS Anywhere}{70}{section.5.11}%
+\contentsline {section}{\numberline {5.12}AWS Lambda - Part 1}{71}{section.5.12}%
+\contentsline {section}{\numberline {5.13}AWS Lambda - Part 2}{71}{section.5.13}%
+\contentsline {section}{\numberline {5.14}Elastic Load Balancers - Part 1}{72}{section.5.14}%
+\contentsline {section}{\numberline {5.15}Elastic Load Balancers - Part 2}{73}{section.5.15}%
+\contentsline {section}{\numberline {5.16}API Gateway}{73}{section.5.16}%
+\contentsline {section}{\numberline {5.17}API Gateway - Part 2}{74}{section.5.17}%
+\contentsline {section}{\numberline {5.18}AWS AppSync}{75}{section.5.18}%
+\contentsline {section}{\numberline {5.19}Route 53 - Part 1}{75}{section.5.19}%
+\contentsline {section}{\numberline {5.20}Route 53 - Part 2}{76}{section.5.20}%
+\contentsline {section}{\numberline {5.21}Route 53 - Resolvers and Hybrid DNS}{77}{section.5.21}%
+\contentsline {section}{\numberline {5.22}AWS Global Accelerator}{77}{section.5.22}%
+\contentsline {section}{\numberline {5.23}Comparison of Solution Architecture}{78}{section.5.23}%
+\contentsline {section}{\numberline {5.24}AWS Outposts}{79}{section.5.24}%
+\contentsline {section}{\numberline {5.25}AWS WaveLength}{79}{section.5.25}%
+\contentsline {section}{\numberline {5.26}AWS Local Zones}{79}{section.5.26}%
+\contentsline {chapter}{\numberline {6}Storage}{81}{chapter.6}%
+\contentsline {section}{\numberline {6.1}EBS and Local Instance Store}{82}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}EBS}{82}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}EBS Volume Types}{82}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}EBS Snapshots}{82}{subsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.1.4}Amazon Data Lifecycle Manager}{83}{subsection.6.1.4}%
+\contentsline {subsection}{\numberline {6.1.5}Amazon Data Lifecycle Manger vs AWS Backup}{83}{subsection.6.1.5}%
+\contentsline {subsection}{\numberline {6.1.6}EBS Encryption - Account level setting}{83}{subsection.6.1.6}%
+\contentsline {subsection}{\numberline {6.1.7}EBS Multi-Attach - io1/io2 family}{83}{subsection.6.1.7}%
+\contentsline {subsection}{\numberline {6.1.8}Local EC2 instance store}{83}{subsection.6.1.8}%
+\contentsline {subsection}{\numberline {6.1.9}Instance Store vs EBS}{84}{subsection.6.1.9}%
+\contentsline {section}{\numberline {6.2}Amazon EFS}{84}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}EFS - Elastic File System}{84}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}EFS - Performance and Storage Classes}{84}{subsection.6.2.2}%
+\contentsline {subsubsection}{EFS Scale}{84}{section*.51}%
+\contentsline {subsection}{\numberline {6.2.3}EFS - Storage Classses}{85}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.4}EFS - On-premises and VPC peering}{85}{subsection.6.2.4}%
+\contentsline {subsection}{\numberline {6.2.5}EFS - Access Points}{85}{subsection.6.2.5}%
+\contentsline {subsection}{\numberline {6.2.6}EFS - File System Policies}{85}{subsection.6.2.6}%
+\contentsline {subsection}{\numberline {6.2.7}EFS - Cross Region Replication}{86}{subsection.6.2.7}%
+\contentsline {section}{\numberline {6.3}Amazon S3}{86}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}S3 - Overview}{86}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}S3 Storage Classes Comparison}{86}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}S3 - Replication (Versioning Enabled)}{86}{subsection.6.3.3}%
+\contentsline {subsection}{\numberline {6.3.4}S3 Event Notifications}{87}{subsection.6.3.4}%
+\contentsline {subsection}{\numberline {6.3.5}S3 Event Notification with Amazon EventBridge}{87}{subsection.6.3.5}%
+\contentsline {subsection}{\numberline {6.3.6}S3 - Baseline Performance}{87}{subsection.6.3.6}%
+\contentsline {subsection}{\numberline {6.3.7}S3 Performance}{87}{subsection.6.3.7}%
+\contentsline {subsection}{\numberline {6.3.8}S3 Performance - S3 Byte-Range Fetches}{88}{subsection.6.3.8}%
+\contentsline {subsection}{\numberline {6.3.9}S3 Multi-Part - Remove Incomplete Parts}{88}{subsection.6.3.9}%
+\contentsline {section}{\numberline {6.4}Amazon S3 - Storage Class Analysis}{88}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Amazon S3 - Storage Lens}{88}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Storage Lens - Default Dashboard}{88}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.5.2}Storage Lens - Metrics}{89}{subsection.6.5.2}%
+\contentsline {subsection}{\numberline {6.5.3}Storage Lens - Free vs Paid}{90}{subsection.6.5.3}%
+\contentsline {section}{\numberline {6.6}S3 Solution Architecture}{90}{section.6.6}%
+\contentsline {subsection}{\numberline {6.6.1}S3 Solution Architecture Indexing objects in Dyanmo DB}{90}{subsection.6.6.1}%
+\contentsline {subsubsection}{API for object metadata}{90}{section*.52}%
+\contentsline {subsection}{\numberline {6.6.2}Solution Architecture on AWS Dynamic vs Static Content}{90}{subsection.6.6.2}%
+\contentsline {section}{\numberline {6.7}Amazon FSx}{90}{section.6.7}%
+\contentsline {subsection}{\numberline {6.7.1}Amazon FSx - Overview}{90}{subsection.6.7.1}%
+\contentsline {subsection}{\numberline {6.7.2}Amazon FSx for Windows (File Server)}{91}{subsection.6.7.2}%
+\contentsline {subsection}{\numberline {6.7.3}Amazon FSx for Lustre}{91}{subsection.6.7.3}%
+\contentsline {subsection}{\numberline {6.7.4}FSx Lustre - File System Deployment Options}{92}{subsection.6.7.4}%
+\contentsline {subsection}{\numberline {6.7.5}Amazon FSx for NetApp ONTAP}{92}{subsection.6.7.5}%
+\contentsline {subsection}{\numberline {6.7.6}Amazon FSx for OpenZFS}{92}{subsection.6.7.6}%
+\contentsline {section}{\numberline {6.8}Amazon FSx - Solution Architecture}{93}{section.6.8}%
+\contentsline {subsection}{\numberline {6.8.1}FSx - Solution Architecture Decrese FSx Volume Size}{93}{subsection.6.8.1}%
+\contentsline {subsection}{\numberline {6.8.2}FSx for Lustre - Data Lazy Loading}{93}{subsection.6.8.2}%
+\contentsline {section}{\numberline {6.9}AWS DataSync}{93}{section.6.9}%
+\contentsline {section}{\numberline {6.10}AWS DataSync - Solution Architecture}{94}{section.6.10}%
+\contentsline {subsection}{\numberline {6.10.1}AWS DataSync NFS / SMB to AWS (S3, EFS, FSx)}{94}{subsection.6.10.1}%
+\contentsline {subsection}{\numberline {6.10.2}AWS Datasync Transfer between AWS storage services}{94}{subsection.6.10.2}%
+\contentsline {subsection}{\numberline {6.10.3}AWS DataSync Private VIF through Direct Connect}{94}{subsection.6.10.3}%
+\contentsline {section}{\numberline {6.11}AWS Data Exchange}{94}{section.6.11}%
+\contentsline {subsection}{\numberline {6.11.1}AWS Data Exchange - Other Products}{94}{subsection.6.11.1}%
+\contentsline {section}{\numberline {6.12}AWS Transfer Family}{94}{section.6.12}%
+\contentsline {subsection}{\numberline {6.12.1}AWS Transfer Family - Endpoint Types}{95}{subsection.6.12.1}%
+\contentsline {subsubsection}{Public Endpoint}{95}{section*.53}%
+\contentsline {subsubsection}{VPC Endpoint with Internal Access}{95}{section*.54}%
+\contentsline {subsubsection}{VPC Endpoint with Internet-facing Access}{95}{section*.55}%
+\contentsline {section}{\numberline {6.13}AWS Storage Services Price Comparison}{95}{section.6.13}%
+\contentsline {chapter}{\numberline {7}Caching}{97}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Cloudfront - Part 1}{98}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}CloudFront - Origins}{98}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}CloudFront - S3 as an Origin}{98}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.3}CloudFront vs S3 Cross Region Replication}{98}{subsection.7.1.3}%
+\contentsline {subsection}{\numberline {7.1.4}CloudFront - ALB or EC2 as an origin Using VPC Origins}{99}{subsection.7.1.4}%
+\contentsline {subsection}{\numberline {7.1.5}CloudFront - EC2 or ALB as an origin}{99}{subsection.7.1.5}%
+\contentsline {subsection}{\numberline {7.1.6}CloudFront - Restrict Access to Application Load Balancers and Custom Origins}{99}{subsection.7.1.6}%
+\contentsline {subsection}{\numberline {7.1.7}CloudFront - Origin Groups}{99}{subsection.7.1.7}%
+\contentsline {section}{\numberline {7.2}Cloudfront - Part 2}{99}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}CloudFront Geo Restrictions}{99}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}CloudFront - Pricing}{100}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}CloudFront - Price Classes}{100}{subsection.7.2.3}%
+\contentsline {subsection}{\numberline {7.2.4}CloudFront Signed URL Diagram}{100}{subsection.7.2.4}%
+\contentsline {subsection}{\numberline {7.2.5}CloudFront Signed URL vs S3 Pre-Signed URL}{100}{subsection.7.2.5}%
+\contentsline {subsection}{\numberline {7.2.6}CloudFront - Custom Error Pages}{101}{subsection.7.2.6}%
+\contentsline {section}{\numberline {7.3}Lambda at Edge and CloudFront Functions}{101}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}CloudFront - Customisation at the edge}{101}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}CloudFront Functions and Lamabda at Edge}{101}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.3}CloudFront - CloudFront Functions}{101}{subsection.7.3.3}%
+\contentsline {subsection}{\numberline {7.3.4}CloudFront - Lambda at Edge}{102}{subsection.7.3.4}%
+\contentsline {subsection}{\numberline {7.3.5}CloudFront Functions with Lambda at Edge}{102}{subsection.7.3.5}%
+\contentsline {subsection}{\numberline {7.3.6}Using Lambda at Edge only}{102}{subsection.7.3.6}%
+\contentsline {subsection}{\numberline {7.3.7}CloudFront Funtions vs. Lamda at Edge}{102}{subsection.7.3.7}%
+\contentsline {subsection}{\numberline {7.3.8}CloudFront Functions vs Lambda@Edge Use Cases}{102}{subsection.7.3.8}%
+\contentsline {subsection}{\numberline {7.3.9}CloudFront Functions vs. Lambda at Edge - Authentication and Authorisation}{103}{subsection.7.3.9}%
+\contentsline {subsection}{\numberline {7.3.10}Lambda@Edge: Loading content based on User-Agent}{103}{subsection.7.3.10}%
+\contentsline {subsection}{\numberline {7.3.11}Lambda at Edge - Global Application}{103}{subsection.7.3.11}%
+\contentsline {section}{\numberline {7.4}Lambda at Edge Reduce Latency}{103}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Lambda at Edge - Route to different origin}{103}{subsection.7.4.1}%
+\contentsline {section}{\numberline {7.5}Amazon ElastiCache}{103}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}Amazon ElasticCache Overview}{103}{subsection.7.5.1}%
+\contentsline {subsection}{\numberline {7.5.2}ElastiCache Solution Architecture - DB Cache}{104}{subsection.7.5.2}%
+\contentsline {subsection}{\numberline {7.5.3}ElastiCache Solution Architecture - User Session Store}{104}{subsection.7.5.3}%
+\contentsline {subsection}{\numberline {7.5.4}ElastiCache - Redis vs Memcached}{104}{subsection.7.5.4}%
+\contentsline {section}{\numberline {7.6}Handling Extreme Rates}{104}{section.7.6}%
+\contentsline {chapter}{\numberline {8}Databases}{105}{chapter.8}%
+\contentsline {section}{\numberline {8.1}DyanamoDB}{106}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}DynamoDB - in short}{106}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}DynamoDB - Basics}{106}{subsection.8.1.2}%
+\contentsline {subsection}{\numberline {8.1.3}DynamoDB - Primary Keys}{106}{subsection.8.1.3}%
+\contentsline {subsection}{\numberline {8.1.4}DynamoDB - Indexes}{107}{subsection.8.1.4}%
+\contentsline {subsection}{\numberline {8.1.5}Amazon Kinesis Data Streams for DynamoDB}{107}{subsection.8.1.5}%
+\contentsline {subsection}{\numberline {8.1.6}DynamoDB Solution Architecture Indexing Objects in DynamoDB}{107}{subsection.8.1.6}%
+\contentsline {subsection}{\numberline {8.1.7}DynamoDB - DAX}{107}{subsection.8.1.7}%
+\contentsline {subsection}{\numberline {8.1.8}DynamoDB - DAX vs ElastiCache}{108}{subsection.8.1.8}%
+\contentsline {section}{\numberline {8.2}Amazon OpenSearch}{108}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Amazon OpenSearch (ex ElasticSearch)}{108}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}OpenSearch + OS Dashboards + Logstash}{108}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.3}OpenSearch patterns DynamoDB}{109}{subsection.8.2.3}%
+\contentsline {subsection}{\numberline {8.2.4}OpenSearch patterns CloudWatch Logs}{109}{subsection.8.2.4}%
+\contentsline {section}{\numberline {8.3}RDS}{109}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}RDS - Multi AZ and Read Replicas}{109}{subsection.8.3.1}%
+\contentsline {subsubsection}{Multi-AZ}{109}{section*.56}%
+\contentsline {subsubsection}{Read Replicas}{109}{section*.57}%
+\contentsline {subsection}{\numberline {8.3.2}RDS - Distributing Reads across Replicas}{109}{subsection.8.3.2}%
+\contentsline {subsection}{\numberline {8.3.3}RDS - Security (reminder)}{109}{subsection.8.3.3}%
+\contentsline {subsection}{\numberline {8.3.4}RDS - IAM Authetication}{110}{subsection.8.3.4}%
+\contentsline {subsection}{\numberline {8.3.5}About RDS for Oracle - Exam Tips}{110}{subsection.8.3.5}%
+\contentsline {subsection}{\numberline {8.3.6}About RDS for MySQL}{110}{subsection.8.3.6}%
+\contentsline {subsection}{\numberline {8.3.7}RDS Proxy for AWS Lambda}{110}{subsection.8.3.7}%
+\contentsline {subsection}{\numberline {8.3.8}RDS Solution Architecture Cross Region Failover}{111}{subsection.8.3.8}%
+\contentsline {section}{\numberline {8.4}Aurora - Part 1}{111}{section.8.4}%
+\contentsline {subsection}{\numberline {8.4.1}Aurora High Availability and Read Scaling}{111}{subsection.8.4.1}%
+\contentsline {subsection}{\numberline {8.4.2}Aurora DB Cluster}{111}{subsection.8.4.2}%
+\contentsline {subsection}{\numberline {8.4.3}Aurora Endpoints}{111}{subsection.8.4.3}%
+\contentsline {subsection}{\numberline {8.4.4}Aurora - Customer Endpoints}{112}{subsection.8.4.4}%
+\contentsline {subsection}{\numberline {8.4.5}Aurora Logs}{112}{subsection.8.4.5}%
+\contentsline {subsection}{\numberline {8.4.6}Troubleshooting RDS and Aurora Performance}{112}{subsection.8.4.6}%
+\contentsline {subsection}{\numberline {8.4.7}Aurora Serverless}{112}{subsection.8.4.7}%
+\contentsline {subsection}{\numberline {8.4.8}Aurora Serverless - Data API}{113}{subsection.8.4.8}%
+\contentsline {subsection}{\numberline {8.4.9}RDS Proxy for Aurora}{113}{subsection.8.4.9}%
+\contentsline {subsection}{\numberline {8.4.10}Global Aurora}{113}{subsection.8.4.10}%
+\contentsline {subsection}{\numberline {8.4.11}Aurora Global - Write Forwarding}{113}{subsection.8.4.11}%
+\contentsline {subsection}{\numberline {8.4.12}Covert RDS to Aurora}{113}{subsection.8.4.12}%
+\contentsline {chapter}{\numberline {9}Service Communication}{115}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Step Functions}{116}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}Visual Work flow in Step Functions}{116}{subsection.9.1.1}%
+\contentsline {subsection}{\numberline {9.1.2}Step Function Integrations}{116}{subsection.9.1.2}%
+\contentsline {subsection}{\numberline {9.1.3}Step Functions Workflow Triggeers}{116}{subsection.9.1.3}%
+\contentsline {subsection}{\numberline {9.1.4}Step Funcitons - Sample Projects}{117}{subsection.9.1.4}%
+\contentsline {subsection}{\numberline {9.1.5}Step Functions - Tasks}{117}{subsection.9.1.5}%
+\contentsline {subsection}{\numberline {9.1.6}Step Functions - Standard vs. Express}{117}{subsection.9.1.6}%
+\contentsline {subsection}{\numberline {9.1.7}Step Functions - Express Workflow - Synchronous vs. Asynchoronous}{117}{subsection.9.1.7}%
+\contentsline {subsection}{\numberline {9.1.8}Step Functions - Error handling}{118}{subsection.9.1.8}%
+\contentsline {subsection}{\numberline {9.1.9}Step Functions - Solution Architecture}{118}{subsection.9.1.9}%
+\contentsline {section}{\numberline {9.2}SQS}{118}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Amazon SQS - Dead Letter Queue (DLQ)}{118}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.2}SQS DLQ - Redrive to source}{118}{subsection.9.2.2}%
+\contentsline {subsection}{\numberline {9.2.3}SQS - Solution Architecture Idempotency}{119}{subsection.9.2.3}%
+\contentsline {subsection}{\numberline {9.2.4}Lambda - Event Source Mapping SQS and SQS FIFO}{119}{subsection.9.2.4}%
+\contentsline {subsection}{\numberline {9.2.5}SQS - Solution Architecture Request / Response queue (async)}{119}{subsection.9.2.5}%
+\contentsline {section}{\numberline {9.3}Amazon MQ}{119}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.1}Amazon MQ - Re-platform}{119}{subsection.9.3.1}%
+\contentsline {section}{\numberline {9.4}Amazon SNS}{120}{section.9.4}%
+\contentsline {subsection}{\numberline {9.4.1}Amazon SNS}{120}{subsection.9.4.1}%
+\contentsline {subsection}{\numberline {9.4.2}SNS integrates with a lot of AWS serivces}{120}{subsection.9.4.2}%
+\contentsline {subsection}{\numberline {9.4.3}Amazon SNS - How to publish}{120}{subsection.9.4.3}%
+\contentsline {subsection}{\numberline {9.4.4}Amazon SNS - Security}{120}{subsection.9.4.4}%
+\contentsline {section}{\numberline {9.5}Amazon SNS - SQS Fan Out Pattern}{121}{section.9.5}%
+\contentsline {subsection}{\numberline {9.5.1}SNS + SQS: Fan out}{121}{subsection.9.5.1}%
+\contentsline {subsection}{\numberline {9.5.2}Application: S3 Events to multiple queues}{121}{subsection.9.5.2}%
+\contentsline {subsection}{\numberline {9.5.3}Application: SNS to Amazon S3 through Kinesis Data Firehose}{121}{subsection.9.5.3}%
+\contentsline {subsection}{\numberline {9.5.4}Amazon SNS - FIFO Topic}{121}{subsection.9.5.4}%
+\contentsline {subsection}{\numberline {9.5.5}SNS FIFO + SQS FIFO: Fan Out}{121}{subsection.9.5.5}%
+\contentsline {subsection}{\numberline {9.5.6}SNS - Message Filtering}{121}{subsection.9.5.6}%
+\contentsline {section}{\numberline {9.6}Amazon SNS - Message Delivery Retries}{122}{section.9.6}%
+\contentsline {subsection}{\numberline {9.6.1}SNS - Message Delivery Retries}{122}{subsection.9.6.1}%
+\contentsline {subsubsection}{AWS Managed endpoints}{122}{section*.58}%
+\contentsline {subsubsection}{Customer managed endpoints}{122}{section*.59}%
+\contentsline {subsection}{\numberline {9.6.2}SNS Customer Delivery Policies}{122}{subsection.9.6.2}%
+\contentsline {subsection}{\numberline {9.6.3}SNS - Dead Lette Queues}{122}{subsection.9.6.3}%
+\contentsline {chapter}{\numberline {10}Data Engineering}{123}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Amazon Kinesis Data Streams}{124}{section.10.1}%
+\contentsline {subsubsection}{Kinesis Data Streams}{124}{section*.60}%
+\contentsline {subsubsection}{Kinesis Data Streams - Capacity Modes}{124}{section*.61}%
+\contentsline {section}{\numberline {10.2}Amazon Data Firehose}{125}{section.10.2}%
+\contentsline {subsection}{\numberline {10.2.1}AWS Kinesis Data Firehose}{125}{subsection.10.2.1}%
+\contentsline {subsection}{\numberline {10.2.2}Kinesis Data Firehose Delivery Diagram}{125}{subsection.10.2.2}%
+\contentsline {subsection}{\numberline {10.2.3}Firehose Buffer Sizing}{125}{subsection.10.2.3}%
+\contentsline {subsection}{\numberline {10.2.4}Kinesis Data Streams vs Firehose}{125}{subsection.10.2.4}%
+\contentsline {section}{\numberline {10.3}Amazon Managed Service for Apache Flink}{126}{section.10.3}%
+\contentsline {section}{\numberline {10.4}Streaming Architectures}{126}{section.10.4}%
+\contentsline {subsection}{\numberline {10.4.1}Full Data Engineering Pipeline - Real-Time Layer}{126}{subsection.10.4.1}%
+\contentsline {subsection}{\numberline {10.4.2}Streaming Architectures - 3000 messages of 1kb per second}{126}{subsection.10.4.2}%
+\contentsline {subsection}{\numberline {10.4.3}Comparison Charts}{127}{subsection.10.4.3}%
+\contentsline {section}{\numberline {10.5}Amazon MSK}{127}{section.10.5}%
+\contentsline {subsection}{\numberline {10.5.1}Amazon Managed Streaming for Apache Kafka (Amazon MSK)}{127}{subsection.10.5.1}%
+\contentsline {subsection}{\numberline {10.5.2}Apache Kafka at a high level}{127}{subsection.10.5.2}%
+\contentsline {subsection}{\numberline {10.5.3}Kinesis Data Streams vs. Amazon MSK}{127}{subsection.10.5.3}%
+\contentsline {subsection}{\numberline {10.5.4}Amazon MSK Consumers}{128}{subsection.10.5.4}%
+\contentsline {section}{\numberline {10.6}AWS Batch}{128}{section.10.6}%
+\contentsline {subsection}{\numberline {10.6.1}AWS Batch - Solution Architecture}{128}{subsection.10.6.1}%
+\contentsline {subsection}{\numberline {10.6.2}Batch vs. Lambda}{128}{subsection.10.6.2}%
+\contentsline {subsection}{\numberline {10.6.3}AWS Batch - Compute Environments}{129}{subsection.10.6.3}%
+\contentsline {subsection}{\numberline {10.6.4}AWS Batch - Managed Compute Environment}{129}{subsection.10.6.4}%
+\contentsline {subsection}{\numberline {10.6.5}AWS Batch - Multi Node Mode}{129}{subsection.10.6.5}%
+\contentsline {section}{\numberline {10.7}Amazon EMR}{129}{section.10.7}%
+\contentsline {subsection}{\numberline {10.7.1}EMR - Integrations}{130}{subsection.10.7.1}%
+\contentsline {subsection}{\numberline {10.7.2}Amazon EMR - Node types and purchasing}{130}{subsection.10.7.2}%
+\contentsline {subsection}{\numberline {10.7.3}Amazon EMR - Instance Configuration}{130}{subsection.10.7.3}%
+\contentsline {section}{\numberline {10.8}Running Jobs on AWS}{130}{section.10.8}%
+\contentsline {section}{\numberline {10.9}AWS Glue}{130}{section.10.9}%
+\contentsline {subsection}{\numberline {10.9.1}Glue Data Catalog}{130}{subsection.10.9.1}%
+\contentsline {section}{\numberline {10.10}Redshift}{131}{section.10.10}%
+\contentsline {subsection}{\numberline {10.10.1}Redshift Continued.......}{131}{subsection.10.10.1}%
+\contentsline {subsection}{\numberline {10.10.2}Redshift - Snapshots and DR}{131}{subsection.10.10.2}%
+\contentsline {subsection}{\numberline {10.10.3}Cross-Region Snapshot Copy for an KMS-Encrypted Redshift}{132}{subsection.10.10.3}%
+\contentsline {subsection}{\numberline {10.10.4}Redshift Workload Management (WLM)}{132}{subsection.10.10.4}%
+\contentsline {subsection}{\numberline {10.10.5}Redshift Concurrency Scaling}{132}{subsection.10.10.5}%
+\contentsline {section}{\numberline {10.11}Amazon DocumentDB}{132}{section.10.11}%
+\contentsline {subsection}{\numberline {10.11.1}DocumentDB - Pricing}{133}{subsection.10.11.1}%
+\contentsline {section}{\numberline {10.12}Amazon Timestream}{133}{section.10.12}%
+\contentsline {section}{\numberline {10.13}Amazon Athena}{133}{section.10.13}%
+\contentsline {subsection}{\numberline {10.13.1}Amazon Athena - Performance Improvement}{134}{subsection.10.13.1}%
+\contentsline {subsection}{\numberline {10.13.2}Amazon Athena - Federated Query}{134}{subsection.10.13.2}%
+\contentsline {section}{\numberline {10.14}Amazon QuickSight}{134}{section.10.14}%
+\contentsline {subsection}{\numberline {10.14.1}QuickSight Integrations}{135}{subsection.10.14.1}%
+\contentsline {subsection}{\numberline {10.14.2}QuickSight - Dashboard and Analysis}{135}{subsection.10.14.2}%
+\contentsline {section}{\numberline {10.15}Big Data Architecture}{135}{section.10.15}%
+\contentsline {subsection}{\numberline {10.15.1}Full Data Engineering Pipeline - Analytics layer}{135}{subsection.10.15.1}%
+\contentsline {subsection}{\numberline {10.15.2}Big Data Ingestion Pipeline}{135}{subsection.10.15.2}%
+\contentsline {subsection}{\numberline {10.15.3}Comparison of warehousing technologies}{136}{subsection.10.15.3}%
+\contentsline {chapter}{\numberline {11}Monitoring}{137}{chapter.11}%
+\contentsline {section}{\numberline {11.1}CloudWatch}{138}{section.11.1}%
+\contentsline {subsection}{\numberline {11.1.1}CloudWatch Metrics}{138}{subsection.11.1.1}%
+\contentsline {subsection}{\numberline {11.1.2}CloudWatch Alarms}{138}{subsection.11.1.2}%
+\contentsline {subsection}{\numberline {11.1.3}CloudWatch Dashboards}{138}{subsection.11.1.3}%
+\contentsline {subsection}{\numberline {11.1.4}CloudWatch Alarms Integrations}{138}{subsection.11.1.4}%
+\contentsline {subsection}{\numberline {11.1.5}CloudWatch Syntethics Canary}{138}{subsection.11.1.5}%
+\contentsline {subsection}{\numberline {11.1.6}CloudWatch Synthetics Canary Blueprints}{138}{subsection.11.1.6}%
+\contentsline {section}{\numberline {11.2}CloudWatch Logs}{139}{section.11.2}%
+\contentsline {subsection}{\numberline {11.2.1}AWS Cloudwatch Logs - Sources}{139}{subsection.11.2.1}%
+\contentsline {subsection}{\numberline {11.2.2}CloudWatch Logs}{139}{subsection.11.2.2}%
+\contentsline {subsection}{\numberline {11.2.3}CloudWatch Logs Metric Filter and Insights}{140}{subsection.11.2.3}%
+\contentsline {subsection}{\numberline {11.2.4}CloudWatch Logs - S3 Export}{140}{subsection.11.2.4}%
+\contentsline {subsection}{\numberline {11.2.5}CloudWatch Logs Subscription}{140}{subsection.11.2.5}%
+\contentsline {subsection}{\numberline {11.2.6}CloudWatch Logs Aggregation - Multi-Account and Multi Region}{140}{subsection.11.2.6}%
+\contentsline {subsection}{\numberline {11.2.7}CloudWatch Agent - Integration with SSM}{140}{subsection.11.2.7}%
+\contentsline {section}{\numberline {11.3}Amazon EventBridge}{140}{section.11.3}%
+\contentsline {subsection}{\numberline {11.3.1}Amazon EventBridge - formerly cloudwatch events}{140}{subsection.11.3.1}%
+\contentsline {subsection}{\numberline {11.3.2}Amazon EventBridge Rules}{140}{subsection.11.3.2}%
+\contentsline {subsection}{\numberline {11.3.3}Amazon EventBridge}{140}{subsection.11.3.3}%
+\contentsline {subsection}{\numberline {11.3.4}Amazon EventBridge - Schema Registry}{141}{subsection.11.3.4}%
+\contentsline {subsection}{\numberline {11.3.5}Amazon EventBridge - Resource-based Policy}{141}{subsection.11.3.5}%
+\contentsline {section}{\numberline {11.4}X-Ray}{141}{section.11.4}%
+\contentsline {subsection}{\numberline {11.4.1}Visual analysis of our application}{141}{subsection.11.4.1}%
+\contentsline {subsection}{\numberline {11.4.2}X-Ray}{141}{subsection.11.4.2}%
+\contentsline {section}{\numberline {11.5}AWS Personal Health Dashboard}{141}{section.11.5}%
+\contentsline {subsection}{\numberline {11.5.1}Health Event Notifications}{142}{subsection.11.5.1}%
+\contentsline {chapter}{\numberline {12}Deployment and Instance Management}{143}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Elastic Beanstalk}{144}{section.12.1}%
+\contentsline {subsection}{\numberline {12.1.1}AWS Elastic Beanstalk Overview}{144}{subsection.12.1.1}%
+\contentsline {subsection}{\numberline {12.1.2}Elastic Beanstalk}{144}{subsection.12.1.2}%
+\contentsline {subsection}{\numberline {12.1.3}Beanstalk Environments}{145}{subsection.12.1.3}%
+\contentsline {subsection}{\numberline {12.1.4}Web Server vs Worker Environment}{145}{subsection.12.1.4}%
+\contentsline {subsection}{\numberline {12.1.5}Elastic Beanstalk Deployment Blue / Green}{145}{subsection.12.1.5}%
+\contentsline {section}{\numberline {12.2}CodeDeploy}{145}{section.12.2}%
+\contentsline {subsection}{\numberline {12.2.1}AWS CodeDeploy}{145}{subsection.12.2.1}%
+\contentsline {subsection}{\numberline {12.2.2}CodeDeploy to EC2}{145}{subsection.12.2.2}%
+\contentsline {subsection}{\numberline {12.2.3}CodeDeploy to ASG}{146}{subsection.12.2.3}%
+\contentsline {subsection}{\numberline {12.2.4}CodeDeploy to AWS Lambda}{146}{subsection.12.2.4}%
+\contentsline {subsection}{\numberline {12.2.5}CodeDeploy to ECS}{146}{subsection.12.2.5}%
+\contentsline {section}{\numberline {12.3}CloudFormation}{146}{section.12.3}%
+\contentsline {subsection}{\numberline {12.3.1}Retaining Data on Deletes}{147}{subsection.12.3.1}%
+\contentsline {subsection}{\numberline {12.3.2}CloudFormation Customer Resources (Lambda)}{147}{subsection.12.3.2}%
+\contentsline {subsection}{\numberline {12.3.3}CloudFormation - StackSets}{147}{subsection.12.3.3}%
+\contentsline {subsection}{\numberline {12.3.4}CloudFormation Drift Overview}{147}{subsection.12.3.4}%
+\contentsline {subsection}{\numberline {12.3.5}CloudFormation - Integration with Secrets Manager}{148}{subsection.12.3.5}%
+\contentsline {subsection}{\numberline {12.3.6}CloudFormation - Resource Import}{148}{subsection.12.3.6}%
+\contentsline {section}{\numberline {12.4}Service Catalog}{148}{section.12.4}%
+\contentsline {subsection}{\numberline {12.4.1}AWS Service Catalog}{148}{subsection.12.4.1}%
+\contentsline {subsection}{\numberline {12.4.2}Service Catalog Diagram}{148}{subsection.12.4.2}%
+\contentsline {subsection}{\numberline {12.4.3}AWS Service Catalog}{148}{subsection.12.4.3}%
+\contentsline {section}{\numberline {12.5}SAM - Serverless Application Model}{149}{section.12.5}%
+\contentsline {subsection}{\numberline {12.5.1}CICD Architecture for SAM}{149}{subsection.12.5.1}%
+\contentsline {section}{\numberline {12.6}AWS CDK - Cloud Development Kit}{149}{section.12.6}%
+\contentsline {subsection}{\numberline {12.6.1}CDK Example}{149}{subsection.12.6.1}%
+\contentsline {section}{\numberline {12.7}AWS Systems Manger - SSM}{149}{section.12.7}%
+\contentsline {subsection}{\numberline {12.7.1}AWS Systems Manager Overview}{149}{subsection.12.7.1}%
+\contentsline {subsection}{\numberline {12.7.2}How Systems Manger Works}{150}{subsection.12.7.2}%
+\contentsline {subsection}{\numberline {12.7.3}AWS Systems Manager Run Command}{150}{subsection.12.7.3}%
+\contentsline {subsection}{\numberline {12.7.4}AWS Systems Manager - Send Command before an ASG Instance is Terminated}{150}{subsection.12.7.4}%
+\contentsline {subsection}{\numberline {12.7.5}Systems Manager Patch Managers - Steps}{150}{subsection.12.7.5}%
+\contentsline {subsection}{\numberline {12.7.6}Systems Manager / Session Manager}{151}{subsection.12.7.6}%
+\contentsline {subsection}{\numberline {12.7.7}Systems Manager OpsCenter}{151}{subsection.12.7.7}%
+\contentsline {section}{\numberline {12.8}AWS Cloud Map}{151}{section.12.8}%
+\contentsline {subsection}{\numberline {12.8.1}AWS Cloud Map}{151}{subsection.12.8.1}%
+\contentsline {chapter}{\numberline {13}Cost Control}{153}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Cost Allocation Tags}{154}{section.13.1}%
+\contentsline {section}{\numberline {13.2}AWS Tag Editor}{154}{section.13.2}%
+\contentsline {section}{\numberline {13.3}Trusted Advisor}{154}{section.13.3}%
+\contentsline {subsubsection}{Trusted Advisor - Good to Know}{155}{section*.62}%
+\contentsline {section}{\numberline {13.4}AWS Service Quotas}{155}{section.13.4}%
+\contentsline {section}{\numberline {13.5}EC2 Launch Types and Savings Plans}{155}{section.13.5}%
+\contentsline {subsection}{\numberline {13.5.1}AWS Savings Plan}{156}{subsection.13.5.1}%
+\contentsline {section}{\numberline {13.6}S3 Cost Savings}{156}{section.13.6}%
+\contentsline {subsection}{\numberline {13.6.1}S3 Storage Classes}{156}{subsection.13.6.1}%
+\contentsline {subsection}{\numberline {13.6.2}S3 - Other Cost Savings}{157}{subsection.13.6.2}%
+\contentsline {section}{\numberline {13.7}S3 Storage Classes - Reminder}{157}{section.13.7}%
+\contentsline {subsection}{\numberline {13.7.1}S3 Storage Classes}{157}{subsection.13.7.1}%
+\contentsline {subsection}{\numberline {13.7.2}S3 Durability and Availalbility}{157}{subsection.13.7.2}%
+\contentsline {subsection}{\numberline {13.7.3}S3 Intelligent Tiering}{158}{subsection.13.7.3}%
+\contentsline {subsubsection}{S3 Storage Classes Comparision}{159}{section*.63}%
+\contentsline {subsubsection}{S3 Storage Classes - Price Comparison}{159}{section*.64}%
+\contentsline {section}{\numberline {13.8}AWS Budgets and Cost Explorer}{159}{section.13.8}%
+\contentsline {subsection}{\numberline {13.8.1}AWS Budgets}{159}{subsection.13.8.1}%
+\contentsline {subsection}{\numberline {13.8.2}Budget Actions}{159}{subsection.13.8.2}%
+\contentsline {subsection}{\numberline {13.8.3}Centralised Budget Management}{160}{subsection.13.8.3}%
+\contentsline {subsection}{\numberline {13.8.4}DeCentralised Budget Management}{160}{subsection.13.8.4}%
+\contentsline {subsection}{\numberline {13.8.5}Cost Explorer}{160}{subsection.13.8.5}%
+\contentsline {section}{\numberline {13.9}AWS Compute Optimiser}{160}{section.13.9}%
+\contentsline {subsection}{\numberline {13.9.1}Computer Optimiser - CloudWatch Agent}{160}{subsection.13.9.1}%
+\contentsline {section}{\numberline {13.10}EC2 Reserved Instance}{161}{section.13.10}%
+\contentsline {chapter}{\numberline {14}Migration}{163}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Cloud Migration Strategies - The 7Rs}{164}{section.14.1}%
+\contentsline {section}{\numberline {14.2}Storage Gateway}{165}{section.14.2}%
+\contentsline {chapter}{\numberline {15}VPC}{167}{chapter.15}%
+\contentsline {section}{\numberline {15.1}VPC - Basics}{168}{section.15.1}%
+\contentsline {subsection}{\numberline {15.1.1}VPC}{168}{subsection.15.1.1}%
+\contentsline {subsection}{\numberline {15.1.2}Subnets}{168}{subsection.15.1.2}%
+\contentsline {subsection}{\numberline {15.1.3}Route Tables}{168}{subsection.15.1.3}%
+\contentsline {subsection}{\numberline {15.1.4}Internet Gateways IGW}{168}{subsection.15.1.4}%
+\contentsline {subsection}{\numberline {15.1.5}Public Subnets}{168}{subsection.15.1.5}%
+\contentsline {subsection}{\numberline {15.1.6}Private Subnets}{168}{subsection.15.1.6}%
+\contentsline {subsection}{\numberline {15.1.7}VPC Basics - NAT Instance}{168}{subsection.15.1.7}%
+\contentsline {subsection}{\numberline {15.1.8}VPC Basics - NAT Gateway}{169}{subsection.15.1.8}%
+\contentsline {subsection}{\numberline {15.1.9}Network ACL (NACL)}{169}{subsection.15.1.9}%
+\contentsline {subsection}{\numberline {15.1.10}Security groups}{169}{subsection.15.1.10}%
+\contentsline {subsection}{\numberline {15.1.11}VPC Flow Logs}{169}{subsection.15.1.11}%
+\contentsline {subsection}{\numberline {15.1.12}Bastion Hosts}{169}{subsection.15.1.12}%
+\contentsline {subsection}{\numberline {15.1.13}IPv6 in short}{169}{subsection.15.1.13}%
+\contentsline {subsection}{\numberline {15.1.14}VPC support for IPv6}{170}{subsection.15.1.14}%
+\contentsline {section}{\numberline {15.2}VPC - Peering}{170}{section.15.2}%
+\contentsline {subsection}{\numberline {15.2.1}VPC Peering - Good to know}{170}{subsection.15.2.1}%
+\contentsline {subsection}{\numberline {15.2.2}VPC Peering - Longest Prefix Match}{170}{subsection.15.2.2}%
+\contentsline {subsection}{\numberline {15.2.3}VPC Peering - Invalid Configurations}{171}{subsection.15.2.3}%
+\contentsline {subsubsection}{Overlapping CIDR for IPv4}{171}{section*.65}%
+\contentsline {subsubsection}{No Transitive VPC Peering}{171}{section*.66}%
+\contentsline {subsubsection}{No Edge to Edge Routing}{171}{section*.67}%
+\contentsline {section}{\numberline {15.3}Transit Gateway}{171}{section.15.3}%
+\contentsline {subsection}{\numberline {15.3.1}Transit Gateway - Central NAT Gateway}{171}{subsection.15.3.1}%
+\contentsline {subsection}{\numberline {15.3.2}Transit Gateway - Sharing through RAM}{171}{subsection.15.3.2}%
+\contentsline {subsection}{\numberline {15.3.3}Transit Gatway - Use Different Route Tables to Prevent VPC from Communicating}{171}{subsection.15.3.3}%
+\contentsline {subsection}{\numberline {15.3.4}Transit Gateway to Direct Connect Gateway}{171}{subsection.15.3.4}%
+\contentsline {subsection}{\numberline {15.3.5}Transit Gateway - Inter and Intra Region Peering}{171}{subsection.15.3.5}%
+\contentsline {section}{\numberline {15.4}VPC Endpoints}{172}{section.15.4}%
+\contentsline {subsection}{\numberline {15.4.1}VPC Endpoint Gateway}{172}{subsection.15.4.1}%
+\contentsline {subsection}{\numberline {15.4.2}VPC Endpoints Interface}{172}{subsection.15.4.2}%
+\contentsline {subsection}{\numberline {15.4.3}VPC Endpoint Policies}{173}{subsection.15.4.3}%
+\contentsline {subsection}{\numberline {15.4.4}VPC Endpoint Policy and S3 bucket policy}{173}{subsection.15.4.4}%
+\contentsline {subsubsection}{Example S3 bucket policies}{173}{section*.68}%
+\contentsline {subsection}{\numberline {15.4.5}VPC Endpoint Policies for S3 Troubleshooting}{173}{subsection.15.4.5}%
+\contentsline {section}{\numberline {15.5}PrivateLink}{173}{section.15.5}%
+\contentsline {subsection}{\numberline {15.5.1}PrivateLink for Amazon S3 with Direct Connect}{174}{subsection.15.5.1}%
+\contentsline {subsection}{\numberline {15.5.2}VPC Endpoints / PrivateLink and VPC peering}{174}{subsection.15.5.2}%
+\contentsline {subsection}{\numberline {15.5.3}Site to Site VPN (AWS Managed VPN)}{174}{subsection.15.5.3}%
+\contentsline {subsection}{\numberline {15.5.4}Route Propagation in Site-to-Site VPN}{174}{subsection.15.5.4}%
+\contentsline {subsubsection}{Static Routing}{174}{section*.69}%
+\contentsline {subsection}{\numberline {15.5.5}Site to Site VPN and Internet Access}{174}{subsection.15.5.5}%
+\contentsline {subsection}{\numberline {15.5.6}AWS VPN CloudHub}{174}{subsection.15.5.6}%
+\contentsline {subsection}{\numberline {15.5.7}VPN to multiple VPC}{175}{subsection.15.5.7}%
+\contentsline {subsection}{\numberline {15.5.8}Shared Services VPN}{175}{subsection.15.5.8}%
+\contentsline {section}{\numberline {15.6}AWS S2S VPN}{175}{section.15.6}%
+\contentsline {section}{\numberline {15.7}AWS Client VPN}{175}{section.15.7}%
+\contentsline {subsection}{\numberline {15.7.1}Client VPN - Peered VPC}{175}{subsection.15.7.1}%
+\contentsline {subsection}{\numberline {15.7.2}Client VPN - Access to On-Premises}{175}{subsection.15.7.2}%
+\contentsline {subsection}{\numberline {15.7.3}Client VPN - Internet Access}{175}{subsection.15.7.3}%
+\contentsline {subsection}{\numberline {15.7.4}Client VPN - Transit Gateway}{175}{subsection.15.7.4}%
+\contentsline {section}{\numberline {15.8}Direct Connect}{175}{section.15.8}%
+\contentsline {subsection}{\numberline {15.8.1}Direct Connect - Virtual Interfaces (VIF)}{176}{subsection.15.8.1}%
+\contentsline {subsection}{\numberline {15.8.2}Direct Connect Diagram}{176}{subsection.15.8.2}%
+\contentsline {subsection}{\numberline {15.8.3}Direct Connect - Connection Types}{176}{subsection.15.8.3}%
+\contentsline {subsection}{\numberline {15.8.4}Direct Connect - Encryption}{176}{subsection.15.8.4}%
+\contentsline {subsection}{\numberline {15.8.5}Direct Connect - Link Aggregation Groups (LAG)}{176}{subsection.15.8.5}%
+\contentsline {subsection}{\numberline {15.8.6}Direct Connect Gateway}{177}{subsection.15.8.6}%
+\contentsline {subsection}{\numberline {15.8.7}Site-to-site Active-Active Connection}{177}{subsection.15.8.7}%
+\contentsline {subsection}{\numberline {15.8.8}Direct Connect - High Availability}{177}{subsection.15.8.8}%
+\contentsline {subsection}{\numberline {15.8.9}Direct Connect Gateway - SiteLink}{177}{subsection.15.8.9}%
+\contentsline {section}{\numberline {15.9}On-Premise Redundant Connections}{177}{section.15.9}%
+\contentsline {section}{\numberline {15.10}VPC Flow Logs}{177}{section.15.10}%
+\contentsline {subsection}{\numberline {15.10.1}VPC Flow Logs Syntax}{177}{subsection.15.10.1}%
+\contentsline {subsection}{\numberline {15.10.2}VPC Flow Logs - Troubleshoot SG and NACL issues}{178}{subsection.15.10.2}%
+\contentsline {subsubsection}{Incoming Requests}{178}{section*.70}%
+\contentsline {subsubsection}{Outgoing Requests}{178}{section*.71}%
+\contentsline {subsection}{\numberline {15.10.3}VPC Flow Logs - Architectures}{178}{subsection.15.10.3}%
+\contentsline {subsection}{\numberline {15.10.4}VPC Flow Logs - with NAT Gateway}{178}{subsection.15.10.4}%
+\contentsline {section}{\numberline {15.11}AWS Network Firewall}{178}{section.15.11}%
+\contentsline {subsection}{\numberline {15.11.1}Network Protection on AWS}{178}{subsection.15.11.1}%
+\contentsline {subsection}{\numberline {15.11.2}AWS Network Firewall}{179}{subsection.15.11.2}%
+\contentsline {subsection}{\numberline {15.11.3}Network Firewall - Fine Grained Controls}{179}{subsection.15.11.3}%
+\contentsline {subsection}{\numberline {15.11.4}AWS Network Firewall Architecture}{179}{subsection.15.11.4}%
+\contentsline {chapter}{\numberline {16}Machine Learning}{181}{chapter.16}%
+\contentsline {section}{\numberline {16.1}Rekognition Overview}{182}{section.16.1}%
+\contentsline {subsection}{\numberline {16.1.1}Amazon Rekognition - Content Moderation}{182}{subsection.16.1.1}%
+\contentsline {section}{\numberline {16.2}Transcribe Overview}{182}{section.16.2}%
+\contentsline {section}{\numberline {16.3}Polly Overview}{183}{section.16.3}%
+\contentsline {subsection}{\numberline {16.3.1}Amazon Polly - Lexicon \& SSML}{183}{subsection.16.3.1}%
+\contentsline {section}{\numberline {16.4}Translate Overview}{183}{section.16.4}%
+\contentsline {section}{\numberline {16.5}Lex + Connect Overview}{183}{section.16.5}%
+\contentsline {section}{\numberline {16.6}Comprehend Overview}{184}{section.16.6}%
+\contentsline {section}{\numberline {16.7}Comprehend Medical Overview}{184}{section.16.7}%
+\contentsline {section}{\numberline {16.8}SageMaker Overview}{184}{section.16.8}%
+\contentsline {section}{\numberline {16.9}Kendra Overview}{185}{section.16.9}%
+\contentsline {section}{\numberline {16.10}Personalise Overview}{185}{section.16.10}%
+\contentsline {section}{\numberline {16.11}Textract Overview}{185}{section.16.11}%
+\contentsline {section}{\numberline {16.12}Machine Learning Summary}{185}{section.16.12}%
+\contentsline {chapter}{\numberline {17}Other Services}{187}{chapter.17}%
+\contentsline {section}{\numberline {17.1}Other Services}{188}{section.17.1}%
+\contentsline {section}{\numberline {17.2}IMPORTANT: CodeCommit Discontinuation}{188}{section.17.2}%
+\contentsline {section}{\numberline {17.3}CI/CD}{188}{section.17.3}%
+\contentsline {subsection}{\numberline {17.3.1}Technology Stack for CICD}{188}{subsection.17.3.1}%
+\contentsline {subsection}{\numberline {17.3.2}CICD Architecture}{188}{subsection.17.3.2}%
+\contentsline {subsection}{\numberline {17.3.3}CodeCommit Trigger for AWS Lambda}{188}{subsection.17.3.3}%
+\contentsline {subsection}{\numberline {17.3.4}Good to know CICD}{188}{subsection.17.3.4}%
+\contentsline {subsection}{\numberline {17.3.5}CodePipeline - GitHub integration}{189}{subsection.17.3.5}%
+\contentsline {section}{\numberline {17.4}Amazon CodeGuru}{189}{section.17.4}%
+\contentsline {subsection}{\numberline {17.4.1}Amazon CodeGuru Reviewer}{189}{subsection.17.4.1}%
+\contentsline {subsection}{\numberline {17.4.2}Amazon CodeGuru Profiler}{189}{subsection.17.4.2}%
+\contentsline {section}{\numberline {17.5}Alexa for Business, Lex and Connect}{190}{section.17.5}%
+\contentsline {section}{\numberline {17.6}Kinesis Video Streams}{190}{section.17.6}%
+\contentsline {subsection}{\numberline {17.6.1}Video Streaming and Rekognition}{190}{subsection.17.6.1}%
+\contentsline {section}{\numberline {17.7}AWS WorkSpaces}{190}{section.17.7}%
+\contentsline {subsection}{\numberline {17.7.1}Amazon Workspaces - Cross Region Redirection}{191}{subsection.17.7.1}%
+\contentsline {subsection}{\numberline {17.7.2}Amazon WorkSpaces IP Access Control Groups}{191}{subsection.17.7.2}%
+\contentsline {section}{\numberline {17.8}Amazon AppStream 2.0}{191}{section.17.8}%
+\contentsline {subsection}{\numberline {17.8.1}Amazon AppStream 2.0 vs WorkSpaces}{191}{subsection.17.8.1}%
+\contentsline {section}{\numberline {17.9}AWS Device Farm}{192}{section.17.9}%
+\contentsline {section}{\numberline {17.10}Amazon Macie}{192}{section.17.10}%
+\contentsline {section}{\numberline {17.11}Amazon SES}{192}{section.17.11}%
+\contentsline {subsection}{\numberline {17.11.1}Amazon Simple Email Service (Amazon SES)}{192}{subsection.17.11.1}%
+\contentsline {subsection}{\numberline {17.11.2}Amazon SES - Configuration Sets}{192}{subsection.17.11.2}%
+\contentsline {section}{\numberline {17.12}Amazon Pinpoint}{193}{section.17.12}%
+\contentsline {section}{\numberline {17.13}EC2 Image Builder}{193}{section.17.13}%
+\contentsline {subsection}{\numberline {17.13.1}EC2 Image Builder - CICD Architecture}{193}{subsection.17.13.1}%
+\contentsline {section}{\numberline {17.14}Other Services Summary}{193}{section.17.14}%
+\contentsline {subsection}{\numberline {17.14.1}AWS IoT Core}{193}{subsection.17.14.1}%
+\contentsline {subsection}{\numberline {17.14.2}IoT - Integrations}{193}{subsection.17.14.2}%
+\contentsline {subsection}{\numberline {17.14.3}IoT - Kinesis Data Firehose}{193}{subsection.17.14.3}%
